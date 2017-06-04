@@ -9,6 +9,8 @@ import { STORE_TODO, STORE_ROUTER } from '../../constants/stores';
 import { TodoFilter, TODO_FILTER_LOCATION_HASH } from '../../constants/todos';
 import * as style from './style.css';
 
+import Test from '../../components/Test';
+
 export interface TodoAppProps {
   /** MobX Stores will be injected via @inject() **/
   // [STORE_ROUTER]: RouterStore;
@@ -85,6 +87,7 @@ export class TodoApp extends React.Component<TodoAppProps, TodoAppState> {
           deleteTodo={todoStore.deleteTodo}
           editTodo={todoStore.editTodo} />
         {footer}
+        <Test />
         {children}
       </div>
     );
