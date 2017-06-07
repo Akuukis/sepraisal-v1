@@ -1,5 +1,12 @@
 import * as React from 'react';
 
+import * as injectTapEventPlugin from 'react-tap-event-plugin';
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+
+import Paper from 'material-ui/Paper';
+
+injectTapEventPlugin();
+
 export class App extends React.Component<any, any> {
 
   renderDevTool() {
@@ -11,10 +18,12 @@ export class App extends React.Component<any, any> {
 
   render() {
     return (
-      <div className="container">
-        {this.props.children}
-        {this.renderDevTool()}
-      </div>
+      <MuiThemeProvider>
+        <Paper id='container'>
+          {this.props.children}
+          {this.renderDevTool()}
+        </Paper>
+      </MuiThemeProvider>
     );
   }
 };
