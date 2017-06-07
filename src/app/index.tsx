@@ -2,13 +2,13 @@ import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 import { useStrict } from 'mobx';
 import { Provider } from 'mobx-react';
-import { Router, Route, IndexRoute, browserHistory } from 'react-router';
-import { App } from './containers/App';
-import { TodoApp } from './containers/TodoApp';
+import { browserHistory } from 'react-router';
+
 import { TodoModel } from './models/TodoModel';
 import { TodoStore, RouterStore } from './stores';
 import { STORE_TODO, STORE_ROUTER } from './constants/stores';
 import { TodoFilter } from './constants/todos';
+import { Routes } from './Routes';
 
 // enable MobX strict mode
 useStrict(true);
@@ -30,11 +30,7 @@ const rootStores = {
 // render react DOM
 ReactDOM.render(
   <Provider {...rootStores} >
-    <Router history={browserHistory} >
-      <Route path='/' component={App} >
-        <IndexRoute component={TodoApp} />
-      </Route>
-    </Router>
+    <Routes />
   </Provider >,
   document.getElementById('root')
 );
