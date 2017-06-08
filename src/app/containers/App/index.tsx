@@ -12,11 +12,12 @@ import IconNavigationMenu from 'material-ui/svg-icons/navigation/menu'
 import {STORE_NAVIGATION} from "../../constants/stores";
 import {NavigationStore} from "../../stores/";
 import Navigation from "../Navigation/";
+import './style.css';
 
 
 @inject(STORE_NAVIGATION)
 @observer
-export class App extends React.Component<any, any> {
+export default class App extends React.Component<any, any> {
 
   renderDevTool() {
     if (process.env.NODE_ENV !== 'production') {
@@ -29,7 +30,7 @@ export class App extends React.Component<any, any> {
     const navigation = this.props[STORE_NAVIGATION] as NavigationStore;
     return (
       <MuiThemeProvider>
-          <Paper id='container'>
+        <Paper id='container'>
           <AppBar
               className='topBar'
               iconElementLeft={<IconButton onClick={navigation.openDrawer}><IconNavigationMenu /></IconButton>}

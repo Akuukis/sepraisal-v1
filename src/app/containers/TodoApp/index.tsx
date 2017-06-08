@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { inject, observer } from 'mobx-react';
+
 import { Header } from '../../components/Header';
 import { TodoList } from '../../components/TodoList';
 import { Footer } from '../../components/Footer';
@@ -23,7 +24,7 @@ export interface TodoAppState {
 
 @inject(STORE_TODO, STORE_ROUTER)
 @observer
-export class TodoApp extends React.Component<TodoAppProps, TodoAppState> {
+export default class TodoApp extends React.Component<TodoAppProps, TodoAppState> {
 
   constructor(props: TodoAppProps, context: any) {
     super(props, context);

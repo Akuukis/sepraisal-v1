@@ -2,8 +2,10 @@ import * as React from 'react';
 import { observer } from 'mobx-react';
 import { Router, Route, IndexRoute, hashHistory } from 'react-router';
 
-import { App } from './containers/App';
-import { TodoApp } from './containers/TodoApp';
+import App from './containers/App';
+import TodoApp from './containers/TodoApp';
+import Home from './containers/Home';
+
 
 @observer
 export class Routes extends React.Component<{}, {}> {
@@ -12,7 +14,7 @@ export class Routes extends React.Component<{}, {}> {
     return (
       <Router history={hashHistory} >
         <Route path='/' component={App} >
-          <IndexRoute component={TodoApp} />
+          <IndexRoute component={Home} />
           <Route path='blueprint' component={null} >
             <IndexRoute component={TodoApp} />
             <Route path=':blueprint' component={TodoApp} />
