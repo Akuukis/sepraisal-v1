@@ -100,7 +100,8 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       template: 'assets/index.html'
-    })
+    }),
+    new webpack.NamedModulesPlugin(),
   ],
   devServer: {
     contentBase: sourcePath,
