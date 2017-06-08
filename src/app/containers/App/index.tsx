@@ -1,12 +1,21 @@
 import * as React from 'react';
+import { inject, observer } from 'mobx-react';
 
-import * as injectTapEventPlugin from 'react-tap-event-plugin';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
 import Paper from 'material-ui/Paper';
+import AppBar from 'material-ui/AppBar';
+import Drawer from 'material-ui/Drawer';
+import IconButton from 'material-ui/IconButton';
+import IconNavigationMenu from 'material-ui/svg-icons/navigation/menu'
 
-injectTapEventPlugin();
+import {STORE_NAVIGATION} from "../../constants/stores";
+import {NavigationStore} from "../../stores/";
 
+
+
+@inject(STORE_NAVIGATION)
+@observer
 export class App extends React.Component<any, any> {
 
   renderDevTool() {
@@ -17,9 +26,23 @@ export class App extends React.Component<any, any> {
   };
 
   render() {
+    const navigation = this.props[STORE_NAVIGATION] as NavigationStore;
     return (
       <MuiThemeProvider>
-        <Paper id='container'>
+          <Paper id='container'>
+          <AppBar
+              className='topBar'
+              iconElementLeft={<IconButton onClick={navigation.openDrawer}><IconNavigationMenu /></IconButton>}
+              title={'Space Engineers Praisal: Blueprint Parser & Analyzer'}
+          />
+          <Drawer
+              className='drawer'
+              docked={false}
+              open={navigation.isDrawerOpen}
+              onRequestChange={navigation.closeDrawer}
+          >
+            <p>asdf</p>
+          </Drawer>
           {this.props.children}
           {this.renderDevTool()}
         </Paper>

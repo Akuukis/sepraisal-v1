@@ -4,9 +4,10 @@ import { useStrict } from 'mobx';
 import { Provider } from 'mobx-react';
 import { browserHistory } from 'react-router';
 
+import * as injectTapEventPlugin from 'react-tap-event-plugin';
 import { TodoModel } from './models/TodoModel';
-import { TodoStore, RouterStore } from './stores';
-import { STORE_TODO, STORE_ROUTER } from './constants/stores';
+import { TodoStore, RouterStore, NavigationStore } from './stores';
+import { STORE_TODO, STORE_ROUTER, STORE_NAVIGATION } from './constants/stores';
 import { TodoFilter } from './constants/todos';
 import { Routes } from './Routes';
 
@@ -22,12 +23,15 @@ const defaultTodos = [
 // prepare MobX stores
 const todoStore = new TodoStore(defaultTodos);
 const routerStore = new RouterStore(browserHistory);
+const navigationStore = new NavigationStore();
 const rootStores = {
   [STORE_TODO]: todoStore,
-  [STORE_ROUTER]: routerStore
+  [STORE_ROUTER]: routerStore,
+  [STORE_NAVIGATION]: navigationStore,
 };
 
 // render react DOM
+injectTapEventPlugin();
 ReactDOM.render(
   <Provider {...rootStores} >
     <Routes />
