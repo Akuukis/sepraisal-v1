@@ -11,7 +11,7 @@ import IconNavigationMenu from 'material-ui/svg-icons/navigation/menu'
 
 import {STORE_NAVIGATION} from "../../constants/stores";
 import {NavigationStore} from "../../stores/";
-
+import Navigation from "../Navigation/";
 
 
 @inject(STORE_NAVIGATION)
@@ -41,7 +41,7 @@ export class App extends React.Component<any, any> {
               open={navigation.isDrawerOpen}
               onRequestChange={navigation.closeDrawer}
           >
-            <p>asdf</p>
+            <Navigation />
           </Drawer>
           {this.props.children}
           {this.renderDevTool()}

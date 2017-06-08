@@ -2,7 +2,7 @@ import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 import { useStrict } from 'mobx';
 import { Provider } from 'mobx-react';
-import { browserHistory } from 'react-router';
+import { hashHistory } from 'react-router';
 
 import * as injectTapEventPlugin from 'react-tap-event-plugin';
 import { TodoModel } from './models/TodoModel';
@@ -22,7 +22,7 @@ const defaultTodos = [
 
 // prepare MobX stores
 const todoStore = new TodoStore(defaultTodos);
-const routerStore = new RouterStore(browserHistory);
+const routerStore = new RouterStore(hashHistory);
 const navigationStore = new NavigationStore();
 const rootStores = {
   [STORE_TODO]: todoStore,

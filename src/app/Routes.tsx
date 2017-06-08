@@ -1,7 +1,6 @@
 import * as React from 'react';
-import {observable, computed, action, autorun} from 'mobx';
-import {observer} from 'mobx-react';
-import { Router, Route, IndexRoute, browserHistory } from 'react-router';
+import { observer } from 'mobx-react';
+import { Router, Route, IndexRoute, hashHistory } from 'react-router';
 
 import { App } from './containers/App';
 import { TodoApp } from './containers/TodoApp';
@@ -11,9 +10,24 @@ export class Routes extends React.Component<{}, {}> {
 
   render() {
     return (
-      <Router history={browserHistory} >
+      <Router history={hashHistory} >
         <Route path='/' component={App} >
           <IndexRoute component={TodoApp} />
+          <Route path='blueprint' component={null} >
+            <IndexRoute component={TodoApp} />
+            <Route path=':blueprint' component={TodoApp} />
+          </Route>
+          <Route path='mods' component={null} >
+            <IndexRoute component={null} />
+            <Route path='block' component={null} />
+            <Route path='component' component={null} />
+            <Route path='ingot' component={null} />
+            <Route path='ore' component={null} />
+            <Route path='converter' component={null} />
+          </Route>
+          <Route path='modpacks' component={null} />
+          <Route path='help/:page' component={null} />
+          <Route path='credits' component={null} />
         </Route>
       </Router>
     );
