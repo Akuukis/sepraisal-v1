@@ -1,7 +1,8 @@
+import { WSAEPROVIDERFAILEDINIT } from 'constants';
 import * as React from 'react';
 import { inject, observer } from 'mobx-react';
 
-import { withStyles, createStyleSheet } from 'material-ui/styles';
+import Grid from 'material-ui/Grid';
 import Paper from 'material-ui/Paper';
 import AppBar from 'material-ui/AppBar';
 import Toolbar from 'material-ui/Toolbar';
@@ -16,6 +17,13 @@ import {NavigationStore} from "../../stores/";
 import Navigation from "../Navigation/";
 import './style.css';
 
+const style = {
+  position: 'fixed',
+  left: 0,
+  top: 64,
+  width: '100%',
+  height: '100%',
+}
 
 @inject(STORE_NAVIGATION)
 @observer
@@ -32,17 +40,6 @@ export default class App extends React.Component<any, any> {
     const navigation = this.props[STORE_NAVIGATION] as NavigationStore;
     return (
         <div>
-          <AppBar>
-            <Toolbar>
-              <IconButton contrast onClick={navigation.openDrawer}>
-                <IconMenu />
-              </IconButton>
-              <Typography type="title" colorInherit>
-                {'Space Engineers Praisal: Blueprint Parser & Analyzer'}
-              </Typography>
-              <Button contrast>Login</Button>
-            </Toolbar>
-          </AppBar>
           <Drawer
             docked={false}
             open={navigation.isDrawerOpen}
@@ -51,7 +48,19 @@ export default class App extends React.Component<any, any> {
           >
             <Navigation />
           </Drawer>
-          {this.props.children}
+          <AppBar>
+            <Toolbar>
+              <IconButton contrast onClick={navigation.openDrawer}>
+                <IconMenu />
+              </IconButton>
+              <Typography type="title" colorInherit>
+                {'Space Engineers Praisal: Blueprint Parser & Analyzer'}
+              </Typography>
+            </Toolbar>
+          </AppBar>
+          <Grid item xs={12} style={style}>
+            {this.props.children}
+          </Grid>
           {this.renderDevTool()}
         </div>
     );
