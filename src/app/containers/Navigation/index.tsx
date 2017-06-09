@@ -5,10 +5,7 @@ import { Link } from "react-router";
 import Drawer from 'material-ui/Drawer';
 import Divider from 'material-ui/Divider';
 import {List, ListItem} from 'material-ui/List';
-import Menu from 'material-ui/Menu';
-import MenuItem from 'material-ui/MenuItem';
-import DropDownMenu from 'material-ui/DropDownMenu';
-import RaisedButton from 'material-ui/RaisedButton';
+import Menu, { MenuItem } from 'material-ui/Menu';
 import Paper from 'material-ui/Paper';
 import * as RR from 'react-router';
 

@@ -2,6 +2,7 @@ import * as React from 'react';
 import { observer } from 'mobx-react';
 import { Router, Route, IndexRoute, hashHistory } from 'react-router';
 
+import Theme from './containers/Theme';
 import App from './containers/App';
 import TodoApp from './containers/TodoApp';
 import Home from './containers/Home';
@@ -13,23 +14,25 @@ export class Routes extends React.Component<{}, {}> {
   render() {
     return (
       <Router history={hashHistory} >
-        <Route path='/' component={App} >
-          <IndexRoute component={Home} />
-          <Route path='blueprint' component={null} >
-            <IndexRoute component={TodoApp} />
-            <Route path=':blueprint' component={TodoApp} />
+        <Route component={Theme}>
+          <Route path='/' component={App} >
+            <IndexRoute component={Home} />
+            <Route path='blueprint' component={null} >
+              <IndexRoute component={TodoApp} />
+              <Route path=':blueprint' component={TodoApp} />
+            </Route>
+            <Route path='mods' component={null} >
+              <IndexRoute component={null} />
+              <Route path='block' component={null} />
+              <Route path='component' component={null} />
+              <Route path='ingot' component={null} />
+              <Route path='ore' component={null} />
+              <Route path='converter' component={null} />
+            </Route>
+            <Route path='modpacks' component={null} />
+            <Route path='help/:page' component={null} />
+            <Route path='credits' component={null} />
           </Route>
-          <Route path='mods' component={null} >
-            <IndexRoute component={null} />
-            <Route path='block' component={null} />
-            <Route path='component' component={null} />
-            <Route path='ingot' component={null} />
-            <Route path='ore' component={null} />
-            <Route path='converter' component={null} />
-          </Route>
-          <Route path='modpacks' component={null} />
-          <Route path='help/:page' component={null} />
-          <Route path='credits' component={null} />
         </Route>
       </Router>
     );
