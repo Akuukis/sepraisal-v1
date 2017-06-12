@@ -12,9 +12,9 @@ import Typography from 'material-ui/Typography';
 import IconButton from 'material-ui/IconButton';
 import IconMenu from 'material-ui-icons/Menu';
 
-import {STORE_NAVIGATION} from "../../constants/stores";
-import {NavigationStore} from "../../stores/";
-import Navigation from "../Navigation/";
+import {STORE_NAVIGATION} from '../../constants/stores';
+import {NavigationStore} from '../../stores/';
+import Navigation from '../Navigation/';
 import './style.css';
 
 const style = {
@@ -44,7 +44,6 @@ export default class App extends React.Component<any, any> {
             docked={false}
             open={navigation.isDrawerOpen}
             onRequestClose={navigation.closeDrawer}
-            onClick={navigation.closeDrawer}
           >
             <Navigation />
           </Drawer>
