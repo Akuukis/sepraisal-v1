@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { observer } from 'mobx-react';
-import { Router, Route, IndexRoute, hashHistory } from 'react-router';
+import { Router, Route, IndexRoute, hashHistory, Redirect } from 'react-router';
 
 import Theme from './containers/Theme';
 import App from './containers/App';
@@ -17,11 +17,12 @@ export class Routes extends React.Component<{}, {}> {
         <Route component={Theme}>
           <Route path='/' component={App} >
             <IndexRoute component={Home} />
-            <Route path='blueprint' component={null} >
+            <Redirect from='/home' to='/' />
+            <Route path='/blueprint' component={null} >
               <IndexRoute component={TodoApp} />
               <Route path=':blueprint' component={TodoApp} />
             </Route>
-            <Route path='mods' component={null} >
+            <Route path='/mods' component={null} >
               <IndexRoute component={null} />
               <Route path='block' component={null} />
               <Route path='component' component={null} />
@@ -29,9 +30,12 @@ export class Routes extends React.Component<{}, {}> {
               <Route path='ore' component={null} />
               <Route path='converter' component={null} />
             </Route>
-            <Route path='modpacks' component={null} />
-            <Route path='help/:page' component={null} />
-            <Route path='credits' component={null} />
+            <Route path='/modpacks' component={null} />
+            <Route path='/help' component={null} >
+              <IndexRoute component={null} />
+              <Route path=':page' component={null} />
+            </Route>
+            <Route path='/credits' component={null} />
           </Route>
         </Route>
       </Router>
