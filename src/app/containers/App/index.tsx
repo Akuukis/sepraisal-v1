@@ -2,6 +2,7 @@ import { WSAEPROVIDERFAILEDINIT } from 'constants';
 import * as React from 'react';
 import { inject, observer } from 'mobx-react';
 
+import { createStyleSheet, withStyles } from 'material-ui/styles';
 import Grid from 'material-ui/Grid';
 import Paper from 'material-ui/Paper';
 import AppBar from 'material-ui/AppBar';
@@ -17,14 +18,17 @@ import {NavigationStore} from '../../stores/';
 import Navigation from '../Navigation/';
 import './style.css';
 
-const style = {
-  position: 'fixed',
-  left: 0,
-  top: 64,
-  width: '100%',
-  height: '100%',
-}
+const style = createStyleSheet('App', (theme) => ({
+  root: {
+    position: 'fixed',
+    left: 0,
+    top: 64,
+    width: '100%',
+    height: '100%',
+  },
+}));
 
+@withStyles(style)
 @inject(STORE_NAVIGATION)
 @observer
 export default class App extends React.Component<any, any> {
@@ -39,7 +43,7 @@ export default class App extends React.Component<any, any> {
   render() {
     const navigation = this.props[STORE_NAVIGATION] as NavigationStore;
     return (
-        <div>
+        <Paper className={this.props.classes.root}>
           <Drawer
             docked={false}
             open={navigation.isDrawerOpen}
@@ -57,11 +61,11 @@ export default class App extends React.Component<any, any> {
               </Typography>
             </Toolbar>
           </AppBar>
-          <Grid item xs={12} style={style}>
+          <Paper id='content'>
             {this.props.children}
-          </Grid>
+          </Paper>
           {this.renderDevTool()}
-        </div>
+        </Paper>
     );
   }
 };
