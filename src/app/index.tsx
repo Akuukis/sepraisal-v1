@@ -2,14 +2,14 @@ import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 import { useStrict } from 'mobx';
 import { Provider } from 'mobx-react';
-import { hashHistory } from 'react-router';
+import { hashHistory, Router } from 'react-router';
 
 import * as injectTapEventPlugin from 'react-tap-event-plugin';
 import { TodoModel } from './models/TodoModel';
 import { TodoStore, RouterStore, NavigationStore } from './stores';
 import { STORE_TODO, STORE_ROUTER, STORE_NAVIGATION } from './constants/stores';
 import { TodoFilter } from './constants/todos';
-import { Routes } from './Routes';
+import { routes } from './routes';
 
 // enable MobX strict mode
 useStrict(true);
@@ -30,11 +30,12 @@ const rootStores = {
   [STORE_NAVIGATION]: navigationStore,
 };
 
-// render react DOM
 injectTapEventPlugin();
 ReactDOM.render(
   <Provider {...rootStores} >
-    <Routes />
+    <Router history={hashHistory} >
+      { routes }
+    </Router>
   </Provider >,
   document.getElementById('root')
 );
