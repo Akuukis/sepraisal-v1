@@ -1,3 +1,1 @@
-export const STORE_TODO = 'todo';
-export const STORE_ROUTER = 'router';
-export const STORE_NAVIGATION = 'navigation';
+export const STORE_ROUTER = 'routing';

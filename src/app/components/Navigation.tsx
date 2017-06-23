@@ -3,8 +3,8 @@ import { inject, observer } from 'mobx-react';
 
 import List, {ListItem, ListItemText} from 'material-ui/List';
 
-import { RouterStore } from '../../stores';
-import { STORE_ROUTER } from '../../constants/stores';
+import { RouterStore } from './../stores/';
+import { STORE_ROUTER } from './../constants/';
 
 @inject(STORE_ROUTER)
 @observer
