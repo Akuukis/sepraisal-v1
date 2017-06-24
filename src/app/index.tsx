@@ -6,7 +6,7 @@ import { hashHistory, Router } from 'react-router';
 
 import * as injectTapEventPlugin from 'react-tap-event-plugin';
 import { TodoModel } from './models/TodoModel';
-import { TodoStore, RouterStore, NavigationStore } from './stores';
+import { RouterStore } from './stores';
 import { STORE_ROUTER } from './constants/stores';
 import { routes } from './routes';
 
