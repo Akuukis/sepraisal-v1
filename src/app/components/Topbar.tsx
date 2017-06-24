@@ -15,6 +15,9 @@ const style = createStyleSheet('Topbar', (theme) => ({
     backgroundImage: `url('${background}')`,
     backgroundPosition: '0px -12px ',
   },
+  headline: {
+    color: 'white',
+  }
 }));
 
 interface TopbarProps {
@@ -35,7 +38,7 @@ export default class Topbar extends React.Component<TopbarProps & any, {}> {
           <IconButton onClick={()=>this.props.setDrawer(true)}>
             <IconMenu />
           </IconButton>
-          <Typography type="headline">
+          <Typography type="headline" className={this.props.classes.headline}>
             {'Space Engineers Praisal: Blueprint Parser & Analyzer'}
           </Typography>
         </Toolbar>
