@@ -1,1 +1,1 @@
-export { STORE_ROUTER } from './stores';
+export { STORE_BLUMMARY, STORE_ROUTER } from './stores';
