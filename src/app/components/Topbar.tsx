@@ -11,7 +11,7 @@ import IconMenu from 'material-ui-icons/Menu';
 import * as background from '../../assets/background-wide.jpg';
 
 const style = createStyleSheet('Topbar', (theme) => ({
-  root: {
+  appbar: {
     backgroundImage: `url('${background}')`,
     backgroundPosition: '0px -12px ',
   },
@@ -33,7 +33,7 @@ export default class Topbar extends React.Component<TopbarProps & any, {}> {
 
   render() {
     return (
-      <AppBar elevation={0} classes={this.props.classes}>
+      <AppBar elevation={0} className={this.props.classes.appbar}>
         <Toolbar>
           <IconButton onClick={()=>this.props.setDrawer(true)}>
             <IconMenu />
