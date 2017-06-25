@@ -8,6 +8,7 @@ import Paper from 'material-ui/Paper';
 import Drawer from 'material-ui/Drawer';
 import Button from 'material-ui/Button';
 
+import { ComponentRouted } from '../common/';
 import { STORE_BLUMMARY } from '../constants/stores';
 import { BlummaryStore } from '../stores/BlummaryStore';
 
@@ -43,7 +44,7 @@ const style = createStyleSheet('App', (theme) => ({
 @withStyles(style)
 @inject(STORE_BLUMMARY)
 @observer
-export default class App extends React.Component<any, any> {
+export default class App extends ComponentRouted<{}, {}, {}> {
   @observable public isDrawerOpen: boolean = false;
   @observable private loaded: boolean = false;
 

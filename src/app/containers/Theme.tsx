@@ -1,6 +1,8 @@
 import * as React from 'react';
 
 import { MuiThemeProvider, createMuiTheme } from 'material-ui/styles';
+
+import { ComponentRouted } from '../common/';
 import createPalette from 'material-ui/styles/palette';
 import { purple, green, red } from 'material-ui/styles/colors';
 
@@ -15,7 +17,7 @@ const theme = createMuiTheme({
   }),
 });
 
-export default class Theme extends React.Component<{}, {}> {
+export default class Theme extends ComponentRouted<{}, {}, {}> {
 
   render() {
     return (
@@ -24,4 +26,5 @@ export default class Theme extends React.Component<{}, {}> {
       </MuiThemeProvider>
     );
   }
+
 };

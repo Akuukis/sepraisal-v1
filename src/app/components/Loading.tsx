@@ -1,6 +1,8 @@
 import * as React from 'react';
 
-export default class Loading extends React.Component<{}, {}> {
+import {Component} from "../common/";
+
+export default class Loading extends Component<{}, {}> {
 
   render() {
     return (

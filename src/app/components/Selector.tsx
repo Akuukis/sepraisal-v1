@@ -1,5 +1,7 @@
 import * as React from 'react';
 
+import {Component} from "../common/";
+
 import { createStyleSheet, withStyles } from 'material-ui/styles';
 import List, {ListItem, ListItemText} from 'material-ui/List';
 
@@ -15,7 +17,7 @@ export interface SelectorProps {
 }
 
 @withStyles(style)
-export default class Selector extends React.Component<SelectorProps, {}> {
+export default class Selector extends Component<SelectorProps, {}> {
 
   constructor(props) {
     super(props);

@@ -3,12 +3,13 @@ import { inject, observer } from 'mobx-react';
 
 import List, {ListItem, ListItemText} from 'material-ui/List';
 
+import {Component} from "../common/";
 import { RouterStore } from './../stores/';
 import { STORE_ROUTER } from './../constants/';
 
 @inject(STORE_ROUTER)
 @observer
-export default class Navigation extends React.Component<{}, void> {
+export default class Navigation extends Component<{}, {}> {
 
   constructor(props) {
     super(props);

@@ -8,6 +8,8 @@ import Typography from 'material-ui/Typography';
 import IconButton from 'material-ui/IconButton';
 import IconMenu from 'material-ui-icons/Menu';
 
+import {Component} from '../common/';
+
 import * as background from '../../assets/background-wide.jpg';
 
 const style = createStyleSheet('Topbar', (theme) => ({
@@ -25,7 +27,7 @@ interface TopbarProps {
 }
 
 @withStyles(style)
-export default class Topbar extends React.Component<TopbarProps & any, {}> {
+export default class Topbar extends Component<TopbarProps, {}> {
 
   constructor(props) {
     super(props)
