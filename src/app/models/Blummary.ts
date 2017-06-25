@@ -1,4 +1,7 @@
+import {action, computed, observable} from 'mobx';
 import { parseString } from 'xml2js';
+
+import {ObservableMap} from './../common/';
 
 export interface BlummaryDTO {
   title: string,
@@ -7,11 +10,17 @@ export interface BlummaryDTO {
 
 export class Blummary {
   readonly raw: BlummaryDTO;
+  @observable title: string;
+  blockcount: ObservableMap<number>;
 
   constructor(raw?: BlummaryDTO) {
     this.raw = raw || { title: 'New blueprint', blockcount: {} };
+    this.title = raw.title;
+    const obj2mapArray = (obj) => Object.keys(obj).map<[string, number]>( (key)=>[key, obj[key]]);
+    this.blockcount = new ObservableMap<number>( obj2mapArray(raw.blockcount) );
   }
 
+  // Static methods for parsing input before construction.
   private static isPrefab(def: PrefabDefinitions | ShipDefinitions): def is PrefabDefinitions {
     return (<PrefabDefinitions>def).Prefabs !== undefined;
   }
@@ -52,5 +61,28 @@ export class Blummary {
       });
     });
   }
+
+
+  // Methods for manipulating Blummary.
+  reset(raw = this.raw): void {
+    this.title = raw.title;
+    const obj2mapArray = (obj) => Object.keys(obj).map<[string, number]>( (key)=>[key, obj[key]]);
+    this.blockcount = new ObservableMap<number>( obj2mapArray(raw.blockcount) );
+  }
+
+  export(): BlummaryDTO {
+    return {
+      title: this.title,
+      blockcount: this.blockcount.toJSON()
+    }
+  }
+
+  save(): void {
+    this.reset(this.export());
+  }
+
+
+  // Methods for analysis.
+  @computed get count(): number { return this.blockcount.reduce<number>((sum, count)=>sum+count, 0); }
 
 }

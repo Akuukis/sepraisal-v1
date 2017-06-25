@@ -1,5 +1,6 @@
-import {action, ObservableMap} from "mobx";
+import {action, } from "mobx";
 
+import {ObservableMap} from './../common/';
 import { Blummary } from './../models/';
 
 import * as EveryLargeBlockOnce from '../../../assets/blueprints/EveryLargeBlockOnce/bp.sbc';
@@ -9,12 +10,6 @@ import * as MarsLander from '../../../vendor/SpaceEngineers/prefabs/MarsLander.s
 import * as RespawnShip from '../../../vendor/SpaceEngineers/prefabs/RespawnShip.sbc';
 
 export class BlummaryStore extends ObservableMap<Blummary> {
-  map<T>( callback: (blummary: Blummary, key: string)=>T ): T[] {
-    const results: T[] = [];
-    this.forEach((blummary: Blummary, key: string)=>results.push(callback(blummary, key)));
-    return results;
-  }
-
   add(blummary: Blummary) {
     console.log(blummary)
     this.set(blummary.raw.title, blummary);

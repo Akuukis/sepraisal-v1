@@ -5,6 +5,7 @@ import { Route, IndexRoute, Redirect } from 'react-router';
 import Theme from './containers/Theme';
 import App from './containers/App';
 import Home from './containers/Home';
+import Blueprint from './containers/Blueprint';
 
 
 export const routes = (
@@ -12,7 +13,7 @@ export const routes = (
   <Route path='/' component={App} >
     <IndexRoute component={Home} />
     <Redirect from='/home' to='/' />
-    <Route path='/blueprint' component={null} >
+    <Route path='/blueprint' component={Blueprint} >
       <IndexRoute component={null} />
       <Route path=':blueprint' component={null} />
     </Route>
