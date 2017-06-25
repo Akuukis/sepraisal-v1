@@ -91,7 +91,6 @@ export default class App extends React.Component<any, any> {
           <Topbar setDrawer={this.setDrawer} />
           <Paper className={this.props.classes.content}>
             { this.ready ? this.props.children : <Loading />}
-            {this.props.children}
           </Paper>
           {this.renderDevTool()}
         </Paper>
