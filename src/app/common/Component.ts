@@ -4,7 +4,7 @@ export abstract class Component<
     Props extends {},
     State extends {}
   > extends ReactComponent<
-    Props & {classes: {[className: string]: string}},  // hack for material-ui @withStyle().
+    Props & Partial<{classes: {[className: string]: string}}>,  // hack for material-ui @withStyle().
     State
   > {
 
