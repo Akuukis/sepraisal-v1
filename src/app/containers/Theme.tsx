@@ -4,7 +4,7 @@ import { MuiThemeProvider, createMuiTheme } from 'material-ui/styles';
 
 import { ComponentRouted } from '../common/';
 import createPalette from 'material-ui/styles/palette';
-import { purple, green, red } from 'material-ui/styles/colors';
+import { purple, green, red } from 'material-ui/colors';
 
 const theme = createMuiTheme({
   palette: createPalette({
