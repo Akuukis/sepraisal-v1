@@ -6,11 +6,11 @@ import {Blummary, Block, Component, Ingot, Ore} from './';
 
 export class Analysis {
 
-  blummary: Blummary;
-  blocks: BlockStore;
-  components: ComponentStore;
-  ingots: IngotStore;
-  ores: OreStore;
+  public blummary: Blummary;
+  public blocks: BlockStore;
+  public components: ComponentStore;
+  public ingots: IngotStore;
+  public ores: OreStore;
 
   constructor(blummary: Blummary, blocks: BlockStore, components: ComponentStore, ingots: IngotStore, ores: OreStore) {
     this.blummary = blummary;

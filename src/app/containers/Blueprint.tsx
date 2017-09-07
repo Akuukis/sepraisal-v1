@@ -6,37 +6,31 @@ import { createStyleSheet, withStyles } from 'material-ui/styles';
 import Grid from 'material-ui/Grid';
 
 import { ComponentRouted } from '../common/';
-import { STORE_BLUMMARY } from '../constants/stores';
-import { BlummaryStore } from '../stores/BlummaryStore';
+import { STORE_BLUMMARY, STORE_ANALYSIS } from '../constants/stores';
+import { BlummaryStore, AnalysisStore } from '../stores/';
+import AnalysisBar from '../components/AnalysisBar';
 import Selector from '../components/Selector';
 
 const style = createStyleSheet('Blueprint', (theme) => ({
 }));
 
-let id = 0;
-function createData(name, calories, fat, carbs, protein) {
-  id += 1;
-  return { id, name, calories, fat, carbs, protein };
-}
-
-@inject(STORE_BLUMMARY)
+@inject(STORE_BLUMMARY, STORE_ANALYSIS)
 @withStyles(style)
 @observer
 export default class Blueprint extends ComponentRouted<{}, {}, {}> {
 
-
   constructor(props) {
     super(props);
 
-    this.go = this.go.bind(this);
+    this.select = this.select.bind(this);
   }
 
-  go(title: string) {
-    this.props.router.push(`/blueprint/${title}`)
+  select(title: string) {
+    (this.props[STORE_ANALYSIS] as AnalysisStore).add((this.props[STORE_BLUMMARY] as BlummaryStore).get(title));
   }
 
   @computed get count() {
-    return 0;
+    return (this.props[STORE_ANALYSIS] as AnalysisStore).size;
   }
 
   @computed get blummaries() {
@@ -45,17 +39,21 @@ export default class Blueprint extends ComponentRouted<{}, {}, {}> {
 
   @computed get renderSelector() {
     return (
-        <Selector lines={this.blummaries} onClick={this.go} />
+        <Selector lines={this.blummaries} onClick={this.select} />
     )
   }
 
   @computed get renderAnalysis() {
+    const width = Math.floor(12 / this.count);
     return (
       <Grid container>
-
-        <Grid item xs={12} sm={12} md={12} lg={12} >
-
-        </Grid>
+        { (this.props[STORE_ANALYSIS] as AnalysisStore).map((analysis)=>(
+          <Grid item xs={width} key={analysis.blummary.title}>
+            <AnalysisBar
+              analysis={analysis}
+            />
+          </Grid>
+        )) }
       </Grid>
     )
 
