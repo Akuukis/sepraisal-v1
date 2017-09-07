@@ -1,18 +1,18 @@
 import {action, computed, observable} from 'mobx';
 import { parseString } from 'xml2js';
 
+import {BlockStore, ComponentStore, IngotStore, OreStore} from './../stores/';
 import {Blummary, Block, Component, Ingot, Ore} from './';
-import {ObservableMap} from './../common/';
 
 export class Analysis {
 
   blummary: Blummary;
-  blocks: ObservableMap<Block>;
-  components: ObservableMap<Component>;
-  ingots: ObservableMap<Ingot>;
-  ores: ObservableMap<Ore>;
+  blocks: BlockStore;
+  components: ComponentStore;
+  ingots: IngotStore;
+  ores: OreStore;
 
-  constructor(blummary: Blummary, blocks: ObservableMap<Block>, components: ObservableMap<Component>, ingots: ObservableMap<Ingot>, ores: ObservableMap<Ore>) {
+  constructor(blummary: Blummary, blocks: BlockStore, components: ComponentStore, ingots: IngotStore, ores: OreStore) {
     this.blummary = blummary;
     this.blocks = blocks;
     this.components = components;

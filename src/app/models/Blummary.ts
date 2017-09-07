@@ -3,6 +3,8 @@ import { parseString } from 'xml2js';
 
 import {ObservableMap} from './../common/';
 
+const obj2mapArray = (obj) => Object.keys(obj).map<[string, number]>( (key)=>[key, obj[key]]);
+
 export interface BlummaryDTO {
   title: string,
   blockcount: { [typeSlashsubtype: string]: number },
@@ -16,7 +18,6 @@ export class Blummary {
   constructor(raw?: BlummaryDTO) {
     this.raw = raw || { title: 'New blueprint', blockcount: {} };
     this.title = raw.title;
-    const obj2mapArray = (obj) => Object.keys(obj).map<[string, number]>( (key)=>[key, obj[key]]);
     this.blockcount = new ObservableMap<number>( obj2mapArray(raw.blockcount) );
   }
 
@@ -66,7 +67,6 @@ export class Blummary {
   // Methods for manipulating Blummary.
   reset(raw = this.raw): void {
     this.title = raw.title;
-    const obj2mapArray = (obj) => Object.keys(obj).map<[string, number]>( (key)=>[key, obj[key]]);
     this.blockcount = new ObservableMap<number>( obj2mapArray(raw.blockcount) );
   }
 
