@@ -9,8 +9,8 @@ import Drawer from 'material-ui/Drawer';
 import Button from 'material-ui/Button';
 
 import { ComponentRouted } from '../common/';
-import { STORE_BLUMMARY } from '../constants/stores';
-import { BlummaryStore } from '../stores/BlummaryStore';
+import {STORE_BLUMMARY, STORE_BLOCK} from '../constants/stores';
+import {BlockStore, BlummaryStore} from '../stores/';
 
 import Topbar from '../components/Topbar';
 import Navigation from '../components/Navigation';
@@ -42,7 +42,7 @@ const style = createStyleSheet('App', (theme) => ({
 }));
 
 @withStyles(style)
-@inject(STORE_BLUMMARY)
+@inject(STORE_BLUMMARY, STORE_BLOCK)
 @observer
 export default class App extends ComponentRouted<{}, {}, {}> {
   @observable public isDrawerOpen: boolean = false;
@@ -56,6 +56,7 @@ export default class App extends ComponentRouted<{}, {}, {}> {
 
   async componentDidMount() {
     const blummaryStore = this.props[STORE_BLUMMARY] as BlummaryStore;
+    const blockStore = this.props[STORE_BLOCK] as BlockStore;
     await blummaryStore.addPrefabs();
     this.proceed();
   }

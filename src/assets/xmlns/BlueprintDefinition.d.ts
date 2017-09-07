@@ -1,7 +1,7 @@
 interface xml2js {
 }
 
-declare interface CubeBlock extends xml2js {
+declare interface BlueprintCubeBlock extends xml2js {
   $: {
     'xsi:type': string,
   },
@@ -9,12 +9,12 @@ declare interface CubeBlock extends xml2js {
   BuiltBy: [string],
 }
 
-declare interface CubeBlocks extends xml2js {
-  MyObjectBuilder_CubeBlock: CubeBlock[],
+declare interface BlueprintCubeBlocks extends xml2js {
+  MyObjectBuilder_CubeBlock: BlueprintCubeBlock[],
 }
 
-declare interface CubeGrid extends xml2js {
-  CubeBlocks: [CubeBlocks],
+declare interface BlueprintCubeGrid extends xml2js {
+  CubeBlocks: [BlueprintCubeBlocks],
   SubtypeName: [string],
   EntityId: [string],
   PersistentFlags: [string],
@@ -29,6 +29,6 @@ declare interface CubeGrid extends xml2js {
   TargetingTargets: [string],
 }
 
-declare interface CubeGrids extends xml2js {
-  CubeGrid: CubeGrid[], 
+declare interface BlueprintCubeGrids extends xml2js {
+  CubeGrid: BlueprintCubeGrid[], 
 }

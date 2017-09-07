@@ -21,35 +21,35 @@ export class Blummary {
   }
 
   // Static methods for parsing input before construction.
-  private static isPrefab(def: PrefabDefinitions | ShipDefinitions): def is PrefabDefinitions {
-    return (<PrefabDefinitions>def).Prefabs !== undefined;
+  private static isPrefab(def: BlueprintPrefabDefinitions | BlueprintShipDefinitions): def is BlueprintPrefabDefinitions {
+    return (<BlueprintPrefabDefinitions>def).Prefabs !== undefined;
   }
 
-  private static parseBlueprint(title: string, cubeGrids: CubeGrid[]) {
+  private static parseBlueprint(title: string, cubeGrids: BlueprintCubeGrid[]) {
     const blummary: BlummaryDTO = {
       title,
       blockcount: {},
     }
     cubeGrids
-      .reduce( (aggr: CubeBlock[], cubeGrid: CubeGrid) => aggr.concat(cubeGrid.CubeBlocks[0].MyObjectBuilder_CubeBlock), [] )
-      .map( (cubeBlock: CubeBlock) => `${cubeBlock.$['xsi:type'].substr('MyObjectBuilder_'.length)}/${cubeBlock.SubtypeName[0]}` )
+      .reduce( (aggr: BlueprintCubeBlock[], cubeGrid: BlueprintCubeGrid) => aggr.concat(cubeGrid.CubeBlocks[0].MyObjectBuilder_CubeBlock), [] )
+      .map( (cubeBlock: BlueprintCubeBlock) => `${cubeBlock.$['xsi:type'].substr('MyObjectBuilder_'.length)}/${cubeBlock.SubtypeName[0]}` )
       .forEach( (block) => blummary.blockcount[block] ? blummary.blockcount[block]++ : blummary.blockcount[block] = 1 );
     return blummary;
   }
 
-  static parsePrefabBlueprint(def: PrefabDefinitions) {
+  static parsePrefabBlueprint(def: BlueprintPrefabDefinitions) {
     const blueprint = def.Prefabs[0].Prefab[0];
     return this.parseBlueprint(blueprint.Id[0].SubtypeId[0], blueprint.CubeGrids[0].CubeGrid)
   }
 
-  static parseShipBlueprint(def: ShipDefinitions) {
+  static parseShipBlueprint(def: BlueprintShipDefinitions) {
     const blueprint = def.ShipBlueprints[0].ShipBlueprint[0];
     return this.parseBlueprint(blueprint.Id[0].$.Subtype, blueprint.CubeGrids[0].CubeGrid)
   }
 
   static async parseBlueprintXml(xml: string): Promise<BlummaryDTO> {
     return new Promise( (resolve: (value: BlummaryDTO)=>void, reject: (reason: Error)=>void) => {
-      parseString(xml, (parseError: Error, bp: ShipBlueprintDefinition|PrefabBlueprintDefinition) => {
+      parseString(xml, (parseError: Error, bp: BlueprintShipDefinition|BlueprintPrefabBlueprintDefinition) => {
         if(parseError) reject(parseError);
         const def = bp.Definitions;
         try {

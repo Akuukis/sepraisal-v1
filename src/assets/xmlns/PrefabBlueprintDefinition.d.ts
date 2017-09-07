@@ -1,29 +1,29 @@
-declare interface PrefabId extends xml2js {
+declare interface BlueprintPrefabId extends xml2js {
   TypeId: ['MyObjectBuilder_PrefabDefinition'],
   SubtypeId: [string],
 }
 
-declare interface Prefab extends xml2js {
-  Id: [PrefabId],
+declare interface BlueprintPrefab extends xml2js {
+  Id: [BlueprintPrefabId],
   DisplayName: [string],
-  CubeGrids: [CubeGrids],
+  CubeGrids: [BlueprintCubeGrids],
   WorkshopId: [string],
   OwnerSteamId: [string],
   Points: [number],
 }
 
-declare interface Prefabs extends xml2js {
-  Prefab: [Prefab], 
+declare interface BlueprintPrefabs extends xml2js {
+  Prefab: [BlueprintPrefab], 
 }
 
-declare interface PrefabDefinitions extends xml2js {
+declare interface BlueprintPrefabDefinitions extends xml2js {
   $: {
     'xmlns:xsd': 'http://www.w3.org/2001/XMLSchema',
     'xmlns:xsi': 'http://www.w3.org/2001/XMLSchema-instance',
   },
-  Prefabs: [Prefabs],
+  Prefabs: [BlueprintPrefabs],
 }
 
-declare interface PrefabBlueprintDefinition {
-  Definitions: PrefabDefinitions,
+declare interface BlueprintPrefabBlueprintDefinition {
+  Definitions: BlueprintPrefabDefinitions,
 }

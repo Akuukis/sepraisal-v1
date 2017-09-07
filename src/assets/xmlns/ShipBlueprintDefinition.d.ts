@@ -1,31 +1,31 @@
-declare interface ShipId extends xml2js {
+declare interface BlueprintShipId extends xml2js {
   $: {
     Type: 'MyObjectBuilder_ShipBlueprintDefinition',
     Subtype: string,
   }
 }
 
-declare interface ShipBlueprint extends xml2js {
-  Id: [ShipId],
+declare interface BlueprintShipBlueprint extends xml2js {
+  Id: [BlueprintShipId],
   DisplayName: [string],
-  CubeGrids: [CubeGrids],
+  CubeGrids: [BlueprintCubeGrids],
   WorkshopId: [string],
   OwnerSteamId: [string],
   Points: [number],
 }
 
-declare interface ShipBlueprints extends xml2js {
-  ShipBlueprint: [ShipBlueprint], 
+declare interface BlueprintShipBlueprints extends xml2js {
+  ShipBlueprint: [BlueprintShipBlueprint], 
 }
 
-declare interface ShipDefinitions extends xml2js {
+declare interface BlueprintShipDefinitions extends xml2js {
   $: {
     'xmlns:xsd': 'http://www.w3.org/2001/XMLSchema',
     'xmlns:xsi': 'http://www.w3.org/2001/XMLSchema-instance',
   },
-  ShipBlueprints: [ShipBlueprints],
+  ShipBlueprints: [BlueprintShipBlueprints],
 }
 
-declare interface ShipBlueprintDefinition {
-  Definitions: ShipDefinitions,
+declare interface BlueprintShipDefinition {
+  Definitions: BlueprintShipDefinitions,
 }
