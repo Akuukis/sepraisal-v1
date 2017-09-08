@@ -25,3 +25,7 @@ export class Analysis {
   @computed get blockTime() { return this.blummary.blockcount.reduce<number>((sum, value, key)=>sum+this.blocks.get(key).time, 0)}
 
 }
+
+export interface AnalysisRowProps {
+  analysis: Analysis
+}

@@ -5,17 +5,13 @@ import Grid from 'material-ui/Grid';
 import List, {ListItem, ListItemText} from 'material-ui/List';
 
 import {Component} from "../common/";
-import {Analysis} from "../models/";
+import {Analysis, AnalysisRowProps} from "../models/";
 
 const style = createStyleSheet('AnalysisSummary', (theme) => ({
 }))
 
-export interface AnalysisSummaryProps {
-  analysis: Analysis
-}
-
 @withStyles(style)
-export default class AnalysisSummary extends Component<AnalysisSummaryProps, {}> {
+export default class AnalysisSummary extends Component<AnalysisRowProps, {}> {
 
   constructor(props) {
     super(props);

@@ -46,7 +46,7 @@ export default class Blueprint extends ComponentRouted<{}, {}, {}> {
   @computed get renderAnalysis() {
     const width = Math.floor(12 / this.count);
     return (
-      <Grid container>
+      <Grid container spacing={16} style={{padding:'8px'}}>
         { (this.props[STORE_ANALYSIS] as AnalysisStore).map((analysis)=>(
           <Grid item xs={width} key={analysis.blummary.title}>
             <AnalysisColumn

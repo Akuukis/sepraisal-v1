@@ -1,5 +1,5 @@
 export { Blummary } from './Blummary';
-export { Analysis } from './Analysis';
+export { Analysis, AnalysisRowProps } from './Analysis';
 
 
 export { Material } from './Material';
