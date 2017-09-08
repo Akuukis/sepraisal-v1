@@ -5,16 +5,17 @@ import Grid from 'material-ui/Grid';
 
 import {Component} from "../common/";
 import {Analysis} from "../models/";
+import AnalysisSummary from "../components/AnalysisSummary";
 
-const style = createStyleSheet('Analysis', (theme) => ({
+const style = createStyleSheet('AnalysisColumn', (theme) => ({
 }))
 
-export interface AnalysisProps {
+export interface AnalysisColumnProps {
   analysis: Analysis
 }
 
 @withStyles(style)
-export default class AnalysisBar extends Component<AnalysisProps, {}> {
+export default class AnalysisColumn extends Component<AnalysisColumnProps, {}> {
 
   constructor(props) {
     super(props);
@@ -23,10 +24,7 @@ export default class AnalysisBar extends Component<AnalysisProps, {}> {
   render() {
     return (
       <Grid container>
-        <Grid item xs={12} sm={12} md={12} lg={12} >
-          { this.props.analysis.blummary.title }
-          { this.props.analysis.blummary.count }
-        </Grid>
+        <Grid item xs={12} sm={12} md={12} lg={12} ><AnalysisSummary analysis={this.props.analysis} /></Grid>
       </Grid>
     );
   }

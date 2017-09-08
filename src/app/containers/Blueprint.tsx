@@ -8,7 +8,7 @@ import Grid from 'material-ui/Grid';
 import { ComponentRouted } from '../common/';
 import { STORE_BLUMMARY, STORE_ANALYSIS } from '../constants/stores';
 import { BlummaryStore, AnalysisStore } from '../stores/';
-import AnalysisBar from '../components/AnalysisBar';
+import AnalysisColumn from './AnalysisColumn';
 import Selector from '../components/Selector';
 
 const style = createStyleSheet('Blueprint', (theme) => ({
@@ -49,7 +49,7 @@ export default class Blueprint extends ComponentRouted<{}, {}, {}> {
       <Grid container>
         { (this.props[STORE_ANALYSIS] as AnalysisStore).map((analysis)=>(
           <Grid item xs={width} key={analysis.blummary.title}>
-            <AnalysisBar
+            <AnalysisColumn
               analysis={analysis}
             />
           </Grid>

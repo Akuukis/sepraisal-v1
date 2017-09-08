@@ -15,7 +15,7 @@ export const routes = (
     <Redirect from='/home' to='/' />
     <Route path='/blueprint' component={Blueprint} >
       <IndexRoute component={null} />
-      {/* <Route path=':blueprint' component={null} /> */}
+      <Route path=':blueprint' component={null} />
     </Route>
     <Route path='/mods' component={null} >
       <IndexRoute component={null} />
