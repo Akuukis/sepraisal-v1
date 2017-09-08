@@ -3,8 +3,9 @@ import {ObservableMap as ObservableMapMobx} from "mobx";
 export class ObservableMap<TValue> extends ObservableMapMobx<TValue> {
 
   reduce<T>( callback: (previous: T, value: TValue, key: string)=>T, initValue: T ): T {
-    this.forEach((value: TValue, key: string)=>callback(initValue, value, key));
-    return initValue;
+    let result: T = initValue;
+    this.forEach((value: TValue, key: string)=>result = callback(result, value, key));
+    return result;
   }
 
   map<T>( callback: (value: TValue, key: string)=>T ): T[] {
