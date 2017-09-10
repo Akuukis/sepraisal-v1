@@ -22,12 +22,17 @@ export class Block extends Material {
           bp.Definitions.CubeBlocks[0].Definition
             .forEach((block)=>{
               if(!block.BuildTimeSeconds) return;
+              const prerequisites = block.Components[0].Component.reduce((req, comp)=>{
+                  const title = `Component/${comp.$.Subtype}`;
+                  req[title] = Number(comp.$.Count) + (title in req ? Number(req[title]) : 0);
+                  return req;
+                }, Object.create(null));
               blockDtos.push({
                 type: block.Id[0].TypeId[0],
                 subtype: block.Id[0].SubtypeId[0],
                 weight: 0,
-                time: block.BuildTimeSeconds[0],
-                prerequisites: {},
+                time: Number(block.BuildTimeSeconds[0]),
+                prerequisites,
               });
             });
           const blocks = blockDtos.map((blockDto)=>new Block(blockDto)); 
