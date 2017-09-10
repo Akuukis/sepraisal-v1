@@ -7,7 +7,6 @@ export class BlockStore extends MaterialStore<Block> {
 
   async reset() {
     const blocks = await Block.parseXml(CubeBlocks);
-    console.log(blocks)
     this.replace(blocks.map((block)=>[block.title, block]));
   }
 

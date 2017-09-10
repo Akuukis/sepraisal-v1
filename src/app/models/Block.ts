@@ -5,8 +5,8 @@ export interface BlockDTO extends MaterialDTO {
   type: string;
   subtype: string;
   weight: number;
-  time?: number;
-  prerequisites?: {
+  time: number;
+  prerequisites: {
     [title: string]: number,
   }  
 }
