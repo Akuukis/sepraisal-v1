@@ -20,25 +20,42 @@ import * as background from '../../assets/background-center-bright.jpg';
 
 const style = createStyleSheet('App', (theme) => ({
   app: {
-
     position: 'fixed',
     left: 0,
-    top: 64,
     width: '100%',
     height: '100%',
-    font: '"Roboto", Helvetica, Arial, sans-serif',
+    fontFamily: '"Roboto", Helvetica, Arial, sans-serif',
     background: '#f0f0f0',
     // color: '#4d4d4d',
     minWidth: '230px',
     fontSmoothing: 'antialiased',
     fontWeight: 300,
+    overflow: 'hidden',
   },
   content: {
     backgroundImage: `url('${background}')`,
-    backgroundPosition: 'center -64px',
-    height: '100%',
-
-  }
+    overflowY: 'overlay',
+    paddingRight: '16px',
+    overflowX: 'hidden',
+  },
+  '@media (min-width: 0px)': {
+      app: {
+        top: 56,
+      },
+      content: {
+          height: 'calc(100% - 56px)',
+          backgroundPosition: 'center -56px',
+      },
+  },
+  '@media (min-width: 600px)': {
+      app: {
+        top: 64,
+      },
+      content: {
+          height: 'calc(100% - 64px)',
+          backgroundPosition: 'center -64px',
+      },
+  },
 }));
 
 @withStyles(style)
