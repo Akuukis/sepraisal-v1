@@ -21,33 +21,9 @@ const style = createStyleSheet('AnalysisOreTable', (theme) => ({
 export default class AnalysisOreTable extends Component<AnalysisRowProps, {}> {
 
   getData(): {[field in keyof typeof datumTitles]: number|string}[] {
-    const components = this.props.analysis.blummary.blockcount.reduce<{[title: string]: number}>((components, count, blockTitle)=>{
-        const { prerequisites } = this.props.analysis.blocks.get(blockTitle);
-        for(let [title, required] of Object.entries(prerequisites)) {
-          components[title] = count * required + (title in components ? components[title] : 0);
-        }
-        return components;
-      }, Object.create(null));
 
-    const ingots = Object.keys(components).reduce<{[title: string]: number}>((ingots, compTitle)=>{
-        const { prerequisites } = this.props.analysis.components.get(compTitle);
-        for(let [title, required] of Object.entries(prerequisites)) {
-          ingots[title] = components[compTitle] * required + (title in ingots ? ingots[title] : 0);
-        }
-        return ingots;
-      }, Object.create(null));
-
-    const ores = Object.keys(ingots).reduce<{[title: string]: number}>((ores, ingotTitle)=>{
-        const { prerequisites } = this.props.analysis.ingots.get(ingotTitle);
-        for(let [title, required] of Object.entries(prerequisites)) {
-          ores[title] = ingots[ingotTitle] * required + (title in ores ? ores[title] : 0);
-        }
-        return ores;
-      }, Object.create(null));
-
-    return Object.keys(ores).map((title)=>{
-      console.log(title);
-      const count = ores[title];
+    return Object.keys(this.props.analysis.oreCount).map((title)=>{
+      const count = this.props.analysis.oreCount[title];
       const { type, subtype } = this.props.analysis.ores.get(title);
       return { type, subtype, count: Math.ceil(count) };
     })

@@ -83,7 +83,6 @@ export default class App extends ComponentRouted<{}, {}, {}> {
       await componentStore.reset();
       await ingotStore.reset();
       await oreStore.reset();
-      console.log(ingotStore)
       this.proceed();
     } catch(e) {
       console.error(e);

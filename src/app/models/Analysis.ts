@@ -24,6 +24,33 @@ export class Analysis {
   @computed get blockWeight() { return this.blummary.blockcount.reduce<number>((sum, value, key)=>sum+this.blocks.get(key).weight, 0)}
   @computed get blockTime() { return this.blummary.blockcount.reduce<number>((sum, value, key)=>sum+this.blocks.get(key).time, 0)}
 
+  @computed get componentCount() { return this.blummary.blockcount.reduce<{[title: string]: number}>((components, count, blockTitle)=>{
+      const { prerequisites } = this.blocks.get(blockTitle);
+      for(let [title, required] of Object.entries(prerequisites)) {
+        components[title] = count * required + (title in components ? components[title] : 0);
+      }
+      return components;
+    }, Object.create(null));
+  }
+
+  @computed get ingotCount() { return Object.keys(this.componentCount).reduce<{[title: string]: number}>((ingots, compTitle)=>{
+      const { prerequisites } = this.components.get(compTitle);
+      for(let [title, required] of Object.entries(prerequisites)) {
+        ingots[title] = this.componentCount[compTitle] * required + (title in ingots ? ingots[title] : 0);
+      }
+      return ingots;
+    }, Object.create(null));
+  }
+
+  @computed get oreCount() { return Object.keys(this.ingotCount).reduce<{[title: string]: number}>((ores, ingotTitle)=>{
+      const { prerequisites } = this.ingots.get(ingotTitle);
+      for(let [title, required] of Object.entries(prerequisites)) {
+        ores[title] = this.ingotCount[ingotTitle] * required + (title in ores ? ores[title] : 0);
+      }
+      return ores;
+    }, Object.create(null));
+  }
+
 }
 
 export interface AnalysisRowProps {

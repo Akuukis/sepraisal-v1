@@ -21,16 +21,9 @@ const style = createStyleSheet('AnalysisAnalysisComponentTable', (theme) => ({
 export default class AnalysisAnalysisComponentTable extends Component<AnalysisRowProps, {}> {
 
   getData(): {[field in keyof typeof datumTitles]: number|string}[] {
-    const components = this.props.analysis.blummary.blockcount.reduce<{[title: string]: number}>((components, count, title)=>{
-        const { prerequisites } = this.props.analysis.blocks.get(title);
-        for(let [title, required] of Object.entries(prerequisites)) {
-          components[title] = count * required + (title in components ? components[title] : 0);
-        }
-        return components;
-      }, Object.create(null));
 
-    return Object.keys(components).map((title)=>{
-      const count = components[title];
+    return Object.keys(this.props.analysis.componentCount).map((title)=>{
+      const count = this.props.analysis.componentCount[title];
       const { type, subtype } = this.props.analysis.components.get(title);
       return { type, subtype, count };
     })
