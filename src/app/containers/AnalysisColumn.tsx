@@ -8,6 +8,9 @@ import {Component} from "../common/";
 import {Analysis} from "../models/";
 import AnalysisSummary from "../components/AnalysisSummary";
 import AnalysisBlockTable from "../components/AnalysisBlockTable";
+import AnalysisComponentTable from "../components/AnalysisComponentTable";
+import AnalysisIngotTable from "../components/AnalysisIngotTable";
+import AnalysisOreTable from "../components/AnalysisOreTable";
 
 const style = createStyleSheet('AnalysisColumn', (theme) => ({
 }))
@@ -38,6 +41,9 @@ export default class AnalysisColumn extends Component<AnalysisColumnProps, {}> {
       <Grid container spacing={16}>
         {this.renderRow(AnalysisSummary)}
         {this.renderRow(AnalysisBlockTable)}
+        {this.renderRow(AnalysisComponentTable)}
+        {this.renderRow(AnalysisIngotTable)}
+        {this.renderRow(AnalysisOreTable)}
       </Grid>
     );
   }
