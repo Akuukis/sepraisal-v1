@@ -1,9 +1,19 @@
+export interface MaterialDTO {
+  type: string;
+  subtype: string;
+  weight: number;
+  time?: number;
+  prerequisites?: {
+    [title: string]: number,
+  }  
+}
+
 export interface MaterialCreationProps {
   time: number,
   prerequisites: { [title: string]: number, }
 }
 
-export class Material {
+export abstract class Material {
   type: string;
   subtype: string;
   weight: number;  // kg.
@@ -12,14 +22,24 @@ export class Material {
     [title: string]: number,
   }
 
-  constructor(type: string, subtype: string, weight: number, creation?: MaterialCreationProps) {
-    this.type = type;
-    this.subtype = subtype;
-    this.weight = weight;
-    if(creation) this.time = creation.time;
-    if(creation) this.prerequisites = creation.prerequisites;
+  constructor(dto: MaterialDTO) {
+    this.type = dto.type;
+    this.subtype = dto.subtype;
+    this.weight = dto.weight;
+    if(dto.time) this.time = dto.time;
+    if(dto.prerequisites) this.prerequisites = dto.prerequisites;
   }
 
   get title() { return `${this.type}/${this.subtype}`}
+
+  toJSON() {
+    return {
+      type: this.type,
+      subtype: this.subtype,
+      weight: this.weight,
+      time: this.time,
+      prerequisites: this.prerequisites && {...this.prerequisites},
+    }
+  }
 
 }

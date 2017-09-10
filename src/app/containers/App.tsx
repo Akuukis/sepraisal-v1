@@ -55,10 +55,15 @@ export default class App extends ComponentRouted<{}, {}, {}> {
   }
 
   async componentDidMount() {
-    const blummaryStore = this.props[STORE_BLUMMARY] as BlummaryStore;
-    const blockStore = this.props[STORE_BLOCK] as BlockStore;
-    await blummaryStore.addPrefabs();
-    this.proceed();
+    try {
+      const blummaryStore = this.props[STORE_BLUMMARY] as BlummaryStore;
+      const blockStore = this.props[STORE_BLOCK] as BlockStore;
+      await blummaryStore.addPrefabs();
+      await blockStore.reset();
+      this.proceed();
+    } catch(e) {
+      console.error(e);
+    }
   }
 
   @action proceed() {

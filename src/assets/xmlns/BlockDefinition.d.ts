@@ -18,6 +18,8 @@ declare interface BlockDefinition extends xml2js {
   Id: [BlockId],
   DisplayName: [string],
   Components: [BlockComponents],
+  BuildTimeSeconds: [number],
+  // ...
 }
 
 declare interface BlockCubeBlocks extends xml2js {
