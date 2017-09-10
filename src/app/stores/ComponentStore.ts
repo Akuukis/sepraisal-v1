@@ -7,7 +7,6 @@ export class ComponentStore extends MaterialStore<Component> {
 
   async reset() {
     const components = await Component.parseXml(Materials);
-    console.log(components)
     this.replace(components.map((component)=>[component.title, component]));
   }
 

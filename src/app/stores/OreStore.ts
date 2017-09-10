@@ -7,7 +7,6 @@ export class OreStore extends MaterialStore<Ore> {
 
   async reset() {
     const ores = await Ore.parseXml(Materials);
-    console.log(ores)
     this.replace(ores.map((ore)=>[ore.title, ore]));
   }
 
