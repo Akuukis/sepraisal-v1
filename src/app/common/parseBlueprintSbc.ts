@@ -16,7 +16,7 @@ export async function parseBlueprintSbc(xml: string, filter: string) {
                 time: Number(material.BaseProductionTimeInSeconds[0]),
                 prerequisites: material.Prerequisites[0].Item.reduce((req, item)=>{
                   const title = `${item.$.TypeId}/${item.$.SubtypeId}`;
-                  req[title] = Number(item.$.Amount) + (title in req ? Number(req[title]) : 0);
+                  req[title] = Number(item.$.Amount) / Number(material.Result[0].$.Amount);
                   return req;
                 }, Object.create(null)),
               }));
