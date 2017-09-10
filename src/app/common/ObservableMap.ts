@@ -14,4 +14,10 @@ export class ObservableMap<TValue> extends ObservableMapMobx<TValue> {
     return results;
   }
 
+  toArray(): TValue[] {
+      const array = [];
+      this.forEach( (wholeloan) => array.push(wholeloan));
+      return array;
+  }
+
 }

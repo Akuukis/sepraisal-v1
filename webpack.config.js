@@ -49,25 +49,30 @@ module.exports = {
       },
       // css 
       {
-        test: /\.css$/,
-        use: ExtractTextPlugin.extract({
-          fallback: 'style-loader',
-          use: [
-            {
-              loader: 'css-loader',
-              query: {
-                modules: true,
-                sourceMap: !isProduction,
-                importLoaders: 1,
-                localIdentName: '[local]__[hash:base64:5]'
-              }
-            },
-            {
-              loader: 'postcss-loader'
-            }
-          ]
-        })
+          test: /\.css$/,
+          loaders: [ 'style-loader', 'css-loader' ],
+          // include: paths
       },
+      // {
+      //   test: /\.css$/,
+      //   use: ExtractTextPlugin.extract({
+      //     fallback: 'style-loader',
+      //     use: [
+      //       {
+      //         loader: 'css-loader',
+      //         query: {
+      //           modules: true,
+      //           sourceMap: !isProduction,
+      //           importLoaders: 1,
+      //           localIdentName: '[local]__[hash:base64:5]'
+      //         }
+      //       },
+      //       {
+      //         loader: 'postcss-loader'
+      //       }
+      //     ]
+      //   })
+      // },
       // static assets 
       { test: /\.html$/, use: 'html-loader' },
       { test: /\.png$/, use: 'url-loader?limit=10000' },

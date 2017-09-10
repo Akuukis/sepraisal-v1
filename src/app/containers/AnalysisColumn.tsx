@@ -7,6 +7,7 @@ import Card from 'material-ui/Card';
 import {Component} from "../common/";
 import {Analysis} from "../models/";
 import AnalysisSummary from "../components/AnalysisSummary";
+import AnalysisBlockTable from "../components/AnalysisBlockTable";
 
 const style = createStyleSheet('AnalysisColumn', (theme) => ({
 }))
@@ -36,6 +37,7 @@ export default class AnalysisColumn extends Component<AnalysisColumnProps, {}> {
     return (
       <Grid container spacing={16}>
         {this.renderRow(AnalysisSummary)}
+        {this.renderRow(AnalysisBlockTable)}
       </Grid>
     );
   }
