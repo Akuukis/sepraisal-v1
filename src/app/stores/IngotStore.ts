@@ -6,9 +6,9 @@ import * as Materials from '../../../vendor/SpaceEngineers/Blueprints.sbc';
 export class IngotStore extends MaterialStore<Ingot> {
 
   async reset() {
-    const components = await Ingot.parseXml(Materials);
-    console.log(components)
-    this.replace(components.map((component)=>[component.title, component]));
+    const ingots = await Ingot.parseXml(Materials);
+    console.log(ingots)
+    this.replace(ingots.map((ingot)=>[ingot.title, ingot]));
   }
 
 }

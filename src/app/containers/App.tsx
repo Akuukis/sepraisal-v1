@@ -9,8 +9,8 @@ import Drawer from 'material-ui/Drawer';
 import Button from 'material-ui/Button';
 
 import { ComponentRouted } from '../common/';
-import {STORE_BLUMMARY, STORE_BLOCK, STORE_COMPONENT, STORE_INGOT} from '../constants/stores';
-import {BlockStore, BlummaryStore, ComponentStore, IngotStore} from '../stores/';
+import {STORE_BLUMMARY, STORE_BLOCK, STORE_COMPONENT, STORE_INGOT, STORE_ORE} from '../constants/stores';
+import {BlockStore, BlummaryStore, ComponentStore, IngotStore, OreStore} from '../stores/';
 
 import Topbar from '../components/Topbar';
 import Navigation from '../components/Navigation';
@@ -42,7 +42,7 @@ const style = createStyleSheet('App', (theme) => ({
 }));
 
 @withStyles(style)
-@inject(STORE_BLUMMARY, STORE_BLOCK, STORE_COMPONENT, STORE_INGOT)
+@inject(STORE_BLUMMARY, STORE_BLOCK, STORE_COMPONENT, STORE_INGOT, STORE_ORE)
 @observer
 export default class App extends ComponentRouted<{}, {}, {}> {
   @observable public isDrawerOpen: boolean = false;
@@ -60,10 +60,12 @@ export default class App extends ComponentRouted<{}, {}, {}> {
       const blockStore = this.props[STORE_BLOCK] as BlockStore;
       const componentStore = this.props[STORE_COMPONENT] as ComponentStore;
       const ingotStore = this.props[STORE_INGOT] as IngotStore;
+      const oreStore = this.props[STORE_ORE] as OreStore;
       await blummaryStore.addPrefabs();
       await blockStore.reset();
       await componentStore.reset();
       await ingotStore.reset();
+      await oreStore.reset();
       this.proceed();
     } catch(e) {
       console.error(e);
