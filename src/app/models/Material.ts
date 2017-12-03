@@ -1,7 +1,7 @@
 export interface MaterialDTO {
   type: string;
   subtype: string;
-  weight: number;
+  mass: number;
   time?: number;
   prerequisites?: {
     [title: string]: number,
@@ -25,7 +25,7 @@ export abstract class Material {
   constructor(dto: MaterialDTO) {
     this.type = dto.type;
     this.subtype = dto.subtype;
-    this.weight = dto.weight;
+    this.weight = dto.mass;
     if(dto.time) this.time = dto.time;
     if(dto.prerequisites) this.prerequisites = dto.prerequisites;
   }

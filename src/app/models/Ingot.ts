@@ -4,7 +4,7 @@ import {parseBlueprintSbc} from "../common/";
 export interface IngotDTO extends MaterialDTO {
   type: string;
   subtype: string;
-  weight: number;
+  mass: number;
   time?: number;
   prerequisites?: {
     [title: string]: number,

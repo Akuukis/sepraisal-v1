@@ -4,7 +4,7 @@ import { parseString } from 'xml2js';
 export interface BlockDTO extends MaterialDTO {
   type: string;
   subtype: string;
-  weight: number;
+  mass: number;
   time: number;
   prerequisites: {
     [title: string]: number,
@@ -30,7 +30,7 @@ export class Block extends Material {
               blockDtos.push({
                 type: block.Id[0].TypeId[0],
                 subtype: block.Id[0].SubtypeId[0],
-                weight: 0,
+                mass: 0,
                 time: Number(block.BuildTimeSeconds[0]),
                 prerequisites,
               });

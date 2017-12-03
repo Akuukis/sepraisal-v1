@@ -12,7 +12,7 @@ export async function parseBlueprintSbc(xml: string, filter: string) {
             .map((material)=>({
                 type: material.Result[0].$.TypeId,
                 subtype: material.Result[0].$.SubtypeId,
-                weight: 0,
+                mass: 0,
                 time: Number(material.BaseProductionTimeInSeconds[0]),
                 prerequisites: material.Prerequisites[0].Item.reduce((req, item)=>{
                   const title = `${item.$.TypeId}/${item.$.SubtypeId}`;
@@ -39,7 +39,7 @@ export async function parseOreBlueprintSbc(xml: string) {
             .map((ore)=>({
                 type: ore.Prerequisites[0].Item[0].$.TypeId,
                 subtype: ore.Prerequisites[0].Item[0].$.SubtypeId,
-                weight: 2.7,  // TODO: Same for everything?
+                mass: 2.7,  // TODO: Same for everything?
               }));
           resolve(blockDtos);
         } catch(transformError) {

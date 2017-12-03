@@ -4,7 +4,7 @@ import {parseOreBlueprintSbc} from "../common/";
 export interface OreDTO extends MaterialDTO {
   type: string;
   subtype: string;
-  weight: number;
+  mass: number;
   time?: number;
   prerequisites?: {
     [title: string]: number,

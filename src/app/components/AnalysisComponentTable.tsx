@@ -12,6 +12,7 @@ const datumTitles = {
   type: 'Type',
   subtype: 'Subtype',
   count: 'Count',
+  weight: 'Weight',
 }
 
 const style = createStyleSheet('AnalysisAnalysisComponentTable', (theme) => ({
@@ -24,8 +25,8 @@ export default class AnalysisAnalysisComponentTable extends Component<AnalysisRo
 
     return Object.keys(this.props.analysis.componentCount).map((title)=>{
       const count = this.props.analysis.componentCount[title];
-      const { type, subtype } = this.props.analysis.components.get(title);
-      return { type, subtype, count };
+      const { type, subtype, weight } = this.props.analysis.components.get(title);
+      return { type, subtype, count, weight };
     })
 
   }

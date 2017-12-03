@@ -41,7 +41,7 @@ export default class Topbar extends Component<TopbarProps, {}> {
             <IconMenu />
           </IconButton>
           <Typography type="headline" className={this.props.classes.headline}>
-            {'Space Engineers Praisal: Blueprint Parser & Analyzer'}
+            {'Space Engineers Praisal: Blueprint Parser & Analyzer Hello World'}
           </Typography>
         </Toolbar>
       </AppBar>
