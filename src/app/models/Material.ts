@@ -16,7 +16,7 @@ export interface MaterialCreationProps {
 export abstract class Material {
   type: string;
   subtype: string;
-  weight: number;  // kg.
+  mass: number;  // kg.
   time?: number;  // Seconds to build, baseBuildTime.
   prerequisites?: {
     [title: string]: number,
@@ -25,7 +25,7 @@ export abstract class Material {
   constructor(dto: MaterialDTO) {
     this.type = dto.type;
     this.subtype = dto.subtype;
-    this.weight = dto.mass;
+    this.mass = dto.mass;
     if(dto.time) this.time = dto.time;
     if(dto.prerequisites) this.prerequisites = dto.prerequisites;
   }
@@ -36,7 +36,7 @@ export abstract class Material {
     return {
       type: this.type,
       subtype: this.subtype,
-      weight: this.weight,
+      weight: this.mass,
       time: this.time,
       prerequisites: this.prerequisites && {...this.prerequisites},
     }

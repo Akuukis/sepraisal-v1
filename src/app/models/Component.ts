@@ -15,7 +15,21 @@ export interface ComponentDTO extends MaterialDTO {
   volume: number;
 }
 
-export class Component extends Material {
+export class Component extends Material implements ComponentDTO {
+  displayName: string;
+  health: number;
+  maxIntegrity: number;
+  size: {X: number, Y: number, Z: number};
+  volume: number; // litres.
+
+  constructor(dto: ComponentDTO) {
+    super(dto);
+    this.displayName = dto.displayName;
+    this.health = dto.health;
+    this.maxIntegrity = dto.maxIntegrity;
+    this.size = dto.size;
+    this.volume = dto.volume;
+  }
 
   static async parseXml(materialXml: string, componentXml: string): Promise<Component[]> {
     const componentDtos = await parseBlueprintSbc(materialXml, 'Component');

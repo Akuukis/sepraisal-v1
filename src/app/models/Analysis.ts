@@ -21,7 +21,7 @@ export class Analysis {
   }
 
   @computed get blockCount() { return this.blummary.count; }
-  @computed get blockWeight() { return this.blummary.blockcount.reduce<number>((sum, value, key)=>sum+this.blocks.get(key).weight, 0)}
+  @computed get blockWeight() { return this.blummary.blockcount.reduce<number>((sum, value, key)=>sum+this.blocks.get(key).mass, 0)}
   @computed get blockTime() { return this.blummary.blockcount.reduce<number>((sum, value, key)=>sum+this.blocks.get(key).time, 0)}
 
   @computed get componentCount() { return this.blummary.blockcount.reduce<{[title: string]: number}>((components, count, blockTitle)=>{
