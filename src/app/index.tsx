@@ -1,13 +1,14 @@
 import * as React from 'react';
-import * as ReactDOM from 'react-dom';
+import { render } from 'react-dom';
 import { useStrict } from 'mobx';
 import { Provider } from 'mobx-react';
 import { hashHistory, Router } from 'react-router';
-
 import * as injectTapEventPlugin from 'react-tap-event-plugin';
+import { AppContainer } from 'react-hot-loader'
+
 import { BlummaryStore, RouterStore, BlockStore, ComponentStore, IngotStore, OreStore, AnalysisStore } from './stores';
 import { STORE_BLUMMARY, STORE_ROUTER, STORE_BLOCK, STORE_COMPONENT, STORE_INGOT, STORE_ORE, STORE_ANALYSIS } from './constants/stores';
-import { routes } from './routes';
+import routes from './routes';
 
 // enable MobX strict mode
 useStrict(true);
@@ -31,11 +32,23 @@ const rootStores = {
 };
 
 injectTapEventPlugin();
-ReactDOM.render(
-  <Provider {...rootStores} >
-    <Router history={hashHistory} >
-      { routes }
-    </Router>
-  </Provider >,
-  document.getElementById('root')
-);
+
+const renderApp = () => {
+
+  render(
+    <AppContainer>
+      <Provider {...rootStores} >
+        <Router history={hashHistory} >
+          { routes }
+        </Router>
+      </Provider >
+    </AppContainer>,
+    document.getElementById('root')
+  );
+
+};
+
+// Hot Module Replacement API
+if (module.hot) module.hot.accept('./containers/App', renderApp);
+
+renderApp();
