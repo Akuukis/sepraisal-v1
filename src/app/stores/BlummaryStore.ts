@@ -1,4 +1,4 @@
-import {action, } from "mobx";
+import { action } from 'mobx';
 
 import {ObservableMap} from './../common/';
 import { Blummary } from './../models/';
@@ -10,7 +10,7 @@ import * as MarsLander from '../../../vendor/SpaceEngineers/prefabs/MarsLander.s
 import * as RespawnShip from '../../../vendor/SpaceEngineers/prefabs/RespawnShip.sbc';
 
 export class BlummaryStore extends ObservableMap<Blummary> {
-  add(blummary: Blummary) {
+  @action add(blummary: Blummary) {
     console.log(blummary)
     this.set(blummary.raw.title, blummary);
   }

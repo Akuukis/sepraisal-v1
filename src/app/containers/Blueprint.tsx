@@ -17,7 +17,6 @@ const styles: StyleRulesCallback<BlueprintClasses> = (theme) => ({
 })
 
 @inject(STORE_BLUMMARY, STORE_ANALYSIS)
-
 @observer
 class Blueprint extends ComponentRouted<{}, BlueprintClasses> {
 
@@ -41,7 +40,7 @@ class Blueprint extends ComponentRouted<{}, BlueprintClasses> {
 
   @computed get renderSelector() {
     return (
-        <Selector lines={this.blummaries} onClick={this.select} />
+        <Selector />
     )
   }
 

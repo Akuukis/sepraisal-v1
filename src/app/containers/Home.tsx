@@ -4,6 +4,7 @@ import { inject, observer } from 'mobx-react';
 
 import { StyleRulesCallback, withStyles } from 'material-ui/styles';
 import Grid from 'material-ui/Grid';
+import { Button } from 'material-ui';
 
 
 import { ComponentRouted } from '../common/';
@@ -23,7 +24,6 @@ function createData(name, calories, fat, carbs, protein) {
 }
 
 @inject(STORE_BLUMMARY)
-
 @observer
 class Home extends ComponentRouted<{}, HomeClasses> {
 
@@ -37,8 +37,8 @@ class Home extends ComponentRouted<{}, HomeClasses> {
     return (this.props[STORE_BLUMMARY] as BlummaryStore).map( (blummary)=>{ return {key: blummary.raw.title, title: blummary.raw.title}});
   }
 
-  go(title: string) {
-    this.props.router.push(`/blueprint/${title}`)
+  go(event: React.MouseEvent<HTMLInputElement>) {
+    this.props.router.push(`/blueprint`)
   }
 
   render() {
@@ -54,7 +54,8 @@ class Home extends ComponentRouted<{}, HomeClasses> {
           <p style={{textAlign:'center'}}>Compare</p>
         </Grid>
         <Grid item xs={12} sm={12} md={12} lg={12} >
-          <Selector lines={this.blummaries} onClick={this.go} />
+          <Selector />
+          <Button color='primary' onClick={this.go}>Proceed</Button>
         </Grid>
       </Grid>
     );
