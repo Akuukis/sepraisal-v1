@@ -1,5 +1,5 @@
 import * as React from 'react';
-import {computed} from 'mobx';
+import { action, computed } from 'mobx';
 import { inject, observer } from 'mobx-react';
 
 import { StyleRulesCallback, withStyles } from 'material-ui/styles';
@@ -19,39 +19,30 @@ const styles: StyleRulesCallback<BlueprintClasses> = (theme) => ({
 @inject(STORE_BLUMMARY, STORE_ANALYSIS)
 @observer
 class Blueprint extends ComponentRouted<{}, BlueprintClasses> {
+  blummaryStore = this.props[STORE_BLUMMARY] as BlummaryStore;
+  analysisStore = this.props[STORE_ANALYSIS] as AnalysisStore;
 
-  constructor(props) {
-    super(props);
-
-    this.select = this.select.bind(this);
-  }
-
-  select(title: string) {
-    (this.props[STORE_ANALYSIS] as AnalysisStore).add((this.props[STORE_BLUMMARY] as BlummaryStore).get(title));
+  select = (title: string) => {
+    this.analysisStore.add(this.blummaryStore.get(title));
   }
 
   @computed get count() {
-    return (this.props[STORE_ANALYSIS] as AnalysisStore).size;
+    return this.analysisStore.size;
   }
 
   @computed get blummaries() {
-    return (this.props[STORE_BLUMMARY] as BlummaryStore).map( (blummary)=>{ return {key: blummary.raw.title, title: blummary.raw.title}});
-  }
-
-  @computed get renderSelector() {
-    return (
-        <Selector />
-    )
+    return this.blummaryStore.map( (blummary)=>{ return {key: blummary.raw.title, title: blummary.raw.title}});
   }
 
   @computed get renderAnalysis() {
     const width = Math.floor(12 / this.count) as 1|2|3|4|6|12;
     return (
       <Grid container spacing={16} style={{padding:'8px'}}>
-        { (this.props[STORE_ANALYSIS] as AnalysisStore).map((analysis)=>(
+        { this.analysisStore.map((analysis)=>(
           <Grid item xs={width} key={analysis.blummary.title}>
             <AnalysisColumn
               analysis={analysis}
+              remove={action(()=>this.analysisStore.delete(analysis.blummary.title))}
             />
           </Grid>
         )) }
@@ -61,7 +52,7 @@ class Blueprint extends ComponentRouted<{}, BlueprintClasses> {
   }
 
   render() {
-    return this.count == 0 ? this.renderSelector : this.renderAnalysis;
+    return this.count === 0 ? <Selector /> : this.renderAnalysis;
   }
 }
 export default withStyles(styles)<{}>(Blueprint);

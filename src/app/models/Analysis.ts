@@ -25,8 +25,10 @@ export class Analysis {
   @computed get blockTime() { return this.blummary.blockcount.reduce<number>((sum, value, key)=>sum+this.blocks.get(key).time, 0)}
 
   @computed get componentCount() { return this.blummary.blockcount.reduce<{[title: string]: number}>((components, count, blockTitle)=>{
-      const { prerequisites } = this.blocks.get(blockTitle);
-      for(let [title, required] of Object.entries(prerequisites)) {
+      const block = this.blocks.get(blockTitle);
+      if(!block) return components;
+
+      for(let [title, required] of Object.entries(block.prerequisites)) {
         components[title] = count * required + (title in components ? components[title] : 0);
       }
       return components;

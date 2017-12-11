@@ -1,11 +1,17 @@
 import * as React from 'react';
 
-import { StyleRulesCallback, withStyles } from 'material-ui/styles';
+import { StyleRulesCallback, withStyles, StyledComponentProps } from 'material-ui/styles';
 import Grid from 'material-ui/Grid';
-import Card from 'material-ui/Card';
+import Paper from 'material-ui/Paper';
+import IconButton from 'material-ui/IconButton/IconButton';
+import AppBar from 'material-ui/AppBar';
+import Toolbar from 'material-ui/Toolbar';
+import Typography from 'material-ui/Typography';
+import IconClose from 'material-ui-icons/Close';
+import IconMenu from 'material-ui-icons/Menu';
 
 import {Component} from "../common/";
-import {Analysis} from "../models/";
+import {Analysis, AnalysisRowProps} from "../models/";
 import AnalysisSummary from "../components/AnalysisSummary";
 import AnalysisBlockTable from "../components/AnalysisBlockTable";
 import AnalysisComponentTable from "../components/AnalysisComponentTable";
@@ -14,26 +20,23 @@ import AnalysisOreTable from "../components/AnalysisOreTable";
 
 export type AnalysisColumnClasses = 'root';
 const styles: StyleRulesCallback<AnalysisColumnClasses> = (theme) => ({
-  root: {}
+  root: {},
 })
 
 export interface AnalysisColumnProps {
   analysis: Analysis
+  remove: ()=>any,
 }
 
 
 class AnalysisColumn extends Component<AnalysisColumnProps, AnalysisColumnClasses> {
 
-  constructor(props) {
-    super(props);
-  }
-
-  renderRow(AnalysisRow: React.ComponentType<AnalysisColumnProps>) {
+  renderRow(AnalysisRow: React.ComponentType<AnalysisRowProps & StyledComponentProps<'root'>>) {
     return (
-      <Grid item xs={12} sm={12} md={12} lg={12} >
-        <Card>
+      <Grid item xs={12}>
+        <Paper>
           <AnalysisRow analysis={this.props.analysis} />
-        </Card>
+        </Paper>
       </Grid>
     );
   }
@@ -41,6 +44,23 @@ class AnalysisColumn extends Component<AnalysisColumnProps, AnalysisColumnClasse
   render() {
     return (
       <Grid container spacing={16}>
+        <Grid item xs={12}>
+          <AppBar position="static">
+            <Toolbar>
+              <IconButton color='contrast' aria-label='Menu'>
+                <IconMenu />
+              </IconButton>
+              <Typography type='title' color='inherit' style={{flex: 1}}>
+                {this.props.analysis.blummary.title} ({this.props.analysis.blummary.count})
+              </Typography>
+              <IconButton color='contrast' onClick={this.props.remove} aria-label='remove'>
+                <IconClose />
+              </IconButton>
+            </Toolbar>
+          </AppBar>
+          <Paper>
+          </Paper>
+        </Grid>
         {this.renderRow(AnalysisSummary)}
         {this.renderRow(AnalysisBlockTable)}
         {this.renderRow(AnalysisComponentTable)}

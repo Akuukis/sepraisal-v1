@@ -33,8 +33,8 @@ class AnalysisIngotTable extends Component<AnalysisRowProps, AnalysisIngotTableC
 
   render() {
     return (
-      <Grid container>
-        <Grid item xs={12} sm={12} md={12} lg={12} >
+      <Grid container spacing={0}>
+        <Grid item xs={12}>
           <Table
             columns={Object.keys(datumTitles)}
             headers={datumTitles}

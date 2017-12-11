@@ -23,15 +23,19 @@ class AnalysisAnalysisBlockTable extends Component<AnalysisRowProps, AnalysisAna
 
   getData(): {[field in keyof typeof datumTitles]: number|string}[] {
     return this.props.analysis.blummary.blockcount.map((count, title)=>{
-      const { type, subtype } = this.props.analysis.blocks.get(title);
-      return { type, subtype, count };
+      const block = this.props.analysis.blocks.get(title);
+      return {
+        type: block ? block.type : '**Unknown block**',
+        subtype: block ? block.subtype : `"${title}"`,
+        count,
+      };
     });
   }
 
   render() {
     return (
-      <Grid container>
-        <Grid item xs={12} sm={12} md={12} lg={12} >
+      <Grid container spacing={0}>
+        <Grid item xs={12}>
           <Table
             columns={Object.keys(datumTitles)}
             headers={datumTitles}

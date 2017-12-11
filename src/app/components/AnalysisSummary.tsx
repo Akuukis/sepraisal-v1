@@ -2,6 +2,7 @@ import * as React from 'react';
 
 import { StyleRulesCallback, withStyles } from 'material-ui/styles';
 import Grid from 'material-ui/Grid';
+import Typography from 'material-ui/Typography';
 import List, {ListItem, ListItemText} from 'material-ui/List';
 
 import {Component} from "../common/";
@@ -20,11 +21,11 @@ class AnalysisSummary extends Component<AnalysisRowProps, AnalysisSummaryClasses
 
   render() {
     return (
-      <Grid container>
-        <Grid item xs={12} sm={12} md={12} lg={12} >
+      <Grid container spacing={0}>
+        <Grid item xs={12}>
           <List>
-            <ListItem><ListItemText primary='Title' />{ this.props.analysis.blummary.title }</ListItem>
-            <ListItem><ListItemText primary='Block count' />{ this.props.analysis.blummary.count }</ListItem>
+            <ListItem><ListItemText primary='Title' /><Typography type='body1'>{ this.props.analysis.blummary.title }</Typography></ListItem>
+            <ListItem><ListItemText primary='Block count' /><Typography type='body1'>{ this.props.analysis.blummary.count }</Typography></ListItem>
           </List>
         </Grid>
       </Grid>
