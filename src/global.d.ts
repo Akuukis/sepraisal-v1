@@ -6,12 +6,6 @@ declare module '*.jpg' {
   export = content;
 }
 
-// for style loader
-declare module '*.css' {
-  const styles: any;
-  export = styles;
-}
-
 // for .sbc that are XMLs
 declare module '*.sbc' {
   const content: string;
