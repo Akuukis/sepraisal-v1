@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { observable, action } from 'mobx';
 
-import { createStyleSheet, withStyles } from 'material-ui/styles';
+import { StyleRulesCallback, withStyles } from 'material-ui/styles';
 import AppBar from 'material-ui/AppBar';
 import Toolbar from 'material-ui/Toolbar';
 import Typography from 'material-ui/Typography';
@@ -12,7 +12,9 @@ import {Component} from '../common/';
 
 import * as background from '../../assets/background-wide.jpg';
 
-const style = createStyleSheet('Topbar', (theme) => ({
+export type TopbarClasses = 'root'|'appbar'|'headline';
+const styles: StyleRulesCallback<TopbarClasses> = (theme) => ({
+  root: {},
   appbar: {
     backgroundImage: `url('${background}')`,
     backgroundPosition: '0px -12px ',
@@ -20,14 +22,14 @@ const style = createStyleSheet('Topbar', (theme) => ({
   headline: {
     color: 'white',
   }
-}));
+});
 
 interface TopbarProps {
   setDrawer: (open: boolean) => void,
 }
 
-@withStyles(style)
-export default class Topbar extends Component<TopbarProps, {}> {
+
+class Topbar extends Component<TopbarProps, TopbarClasses> {
 
   constructor(props) {
     super(props)
@@ -48,3 +50,4 @@ export default class Topbar extends Component<TopbarProps, {}> {
     )
   }
 }
+export default withStyles(styles)<TopbarProps>(Topbar);

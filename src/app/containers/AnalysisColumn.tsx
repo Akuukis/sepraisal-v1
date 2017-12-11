@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import { createStyleSheet, withStyles } from 'material-ui/styles';
+import { StyleRulesCallback, withStyles } from 'material-ui/styles';
 import Grid from 'material-ui/Grid';
 import Card from 'material-ui/Card';
 
@@ -12,21 +12,23 @@ import AnalysisComponentTable from "../components/AnalysisComponentTable";
 import AnalysisIngotTable from "../components/AnalysisIngotTable";
 import AnalysisOreTable from "../components/AnalysisOreTable";
 
-const style = createStyleSheet('AnalysisColumn', (theme) => ({
-}))
+export type AnalysisColumnClasses = 'root';
+const styles: StyleRulesCallback<AnalysisColumnClasses> = (theme) => ({
+  root: {}
+})
 
 export interface AnalysisColumnProps {
   analysis: Analysis
 }
 
-@withStyles(style)
-export default class AnalysisColumn extends Component<AnalysisColumnProps, {}> {
+
+class AnalysisColumn extends Component<AnalysisColumnProps, AnalysisColumnClasses> {
 
   constructor(props) {
     super(props);
   }
 
-  renderRow(AnalysisRow: React.ComponentClass<AnalysisColumnProps>) {
+  renderRow(AnalysisRow: React.ComponentType<AnalysisColumnProps>) {
     return (
       <Grid item xs={12} sm={12} md={12} lg={12} >
         <Card>
@@ -49,3 +51,4 @@ export default class AnalysisColumn extends Component<AnalysisColumnProps, {}> {
   }
 
 }
+export default withStyles(styles)<AnalysisColumnProps>(AnalysisColumn);

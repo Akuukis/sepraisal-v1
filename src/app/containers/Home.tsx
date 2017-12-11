@@ -2,7 +2,7 @@ import * as React from 'react';
 import {computed} from 'mobx';
 import { inject, observer } from 'mobx-react';
 
-import { createStyleSheet, withStyles } from 'material-ui/styles';
+import { StyleRulesCallback, withStyles } from 'material-ui/styles';
 import Grid from 'material-ui/Grid';
 
 
@@ -11,8 +11,10 @@ import { STORE_BLUMMARY } from '../constants/stores';
 import { BlummaryStore } from '../stores/BlummaryStore';
 import Selector from '../components/Selector';
 
-const style = createStyleSheet('Home', (theme) => ({
-}));
+export type HomeClasses = 'root';
+const styles: StyleRulesCallback<HomeClasses> = (theme) => ({
+  root: {}
+})
 
 let id = 0;
 function createData(name, calories, fat, carbs, protein) {
@@ -21,9 +23,9 @@ function createData(name, calories, fat, carbs, protein) {
 }
 
 @inject(STORE_BLUMMARY)
-@withStyles(style)
+
 @observer
-export default class Home extends ComponentRouted<{}, {}, {}> {
+class Home extends ComponentRouted<{}, HomeClasses> {
 
   constructor(props) {
     super(props);
@@ -58,3 +60,4 @@ export default class Home extends ComponentRouted<{}, {}, {}> {
     );
   }
 };
+export default withStyles(styles)<{}>(Home);

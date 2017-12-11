@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import { createStyleSheet, withStyles } from 'material-ui/styles';
+import { StyleRulesCallback, withStyles } from 'material-ui/styles';
 import Grid from 'material-ui/Grid';
 import List, {ListItem, ListItemText} from 'material-ui/List';
 
@@ -14,11 +14,12 @@ const datumTitles = {
   count: 'Count',
 }
 
-const style = createStyleSheet('AnalysisAnalysisBlockTable', (theme) => ({
-}))
+export type AnalysisAnalysisBlockTableClasses = 'root';
+const styles: StyleRulesCallback = (theme) => ({
+  root: {}
+})
 
-@withStyles(style)
-export default class AnalysisAnalysisBlockTable extends Component<AnalysisRowProps, {}> {
+class AnalysisAnalysisBlockTable extends Component<AnalysisRowProps, AnalysisAnalysisBlockTableClasses> {
 
   getData(): {[field in keyof typeof datumTitles]: number|string}[] {
     return this.props.analysis.blummary.blockcount.map((count, title)=>{
@@ -28,7 +29,6 @@ export default class AnalysisAnalysisBlockTable extends Component<AnalysisRowPro
   }
 
   render() {
-
     return (
       <Grid container>
         <Grid item xs={12} sm={12} md={12} lg={12} >
@@ -43,3 +43,4 @@ export default class AnalysisAnalysisBlockTable extends Component<AnalysisRowPro
   }
 
 }
+export default withStyles(styles)<AnalysisRowProps>(AnalysisAnalysisBlockTable);

@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import { createStyleSheet, withStyles } from 'material-ui/styles';
+import { StyleRulesCallback, withStyles } from 'material-ui/styles';
 import Grid from 'material-ui/Grid';
 import List, {ListItem, ListItemText} from 'material-ui/List';
 
@@ -16,11 +16,12 @@ const datumTitles = {
   volume: 'Volume'
 }
 
-const style = createStyleSheet('AnalysisAnalysisComponentTable', (theme) => ({
-}))
+export type AnalysisComponentTableClasses = 'root';
+const styles: StyleRulesCallback<AnalysisComponentTableClasses> = (theme) => ({
+  root: {}
+})
 
-@withStyles(style)
-export default class AnalysisAnalysisComponentTable extends Component<AnalysisRowProps, {}> {
+class AnalysisComponentTable extends Component<AnalysisRowProps, AnalysisComponentTableClasses> {
 
   getData(): {[field in keyof typeof datumTitles]: number|string}[] {
 
@@ -53,3 +54,4 @@ export default class AnalysisAnalysisComponentTable extends Component<AnalysisRo
   }
 
 }
+export default withStyles(styles)<AnalysisRowProps>(AnalysisComponentTable);

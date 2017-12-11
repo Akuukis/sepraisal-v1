@@ -2,7 +2,7 @@ import * as React from 'react';
 import {action, observable, computed} from 'mobx';
 import {observer} from 'mobx-react';
 
-import {withStyles, createStyleSheet} from 'material-ui/styles';
+import { StyleRulesCallback, withStyles } from 'material-ui/styles';
 import Checkbox from 'material-ui/Checkbox';
 
 // Checkbox example: https://codepen.io/aaronschwartz/pen/WOOPRw?editors=0010
@@ -34,7 +34,8 @@ interface ITableProps<Datum extends {} = {}> {
     tableProps?: {};
 }
 
-const styleSheet = createStyleSheet('Table', (theme) => ({
+export type TableClasses = 'root'|'th'|'td'|'tr';
+const styles: StyleRulesCallback<TableClasses> = (theme) => ({
     root: {
         fontFamily: '"Roboto", "Helvetica", "Arial", sans-serif',
     },
@@ -49,7 +50,7 @@ const styleSheet = createStyleSheet('Table', (theme) => ({
     tr: {
         alignItems: 'center',
     },
-}));
+});
 
 @observer
 class Table extends Component<ITableProps, 'root'|'td'|'th'|'tr'> {
@@ -129,4 +130,4 @@ class Table extends Component<ITableProps, 'root'|'td'|'th'|'tr'> {
         );
     }
 }
-export default withStyles<ITableProps>(styleSheet)(Table);
+export default withStyles(styles)<ITableProps>(Table);

@@ -2,16 +2,16 @@ import { Component } from './Component';
 import { RouteComponentProps } from 'react-router';
 
 interface ParamsAny {
-    [param:string]: string
+    [param: string]: string;
 }
 
 export class ComponentRouted<
-        Props extends {},
-        State extends {},
-        Params extends {}
+        Props extends object = object,
+        StyleClassNames extends string = undefined,
+        Params extends object = object
     > extends Component<
         Props & Partial<RouteComponentProps<Params & ParamsAny, Params>>,
-        State
+        StyleClassNames
     > {
 
 }

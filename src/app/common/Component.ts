@@ -1,11 +1,14 @@
 import { Component as ReactComponent} from 'react';
+import { WithStyles } from 'material-ui/styles';
+
+export default function returnof<T>(fn: () => T): T { return undefined; }
 
 export abstract class Component<
-    Props extends {},
-    State extends {}
-  > extends ReactComponent<
-    Props & Partial<{classes: {[className: string]: string}}>,  // hack for material-ui @withStyle().
-    State
-  > {
+        Props extends object = object,
+        StyleClassNames extends string = ''
+    > extends ReactComponent<
+        Props & WithStyles<StyleClassNames>,
+        {}
+    > {
 
 }

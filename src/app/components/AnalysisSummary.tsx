@@ -1,17 +1,18 @@
 import * as React from 'react';
 
-import { createStyleSheet, withStyles } from 'material-ui/styles';
+import { StyleRulesCallback, withStyles } from 'material-ui/styles';
 import Grid from 'material-ui/Grid';
 import List, {ListItem, ListItemText} from 'material-ui/List';
 
 import {Component} from "../common/";
 import {Analysis, AnalysisRowProps} from "../models/";
 
-const style = createStyleSheet('AnalysisSummary', (theme) => ({
-}))
+export type AnalysisSummaryClasses = 'root';
+const styles: StyleRulesCallback<AnalysisSummaryClasses> = (theme) => ({
+  root: {}
+})
 
-@withStyles(style)
-export default class AnalysisSummary extends Component<AnalysisRowProps, {}> {
+class AnalysisSummary extends Component<AnalysisRowProps, AnalysisSummaryClasses> {
 
   constructor(props) {
     super(props);
@@ -31,3 +32,4 @@ export default class AnalysisSummary extends Component<AnalysisRowProps, {}> {
   }
 
 }
+export default withStyles(styles)<AnalysisRowProps>(AnalysisSummary);

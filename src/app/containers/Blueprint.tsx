@@ -2,7 +2,7 @@ import * as React from 'react';
 import {computed} from 'mobx';
 import { inject, observer } from 'mobx-react';
 
-import { createStyleSheet, withStyles } from 'material-ui/styles';
+import { StyleRulesCallback, withStyles } from 'material-ui/styles';
 import Grid from 'material-ui/Grid';
 
 import { ComponentRouted } from '../common/';
@@ -11,13 +11,15 @@ import { BlummaryStore, AnalysisStore } from '../stores/';
 import AnalysisColumn from './AnalysisColumn';
 import Selector from '../components/Selector';
 
-const style = createStyleSheet('Blueprint', (theme) => ({
-}));
+export type BlueprintClasses = 'root';
+const styles: StyleRulesCallback<BlueprintClasses> = (theme) => ({
+  root: {}
+})
 
 @inject(STORE_BLUMMARY, STORE_ANALYSIS)
-@withStyles(style)
+
 @observer
-export default class Blueprint extends ComponentRouted<{}, {}, {}> {
+class Blueprint extends ComponentRouted<{}, BlueprintClasses> {
 
   constructor(props) {
     super(props);
@@ -44,7 +46,7 @@ export default class Blueprint extends ComponentRouted<{}, {}, {}> {
   }
 
   @computed get renderAnalysis() {
-    const width = Math.floor(12 / this.count);
+    const width = Math.floor(12 / this.count) as 1|2|3|4|6|12;
     return (
       <Grid container spacing={16} style={{padding:'8px'}}>
         { (this.props[STORE_ANALYSIS] as AnalysisStore).map((analysis)=>(
@@ -62,4 +64,5 @@ export default class Blueprint extends ComponentRouted<{}, {}, {}> {
   render() {
     return this.count == 0 ? this.renderSelector : this.renderAnalysis;
   }
-};
+}
+export default withStyles(styles)<{}>(Blueprint);

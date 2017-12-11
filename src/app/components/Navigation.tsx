@@ -1,15 +1,21 @@
 import * as React from 'react';
 import { inject, observer } from 'mobx-react';
 
+import { StyleRulesCallback, withStyles } from 'material-ui/styles';
 import List, {ListItem, ListItemText} from 'material-ui/List';
 
 import {Component} from "../common/";
 import { RouterStore } from './../stores/';
 import { STORE_ROUTER } from './../constants/';
 
+export type NavigationClasses = 'root';
+const styles: StyleRulesCallback<NavigationClasses> = (theme) => ({
+  root: {}
+})
+
 @inject(STORE_ROUTER)
 @observer
-export default class Navigation extends Component<{}, {}> {
+class Navigation extends Component<{}, NavigationClasses> {
 
   constructor(props) {
     super(props);
@@ -17,7 +23,7 @@ export default class Navigation extends Component<{}, {}> {
     this.handleClick = this.handleClick.bind(this);
   }
 
-  handleClick(event: React.TouchEvent<Element>) {
+  handleClick(event: React.MouseEvent<Element>) {
     const router = this.props[STORE_ROUTER] as RouterStore;
     const path = event.currentTarget.getAttribute('value');
     router.push(path);
@@ -35,3 +41,4 @@ export default class Navigation extends Component<{}, {}> {
   }
 
 }
+export default withStyles(styles)<{}>(Navigation);

@@ -2,7 +2,7 @@ import * as React from 'react';
 import {observable, action, computed} from 'mobx';
 import {observer, inject} from 'mobx-react';
 
-import { createStyleSheet, withStyles } from 'material-ui/styles';
+import { StyleRulesCallback, withStyles } from 'material-ui/styles';
 import Grid from 'material-ui/Grid';
 import Paper from 'material-ui/Paper';
 import Drawer from 'material-ui/Drawer';
@@ -18,7 +18,8 @@ import Loading from "../components/Loading";
 
 import * as background from '../../assets/background-center-bright.jpg';
 
-const style = createStyleSheet('App', (theme) => ({
+export type AppClasses = 'app'|'content';
+const styles: StyleRulesCallback<AppClasses> = (theme) => ({
   app: {
     position: 'fixed',
     left: 0,
@@ -34,7 +35,7 @@ const style = createStyleSheet('App', (theme) => ({
   },
   content: {
     backgroundImage: `url('${background}')`,
-    overflowY: 'overlay',
+    overflowY: 'visible',
     paddingRight: '16px',
     overflowX: 'hidden',
   },
@@ -56,12 +57,11 @@ const style = createStyleSheet('App', (theme) => ({
           backgroundPosition: 'center -64px',
       },
   },
-}));
+});
 
-@withStyles(style)
 @inject(STORE_BLUMMARY, STORE_BLOCK, STORE_COMPONENT, STORE_INGOT, STORE_ORE)
 @observer
-export default class App extends ComponentRouted<{}, {}, {}> {
+class App extends ComponentRouted<{}, AppClasses> {
   @observable public isDrawerOpen: boolean = false;
   @observable private loaded: boolean = false;
 
@@ -112,7 +112,6 @@ export default class App extends ComponentRouted<{}, {}, {}> {
     return (
         <Paper className={this.props.classes.app}>
           <Drawer
-            docked={false}
             open={this.isDrawerOpen}
             onRequestClose={()=>this.setDrawer(false)}
           >
@@ -127,3 +126,5 @@ export default class App extends ComponentRouted<{}, {}, {}> {
     );
   }
 };
+export default withStyles(styles)<{}>(App);
+

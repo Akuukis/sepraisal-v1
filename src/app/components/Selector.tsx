@@ -2,11 +2,13 @@ import * as React from 'react';
 
 import {Component} from "../common/";
 
-import { createStyleSheet, withStyles } from 'material-ui/styles';
+import { StyleRulesCallback, withStyles } from 'material-ui/styles';
 import List, {ListItem, ListItemText} from 'material-ui/List';
 
-const style = createStyleSheet('Selector', (theme) => ({
-}))
+export type SelectorClasses = 'root';
+const styles: StyleRulesCallback<SelectorClasses> = (theme) => ({
+  root: {}
+})
 
 export interface SelectorProps {
   lines: Array<{
@@ -16,16 +18,15 @@ export interface SelectorProps {
   onClick: (key: string) => void,
 }
 
-@withStyles(style)
-export default class Selector extends Component<SelectorProps, {}> {
+class Selector extends Component<SelectorProps, SelectorClasses> {
 
   constructor(props) {
     super(props);
 
-    this.handleTouch = this.handleTouch.bind(this);
+    this.handleClick = this.handleClick.bind(this);
   }
 
-  handleTouch(event: React.TouchEvent<HTMLElement>): void {
+  handleClick(event: React.MouseEvent<HTMLElement>): void {
     this.props.onClick(event.currentTarget.getAttribute('value'));
   }
 
@@ -34,7 +35,7 @@ export default class Selector extends Component<SelectorProps, {}> {
       <List>
         {
           this.props.lines.map<JSX.Element>( (line) => (
-            <ListItem key={line.key} value={line.key} button onTouchTap={this.handleTouch}>
+            <ListItem key={line.key} value={line.key} button onClick={this.handleClick}>
               <ListItemText
                 primary={line.title}
               />
@@ -46,3 +47,4 @@ export default class Selector extends Component<SelectorProps, {}> {
   }
 
 }
+export default withStyles(styles)<SelectorProps>(Selector);
