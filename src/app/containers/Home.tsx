@@ -11,8 +11,8 @@ import Typography from 'material-ui/Typography';
 
 import { ComponentRouted } from '../common/';
 import { ROUTES } from '../constants/routes';
-import { STORE_BLUMMARY } from '../constants/stores';
-import { BlummaryStore } from '../stores/BlummaryStore';
+import { STORE_BLUMMARY, STORE_ANALYSIS } from '../constants/stores';
+import { BlummaryStore, AnalysisStore } from '../stores/';
 import Selector from '../components/Selector';
 
 export type HomeClasses = 'root'|'content';
@@ -25,28 +25,16 @@ const styles: StyleRulesCallback<HomeClasses> = (theme) => ({
   },
 })
 
-let id = 0;
-function createData(name, calories, fat, carbs, protein) {
-  id += 1;
-  return { id, name, calories, fat, carbs, protein };
-}
-
-@inject(STORE_BLUMMARY)
+@inject(STORE_BLUMMARY, STORE_ANALYSIS)
 @observer
 class Home extends ComponentRouted<{}, HomeClasses> {
+  blummaryStore = this.props[STORE_BLUMMARY] as BlummaryStore;
+  analysisStore = this.props[STORE_ANALYSIS] as AnalysisStore;
 
-  constructor(props) {
-    super(props);
+  @computed get disabled() { return this.analysisStore.size === 0; }
 
-    this.go = this.go.bind(this);
-  }
-
-  @computed get blummaries() {
-    return (this.props[STORE_BLUMMARY] as BlummaryStore).map( (blummary)=>{ return {key: blummary.raw.title, title: blummary.raw.title}});
-  }
-
-  go(event: React.MouseEvent<HTMLInputElement>) {
-    this.props.router.push(ROUTES.ANALYSIS)
+  proceed = (event: React.MouseEvent<HTMLInputElement>) => {
+    this.props.router.push(ROUTES.ANALYSIS);
   }
 
   render() {
@@ -60,7 +48,15 @@ class Home extends ComponentRouted<{}, HomeClasses> {
         </Grid>
         <Grid item xs={12} sm={12} md={12} lg={12} >
           <Selector classes={{root: this.props.classes.content}}>
-            <Button raised style={{width: '100%'}} color='primary' onClick={this.go}>Continue</Button>
+            <Button
+              raised
+              color='primary'
+              style={{width: '100%'}}
+              disabled={this.disabled}
+              onClick={this.proceed}
+            >
+              Continue
+            </Button>
           </Selector>
         </Grid>
       </Grid>

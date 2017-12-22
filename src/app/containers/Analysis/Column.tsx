@@ -24,8 +24,9 @@ const styles: StyleRulesCallback<AnalysisColumnClasses> = (theme) => ({
 })
 
 export interface AnalysisColumnProps {
-  analysis: Analysis
-  remove: ()=>any,
+  width: 1|2|3|4|6|12;
+  analysis: Analysis;
+  remove: ()=>any;
 }
 
 
@@ -43,29 +44,31 @@ class AnalysisColumn extends Component<AnalysisColumnProps, AnalysisColumnClasse
 
   render() {
     return (
-      <Grid container spacing={16}>
-        <Grid item xs={12}>
-          <AppBar position="static">
-            <Toolbar>
-              <IconButton color='contrast' aria-label='Menu'>
-                <IconMenu />
-              </IconButton>
-              <Typography type='title' color='inherit' style={{flex: 1}}>
-                {this.props.analysis.blummary.title} ({this.props.analysis.blummary.count})
-              </Typography>
-              <IconButton color='contrast' onClick={this.props.remove} aria-label='remove'>
-                <IconClose />
-              </IconButton>
-            </Toolbar>
-          </AppBar>
-          <Paper>
-          </Paper>
+      <Grid item xs={this.props.width} key={this.props.analysis.blummary.title}>
+        <Grid container spacing={16}>
+          <Grid item xs={12}>
+            <AppBar position='static'>
+              <Toolbar>
+                <IconButton color='contrast' aria-label='Menu'>
+                  <IconMenu />
+                </IconButton>
+                <Typography type='title' color='inherit' style={{flex: 1}}>
+                  {this.props.analysis.blummary.title} ({this.props.analysis.blummary.count})
+                </Typography>
+                <IconButton color='contrast' onClick={this.props.remove} aria-label='remove'>
+                  <IconClose />
+                </IconButton>
+              </Toolbar>
+            </AppBar>
+            <Paper>
+            </Paper>
+          </Grid>
+          {this.renderRow(AnalysisSummary)}
+          {this.renderRow(AnalysisBlockTable)}
+          {this.renderRow(AnalysisComponentTable)}
+          {this.renderRow(AnalysisIngotTable)}
+          {this.renderRow(AnalysisOreTable)}
         </Grid>
-        {this.renderRow(AnalysisSummary)}
-        {this.renderRow(AnalysisBlockTable)}
-        {this.renderRow(AnalysisComponentTable)}
-        {this.renderRow(AnalysisIngotTable)}
-        {this.renderRow(AnalysisOreTable)}
       </Grid>
     );
   }
