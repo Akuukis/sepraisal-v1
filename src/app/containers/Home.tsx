@@ -6,13 +6,14 @@ import { StyleRulesCallback, withStyles } from 'material-ui/styles';
 import Grid from 'material-ui/Grid';
 import Paper from 'material-ui/Paper';
 import Button from 'material-ui/Button';
+import Typography from 'material-ui/Typography';
 
 
 import { ComponentRouted } from '../common/';
+import { ROUTES } from '../constants/routes';
 import { STORE_BLUMMARY } from '../constants/stores';
 import { BlummaryStore } from '../stores/BlummaryStore';
 import Selector from '../components/Selector';
-import Typography from 'material-ui/Typography/Typography';
 
 export type HomeClasses = 'root'|'content';
 const styles: StyleRulesCallback<HomeClasses> = (theme) => ({
@@ -45,7 +46,7 @@ class Home extends ComponentRouted<{}, HomeClasses> {
   }
 
   go(event: React.MouseEvent<HTMLInputElement>) {
-    this.props.router.push(`/blueprint`)
+    this.props.router.push(ROUTES.ANALYSIS)
   }
 
   render() {

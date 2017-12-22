@@ -6,7 +6,7 @@ import List, {ListItem, ListItemText} from 'material-ui/List';
 
 import {Component} from "../common/";
 import { RouterStore } from './../stores/';
-import { STORE_ROUTER } from './../constants/';
+import { STORE_ROUTER } from './../constants/stores';
 
 export type NavigationClasses = 'root';
 const styles: StyleRulesCallback<NavigationClasses> = (theme) => ({

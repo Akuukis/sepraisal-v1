@@ -10,13 +10,13 @@ import Typography from 'material-ui/Typography';
 import IconClose from 'material-ui-icons/Close';
 import IconMenu from 'material-ui-icons/Menu';
 
-import {Component} from "../common/";
-import {Analysis, AnalysisRowProps} from "../models/";
-import AnalysisSummary from "../components/AnalysisSummary";
-import AnalysisBlockTable from "../components/AnalysisBlockTable";
-import AnalysisComponentTable from "../components/AnalysisComponentTable";
-import AnalysisIngotTable from "../components/AnalysisIngotTable";
-import AnalysisOreTable from "../components/AnalysisOreTable";
+import {Component} from "../../common/";
+import {Analysis, AnalysisRowProps} from "../../models/";
+import AnalysisSummary from "../../components/AnalysisSummary";
+import AnalysisBlockTable from "../../components/AnalysisBlockTable";
+import AnalysisComponentTable from "../../components/AnalysisComponentTable";
+import AnalysisIngotTable from "../../components/AnalysisIngotTable";
+import AnalysisOreTable from "../../components/AnalysisOreTable";
 
 export type AnalysisColumnClasses = 'root';
 const styles: StyleRulesCallback<AnalysisColumnClasses> = (theme) => ({

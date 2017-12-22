@@ -5,20 +5,20 @@ import { inject, observer } from 'mobx-react';
 import { StyleRulesCallback, withStyles } from 'material-ui/styles';
 import Grid from 'material-ui/Grid';
 
-import { ComponentRouted } from '../common/';
-import { STORE_BLUMMARY, STORE_ANALYSIS } from '../constants/stores';
-import { BlummaryStore, AnalysisStore } from '../stores/';
-import AnalysisColumn from './AnalysisColumn';
-import Selector from '../components/Selector';
+import { ComponentRouted } from '../../common/';
+import { STORE_BLUMMARY, STORE_ANALYSIS } from '../../constants/stores';
+import { BlummaryStore, AnalysisStore } from '../../stores/';
+import AnalysisColumn from './Column';
+import Selector from '../../components/Selector';
 
-export type BlueprintClasses = 'root';
-const styles: StyleRulesCallback<BlueprintClasses> = (theme) => ({
+export type AnalysisClasses = 'root';
+const styles: StyleRulesCallback<AnalysisClasses> = (theme) => ({
   root: {}
 })
 
 @inject(STORE_BLUMMARY, STORE_ANALYSIS)
 @observer
-class Blueprint extends ComponentRouted<{}, BlueprintClasses> {
+class Analysis extends ComponentRouted<{}, AnalysisClasses> {
   blummaryStore = this.props[STORE_BLUMMARY] as BlummaryStore;
   analysisStore = this.props[STORE_ANALYSIS] as AnalysisStore;
 
@@ -55,4 +55,4 @@ class Blueprint extends ComponentRouted<{}, BlueprintClasses> {
     return this.count === 0 ? <Selector /> : this.renderAnalysis;
   }
 }
-export default withStyles(styles)<{}>(Blueprint);
+export default withStyles(styles)<{}>(Analysis);
