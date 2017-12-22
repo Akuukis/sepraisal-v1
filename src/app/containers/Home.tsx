@@ -4,17 +4,24 @@ import { inject, observer } from 'mobx-react';
 
 import { StyleRulesCallback, withStyles } from 'material-ui/styles';
 import Grid from 'material-ui/Grid';
-import { Button } from 'material-ui';
+import Paper from 'material-ui/Paper';
+import Button from 'material-ui/Button';
 
 
 import { ComponentRouted } from '../common/';
 import { STORE_BLUMMARY } from '../constants/stores';
 import { BlummaryStore } from '../stores/BlummaryStore';
 import Selector from '../components/Selector';
+import Typography from 'material-ui/Typography/Typography';
 
-export type HomeClasses = 'root';
+export type HomeClasses = 'root'|'content';
 const styles: StyleRulesCallback<HomeClasses> = (theme) => ({
-  root: {}
+  root: {
+    padding: '0.5em',
+  },
+  content: {
+    padding: '0.5em',
+  },
 })
 
 let id = 0;
@@ -43,19 +50,17 @@ class Home extends ComponentRouted<{}, HomeClasses> {
 
   render() {
     return (
-      <Grid container>
-        <Grid item xs={12} sm={6} md={4} lg={4}>
-          <p style={{textAlign:'center'}}>Upload</p>
-        </Grid>
-        <Grid item xs={12} sm={6} md={4} lg={4}>
-          <p style={{textAlign:'center'}}>Analyze</p>
-        </Grid>
-        <Grid item xs={12} sm={12} md={4} lg={4}>
-          <p style={{textAlign:'center'}}>Compare</p>
+      <Grid container spacing={16} className={this.props.classes.root}>
+        <Grid item xs={12}>
+          <Paper className={this.props.classes.content}>
+            <Typography>SE-Praisal is a tool to analyze required materials for your blueprints.</Typography>
+            <Typography>Furthermore, it can praise your blueprints according to various popular MP server economics.</Typography>
+          </Paper>
         </Grid>
         <Grid item xs={12} sm={12} md={12} lg={12} >
-          <Selector />
-          <Button color='primary' onClick={this.go}>Proceed</Button>
+          <Selector classes={{root: this.props.classes.content}}>
+            <Button raised style={{width: '100%'}} color='primary' onClick={this.go}>Continue</Button>
+          </Selector>
         </Grid>
       </Grid>
     );

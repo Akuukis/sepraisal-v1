@@ -1,5 +1,5 @@
-export const STORE_ROUTER = 'routing';
-export const STORE_BLUMMARY = 'blummary';
+export const STORE_ROUTER = 'routerStore';
+export const STORE_BLUMMARY = 'blummaryStore';
 export const STORE_BLOCK = 'blockStore';
 export const STORE_COMPONENT = 'componentStore';
 export const STORE_INGOT = 'ingotStore';

@@ -50,15 +50,15 @@ class Selector extends Component<SelectorProps, SelectorClasses> {
     return (
       <Paper className={this.props.classes.root}>
         <Typography type='headline'>Select a blueprint</Typography>
-        <Grid container spacing={16}>
-          <Grid item xs={12} sm={12} md={6}>
-            <Typography type='subheading'>Default and uploaded blueprints</Typography>
+        <Grid container spacing={16} alignItems='stretch'>
+          <Grid item xs={12} sm={6} md={6} style={{height: '100%'}}>
+            <Typography type='subheading'>Available blueprints</Typography>
             <List dense>
               { this.blummaryStore.map<JSX.Element>( (blummary) => <SelectorRow key={blummary.raw.title} blummary={blummary} /> ) }
             </List>
           </Grid>
-          <Grid item xs={12} sm={12} md={6}>
-            <Grid container spacing={16}>
+          <Grid item xs={12} sm={6} md={6}>
+            <Grid container spacing={16} justify='space-between' style={{height: '100%'}}>
               <Grid item xs={12}>
                 <Typography type='subheading'>Upload a new blueprint..</Typography>
                 <Button>
@@ -70,6 +70,9 @@ class Selector extends Component<SelectorProps, SelectorClasses> {
               </Grid>
               <Grid item xs={12}>
                 <Typography type='subheading'>Create new empty blueprint</Typography>
+              </Grid>
+              <Grid item xs={12}>
+                { this.props.children }
               </Grid>
             </Grid>
           </Grid>
