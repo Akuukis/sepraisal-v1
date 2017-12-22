@@ -14,10 +14,16 @@ import { STORE_BLUMMARY, STORE_ANALYSIS } from '../constants/stores';
 import { Blummary, BlummaryDTO } from '../models/Blummary';
 import { AnalysisStore, BlummaryStore } from '../stores/index';
 
-export type SelectorClasses = 'root';
+export type SelectorClasses = 'root'|'selected';
 const styles: StyleRulesCallback<SelectorClasses> = (theme) => ({
   root: {
     padding: '0.5em',
+  },
+  selected: {
+    background: theme.palette.primary[200],
+    '&:hover': {
+      background: theme.palette.primary[300],
+    }
   }
 })
 
@@ -61,7 +67,13 @@ class Selector extends Component<SelectorProps, SelectorClasses> {
             <Typography type='subheading'>Select an existing blueprint</Typography>
             <List>
               { this.blummaries.map<JSX.Element>( (line) => (
-                  <ListItem key={line.key} value={line.key} button onClick={this.handleSelect}>
+                  <ListItem
+                    button
+                    key={line.key}
+                    value={line.key}
+                    className={computed(()=>this.analysisStore.has(line.key) ? this.props.classes.selected : '').get()}
+                    onClick={this.handleSelect}
+                  >
                     <ListItemText
                       primary={line.title}
                     />
