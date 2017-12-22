@@ -42,8 +42,15 @@ class Home extends ComponentRouted<{}, HomeClasses> {
       <Grid container spacing={16} className={this.props.classes.root}>
         <Grid item xs={12}>
           <Paper className={this.props.classes.content}>
-            <Typography>SE-Praisal is a tool to analyze required materials for your blueprints.</Typography>
-            <Typography>Furthermore, it can praise your blueprints according to various popular MP server economics.</Typography>
+            <Typography paragraph>SE-Praisal is a tool to analyze your blueprints. Currently it reports required materials. Try it out below!</Typography>
+            <Typography paragraph>In the future, it will also be able to
+              <br />* praise your blueprints according to various popular MP servers (in credits, XP, etc.),
+              <br />* measure compliance level to popular MP server grid limits,
+              <br />* calculate production times,
+              <br />* handle mods (and modpacks),
+              <br />* do smart block analysis to report freight, production and mobility perfomance,
+              <br />* and understand TIM tags for more interesting reports.
+            </Typography>
           </Paper>
         </Grid>
         <Grid item xs={12} sm={12} md={12} lg={12} >

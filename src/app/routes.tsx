@@ -6,6 +6,7 @@ import { ROUTES, ROUTES_MODS } from './constants/routes';
 import Theme from './containers/Theme';
 import App from './containers/App';
 import Home from './containers/Home';
+import Credits from './containers/Credits';
 import Analysis from './containers/Analysis';
 
 
@@ -31,7 +32,7 @@ export const routes = (
         <IndexRoute component={null} />
         <Route path={`:page`} component={null} />
       </Route>
-      <Route path={ROUTES.CREDITS} component={null} />
+      <Route path={ROUTES.CREDITS} component={Credits} />
     </Route>
   </Route>
 )
