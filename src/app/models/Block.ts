@@ -1,3 +1,5 @@
+import { computed } from 'mobx';
+
 import {Material, MaterialDTO} from "./";
 import { parseBlockSbc } from "../common/parseBlockSbc";
 import { ComponentStore } from "../stores/ComponentStore";
@@ -13,8 +15,8 @@ export interface BlockDTO extends MaterialDTO {
 }
 
 export class Block extends Material {
-  componentStore: ComponentStore;
-  size: {X: number, Y: number, Z: number};
+  readonly componentStore: ComponentStore;
+  readonly size: {X: number, Y: number, Z: number};
 
   constructor(blockDto: BlockDTO, componentStore: ComponentStore) {
     super(blockDto);
@@ -22,7 +24,7 @@ export class Block extends Material {
     this.componentStore = componentStore;
   }
 
-  get mass() {
+  @computed get mass() {
     const mass = Object.keys(this.prerequisites).reduce((sum, typeSubtype)=>{
         const component = this.componentStore.get(typeSubtype);
         return component.mass * this.prerequisites[typeSubtype];
@@ -30,7 +32,7 @@ export class Block extends Material {
     return mass;
   }
 
-  get volume() {
+  @computed get volume() {
     return (2.5 * this.size.X) * (2.5 * this.size.Y) * (2.5 * this.size.Z);
   }
 
