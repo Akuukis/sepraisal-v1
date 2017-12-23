@@ -49,9 +49,9 @@ class AnalysisColumn extends Component<AnalysisColumnProps, AnalysisColumnClasse
           <Grid item xs={12}>
             <AppBar position='static'>
               <Toolbar>
-                <IconButton color='contrast' aria-label='Menu'>
+                {/* <IconButton color='contrast' aria-label='Menu'>
                   <IconMenu />
-                </IconButton>
+                </IconButton> */}
                 <Typography type='title' color='inherit' style={{flex: 1}}>
                   {this.props.analysis.blummary.title} ({this.props.analysis.blummary.count})
                 </Typography>
