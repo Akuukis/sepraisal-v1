@@ -31,9 +31,9 @@ class AnalysisOreTable extends Component<AnalysisRowProps, AnalysisOreTableClass
       return {
         type,
         subtype,
-        count: Math.ceil(count),
-        mass: mass * count,
-        volume: volume * count,
+        count: Math.round(count),
+        mass: Math.round(mass * count),
+        volume: Math.round(volume * count)
       };
     })
 

@@ -29,9 +29,9 @@ class AnalysisAnalysisBlockTable extends Component<AnalysisRowProps, AnalysisAna
       return {
         type: block ? block.type : '**Unknown block**',
         subtype: block ? block.subtype : `"${title}"`,
-        count,
-        mass: block.mass * count,
-        volume: block.volume * count
+        count: Math.round(count),
+        mass: Math.round(block.mass * count),
+        volume: Math.round(block.volume * count)
       };
     });
   }
