@@ -31,7 +31,7 @@ module.exports = {
   output: {
     path: outPath,
     filename: 'bundle.js',
-    publicPath: '/'
+    publicPath: '/spaceengineers-praisal/'
   },
   target: 'web',
   resolve: {
