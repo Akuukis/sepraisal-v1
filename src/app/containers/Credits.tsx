@@ -28,14 +28,17 @@ class Credits extends ComponentRouted<{}, CreditsClasses> {
       <Grid container spacing={16} className={this.props.classes.root}>
         <Grid item xs={12}>
           <Paper className={this.props.classes.content}>
-            <Typography type='headline'>Maintainer:</Typography>
+            <Typography type='headline'>Maintainer</Typography>
             <Typography paragraph>Akuukis (
               <a href='https://steamcommunity.com/id/akuukis'>Steam</a>,
               <a href='https://github.com/Akuukis'>Github</a>,
               Discord: Akuukis#6154)
             </Typography>
-            <Typography type='headline'>Contributors:</Typography>
-            <Typography paragraph>None yet, this started just before Christmas</Typography>
+            <Typography type='headline'>Contributors</Typography>
+            <Typography paragraph>None yet, this started just recently.</Typography>
+            <Typography type='headline'>Keen Software House</Typography>
+            <Typography paragraph><a href='https://www.keenswh.com/'>You</a> are great! Thanks for making <a href='https://www.spaceengineersgame.com/'>Space Engineers</a> :)</Typography>
+            <Typography paragraph>Game assets are used with Keen Software House permission in personal communication.</Typography>
             <Typography type='headline'>Bug reports</Typography>
             <Typography paragraph>Please report to <a href='https://github.com/Akuukis/spaceengineers-praisal/issues'>Github issues</a>,
               or write me personally if you don't want to signup to Github.
