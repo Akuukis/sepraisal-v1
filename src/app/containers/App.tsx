@@ -100,7 +100,7 @@ class App extends ComponentRouted<{}, AppClasses> {
   }
 
   renderDevTool() {
-    if (process.env.NODE_ENV !== 'production') {
+    if (process.env.NODE_ENV === 'development') {
       const DevTools = require('mobx-react-devtools').default;
       return (<DevTools />);
     }

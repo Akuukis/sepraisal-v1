@@ -5,8 +5,8 @@
   "main": "dist/index.js",
   "scripts": {
     "test": "gulp test",
-    "start": "webpack-dev-server -d --history-api-fallback --hot --inline --progress --colors --port 3000 --open",
-    "build": "webpack -p --progress --colors"
+    "start": "NODE_ENV=development webpack-dev-server -d --history-api-fallback --hot --inline --progress --colors --port 3000 --open",
+    "build": "NODE_ENV=production webpack --progress --colors"
   },
   "repository": {
     "type": "git",

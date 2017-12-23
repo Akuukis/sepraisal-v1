@@ -31,7 +31,7 @@ module.exports = {
   output: {
     path: outPath,
     filename: 'bundle.js',
-    publicPath: '/'
+    publicPath: '/spaceengineers-praisal/'
   },
   target: 'web',
   resolve: {
@@ -75,6 +75,9 @@ module.exports = {
       template: 'assets/index.html'
     }),
     new webpack.NamedModulesPlugin(),
+    new webpack.DefinePlugin({
+        'process.env.NODE_ENV': `'${process.env.NODE_ENV}'`
+    }),
   ],
   devServer: {
     contentBase: sourcePath,
