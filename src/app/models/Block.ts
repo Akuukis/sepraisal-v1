@@ -26,9 +26,9 @@ export class Block extends Material {
 
   @computed get mass() {
     const mass = Object.keys(this.prerequisites).reduce((sum, typeSubtype)=>{
-        const component = this.componentStore.get(typeSubtype);
-        return component.mass * this.prerequisites[typeSubtype];
-      }, 0)
+      const component = this.componentStore.get(typeSubtype);
+      return sum + component.mass * this.prerequisites[typeSubtype];
+    }, 0)
     return mass;
   }
 
