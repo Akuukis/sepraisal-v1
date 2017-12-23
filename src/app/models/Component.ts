@@ -48,7 +48,6 @@ export class Component extends Material implements ComponentDTO {
       comp.volume = comp2.volume;
     });
 
-    console.log(...componentMap.values())
     return ([...componentMap.values()] as ComponentDTO[]).map((blockDto)=>new Component(blockDto)); 
   };
 

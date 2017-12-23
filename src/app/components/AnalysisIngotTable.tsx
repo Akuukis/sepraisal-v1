@@ -12,6 +12,8 @@ const datumTitles = {
   type: 'Type',
   subtype: 'Subtype',
   count: 'Count',
+  mass: 'Mass',
+  volume: 'Volume'
 }
 
 export type AnalysisIngotTableClasses = 'root';
@@ -25,8 +27,14 @@ class AnalysisIngotTable extends Component<AnalysisRowProps, AnalysisIngotTableC
 
     return Object.keys(this.props.analysis.ingotCount).map((title)=>{
       const count = this.props.analysis.ingotCount[title];
-      const { type, subtype } = this.props.analysis.ingots.get(title);
-      return { type, subtype, count: Math.ceil(count) };
+      const { type, subtype, mass, volume } = this.props.analysis.ingots.get(title);
+      return {
+        type,
+        subtype,
+        count: Math.ceil(count),
+        mass: mass * count,
+        volume: volume * count,
+      };
     });
 
   }

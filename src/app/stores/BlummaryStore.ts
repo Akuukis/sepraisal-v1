@@ -11,7 +11,6 @@ import * as RespawnShip from '../../../vendor/SpaceEngineers/prefabs/RespawnShip
 
 export class BlummaryStore extends ObservableMap<Blummary> {
   @action add(blummary: Blummary) {
-    console.log(blummary)
     this.set(blummary.raw.title, blummary);
   }
 

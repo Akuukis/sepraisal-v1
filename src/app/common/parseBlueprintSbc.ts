@@ -1,8 +1,12 @@
 import { parseString } from 'xml2js';
 
 import { MaterialDTO } from './../models/Material';
+import { IngotDTO } from '../models/Ingot';
+import { ComponentDTO } from '../models/Component';
 
-export async function parseBlueprintSbc(xml: string, filter: string) {
+export async function parseBlueprintSbc(xml: string, filter: 'Component'): Promise<ComponentDTO[]>
+export async function parseBlueprintSbc(xml: string, filter: 'Ingot'): Promise<IngotDTO[]>
+export async function parseBlueprintSbc(xml, filter) {
     return new Promise( (resolve: (value: MaterialDTO[])=>void, reject: (reason: Error)=>void) => {
       parseString(xml, (parseError: Error, bp: MaterialDefinition) => {
         if(parseError) reject(parseError);
@@ -12,7 +16,6 @@ export async function parseBlueprintSbc(xml: string, filter: string) {
             .map((material)=>({
                 type: material.Result[0].$.TypeId,
                 subtype: material.Result[0].$.SubtypeId,
-                mass: 0,
                 time: Number(material.BaseProductionTimeInSeconds[0]),
                 prerequisites: material.Prerequisites[0].Item.reduce((req, item)=>{
                   const title = `${item.$.TypeId}/${item.$.SubtypeId}`;
@@ -28,26 +31,3 @@ export async function parseBlueprintSbc(xml: string, filter: string) {
       });
     });
   }
-
-export async function parseOreBlueprintSbc(xml: string) {
-    return new Promise( (resolve: (value: MaterialDTO[])=>void, reject: (reason: Error)=>void) => {
-      parseString(xml, (parseError: Error, bp: MaterialDefinition) => {
-        if(parseError) reject(parseError);
-        try {
-          const blockDtos = bp.Definitions.Blueprints[0].Blueprint
-            .filter((material)=>material.Prerequisites[0].Item[0].$.TypeId=='Ore')
-            .map((ore)=>({
-                type: ore.Prerequisites[0].Item[0].$.TypeId,
-                subtype: ore.Prerequisites[0].Item[0].$.SubtypeId,
-                mass: 2.7,  // TODO: Same for everything?
-              }));
-          resolve(blockDtos);
-        } catch(transformError) {
-          console.error(transformError, bp)
-          reject(transformError);
-        };
-      });
-    });
-  }
-
-

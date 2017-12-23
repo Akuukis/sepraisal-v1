@@ -12,6 +12,8 @@ const datumTitles = {
   type: 'Type',
   subtype: 'Subtype',
   count: 'Count',
+  mass: 'Mass',
+  volume: 'Volume'
 }
 
 export type AnalysisOreTableClasses = 'root';
@@ -25,8 +27,14 @@ class AnalysisOreTable extends Component<AnalysisRowProps, AnalysisOreTableClass
 
     return Object.keys(this.props.analysis.oreCount).map((title)=>{
       const count = this.props.analysis.oreCount[title];
-      const { type, subtype } = this.props.analysis.ores.get(title);
-      return { type, subtype, count: Math.ceil(count) };
+      const { type, subtype, mass, volume } = this.props.analysis.ores.get(title);
+      return {
+        type,
+        subtype,
+        count: Math.ceil(count),
+        mass: mass * count,
+        volume: volume * count,
+      };
     })
 
   }
