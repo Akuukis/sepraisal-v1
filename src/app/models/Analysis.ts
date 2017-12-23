@@ -21,8 +21,26 @@ export class Analysis {
   }
 
   @computed get blockCount() { return this.blummary.count; }
-  @computed get blockWeight() { return this.blummary.blockcount.reduce<number>((sum, value, key)=>sum+this.blocks.get(key).mass, 0)}
-  @computed get blockTime() { return this.blummary.blockcount.reduce<number>((sum, value, key)=>sum+this.blocks.get(key).time, 0)}
+  @computed get blockTime() { return this.blummary.blockcount.reduce<number>((sum, value, key)=>sum+value*this.blocks.get(key).time, 0)}
+  @computed get blockMass() { return this.blummary.blockcount.reduce<number>((sum, value, key)=>sum+value*this.blocks.get(key).mass, 0)}
+  @computed get componentMass() { return Object.keys(this.componentCount).reduce((sum, title)=>{
+      const count = this.componentCount[title];
+      const { mass } = this.components.get(title);
+      return sum + mass * count;
+    }, 0)
+  }
+  @computed get ingotMass() { return Object.keys(this.ingotCount).reduce((sum, title)=>{
+      const count = this.ingotCount[title];
+      const { mass } = this.ingots.get(title);
+      return sum + mass * count;
+    }, 0)
+  }
+  @computed get oreMass() { return Object.keys(this.oreCount).reduce((sum, title)=>{
+      const count = this.oreCount[title];
+      const { mass } = this.ores.get(title);
+      return sum + mass * count;
+    }, 0)
+  }
 
   @computed get componentCount() { return this.blummary.blockcount.reduce<{[title: string]: number}>((components, count, blockTitle)=>{
       const block = this.blocks.get(blockTitle);
