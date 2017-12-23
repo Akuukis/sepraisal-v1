@@ -6,7 +6,8 @@ import List, {ListItem, ListItemText} from 'material-ui/List';
 
 import {Component} from "../common/";
 import { RouterStore } from './../stores/';
-import { STORE_ROUTER } from './../constants/';
+import { STORE_ROUTER } from './../constants/stores';
+import { ROUTES } from '../constants/routes';
 
 export type NavigationClasses = 'root';
 const styles: StyleRulesCallback<NavigationClasses> = (theme) => ({
@@ -17,13 +18,7 @@ const styles: StyleRulesCallback<NavigationClasses> = (theme) => ({
 @observer
 class Navigation extends Component<{}, NavigationClasses> {
 
-  constructor(props) {
-    super(props);
-
-    this.handleClick = this.handleClick.bind(this);
-  }
-
-  handleClick(event: React.MouseEvent<Element>) {
+  h = (event: React.MouseEvent<Element>) => {
     const router = this.props[STORE_ROUTER] as RouterStore;
     const path = event.currentTarget.getAttribute('value');
     router.push(path);
@@ -31,12 +26,12 @@ class Navigation extends Component<{}, NavigationClasses> {
 
   render() {
     return (<List>
-        <ListItem button onClick={this.handleClick} value={''}><ListItemText primary="Home" /></ListItem>
-        <ListItem button onClick={this.handleClick} value={'blueprint'}><ListItemText primary="Blueprint" /></ListItem>
-        <ListItem button onClick={this.handleClick} value={'mods'}><ListItemText primary="Manage Mods" /></ListItem>
-        <ListItem button onClick={this.handleClick} value={'modpacks'}><ListItemText primary="Manage Modpacks" /></ListItem>
-        <ListItem button onClick={this.handleClick} value={'help'}><ListItemText primary="Help" /></ListItem>
-        <ListItem button onClick={this.handleClick} value={'credits'}><ListItemText primary="Credits" /></ListItem>
+        <ListItem button onClick={this.h} value={ROUTES.HOME}><ListItemText primary="Home" /></ListItem>
+        <ListItem button onClick={this.h} value={ROUTES.ANALYSIS}><ListItemText primary="Analyze" /></ListItem>
+        <ListItem button onClick={this.h} disabled value={ROUTES.MODS}><ListItemText primary="Manage Mods" /></ListItem>
+        <ListItem button onClick={this.h} disabled value={ROUTES.MODPACKS}><ListItemText primary="Manage Modpacks" /></ListItem>
+        <ListItem button onClick={this.h} disabled value={ROUTES.HELP}><ListItemText primary="Help" /></ListItem>
+        <ListItem button onClick={this.h} value={ROUTES.CREDITS}><ListItemText primary="Credits" /></ListItem>
       </List>);
   }
 

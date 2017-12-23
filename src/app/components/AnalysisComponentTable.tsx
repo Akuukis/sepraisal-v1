@@ -29,12 +29,12 @@ class AnalysisComponentTable extends Component<AnalysisRowProps, AnalysisCompone
       const count = this.props.analysis.componentCount[title];
       const { type, subtype, mass, volume } = this.props.analysis.components.get(title);
       return {
-          count,
-          type,
-          subtype,
-          mass: mass * count,
-          volume: volume * count
-        };
+        type,
+        subtype,
+        count: Math.round(count),
+        mass: Math.round(mass * count),
+        volume: Math.round(volume * count)
+      };
     })
 
   }

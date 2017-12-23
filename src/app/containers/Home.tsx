@@ -4,58 +4,67 @@ import { inject, observer } from 'mobx-react';
 
 import { StyleRulesCallback, withStyles } from 'material-ui/styles';
 import Grid from 'material-ui/Grid';
-import { Button } from 'material-ui';
+import Paper from 'material-ui/Paper';
+import Button from 'material-ui/Button';
+import Typography from 'material-ui/Typography';
 
 
 import { ComponentRouted } from '../common/';
-import { STORE_BLUMMARY } from '../constants/stores';
-import { BlummaryStore } from '../stores/BlummaryStore';
+import { ROUTES } from '../constants/routes';
+import { STORE_BLUMMARY, STORE_ANALYSIS } from '../constants/stores';
+import { BlummaryStore, AnalysisStore } from '../stores/';
 import Selector from '../components/Selector';
 
-export type HomeClasses = 'root';
+export type HomeClasses = 'root'|'content';
 const styles: StyleRulesCallback<HomeClasses> = (theme) => ({
-  root: {}
+  root: {
+    padding: '0.5em',
+  },
+  content: {
+    padding: '0.5em',
+  },
 })
 
-let id = 0;
-function createData(name, calories, fat, carbs, protein) {
-  id += 1;
-  return { id, name, calories, fat, carbs, protein };
-}
-
-@inject(STORE_BLUMMARY)
+@inject(STORE_BLUMMARY, STORE_ANALYSIS)
 @observer
 class Home extends ComponentRouted<{}, HomeClasses> {
+  blummaryStore = this.props[STORE_BLUMMARY] as BlummaryStore;
+  analysisStore = this.props[STORE_ANALYSIS] as AnalysisStore;
 
-  constructor(props) {
-    super(props);
+  @computed get disabled() { return this.analysisStore.size === 0; }
 
-    this.go = this.go.bind(this);
-  }
-
-  @computed get blummaries() {
-    return (this.props[STORE_BLUMMARY] as BlummaryStore).map( (blummary)=>{ return {key: blummary.raw.title, title: blummary.raw.title}});
-  }
-
-  go(event: React.MouseEvent<HTMLInputElement>) {
-    this.props.router.push(`/blueprint`)
+  proceed = (event: React.MouseEvent<HTMLInputElement>) => {
+    this.props.router.push(ROUTES.ANALYSIS);
   }
 
   render() {
     return (
-      <Grid container>
-        <Grid item xs={12} sm={6} md={4} lg={4}>
-          <p style={{textAlign:'center'}}>Upload</p>
-        </Grid>
-        <Grid item xs={12} sm={6} md={4} lg={4}>
-          <p style={{textAlign:'center'}}>Analyze</p>
-        </Grid>
-        <Grid item xs={12} sm={12} md={4} lg={4}>
-          <p style={{textAlign:'center'}}>Compare</p>
+      <Grid container spacing={16} className={this.props.classes.root}>
+        <Grid item xs={12}>
+          <Paper className={this.props.classes.content}>
+            <Typography paragraph>SE-Praisal is a tool to analyze your blueprints. Currently it reports required materials. Try it out below!</Typography>
+            <Typography paragraph>In the future, it will also be able to
+              <br />* praise your blueprints according to various popular MP servers (in credits, XP, etc.),
+              <br />* measure compliance level to popular MP server grid limits,
+              <br />* calculate production times,
+              <br />* handle mods (and modpacks),
+              <br />* do smart block analysis to report freight, production and mobility perfomance,
+              <br />* and understand TIM tags for more interesting reports.
+            </Typography>
+          </Paper>
         </Grid>
         <Grid item xs={12} sm={12} md={12} lg={12} >
-          <Selector />
-          <Button color='primary' onClick={this.go}>Proceed</Button>
+          <Selector classes={{root: this.props.classes.content}}>
+            <Button
+              raised
+              color='primary'
+              style={{width: '100%'}}
+              disabled={this.disabled}
+              onClick={this.proceed}
+            >
+              Continue
+            </Button>
+          </Selector>
         </Grid>
       </Grid>
     );

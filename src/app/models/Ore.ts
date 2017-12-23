@@ -1,10 +1,11 @@
 import {Material, MaterialDTO} from "./";
-import {parseOreBlueprintSbc} from "../common/";
+import {parsePhysicalItemsSbc} from "../common/";
 
 export interface OreDTO extends MaterialDTO {
   type: string;
   subtype: string;
   mass: number;
+  volume: number;
   time?: number;
   prerequisites?: {
     [title: string]: number,
@@ -13,8 +14,8 @@ export interface OreDTO extends MaterialDTO {
 
 export class Ore extends Material {
 
-  static async parseXml(xml: string): Promise<Ore[]> {
-    const oreDtos = await parseOreBlueprintSbc(xml);
+  static async parseXml(physicalItemsXml: string): Promise<Ore[]> {
+    const oreDtos = await parsePhysicalItemsSbc(physicalItemsXml, 'Ore');
     return oreDtos.map((blockDto)=>new Ore(blockDto)); 
   };
 

@@ -16,11 +16,11 @@ export interface ComponentDTO extends MaterialDTO {
 }
 
 export class Component extends Material implements ComponentDTO {
-  displayName: string;
-  health: number;
-  maxIntegrity: number;
-  size: {X: number, Y: number, Z: number};
-  volume: number; // litres.
+  readonly displayName: string;
+  readonly health: number;
+  readonly maxIntegrity: number;
+  readonly size: {X: number, Y: number, Z: number};
+  readonly volume: number; // litres.
 
   constructor(dto: ComponentDTO) {
     super(dto);
@@ -28,7 +28,6 @@ export class Component extends Material implements ComponentDTO {
     this.health = dto.health;
     this.maxIntegrity = dto.maxIntegrity;
     this.size = dto.size;
-    this.volume = dto.volume;
   }
 
   static async parseXml(materialXml: string, componentXml: string): Promise<Component[]> {
@@ -48,7 +47,6 @@ export class Component extends Material implements ComponentDTO {
       comp.volume = comp2.volume;
     });
 
-    console.log(...componentMap.values())
     return ([...componentMap.values()] as ComponentDTO[]).map((blockDto)=>new Component(blockDto)); 
   };
 

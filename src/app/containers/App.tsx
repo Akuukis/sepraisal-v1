@@ -36,7 +36,7 @@ const styles: StyleRulesCallback<AppClasses> = (theme) => ({
   content: {
     backgroundImage: `url('${background}')`,
     overflowY: 'visible',
-    paddingRight: '16px',
+    paddingRight: '8px',
     overflowX: 'hidden',
   },
   '@media (min-width: 0px)': {

@@ -1,48 +1,44 @@
+import { computed } from 'mobx';
+
 import {Material, MaterialDTO} from "./";
-import { parseString } from 'xml2js';
+import { parseBlockSbc } from "../common/parseBlockSbc";
+import { ComponentStore } from "../stores/ComponentStore";
 
 export interface BlockDTO extends MaterialDTO {
   type: string;
   subtype: string;
-  mass: number;
   time: number;
+  size: {X: number, Y: number, Z: number};
   prerequisites: {
     [title: string]: number,
   }  
 }
 
 export class Block extends Material {
+  readonly componentStore: ComponentStore;
+  readonly size: {X: number, Y: number, Z: number};
 
-  static async parseXml(xml: string): Promise<Block[]> {
-    return new Promise( (resolve: (value: Block[])=>void, reject: (reason: Error)=>void) => {
-      parseString(xml, (parseError: Error, bp: BlockDefinition) => {
-        if(parseError) reject(parseError);
-        try {
-          const blockDtos: BlockDTO[] = [];
-          bp.Definitions.CubeBlocks[0].Definition
-            .forEach((block)=>{
-              if(!block.BuildTimeSeconds) return;
-              const prerequisites = block.Components[0].Component.reduce((req, comp)=>{
-                  const title = `Component/${comp.$.Subtype}`;
-                  req[title] = Number(comp.$.Count) + (title in req ? Number(req[title]) : 0);
-                  return req;
-                }, Object.create(null));
-              blockDtos.push({
-                type: block.Id[0].TypeId[0],
-                subtype: block.Id[0].SubtypeId[0],
-                mass: 0,
-                time: Number(block.BuildTimeSeconds[0]),
-                prerequisites,
-              });
-            });
-          const blocks = blockDtos.map((blockDto)=>new Block(blockDto)); 
-          resolve(blocks);
-        } catch(transformError) {
-          console.error(transformError, bp)
-          reject(transformError);
-        };
-      });
-    });
+  constructor(blockDto: BlockDTO, componentStore: ComponentStore) {
+    super(blockDto);
+    this.size = blockDto.size;
+    this.componentStore = componentStore;
+  }
+
+  @computed get mass() {
+    const mass = Object.keys(this.prerequisites).reduce((sum, typeSubtype)=>{
+      const component = this.componentStore.get(typeSubtype);
+      return sum + component.mass * this.prerequisites[typeSubtype];
+    }, 0)
+    return mass;
+  }
+
+  @computed get volume() {
+    return (2.5 * this.size.X) * (2.5 * this.size.Y) * (2.5 * this.size.Z);
+  }
+
+  static async parseXml(xml: string, componentStore: ComponentStore): Promise<Block[]> {
+    const blockDtos = await parseBlockSbc(xml);
+    return blockDtos.map((blockDto)=>new Block(blockDto, componentStore));
   };
 
 }

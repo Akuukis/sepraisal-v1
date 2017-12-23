@@ -12,6 +12,8 @@ const datumTitles = {
   type: 'Type',
   subtype: 'Subtype',
   count: 'Count',
+  mass: 'Mass',
+  volume: 'Volume'
 }
 
 export type AnalysisAnalysisBlockTableClasses = 'root';
@@ -27,7 +29,9 @@ class AnalysisAnalysisBlockTable extends Component<AnalysisRowProps, AnalysisAna
       return {
         type: block ? block.type : '**Unknown block**',
         subtype: block ? block.subtype : `"${title}"`,
-        count,
+        count: Math.round(count),
+        mass: Math.round(block.mass * count),
+        volume: Math.round(block.volume * count)
       };
     });
   }
