@@ -29,6 +29,7 @@ class Analysis extends ComponentRouted<{}, AnalysisClasses> {
       <Grid container spacing={16} style={{padding:'8px'}}>
         { this.analysisStore.map((analysis)=>(
             <AnalysisColumn
+              key={analysis.blummary.title}
               width={this.width}
               analysis={analysis}
               remove={action(()=>this.analysisStore.delete(analysis.blummary.title))}

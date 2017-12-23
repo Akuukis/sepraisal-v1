@@ -10,6 +10,14 @@ declare interface BlockComponent extends xml2js {
   },
 }
 
+declare interface BlockSize extends xml2js {
+  $: {
+    x: number,
+    y: number,
+    z: number,
+  }
+}
+
 declare interface BlockComponents extends xml2js {
   Component: [BlockComponent],
 }
@@ -19,6 +27,7 @@ declare interface BlockDefinition extends xml2js {
   DisplayName: [string],
   Components: [BlockComponents],
   BuildTimeSeconds: [number],
+  Size: [BlockSize],
   // ...
 }
 

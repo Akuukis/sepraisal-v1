@@ -16,10 +16,10 @@ useStrict(true);
 // prepare MobX stores
 const routerStore = new RouterStore(hashHistory);
 const blummaryStore = new BlummaryStore();
-const blockStore = new BlockStore();
-const componentStore = new ComponentStore();
-const ingotStore = new IngotStore();
 const oreStore = new OreStore();
+const ingotStore = new IngotStore();
+const componentStore = new ComponentStore();
+const blockStore = new BlockStore(componentStore);
 const analysisStore = new AnalysisStore(blockStore, componentStore, ingotStore, oreStore);
 const rootStores = {
   [STORE_BLUMMARY]: blummaryStore,

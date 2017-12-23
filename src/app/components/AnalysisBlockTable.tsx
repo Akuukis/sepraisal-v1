@@ -12,6 +12,8 @@ const datumTitles = {
   type: 'Type',
   subtype: 'Subtype',
   count: 'Count',
+  mass: 'Mass',
+  volume: 'Volume'
 }
 
 export type AnalysisAnalysisBlockTableClasses = 'root';
@@ -28,6 +30,8 @@ class AnalysisAnalysisBlockTable extends Component<AnalysisRowProps, AnalysisAna
         type: block ? block.type : '**Unknown block**',
         subtype: block ? block.subtype : `"${title}"`,
         count,
+        mass: block.mass * count,
+        volume: block.volume * count
       };
     });
   }
