@@ -2,11 +2,11 @@ import * as React from 'react';
 
 import { StyleRulesCallback, withStyles } from 'material-ui/styles';
 import Grid from 'material-ui/Grid';
-import Typography from 'material-ui/Typography';
-import List, {ListItem, ListItemText} from 'material-ui/List';
+import List from 'material-ui/List';
 
 import {Component} from "../common/";
 import {Analysis, AnalysisRowProps} from "../models/";
+import AnalysisSummaryRow from './AnalysisSummaryRow';
 
 export type AnalysisSummaryClasses = 'root';
 const styles: StyleRulesCallback<AnalysisSummaryClasses> = (theme) => ({
@@ -15,23 +15,18 @@ const styles: StyleRulesCallback<AnalysisSummaryClasses> = (theme) => ({
 
 class AnalysisSummary extends Component<AnalysisRowProps, AnalysisSummaryClasses> {
 
-  constructor(props) {
-    super(props);
-  }
-
-  renderItem = (title, value) => <ListItem><ListItemText primary={title}/><Typography type='body1'>{value}</Typography></ListItem>
-
   render() {
+    const { analysis } = this.props;
     return (
       <Grid container spacing={0}>
         <Grid item xs={12}>
           <List>
-            {this.renderItem('Title', this.props.analysis.blummary.title)}
-            {this.renderItem('Block count', this.props.analysis.blummary.count.toFixed(0))}
-            {this.renderItem('Total Mass', this.props.analysis.blockMass.toFixed(2))}
-            {this.renderItem('Component Mass', this.props.analysis.componentMass.toFixed(2))}
-            {this.renderItem('Ingot Mass', this.props.analysis.ingotMass.toFixed(2))}
-            {this.renderItem('Ore Mass', this.props.analysis.oreMass.toFixed(2))}
+            <AnalysisSummaryRow title={'Title'} value={analysis.blummary.title} errors={[]} />
+            <AnalysisSummaryRow title={'Blocks'} value={`${analysis.blockCount.toFixed(0)} pc`} errors={analysis.blocksErrors} />
+            <AnalysisSummaryRow title={'Components'} value={`${analysis.componentCount.toFixed(0)} pc`} errors={analysis.componentErrors} />
+            <AnalysisSummaryRow title={'Weight'} value={`${(analysis.blockMass/1000).toFixed(1)} t`} errors={[]} />
+            <AnalysisSummaryRow title={'Ingots'} value={`${(analysis.ingotMass/1000).toFixed(1)} t`} errors={analysis.ingotErrors} />
+            <AnalysisSummaryRow title={'Ores'} value={`${(analysis.oreMass/1000).toFixed(1)} t`} errors={analysis.oreErrors} />
           </List>
         </Grid>
       </Grid>

@@ -1,4 +1,6 @@
 import * as React from 'react';
+import { action, computed, observable } from 'mobx';
+import {observer} from 'mobx-react';
 
 import { StyleRulesCallback, withStyles, StyledComponentProps } from 'material-ui/styles';
 import Grid from 'material-ui/Grid';
@@ -18,9 +20,12 @@ import AnalysisComponentTable from "../../components/AnalysisComponentTable";
 import AnalysisIngotTable from "../../components/AnalysisIngotTable";
 import AnalysisOreTable from "../../components/AnalysisOreTable";
 
-export type AnalysisColumnClasses = 'root';
+export type AnalysisColumnClasses = 'root'|'error';
 const styles: StyleRulesCallback<AnalysisColumnClasses> = (theme) => ({
   root: {},
+  error: {
+    backgroundColor: theme.palette.error[400],
+  },
 })
 
 export interface AnalysisColumnProps {
@@ -29,8 +34,16 @@ export interface AnalysisColumnProps {
   remove: ()=>any;
 }
 
-
+@observer
 class AnalysisColumn extends Component<AnalysisColumnProps, AnalysisColumnClasses> {
+
+  @computed get anyError() {
+    const { analysis } = this.props;
+    return analysis.blocksErrors.length > 0
+      || analysis.componentErrors.length > 0
+      || analysis.ingotErrors.length > 0
+      || analysis.oreErrors.length > 0
+  }
 
   renderRow(AnalysisRow: React.ComponentType<AnalysisRowProps & StyledComponentProps<'root'>>) {
     return (
@@ -48,7 +61,7 @@ class AnalysisColumn extends Component<AnalysisColumnProps, AnalysisColumnClasse
         <Grid container spacing={16}>
           <Grid item xs={12}>
             <AppBar position='static'>
-              <Toolbar>
+              <Toolbar className={this.anyError ? this.props.classes.error : undefined}>
                 {/* <IconButton color='contrast' aria-label='Menu'>
                   <IconMenu />
                 </IconButton> */}
