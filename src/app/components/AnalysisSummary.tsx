@@ -27,7 +27,7 @@ class AnalysisSummary extends Component<AnalysisRowProps, AnalysisSummaryClasses
         <Grid item xs={12}>
           <List>
             {this.renderItem('Title', this.props.analysis.blummary.title)}
-            {this.renderItem('Block count', this.props.analysis.blummary.count.toFixed(0))}
+            {this.renderItem('Block count', this.props.analysis.blockCount.toFixed(0))}
             {this.renderItem('Total Mass', this.props.analysis.blockMass.toFixed(2))}
             {this.renderItem('Component Mass', this.props.analysis.componentMass.toFixed(2))}
             {this.renderItem('Ingot Mass', this.props.analysis.ingotMass.toFixed(2))}

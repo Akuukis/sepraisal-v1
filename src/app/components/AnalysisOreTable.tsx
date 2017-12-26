@@ -24,19 +24,13 @@ const styles: StyleRulesCallback<AnalysisOreTableClasses> = (theme) => ({
 class AnalysisOreTable extends Component<AnalysisRowProps, AnalysisOreTableClasses> {
 
   getData(): {[field in keyof typeof datumTitles]: number|string}[] {
-
-    return Object.keys(this.props.analysis.oreCount).map((title)=>{
-      const count = this.props.analysis.oreCount[title];
-      const { type, subtype, mass, volume } = this.props.analysis.oreStore.get(title);
-      return {
-        type,
-        subtype,
+    return this.props.analysis.oreEntries.map(([ore, count])=>({
+        type: ore.type,
+        subtype: ore.subtype,
         count: Math.round(count),
-        mass: Math.round(mass * count),
-        volume: Math.round(volume * count)
-      };
-    })
-
+        mass: Math.round(ore.mass * count),
+        volume: Math.round(ore.volume * count)
+    }));
   }
 
   render() {

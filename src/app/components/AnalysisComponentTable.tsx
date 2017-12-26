@@ -24,19 +24,13 @@ const styles: StyleRulesCallback<AnalysisComponentTableClasses> = (theme) => ({
 class AnalysisComponentTable extends Component<AnalysisRowProps, AnalysisComponentTableClasses> {
 
   getData(): {[field in keyof typeof datumTitles]: number|string}[] {
-
-    return Object.keys(this.props.analysis.componentCount).map((title)=>{
-      const count = this.props.analysis.componentCount[title];
-      const { type, subtype, mass, volume } = this.props.analysis.componentStore.get(title);
-      return {
-        type,
-        subtype,
+    return this.props.analysis.componentEntries.map(([component, count])=>({
+        type: component.type,
+        subtype: component.subtype,
         count: Math.round(count),
-        mass: Math.round(mass * count),
-        volume: Math.round(volume * count)
-      };
-    })
-
+        mass: Math.round(component.mass * count),
+        volume: Math.round(component.volume * count)
+    }))
   }
 
   render() {

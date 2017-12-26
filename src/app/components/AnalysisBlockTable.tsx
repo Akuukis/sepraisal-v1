@@ -24,16 +24,13 @@ const styles: StyleRulesCallback = (theme) => ({
 class AnalysisAnalysisBlockTable extends Component<AnalysisRowProps, AnalysisAnalysisBlockTableClasses> {
 
   getData(): {[field in keyof typeof datumTitles]: number|string}[] {
-    return this.props.analysis.blummary.blockcount.map((count, title)=>{
-      const block = this.props.analysis.blockStore.get(title);
-      return {
+    return this.props.analysis.blockEntries.map(([block, count])=>({
         type: block ? block.type : '**Unknown block**',
-        subtype: block ? block.subtype : `"${title}"`,
+        subtype: block ? block.subtype : `"${block.title}"`,
         count: Math.round(count),
         mass: Math.round(block.mass * count),
         volume: Math.round(block.volume * count)
-      };
-    });
+    }));
   }
 
   render() {
