@@ -24,7 +24,7 @@ const styles: StyleRulesCallback = (theme) => ({
 class AnalysisAnalysisBlockTable extends Component<AnalysisRowProps, AnalysisAnalysisBlockTableClasses> {
 
   getData(): {[field in keyof typeof datumTitles]: number|string}[] {
-    return this.props.analysis.blockEntries.map(([block, count])=>({
+    return this.props.analysis.blocks.map(([block, count])=>({
         type: block ? block.type : '**Unknown block**',
         subtype: block ? block.subtype : `"${block.title}"`,
         count: Math.round(count),

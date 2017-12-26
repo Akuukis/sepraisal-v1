@@ -24,7 +24,7 @@ const styles: StyleRulesCallback<AnalysisIngotTableClasses> = (theme) => ({
 class AnalysisIngotTable extends Component<AnalysisRowProps, AnalysisIngotTableClasses> {
 
   getData(): {[field in keyof typeof datumTitles]: number|string}[] {
-    return this.props.analysis.ingotEntries.map(([ingot, count])=>({
+    return this.props.analysis.ingots.map(([ingot, count])=>({
         type: ingot.type,
         subtype: ingot.subtype,
         count: Math.round(count),

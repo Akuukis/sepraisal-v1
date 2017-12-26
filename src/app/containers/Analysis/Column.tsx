@@ -39,10 +39,10 @@ class AnalysisColumn extends Component<AnalysisColumnProps, AnalysisColumnClasse
 
   @computed get anyError() {
     const { analysis } = this.props;
-    return analysis.blocksErrorEntries.length > 0
-      || analysis.componentsErrorEntries.length > 0
-      || analysis.ingotsErrorEntries.length > 0
-      || analysis.oresErrorEntries.length > 0
+    return analysis.blocksErrors.length > 0
+      || analysis.componentErrors.length > 0
+      || analysis.ingotErrors.length > 0
+      || analysis.oreErrors.length > 0
   }
 
   renderRow(AnalysisRow: React.ComponentType<AnalysisRowProps & StyledComponentProps<'root'>>) {

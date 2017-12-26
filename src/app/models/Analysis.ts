@@ -37,9 +37,9 @@ export class Analysis {
 
   @computed.struct private get blockAll() { return this.blummary.blockcount.entries()
     .reduce((struct, [name, count])=>{struct[name]=count; return struct}, Object.create(null)); }
-  @computed.struct private get componentAll() { return this.getMaterialAll(this.blockEntries, this.blockStore); }
-  @computed.struct private get ingotAll() { return this.getMaterialAll(this.componentEntries, this.componentStore); }
-  @computed.struct private get oreAll() { return this.getMaterialAll(this.ingotEntries, this.ingotStore); }
+  @computed.struct private get componentAll() { return this.getMaterialAll(this.blocks, this.blockStore); }
+  @computed.struct private get ingotAll() { return this.getMaterialAll(this.components, this.componentStore); }
+  @computed.struct private get oreAll() { return this.getMaterialAll(this.ingots, this.ingotStore); }
 
   private getMaterials(struct: {[name: string]: number}, store: MaterialStore<any>): {[blockName: string]: number} {
     const result = Object.create(null);
@@ -57,41 +57,41 @@ export class Analysis {
     return result;
   }
 
-  @computed.struct get blocks() { return this.getMaterials(this.blockAll, this.blockStore); }
-  @computed.struct get components() { return this.getMaterials(this.componentAll, this.componentStore); }
-  @computed.struct get ingots() { return this.getMaterials(this.ingotAll, this.ingotStore); }
-  @computed.struct get ores() { return this.getMaterials(this.oreAll, this.oreStore); }
+  @computed.struct private get blockStruct() { return this.getMaterials(this.blockAll, this.blockStore); }
+  @computed.struct private get componentStruct() { return this.getMaterials(this.componentAll, this.componentStore); }
+  @computed.struct private get ingotStruct() { return this.getMaterials(this.ingotAll, this.ingotStore); }
+  @computed.struct private get oreStruct() { return this.getMaterials(this.oreAll, this.oreStore); }
 
-  @computed.struct get blocksError() { return this.getMaterialsError(this.blockAll, this.blockStore); }
-  @computed.struct get componentsError() { return this.getMaterialsError(this.componentAll, this.componentStore); }
-  @computed.struct get ingotsError() { return this.getMaterialsError(this.ingotAll, this.ingotStore); }
-  @computed.struct get oresError() { return this.getMaterialsError(this.oreAll, this.oreStore); }
+  @computed.struct private get blockErrorsStruct() { return this.getMaterialsError(this.blockAll, this.blockStore); }
+  @computed.struct private get componentErrorsStruct() { return this.getMaterialsError(this.componentAll, this.componentStore); }
+  @computed.struct private get ingotErrorsStruct() { return this.getMaterialsError(this.ingotAll, this.ingotStore); }
+  @computed.struct private get oreErrorsStruct() { return this.getMaterialsError(this.oreAll, this.oreStore); }
 
-  @computed get blockEntries()     { return Object.entries(this.blocks    ).map<[Block    , number]>(([name, count])=>[this.blockStore.get(name)    , count]); }
-  @computed get componentEntries() { return Object.entries(this.components).map<[Component, number]>(([name, count])=>[this.componentStore.get(name), count]); }
-  @computed get ingotEntries()     { return Object.entries(this.ingots    ).map<[Ingot    , number]>(([name, count])=>[this.ingotStore.get(name)    , count]); }
-  @computed get oreEntries()       { return Object.entries(this.ores      ).map<[Ore      , number]>(([name, count])=>[this.oreStore.get(name)      , count]); }
+  @computed get blocks()     { return Object.entries(this.blockStruct    ).map<[Block    , number]>(([name, count])=>[this.blockStore.get(name)    , count]); }
+  @computed get components() { return Object.entries(this.componentStruct).map<[Component, number]>(([name, count])=>[this.componentStore.get(name), count]); }
+  @computed get ingots()     { return Object.entries(this.ingotStruct    ).map<[Ingot    , number]>(([name, count])=>[this.ingotStore.get(name)    , count]); }
+  @computed get ores()       { return Object.entries(this.oreStruct      ).map<[Ore      , number]>(([name, count])=>[this.oreStore.get(name)      , count]); }
 
-  @computed get blocksErrorEntries() { return Object.entries(this.blocksError); }
-  @computed get componentsErrorEntries() { return Object.entries(this.componentsError); }
-  @computed get ingotsErrorEntries() { return Object.entries(this.ingotsError); }
-  @computed get oresErrorEntries() { return Object.entries(this.oresError); }
+  @computed get blocksErrors() { return Object.entries(this.blockErrorsStruct); }
+  @computed get componentErrors() { return Object.entries(this.componentErrorsStruct); }
+  @computed get ingotErrors() { return Object.entries(this.ingotErrorsStruct); }
+  @computed get oreErrors() { return Object.entries(this.oreErrorsStruct); }
 
-  @computed get blockCount() { return this.blockEntries.reduce((sum, [material, count])=>sum+count, 0)}
-  @computed get blockTime() { return this.blockEntries.reduce((sum, [material, count])=>sum+material.time*count, 0)}
-  @computed get blockMass() { return this.blockEntries.reduce((sum, [material, count])=>sum+material.mass*count, 0)}
+  @computed get blockCount() { return this.blocks.reduce((sum, [material, count])=>sum+count, 0)}
+  @computed get blockTime() { return this.blocks.reduce((sum, [material, count])=>sum+material.time*count, 0)}
+  @computed get blockMass() { return this.blocks.reduce((sum, [material, count])=>sum+material.mass*count, 0)}
 
-  @computed get componentCount() { return this.componentEntries.reduce((sum, [material, count])=>sum+count, 0)}
-  @computed get componentTime() { return this.componentEntries.reduce((sum, [material, count])=>sum+material.time*count, 0)}
-  @computed get componentMass() { return this.componentEntries.reduce((sum, [material, count])=>sum+material.mass*count, 0)}
+  @computed get componentCount() { return this.components.reduce((sum, [material, count])=>sum+count, 0)}
+  @computed get componentTime() { return this.components.reduce((sum, [material, count])=>sum+material.time*count, 0)}
+  @computed get componentMass() { return this.components.reduce((sum, [material, count])=>sum+material.mass*count, 0)}
 
-  @computed get ingotCount() { return this.ingotEntries.reduce((sum, [material, count])=>sum+count, 0)}
-  @computed get ingotTime() { return this.ingotEntries.reduce((sum, [material, count])=>sum+material.time*count, 0)}
-  @computed get ingotMass() { return this.ingotEntries.reduce((sum, [material, count])=>sum+material.mass*count, 0)}
+  @computed get ingotCount() { return this.ingots.reduce((sum, [material, count])=>sum+count, 0)}
+  @computed get ingotTime() { return this.ingots.reduce((sum, [material, count])=>sum+material.time*count, 0)}
+  @computed get ingotMass() { return this.ingots.reduce((sum, [material, count])=>sum+material.mass*count, 0)}
 
-  @computed get oreCount() { return this.oreEntries.reduce((sum, [material, count])=>sum+count, 0)}
-  @computed get oreTime() { return this.oreEntries.reduce((sum, [material, count])=>sum+material.time*count, 0)}
-  @computed get oreMass() { return this.oreEntries.reduce((sum, [material, count])=>sum+material.mass*count, 0)}
+  @computed get oreCount() { return this.ores.reduce((sum, [material, count])=>sum+count, 0)}
+  @computed get oreTime() { return this.ores.reduce((sum, [material, count])=>sum+material.time*count, 0)}
+  @computed get oreMass() { return this.ores.reduce((sum, [material, count])=>sum+material.mass*count, 0)}
 
 
 }

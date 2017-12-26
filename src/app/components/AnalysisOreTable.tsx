@@ -24,7 +24,7 @@ const styles: StyleRulesCallback<AnalysisOreTableClasses> = (theme) => ({
 class AnalysisOreTable extends Component<AnalysisRowProps, AnalysisOreTableClasses> {
 
   getData(): {[field in keyof typeof datumTitles]: number|string}[] {
-    return this.props.analysis.oreEntries.map(([ore, count])=>({
+    return this.props.analysis.ores.map(([ore, count])=>({
         type: ore.type,
         subtype: ore.subtype,
         count: Math.round(count),

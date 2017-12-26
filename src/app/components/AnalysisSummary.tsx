@@ -22,11 +22,11 @@ class AnalysisSummary extends Component<AnalysisRowProps, AnalysisSummaryClasses
         <Grid item xs={12}>
           <List>
             <AnalysisSummaryRow title={'Title'} value={analysis.blummary.title} errors={[]} />
-            <AnalysisSummaryRow title={'Blocks'} value={`${analysis.blockCount.toFixed(0)} pc`} errors={analysis.blocksErrorEntries} />
-            <AnalysisSummaryRow title={'Components'} value={`${analysis.componentCount.toFixed(0)} pc`} errors={analysis.componentsErrorEntries} />
+            <AnalysisSummaryRow title={'Blocks'} value={`${analysis.blockCount.toFixed(0)} pc`} errors={analysis.blocksErrors} />
+            <AnalysisSummaryRow title={'Components'} value={`${analysis.componentCount.toFixed(0)} pc`} errors={analysis.componentErrors} />
             <AnalysisSummaryRow title={'Weight'} value={`${(analysis.blockMass/1000).toFixed(1)} t`} errors={[]} />
-            <AnalysisSummaryRow title={'Ingots'} value={`${(analysis.ingotMass/1000).toFixed(1)} t`} errors={analysis.ingotsErrorEntries} />
-            <AnalysisSummaryRow title={'Ores'} value={`${(analysis.oreMass/1000).toFixed(1)} t`} errors={analysis.oresErrorEntries} />
+            <AnalysisSummaryRow title={'Ingots'} value={`${(analysis.ingotMass/1000).toFixed(1)} t`} errors={analysis.ingotErrors} />
+            <AnalysisSummaryRow title={'Ores'} value={`${(analysis.oreMass/1000).toFixed(1)} t`} errors={analysis.oreErrors} />
           </List>
         </Grid>
       </Grid>
