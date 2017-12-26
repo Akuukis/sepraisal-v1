@@ -19,7 +19,7 @@ class AnalysisSummary extends Component<AnalysisRowProps, AnalysisSummaryClasses
     super(props);
   }
 
-  renderItem = (title, value) => <ListItem><ListItemText primary={title}/><Typography type='body1'>{value}</Typography></ListItem>
+  renderItem = (title, value, subtitle?) => <ListItem><ListItemText primary={title} secondary={subtitle}/><Typography type='body1'>{value}</Typography></ListItem>
 
   render() {
     return (
@@ -27,11 +27,11 @@ class AnalysisSummary extends Component<AnalysisRowProps, AnalysisSummaryClasses
         <Grid item xs={12}>
           <List>
             {this.renderItem('Title', this.props.analysis.blummary.title)}
-            {this.renderItem('Block count', this.props.analysis.blockCount.toFixed(0))}
-            {this.renderItem('Total Mass', this.props.analysis.blockMass.toFixed(2))}
-            {this.renderItem('Component Mass', this.props.analysis.componentMass.toFixed(2))}
-            {this.renderItem('Ingot Mass', this.props.analysis.ingotMass.toFixed(2))}
-            {this.renderItem('Ore Mass', this.props.analysis.oreMass.toFixed(2))}
+            {this.renderItem('Blocks'    , `${this.props.analysis.blockCount.toFixed(0)} pc`)}
+            {this.renderItem('Components', `${this.props.analysis.componentCount.toFixed(0)} pc`)}
+            {this.renderItem('Weight'    , `${(this.props.analysis.blockMass/1000).toFixed(1)} t`, 'Block weight and Component weight are always equal')}
+            {this.renderItem('Ingots'    , `${(this.props.analysis.ingotMass/1000).toFixed(1)} t`, 'Weight and amount are always equal, i.e. 1kg = 1pc')}
+            {this.renderItem('Ores'      , `${(this.props.analysis.oreMass/1000).toFixed(1)} t`, 'Weight and amount are always equal, i.e. 1kg = 1pc')}
           </List>
         </Grid>
       </Grid>
