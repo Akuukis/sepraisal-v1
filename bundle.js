@@ -1,5 +1,12 @@
 webpackJsonp([0],{
 
+/***/ "../assets/blueprints/EveryLargeBlockOnce/bp.sbc":
+/***/ (function(module, exports) {
+
+module.exports = "<?xml version=\"1.0\"?>\r\n<Definitions xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\r\n  <ShipBlueprints>\r\n    <ShipBlueprint xsi:type=\"MyObjectBuilder_ShipBlueprintDefinition\">\r\n      <Id Type=\"MyObjectBuilder_ShipBlueprintDefinition\" Subtype=\"EveryLargeBlockOnce\" />\r\n      <DisplayName>Akuukis</DisplayName>\r\n      <CubeGrids>\r\n        <CubeGrid>\r\n          <SubtypeName />\r\n          <EntityId>110898700093416191</EntityId>\r\n          <PersistentFlags>CastShadows InScene</PersistentFlags>\r\n          <PositionAndOrientation>\r\n            <Position x=\"-221.43470521950439\" y=\"-182.71736234580567\" z=\"-42.789866221119155\" />\r\n            <Forward x=\"-7.95046E-06\" y=\"-1.05400022E-05\" z=\"-1\" />\r\n            <Up x=\"-1.12715861E-05\" y=\"1\" z=\"-1.05399131E-05\" />\r\n            <Orientation>\r\n              <X>-5.269979E-06</X>\r\n              <Y>3.97525946E-06</Y>\r\n              <Z>5.635772E-06</Z>\r\n              <W>1</W>\r\n            </Orientation>\r\n          </PositionAndOrientation>\r\n          <GridSizeEnum>Large</GridSizeEnum>\r\n          <CubeBlocks>\r\n            <MyObjectBuilder_CubeBlock xsi:type=\"MyObjectBuilder_CubeBlock\">\r\n              <SubtypeName>LargeBlockArmorBlock</SubtypeName>\r\n              <BuiltBy>144115188075855895</BuiltBy>\r\n            </MyObjectBuilder_CubeBlock>\r\n            <MyObjectBuilder_CubeBlock xsi:type=\"MyObjectBuilder_CubeBlock\">\r\n              <SubtypeName>LargeBlockArmorCornerInv</SubtypeName>\r\n              <Min x=\"1\" y=\"0\" z=\"0\" />\r\n              <BlockOrientation Forward=\"Down\" Up=\"Forward\" />\r\n              <BuiltBy>144115188075855895</BuiltBy>\r\n            </MyObjectBuilder_CubeBlock>\r\n            <MyObjectBuilder_CubeBlock xsi:type=\"MyObjectBuilder_CubeBlock\">\r\n              <SubtypeName>LargeBlockArmorCorner</SubtypeName>\r\n              <Min x=\"1\" y=\"0\" z=\"-1\" />\r\n              <BlockOrientation Forward=\"Down\" Up=\"Forward\" />\r\n              <BuiltBy>144115188075855895</BuiltBy>\r\n            </MyObjectBuilder_CubeBlock>\r\n            <MyObjectBuilder_CubeBlock xsi:type=\"MyObjectBuilder_CubeBlock\">\r\n              <SubtypeName>LargeBlockArmorSlope</SubtypeName>\r\n              <Min x=\"-1\" y=\"0\" z=\"0\" />\r\n              <BlockOrientation Forward=\"Forward\" Up=\"Left\" />\r\n              <BuiltBy>144115188075855895</BuiltBy>\r\n            </MyObjectBuilder_CubeBlock>\r\n            <MyObjectBuilder_CubeBlock xsi:type=\"MyObjectBuilder_CubeBlock\">\r\n              <SubtypeName>LargeHeavyBlockArmorCorner</SubtypeName>\r\n              <Min x=\"2\" y=\"0\" z=\"-1\" />\r\n              <BlockOrientation Forward=\"Down\" Up=\"Right\" />\r\n              <BuiltBy>144115188075855895</BuiltBy>\r\n            </MyObjectBuilder_CubeBlock>\r\n            <MyObjectBuilder_CubeBlock xsi:type=\"MyObjectBuilder_CubeBlock\">\r\n              <SubtypeName>LargeHeavyBlockArmorCornerInv</SubtypeName>\r\n              <Min x=\"2\" y=\"0\" z=\"0\" />\r\n              <BlockOrientation Forward=\"Down\" Up=\"Right\" />\r\n              <BuiltBy>144115188075855895</BuiltBy>\r\n            </MyObjectBuilder_CubeBlock>\r\n            <MyObjectBuilder_CubeBlock xsi:type=\"MyObjectBuilder_CubeBlock\">\r\n              <SubtypeName>LargeHeavyBlockArmorBlock</SubtypeName>\r\n              <Min x=\"3\" y=\"0\" z=\"0\" />\r\n              <BuiltBy>144115188075855895</BuiltBy>\r\n            </MyObjectBuilder_CubeBlock>\r\n            <MyObjectBuilder_CubeBlock xsi:type=\"MyObjectBuilder_CubeBlock\">\r\n              <SubtypeName>LargeHeavyBlockArmorSlope</SubtypeName>\r\n              <Min x=\"4\" y=\"0\" z=\"0\" />\r\n              <BlockOrientation Forward=\"Forward\" Up=\"Right\" />\r\n              <BuiltBy>144115188075855895</BuiltBy>\r\n            </MyObjectBuilder_CubeBlock>\r\n            <MyObjectBuilder_CubeBlock xsi:type=\"MyObjectBuilder_CubeBlock\">\r\n              <SubtypeName>LargeBlockInteriorWall</SubtypeName>\r\n              <Min x=\"3\" y=\"0\" z=\"1\" />\r\n              <BlockOrientation Forward=\"Backward\" Up=\"Up\" />\r\n              <BuiltBy>144115188075855895</BuiltBy>\r\n            </MyObjectBuilder_CubeBlock>\r\n            <MyObjectBuilder_CubeBlock xsi:type=\"MyObjectBuilder_CubeBlock\">\r\n              <SubtypeName>LargeBlockArmorRoundCorner</SubtypeName>\r\n              <Min x=\"-1\" y=\"1\" z=\"0\" />\r\n              <BuiltBy>144115188075855895</BuiltBy>\r\n            </MyObjectBuilder_CubeBlock>\r\n            <MyObjectBuilder_CubeBlock xsi:type=\"MyObjectBuilder_CubeBlock\">\r\n              <SubtypeName>LargeBlockArmorRoundSlope</SubtypeName>\r\n              <Min x=\"0\" y=\"1\" z=\"0\" />\r\n              <BuiltBy>144115188075855895</BuiltBy>\r\n            </MyObjectBuilder_CubeBlock>\r\n            <MyObjectBuilder_CubeBlock xsi:type=\"MyObjectBuilder_CubeBlock\">\r\n              <SubtypeName>LargeHeavyBlockArmorRoundSlope</SubtypeName>\r\n              <Min x=\"3\" y=\"1\" z=\"0\" />\r\n              <BuiltBy>144115188075855895</BuiltBy>\r\n            </MyObjectBuilder_CubeBlock>\r\n            <MyObjectBuilder_CubeBlock xsi:type=\"MyObjectBuilder_CubeBlock\">\r\n              <SubtypeName>LargeHeavyBlockArmorRoundCorner</SubtypeName>\r\n              <Min x=\"4\" y=\"1\" z=\"0\" />\r\n              <BlockOrientation Forward=\"Forward\" Up=\"Right\" />\r\n              <BuiltBy>144115188075855895</BuiltBy>\r\n            </MyObjectBuilder_CubeBlock>\r\n            <MyObjectBuilder_CubeBlock xsi:type=\"MyObjectBuilder_CubeBlock\">\r\n              <SubtypeName>LargeBlockArmorSlope2Base</SubtypeName>\r\n              <Min x=\"-1\" y=\"-1\" z=\"0\" />\r\n              <BlockOrientation Forward=\"Left\" Up=\"Backward\" />\r\n              <BuiltBy>144115188075855895</BuiltBy>\r\n            </MyObjectBuilder_CubeBlock>\r\n            <MyObjectBuilder_CubeBlock xsi:type=\"MyObjectBuilder_CubeBlock\">\r\n              <SubtypeName>LargeBlockArmorSlope2Tip</SubtypeName>\r\n              <Min x=\"0\" y=\"-1\" z=\"0\" />\r\n              <BlockOrientation Forward=\"Left\" Up=\"Backward\" />\r\n              <BuiltBy>144115188075855895</BuiltBy>\r\n            </MyObjectBuilder_CubeBlock>\r\n            <MyObjectBuilder_CubeBlock xsi:type=\"MyObjectBuilder_CubeBlock\">\r\n              <SubtypeName>LargeHeavyBlockArmorSlope2Base</SubtypeName>\r\n              <Min x=\"4\" y=\"-1\" z=\"0\" />\r\n              <BlockOrientation Forward=\"Right\" Up=\"Backward\" />\r\n              <BuiltBy>144115188075855895</BuiltBy>\r\n            </MyObjectBuilder_CubeBlock>\r\n            <MyObjectBuilder_CubeBlock xsi:type=\"MyObjectBuilder_CubeBlock\">\r\n              <SubtypeName>LargeHeavyBlockArmorSlope2Tip</SubtypeName>\r\n              <Min x=\"3\" y=\"-1\" z=\"0\" />\r\n              <BlockOrientation Forward=\"Right\" Up=\"Backward\" />\r\n              <BuiltBy>144115188075855895</BuiltBy>\r\n            </MyObjectBuilder_CubeBlock>\r\n            <MyObjectBuilder_CubeBlock xsi:type=\"MyObjectBuilder_CubeBlock\">\r\n              <SubtypeName>LargeBlockArmorCorner2Tip</SubtypeName>\r\n              <Min x=\"1\" y=\"-1\" z=\"0\" />\r\n              <BlockOrientation Forward=\"Forward\" Up=\"Left\" />\r\n              <BuiltBy>144115188075855895</BuiltBy>\r\n            </MyObjectBuilder_CubeBlock>\r\n            <MyObjectBuilder_CubeBlock xsi:type=\"MyObjectBuilder_CubeBlock\">\r\n              <SubtypeName>LargeBlockArmorCorner2Base</SubtypeName>\r\n              <Min x=\"1\" y=\"-1\" z=\"-1\" />\r\n              <BlockOrientation Forward=\"Up\" Up=\"Left\" />\r\n              <BuiltBy>144115188075855895</BuiltBy>\r\n            </MyObjectBuilder_CubeBlock>\r\n            <MyObjectBuilder_CubeBlock xsi:type=\"MyObjectBuilder_CubeBlock\">\r\n              <SubtypeName>LargeHeavyBlockArmorCorner2Base</SubtypeName>\r\n              <Min x=\"2\" y=\"-1\" z=\"-1\" />\r\n              <BlockOrientation Forward=\"Left\" Up=\"Down\" />\r\n              <BuiltBy>144115188075855895</BuiltBy>\r\n            </MyObjectBuilder_CubeBlock>\r\n            <MyObjectBuilder_CubeBlock xsi:type=\"MyObjectBuilder_CubeBlock\">\r\n              <SubtypeName>LargeHeavyBlockArmorCorner2Tip</SubtypeName>\r\n              <Min x=\"2\" y=\"-1\" z=\"0\" />\r\n              <BlockOrientation Forward=\"Forward\" Up=\"Down\" />\r\n              <BuiltBy>144115188075855895</BuiltBy>\r\n            </MyObjectBuilder_CubeBlock>\r\n            <MyObjectBuilder_CubeBlock xsi:type=\"MyObjectBuilder_CubeBlock\">\r\n              <SubtypeName>LargeBlockArmorInvCorner2Tip</SubtypeName>\r\n              <Min x=\"1\" y=\"1\" z=\"0\" />\r\n              <BlockOrientation Forward=\"Forward\" Up=\"Left\" />\r\n              <BuiltBy>144115188075855895</BuiltBy>\r\n            </MyObjectBuilder_CubeBlock>\r\n            <MyObjectBuilder_CubeBlock xsi:type=\"MyObjectBuilder_CubeBlock\">\r\n              <SubtypeName>LargeBlockArmorInvCorner2Base</SubtypeName>\r\n              <Min x=\"1\" y=\"1\" z=\"1\" />\r\n              <BlockOrientation Forward=\"Forward\" Up=\"Left\" />\r\n              <BuiltBy>144115188075855895</BuiltBy>\r\n            </MyObjectBuilder_CubeBlock>\r\n            <MyObjectBuilder_CubeBlock xsi:type=\"MyObjectBuilder_CubeBlock\">\r\n              <SubtypeName>LargeHeavyBlockArmorInvCorner2Tip</SubtypeName>\r\n              <Min x=\"2\" y=\"1\" z=\"0\" />\r\n              <BlockOrientation Forward=\"Forward\" Up=\"Down\" />\r\n              <BuiltBy>144115188075855895</BuiltBy>\r\n            </MyObjectBuilder_CubeBlock>\r\n            <MyObjectBuilder_CubeBlock xsi:type=\"MyObjectBuilder_CubeBlock\">\r\n              <SubtypeName>LargeHeavyBlockArmorInvCorner2Base</SubtypeName>\r\n              <Min x=\"2\" y=\"1\" z=\"1\" />\r\n              <BlockOrientation Forward=\"Forward\" Up=\"Down\" />\r\n              <BuiltBy>144115188075855895</BuiltBy>\r\n            </MyObjectBuilder_CubeBlock>\r\n            <MyObjectBuilder_CubeBlock xsi:type=\"MyObjectBuilder_Cockpit\">\r\n              <SubtypeName>LargeBlockCockpit</SubtypeName>\r\n              <EntityId>138161136200815754</EntityId>\r\n              <Min x=\"0\" y=\"0\" z=\"1\" />\r\n              <BlockOrientation Forward=\"Down\" Up=\"Backward\" />\r\n              <Owner>144115188075855895</Owner>\r\n              <BuiltBy>144115188075855895</BuiltBy>\r\n              <ShareMode>Faction</ShareMode>\r\n              <ComponentContainer>\r\n                <Components>\r\n                  <ComponentData>\r\n                    <TypeId>MyInventoryBase</TypeId>\r\n                    <Component xsi:type=\"MyObjectBuilder_Inventory\">\r\n                      <Items />\r\n                      <nextItemId>0</nextItemId>\r\n                      <Volume>1</Volume>\r\n                      <Mass>9223372036854.775807</Mass>\r\n                      <MaxItemCount>2147483647</MaxItemCount>\r\n                      <Size xsi:nil=\"true\" />\r\n                      <InventoryFlags>CanReceive CanSend</InventoryFlags>\r\n                      <RemoveEntityOnEmpty>false</RemoveEntityOnEmpty>\r\n                    </Component>\r\n                  </ComponentData>\r\n                </Components>\r\n              </ComponentContainer>\r\n              <ShowOnHUD>false</ShowOnHUD>\r\n              <ShowInTerminal>true</ShowInTerminal>\r\n              <ShowInToolbarConfig>true</ShowInToolbarConfig>\r\n              <ShowInInventory>true</ShowInInventory>\r\n              <UseSingleWeaponMode>false</UseSingleWeaponMode>\r\n              <ControlWheels>true</ControlWheels>\r\n              <Toolbar>\r\n                <ToolbarType>Character</ToolbarType>\r\n                <SelectedSlot xsi:nil=\"true\" />\r\n                <Slots />\r\n              </Toolbar>\r\n              <SelectedGunId xsi:nil=\"true\" />\r\n              <IsMainCockpit>false</IsMainCockpit>\r\n              <HorizonIndicatorEnabled>true</HorizonIndicatorEnabled>\r\n              <BuildToolbar>\r\n                <ToolbarType>Character</ToolbarType>\r\n                <SelectedSlot xsi:nil=\"true\" />\r\n                <Slots />\r\n              </BuildToolbar>\r\n              <PilotRelativeWorld xsi:nil=\"true\" />\r\n              <PilotGunDefinition xsi:nil=\"true\" />\r\n              <IsInFirstPersonView>true</IsInFirstPersonView>\r\n              <OxygenLevel>0</OxygenLevel>\r\n            </MyObjectBuilder_CubeBlock>\r\n            <MyObjectBuilder_CubeBlock xsi:type=\"MyObjectBuilder_Cockpit\">\r\n              <SubtypeName>LargeBlockCockpitSeat</SubtypeName>\r\n              <EntityId>104690198560272741</EntityId>\r\n              <Min x=\"1\" y=\"0\" z=\"1\" />\r\n              <BlockOrientation Forward=\"Forward\" Up=\"Down\" />\r\n              <Owner>144115188075855895</Owner>\r\n              <BuiltBy>144115188075855895</BuiltBy>\r\n              <ShareMode>Faction</ShareMode>\r\n              <ComponentContainer>\r\n                <Components>\r\n                  <ComponentData>\r\n                    <TypeId>MyInventoryBase</TypeId>\r\n                    <Component xsi:type=\"MyObjectBuilder_Inventory\">\r\n                      <Items />\r\n                      <nextItemId>0</nextItemId>\r\n                      <Volume>1</Volume>\r\n                      <Mass>9223372036854.775807</Mass>\r\n                      <MaxItemCount>2147483647</MaxItemCount>\r\n                      <Size xsi:nil=\"true\" />\r\n                      <InventoryFlags>CanReceive CanSend</InventoryFlags>\r\n                      <RemoveEntityOnEmpty>false</RemoveEntityOnEmpty>\r\n                    </Component>\r\n                  </ComponentData>\r\n                </Components>\r\n              </ComponentContainer>\r\n              <ShowOnHUD>false</ShowOnHUD>\r\n              <ShowInTerminal>true</ShowInTerminal>\r\n              <ShowInToolbarConfig>true</ShowInToolbarConfig>\r\n              <ShowInInventory>true</ShowInInventory>\r\n              <UseSingleWeaponMode>false</UseSingleWeaponMode>\r\n              <ControlWheels>true</ControlWheels>\r\n              <Toolbar>\r\n                <ToolbarType>Character</ToolbarType>\r\n                <SelectedSlot xsi:nil=\"true\" />\r\n                <Slots />\r\n              </Toolbar>\r\n              <SelectedGunId xsi:nil=\"true\" />\r\n              <IsMainCockpit>false</IsMainCockpit>\r\n              <HorizonIndicatorEnabled>true</HorizonIndicatorEnabled>\r\n              <BuildToolbar>\r\n                <ToolbarType>Character</ToolbarType>\r\n                <SelectedSlot xsi:nil=\"true\" />\r\n                <Slots />\r\n              </BuildToolbar>\r\n              <PilotRelativeWorld xsi:nil=\"true\" />\r\n              <PilotGunDefinition xsi:nil=\"true\" />\r\n              <IsInFirstPersonView>true</IsInFirstPersonView>\r\n              <OxygenLevel>0</OxygenLevel>\r\n            </MyObjectBuilder_CubeBlock>\r\n            <MyObjectBuilder_CubeBlock xsi:type=\"MyObjectBuilder_RemoteControl\">\r\n              <SubtypeName>LargeBlockRemoteControl</SubtypeName>\r\n              <EntityId>80605021560057561</EntityId>\r\n              <Min x=\"2\" y=\"0\" z=\"1\" />\r\n              <BlockOrientation Forward=\"Down\" Up=\"Forward\" />\r\n              <Owner>144115188075855895</Owner>\r\n              <BuiltBy>144115188075855895</BuiltBy>\r\n              <ShareMode>Faction</ShareMode>\r\n              <ShowOnHUD>false</ShowOnHUD>\r\n              <ShowInTerminal>true</ShowInTerminal>\r\n              <ShowInToolbarConfig>true</ShowInToolbarConfig>\r\n              <ShowInInventory>true</ShowInInventory>\r\n              <UseSingleWeaponMode>false</UseSingleWeaponMode>\r\n              <ControlWheels>true</ControlWheels>\r\n              <Toolbar>\r\n                <ToolbarType>Character</ToolbarType>\r\n                <SelectedSlot xsi:nil=\"true\" />\r\n                <Slots />\r\n              </Toolbar>\r\n              <SelectedGunId xsi:nil=\"true\" />\r\n              <IsMainCockpit>false</IsMainCockpit>\r\n              <HorizonIndicatorEnabled>true</HorizonIndicatorEnabled>\r\n              <BuildToolbar>\r\n                <ToolbarType>Character</ToolbarType>\r\n                <SelectedSlot xsi:nil=\"true\" />\r\n                <Slots />\r\n              </BuildToolbar>\r\n              <PreviousControlledEntityId xsi:nil=\"true\" />\r\n              <AutoPilotEnabled>false</AutoPilotEnabled>\r\n              <FlightMode>0</FlightMode>\r\n              <BindedCamera>0</BindedCamera>\r\n              <CurrentWaypointIndex>-1</CurrentWaypointIndex>\r\n              <Waypoints />\r\n              <Direction>0</Direction>\r\n              <DockingModeEnabled>false</DockingModeEnabled>\r\n              <CollisionAvoidance>false</CollisionAvoidance>\r\n              <Coords />\r\n              <Names />\r\n              <WaypointThresholdDistance>0</WaypointThresholdDistance>\r\n              <IsMainRemoteControl>false</IsMainRemoteControl>\r\n            </MyObjectBuilder_CubeBlock>\r\n            <MyObjectBuilder_CubeBlock xsi:type=\"MyObjectBuilder_Cockpit\">\r\n              <SubtypeName>PassengerSeatLarge</SubtypeName>\r\n              <EntityId>111573790654933380</EntityId>\r\n              <Min x=\"3\" y=\"-1\" z=\"1\" />\r\n              <BlockOrientation Forward=\"Backward\" Up=\"Down\" />\r\n              <BuiltBy>144115188075855895</BuiltBy>\r\n              <ComponentContainer>\r\n                <Components>\r\n                  <ComponentData>\r\n                    <TypeId>MyInventoryBase</TypeId>\r\n                    <Component xsi:type=\"MyObjectBuilder_Inventory\">\r\n                      <Items />\r\n                      <nextItemId>0</nextItemId>\r\n                      <Volume>1</Volume>\r\n                      <Mass>9223372036854.775807</Mass>\r\n                      <MaxItemCount>2147483647</MaxItemCount>\r\n                      <Size xsi:nil=\"true\" />\r\n                      <InventoryFlags>CanReceive CanSend</InventoryFlags>\r\n                      <RemoveEntityOnEmpty>false</RemoveEntityOnEmpty>\r\n                    </Component>\r\n                  </ComponentData>\r\n                </Components>\r\n              </ComponentContainer>\r\n              <ShowOnHUD>false</ShowOnHUD>\r\n              <ShowInTerminal>true</ShowInTerminal>\r\n              <ShowInToolbarConfig>true</ShowInToolbarConfig>\r\n              <ShowInInventory>true</ShowInInventory>\r\n              <UseSingleWeaponMode>false</UseSingleWeaponMode>\r\n              <ControlWheels>true</ControlWheels>\r\n              <Toolbar>\r\n                <ToolbarType>Character</ToolbarType>\r\n                <SelectedSlot xsi:nil=\"true\" />\r\n                <Slots />\r\n              </Toolbar>\r\n              <SelectedGunId xsi:nil=\"true\" />\r\n              <IsMainCockpit>false</IsMainCockpit>\r\n              <HorizonIndicatorEnabled>true</HorizonIndicatorEnabled>\r\n              <BuildToolbar>\r\n                <ToolbarType>Character</ToolbarType>\r\n                <SelectedSlot xsi:nil=\"true\" />\r\n                <Slots />\r\n              </BuildToolbar>\r\n              <PilotRelativeWorld xsi:nil=\"true\" />\r\n              <PilotGunDefinition xsi:nil=\"true\" />\r\n              <IsInFirstPersonView>true</IsInFirstPersonView>\r\n              <OxygenLevel>0</OxygenLevel>\r\n            </MyObjectBuilder_CubeBlock>\r\n            <MyObjectBuilder_CubeBlock xsi:type=\"MyObjectBuilder_BatteryBlock\">\r\n              <SubtypeName>LargeBlockBatteryBlock</SubtypeName>\r\n              <EntityId>94196158764951791</EntityId>\r\n              <Min x=\"1\" y=\"0\" z=\"2\" />\r\n              <BlockOrientation Forward=\"Down\" Up=\"Forward\" />\r\n              <Owner>144115188075855895</Owner>\r\n              <BuiltBy>144115188075855895</BuiltBy>\r\n              <ShareMode>Faction</ShareMode>\r\n              <ShowOnHUD>false</ShowOnHUD>\r\n              <ShowInTerminal>true</ShowInTerminal>\r\n              <ShowInToolbarConfig>true</ShowInToolbarConfig>\r\n              <ShowInInventory>true</ShowInInventory>\r\n              <Enabled>true</Enabled>\r\n              <CurrentStoredPower>3</CurrentStoredPower>\r\n              <ProducerEnabled>true</ProducerEnabled>\r\n              <MaxStoredPower>0</MaxStoredPower>\r\n              <SemiautoEnabled>false</SemiautoEnabled>\r\n              <OnlyDischargeEnabled>false</OnlyDischargeEnabled>\r\n            </MyObjectBuilder_CubeBlock>\r\n            <MyObjectBuilder_CubeBlock xsi:type=\"MyObjectBuilder_SolarPanel\">\r\n              <SubtypeName>LargeBlockSolarPanel</SubtypeName>\r\n              <EntityId>109004102274585980</EntityId>\r\n              <Min x=\"-5\" y=\"-1\" z=\"0\" />\r\n              <Owner>144115188075855895</Owner>\r\n              <BuiltBy>144115188075855895</BuiltBy>\r\n              <ShareMode>Faction</ShareMode>\r\n              <ShowOnHUD>false</ShowOnHUD>\r\n              <ShowInTerminal>true</ShowInTerminal>\r\n              <ShowInToolbarConfig>true</ShowInToolbarConfig>\r\n              <ShowInInventory>true</ShowInInventory>\r\n              <Enabled>true</Enabled>\r\n            </MyObjectBuilder_CubeBlock>\r\n            <MyObjectBuilder_CubeBlock xsi:type=\"MyObjectBuilder_Reactor\">\r\n              <SubtypeName>LargeBlockSmallGenerator</SubtypeName>\r\n              <EntityId>111431274083756550</EntityId>\r\n              <Min x=\"5\" y=\"-1\" z=\"0\" />\r\n              <BlockOrientation Forward=\"Up\" Up=\"Right\" />\r\n              <Owner>144115188075855895</Owner>\r\n              <BuiltBy>144115188075855895</BuiltBy>\r\n              <ShareMode>Faction</ShareMode>\r\n              <ComponentContainer>\r\n                <Components>\r\n                  <ComponentData>\r\n                    <TypeId>MyInventoryBase</TypeId>\r\n                    <Component xsi:type=\"MyObjectBuilder_Inventory\">\r\n                      <Items />\r\n                      <nextItemId>0</nextItemId>\r\n                      <Volume>1</Volume>\r\n                      <Mass>9223372036854.775807</Mass>\r\n                      <MaxItemCount>2147483647</MaxItemCount>\r\n                      <Size xsi:nil=\"true\" />\r\n                      <InventoryFlags>CanReceive</InventoryFlags>\r\n                      <RemoveEntityOnEmpty>false</RemoveEntityOnEmpty>\r\n                    </Component>\r\n                  </ComponentData>\r\n                </Components>\r\n              </ComponentContainer>\r\n              <ShowOnHUD>false</ShowOnHUD>\r\n              <ShowInTerminal>true</ShowInTerminal>\r\n              <ShowInToolbarConfig>true</ShowInToolbarConfig>\r\n              <ShowInInventory>true</ShowInInventory>\r\n              <Enabled>true</Enabled>\r\n              <Inventory>\r\n                <Items />\r\n                <nextItemId>0</nextItemId>\r\n                <Volume>1</Volume>\r\n                <Mass>9223372036854.775807</Mass>\r\n                <MaxItemCount>2147483647</MaxItemCount>\r\n                <Size xsi:nil=\"true\" />\r\n                <InventoryFlags>CanReceive</InventoryFlags>\r\n                <RemoveEntityOnEmpty>false</RemoveEntityOnEmpty>\r\n              </Inventory>\r\n            </MyObjectBuilder_CubeBlock>\r\n            <MyObjectBuilder_CubeBlock xsi:type=\"MyObjectBuilder_Reactor\">\r\n              <SubtypeName>LargeBlockLargeGenerator</SubtypeName>\r\n              <EntityId>75306362179263019</EntityId>\r\n              <Min x=\"6\" y=\"-2\" z=\"-1\" />\r\n              <Owner>144115188075855895</Owner>\r\n              <BuiltBy>144115188075855895</BuiltBy>\r\n              <ShareMode>Faction</ShareMode>\r\n              <ComponentContainer>\r\n                <Components>\r\n                  <ComponentData>\r\n                    <TypeId>MyInventoryBase</TypeId>\r\n                    <Component xsi:type=\"MyObjectBuilder_Inventory\">\r\n                      <Items />\r\n                      <nextItemId>0</nextItemId>\r\n                      <Volume>8</Volume>\r\n                      <Mass>9223372036854.775807</Mass>\r\n                      <MaxItemCount>2147483647</MaxItemCount>\r\n                      <Size xsi:nil=\"true\" />\r\n                      <InventoryFlags>CanReceive</InventoryFlags>\r\n                      <RemoveEntityOnEmpty>false</RemoveEntityOnEmpty>\r\n                    </Component>\r\n                  </ComponentData>\r\n                </Components>\r\n              </ComponentContainer>\r\n              <ShowOnHUD>false</ShowOnHUD>\r\n              <ShowInTerminal>true</ShowInTerminal>\r\n              <ShowInToolbarConfig>true</ShowInToolbarConfig>\r\n              <ShowInInventory>true</ShowInInventory>\r\n              <Enabled>true</Enabled>\r\n              <Inventory>\r\n                <Items />\r\n                <nextItemId>0</nextItemId>\r\n                <Volume>8</Volume>\r\n                <Mass>9223372036854.775807</Mass>\r\n                <MaxItemCount>2147483647</MaxItemCount>\r\n                <Size xsi:nil=\"true\" />\r\n                <InventoryFlags>CanReceive</InventoryFlags>\r\n                <RemoveEntityOnEmpty>false</RemoveEntityOnEmpty>\r\n              </Inventory>\r\n            </MyObjectBuilder_CubeBlock>\r\n            <MyObjectBuilder_CubeBlock xsi:type=\"MyObjectBuilder_MedicalRoom\">\r\n              <SubtypeName>LargeMedicalRoom</SubtypeName>\r\n              <EntityId>131365224972937667</EntityId>\r\n              <Min x=\"2\" y=\"0\" z=\"2\" />\r\n              <BlockOrientation Forward=\"Up\" Up=\"Backward\" />\r\n              <Owner>144115188075855895</Owner>\r\n              <BuiltBy>144115188075855895</BuiltBy>\r\n              <ShareMode>Faction</ShareMode>\r\n              <ComponentContainer>\r\n                <Components>\r\n                  <ComponentData>\r\n                    <TypeId>MyRespawnComponent</TypeId>\r\n                    <Component xsi:type=\"MyObjectBuilder_RespawnComponent\" />\r\n                  </ComponentData>\r\n                </Components>\r\n              </ComponentContainer>\r\n              <ShowOnHUD>false</ShowOnHUD>\r\n              <ShowInTerminal>true</ShowInTerminal>\r\n              <ShowInToolbarConfig>true</ShowInToolbarConfig>\r\n              <ShowInInventory>true</ShowInInventory>\r\n              <Enabled>true</Enabled>\r\n              <SteamUserId>0</SteamUserId>\r\n              <IdleSound>ArcBlockMedical</IdleSound>\r\n              <ProgressSound>ArcBlockMedicalProgress</ProgressSound>\r\n              <TakeOwnership>false</TakeOwnership>\r\n              <SetFaction>false</SetFaction>\r\n            </MyObjectBuilder_CubeBlock>\r\n            <MyObjectBuilder_CubeBlock xsi:type=\"MyObjectBuilder_CryoChamber\">\r\n              <SubtypeName>LargeBlockCryoChamber</SubtypeName>\r\n              <EntityId>103920215591792633</EntityId>\r\n              <Min x=\"0\" y=\"0\" z=\"2\" />\r\n              <BlockOrientation Forward=\"Down\" Up=\"Backward\" />\r\n              <Owner>144115188075855895</Owner>\r\n              <BuiltBy>144115188075855895</BuiltBy>\r\n              <ShareMode>Faction</ShareMode>\r\n              <ComponentContainer>\r\n                <Components>\r\n                  <ComponentData>\r\n                    <TypeId>MyInventoryBase</TypeId>\r\n                    <Component xsi:type=\"MyObjectBuilder_Inventory\">\r\n                      <Items />\r\n                      <nextItemId>0</nextItemId>\r\n                      <Volume>1</Volume>\r\n                      <Mass>9223372036854.775807</Mass>\r\n                      <MaxItemCount>2147483647</MaxItemCount>\r\n                      <Size xsi:nil=\"true\" />\r\n                      <InventoryFlags>CanReceive CanSend</InventoryFlags>\r\n                      <RemoveEntityOnEmpty>false</RemoveEntityOnEmpty>\r\n                    </Component>\r\n                  </ComponentData>\r\n                </Components>\r\n              </ComponentContainer>\r\n              <CustomName>Cryo Chamber 2</CustomName>\r\n              <ShowOnHUD>false</ShowOnHUD>\r\n              <ShowInTerminal>true</ShowInTerminal>\r\n              <ShowInToolbarConfig>true</ShowInToolbarConfig>\r\n              <ShowInInventory>true</ShowInInventory>\r\n              <UseSingleWeaponMode>false</UseSingleWeaponMode>\r\n              <ControlWheels>true</ControlWheels>\r\n              <Toolbar>\r\n                <ToolbarType>Character</ToolbarType>\r\n                <SelectedSlot xsi:nil=\"true\" />\r\n                <Slots />\r\n              </Toolbar>\r\n              <SelectedGunId xsi:nil=\"true\" />\r\n              <IsMainCockpit>false</IsMainCockpit>\r\n              <HorizonIndicatorEnabled>false</HorizonIndicatorEnabled>\r\n              <BuildToolbar>\r\n                <ToolbarType>Character</ToolbarType>\r\n                <SelectedSlot xsi:nil=\"true\" />\r\n                <Slots />\r\n              </BuildToolbar>\r\n              <PilotRelativeWorld xsi:nil=\"true\" />\r\n              <PilotGunDefinition xsi:nil=\"true\" />\r\n              <IsInFirstPersonView>true</IsInFirstPersonView>\r\n              <OxygenLevel>0</OxygenLevel>\r\n              <SteamId xsi:nil=\"true\" />\r\n              <SerialId xsi:nil=\"true\" />\r\n            </MyObjectBuilder_CubeBlock>\r\n            <MyObjectBuilder_CubeBlock xsi:type=\"MyObjectBuilder_Thrust\">\r\n              <SubtypeName>LargeBlockSmallHydrogenThrust</SubtypeName>\r\n              <EntityId>80846874712601939</EntityId>\r\n              <Min x=\"4\" y=\"-2\" z=\"0\" />\r\n              <BlockOrientation Forward=\"Backward\" Up=\"Right\" />\r\n              <BuiltBy>144115188075855895</BuiltBy>\r\n              <ShowOnHUD>false</ShowOnHUD>\r\n              <ShowInTerminal>true</ShowInTerminal>\r\n              <ShowInToolbarConfig>true</ShowInToolbarConfig>\r\n              <ShowInInventory>true</ShowInInventory>\r\n              <Enabled>true</Enabled>\r\n            </MyObjectBuilder_CubeBlock>\r\n            <MyObjectBuilder_CubeBlock xsi:type=\"MyObjectBuilder_Thrust\">\r\n              <SubtypeName>LargeBlockLargeHydrogenThrust</SubtypeName>\r\n              <EntityId>78167866626169388</EntityId>\r\n              <Min x=\"6\" y=\"1\" z=\"0\" />\r\n              <BlockOrientation Forward=\"Backward\" Up=\"Up\" />\r\n              <BuiltBy>144115188075855895</BuiltBy>\r\n              <ShowOnHUD>false</ShowOnHUD>\r\n              <ShowInTerminal>true</ShowInTerminal>\r\n              <ShowInToolbarConfig>true</ShowInToolbarConfig>\r\n              <ShowInInventory>true</ShowInInventory>\r\n              <Enabled>true</Enabled>\r\n            </MyObjectBuilder_CubeBlock>\r\n            <MyObjectBuilder_CubeBlock xsi:type=\"MyObjectBuilder_Thrust\">\r\n              <SubtypeName>LargeBlockSmallAtmosphericThrust</SubtypeName>\r\n              <EntityId>74463982398866985</EntityId>\r\n              <Min x=\"3\" y=\"-2\" z=\"-1\" />\r\n              <BlockOrientation Forward=\"Backward\" Up=\"Up\" />\r\n              <BuiltBy>144115188075855895</BuiltBy>\r\n              <ShowOnHUD>false</ShowOnHUD>\r\n              <ShowInTerminal>true</ShowInTerminal>\r\n              <ShowInToolbarConfig>true</ShowInToolbarConfig>\r\n              <ShowInInventory>true</ShowInInventory>\r\n              <Enabled>true</Enabled>\r\n            </MyObjectBuilder_CubeBlock>\r\n            <MyObjectBuilder_CubeBlock xsi:type=\"MyObjectBuilder_Thrust\">\r\n              <SubtypeName>LargeBlockLargeAtmosphericThrust</SubtypeName>\r\n              <EntityId>89166395987442501</EntityId>\r\n              <Min x=\"9\" y=\"-2\" z=\"-2\" />\r\n              <BlockOrientation Forward=\"Backward\" Up=\"Left\" />\r\n              <BuiltBy>144115188075855895</BuiltBy>\r\n              <ShowOnHUD>false</ShowOnHUD>\r\n              <ShowInTerminal>true</ShowInTerminal>\r\n              <ShowInToolbarConfig>true</ShowInToolbarConfig>\r\n              <ShowInInventory>true</ShowInInventory>\r\n              <Enabled>true</Enabled>\r\n            </MyObjectBuilder_CubeBlock>\r\n            <MyObjectBuilder_CubeBlock xsi:type=\"MyObjectBuilder_Thrust\">\r\n              <SubtypeName>LargeBlockSmallThrust</SubtypeName>\r\n              <EntityId>82786849111893898</EntityId>\r\n              <Min x=\"-1\" y=\"-2\" z=\"0\" />\r\n              <BlockOrientation Forward=\"Backward\" Up=\"Down\" />\r\n              <BuiltBy>144115188075855895</BuiltBy>\r\n              <ShowOnHUD>false</ShowOnHUD>\r\n              <ShowInTerminal>true</ShowInTerminal>\r\n              <ShowInToolbarConfig>true</ShowInToolbarConfig>\r\n              <ShowInInventory>true</ShowInInventory>\r\n              <Enabled>true</Enabled>\r\n            </MyObjectBuilder_CubeBlock>\r\n            <MyObjectBuilder_CubeBlock xsi:type=\"MyObjectBuilder_Thrust\">\r\n              <SubtypeName>LargeBlockLargeThrust</SubtypeName>\r\n              <EntityId>72742379531119797</EntityId>\r\n              <Min x=\"6\" y=\"-1\" z=\"2\" />\r\n              <BlockOrientation Forward=\"Backward\" Up=\"Up\" />\r\n              <BuiltBy>144115188075855895</BuiltBy>\r\n              <ShowOnHUD>false</ShowOnHUD>\r\n              <ShowInTerminal>true</ShowInTerminal>\r\n              <ShowInToolbarConfig>true</ShowInToolbarConfig>\r\n              <ShowInInventory>true</ShowInInventory>\r\n              <Enabled>true</Enabled>\r\n            </MyObjectBuilder_CubeBlock>\r\n            <MyObjectBuilder_CubeBlock xsi:type=\"MyObjectBuilder_Wheel\">\r\n              <SubtypeName>Wheel5x5</SubtypeName>\r\n              <EntityId>118571239870867939</EntityId>\r\n              <Min x=\"-7\" y=\"-3\" z=\"-2\" />\r\n              <BlockOrientation Forward=\"Down\" Up=\"Forward\" />\r\n              <BuiltBy>144115188075855895</BuiltBy>\r\n            </MyObjectBuilder_CubeBlock>\r\n            <MyObjectBuilder_CubeBlock xsi:type=\"MyObjectBuilder_Wheel\">\r\n              <SubtypeName>Wheel1x1</SubtypeName>\r\n              <EntityId>95336323840204246</EntityId>\r\n              <Min x=\"0\" y=\"-2\" z=\"0\" />\r\n              <BlockOrientation Forward=\"Left\" Up=\"Down\" />\r\n              <BuiltBy>144115188075855895</BuiltBy>\r\n            </MyObjectBuilder_CubeBlock>\r\n            <MyObjectBuilder_CubeBlock xsi:type=\"MyObjectBuilder_Wheel\">\r\n              <SubtypeName>Wheel3x3</SubtypeName>\r\n              <EntityId>96227120965723093</EntityId>\r\n              <Min x=\"-1\" y=\"-3\" z=\"-1\" />\r\n              <BlockOrientation Forward=\"Forward\" Up=\"Down\" />\r\n              <BuiltBy>144115188075855895</BuiltBy>\r\n            </MyObjectBuilder_CubeBlock>\r\n            <MyObjectBuilder_CubeBlock xsi:type=\"MyObjectBuilder_Gyro\">\r\n              <SubtypeName>LargeBlockGyro</SubtypeName>\r\n              <EntityId>135002331150472060</EntityId>\r\n              <Min x=\"1\" y=\"-1\" z=\"2\" />\r\n              <BlockOrientation Forward=\"Left\" Up=\"Down\" />\r\n              <Owner>144115188075855895</Owner>\r\n              <BuiltBy>144115188075855895</BuiltBy>\r\n              <ShareMode>Faction</ShareMode>\r\n              <ShowOnHUD>false</ShowOnHUD>\r\n              <ShowInTerminal>true</ShowInTerminal>\r\n              <ShowInToolbarConfig>true</ShowInToolbarConfig>\r\n              <ShowInInventory>true</ShowInInventory>\r\n              <Enabled>true</Enabled>\r\n            </MyObjectBuilder_CubeBlock>\r\n            <MyObjectBuilder_CubeBlock xsi:type=\"MyObjectBuilder_OreDetector\">\r\n              <SubtypeName>LargeOreDetector</SubtypeName>\r\n              <EntityId>116976909388668016</EntityId>\r\n              <Min x=\"3\" y=\"-3\" z=\"0\" />\r\n              <BlockOrientation Forward=\"Backward\" Up=\"Down\" />\r\n              <Owner>144115188075855895</Owner>\r\n              <BuiltBy>144115188075855895</BuiltBy>\r\n              <ShareMode>Faction</ShareMode>\r\n              <ShowOnHUD>false</ShowOnHUD>\r\n              <ShowInTerminal>true</ShowInTerminal>\r\n              <ShowInToolbarConfig>true</ShowInToolbarConfig>\r\n              <ShowInInventory>true</ShowInInventory>\r\n              <Enabled>true</Enabled>\r\n              <DetectionRadius>150</DetectionRadius>\r\n              <BroadcastUsingAntennas>true</BroadcastUsingAntennas>\r\n            </MyObjectBuilder_CubeBlock>\r\n            <MyObjectBuilder_CubeBlock xsi:type=\"MyObjectBuilder_RadioAntenna\">\r\n              <SubtypeName>LargeBlockRadioAntenna</SubtypeName>\r\n              <EntityId>97852602255182328</EntityId>\r\n              <Min x=\"2\" y=\"0\" z=\"3\" />\r\n              <BlockOrientation Forward=\"Left\" Up=\"Backward\" />\r\n              <Owner>144115188075855895</Owner>\r\n              <BuiltBy>144115188075855895</BuiltBy>\r\n              <ShareMode>Faction</ShareMode>\r\n              <ShowOnHUD>false</ShowOnHUD>\r\n              <ShowInTerminal>true</ShowInTerminal>\r\n              <ShowInToolbarConfig>true</ShowInToolbarConfig>\r\n              <ShowInInventory>true</ShowInInventory>\r\n              <Enabled>true</Enabled>\r\n              <BroadcastRadius>10000</BroadcastRadius>\r\n              <ShowShipName>false</ShowShipName>\r\n              <EnableBroadcasting>true</EnableBroadcasting>\r\n              <AttachedPB>0</AttachedPB>\r\n              <IgnoreAllied>false</IgnoreAllied>\r\n              <IgnoreOther>true</IgnoreOther>\r\n            </MyObjectBuilder_CubeBlock>\r\n            <MyObjectBuilder_CubeBlock xsi:type=\"MyObjectBuilder_Beacon\">\r\n              <SubtypeName>LargeBlockBeacon</SubtypeName>\r\n              <EntityId>73560590039622975</EntityId>\r\n              <Min x=\"1\" y=\"2\" z=\"0\" />\r\n              <BlockOrientation Forward=\"Forward\" Up=\"Right\" />\r\n              <Owner>144115188075855895</Owner>\r\n              <BuiltBy>144115188075855895</BuiltBy>\r\n              <ShareMode>Faction</ShareMode>\r\n              <ShowOnHUD>false</ShowOnHUD>\r\n              <ShowInTerminal>true</ShowInTerminal>\r\n              <ShowInToolbarConfig>true</ShowInToolbarConfig>\r\n              <ShowInInventory>true</ShowInInventory>\r\n              <Enabled>true</Enabled>\r\n              <BroadcastRadius>10000</BroadcastRadius>\r\n            </MyObjectBuilder_CubeBlock>\r\n            <MyObjectBuilder_CubeBlock xsi:type=\"MyObjectBuilder_LaserAntenna\">\r\n              <SubtypeName>LargeBlockLaserAntenna</SubtypeName>\r\n              <EntityId>76680238033756898</EntityId>\r\n              <Min x=\"3\" y=\"-4\" z=\"0\" />\r\n              <BlockOrientation Forward=\"Down\" Up=\"Backward\" />\r\n              <Owner>144115188075855895</Owner>\r\n              <BuiltBy>144115188075855895</BuiltBy>\r\n              <ShareMode>Faction</ShareMode>\r\n              <ShowOnHUD>false</ShowOnHUD>\r\n              <ShowInTerminal>true</ShowInTerminal>\r\n              <ShowInToolbarConfig>true</ShowInToolbarConfig>\r\n              <ShowInInventory>true</ShowInInventory>\r\n              <Enabled>true</Enabled>\r\n              <State>0</State>\r\n              <targetEntityId xsi:nil=\"true\" />\r\n              <gpsTarget xsi:nil=\"true\" />\r\n              <gpsTargetName />\r\n              <LastTargetPosition>\r\n                <X>0</X>\r\n                <Y>0</Y>\r\n                <Z>0</Z>\r\n              </LastTargetPosition>\r\n              <HeadRotation>\r\n                <X>0</X>\r\n                <Y>0</Y>\r\n              </HeadRotation>\r\n              <LastKnownTargetName />\r\n              <AttachedPB>0</AttachedPB>\r\n            </MyObjectBuilder_CubeBlock>\r\n            <MyObjectBuilder_CubeBlock xsi:type=\"MyObjectBuilder_Refinery\">\r\n              <SubtypeName>LargeRefinery</SubtypeName>\r\n              <EntityId>104805934187317544</EntityId>\r\n              <Min x=\"1\" y=\"3\" z=\"0\" />\r\n              <BlockOrientation Forward=\"Backward\" Up=\"Up\" />\r\n              <Owner>144115188075855895</Owner>\r\n              <BuiltBy>144115188075855895</BuiltBy>\r\n              <ShareMode>Faction</ShareMode>\r\n              <ComponentContainer>\r\n                <Components>\r\n                  <ComponentData>\r\n                    <TypeId>MyInventoryBase</TypeId>\r\n                    <Component xsi:type=\"MyObjectBuilder_InventoryAggregate\">\r\n                      <InventoryId>Inventory</InventoryId>\r\n                      <Inventories>\r\n                        <MyObjectBuilder_InventoryBase xsi:type=\"MyObjectBuilder_Inventory\">\r\n                          <Items />\r\n                          <nextItemId>0</nextItemId>\r\n                          <Volume>7.5</Volume>\r\n                          <Mass>9223372036854.775807</Mass>\r\n                          <MaxItemCount>2147483647</MaxItemCount>\r\n                          <Size xsi:nil=\"true\" />\r\n                          <InventoryFlags>CanReceive</InventoryFlags>\r\n                          <RemoveEntityOnEmpty>false</RemoveEntityOnEmpty>\r\n                        </MyObjectBuilder_InventoryBase>\r\n                        <MyObjectBuilder_InventoryBase xsi:type=\"MyObjectBuilder_Inventory\">\r\n                          <Items />\r\n                          <nextItemId>0</nextItemId>\r\n                          <Volume>7.5</Volume>\r\n                          <Mass>9223372036854.775807</Mass>\r\n                          <MaxItemCount>2147483647</MaxItemCount>\r\n                          <Size xsi:nil=\"true\" />\r\n                          <InventoryFlags>CanSend</InventoryFlags>\r\n                          <RemoveEntityOnEmpty>false</RemoveEntityOnEmpty>\r\n                        </MyObjectBuilder_InventoryBase>\r\n                      </Inventories>\r\n                    </Component>\r\n                  </ComponentData>\r\n                </Components>\r\n              </ComponentContainer>\r\n              <ShowOnHUD>false</ShowOnHUD>\r\n              <ShowInTerminal>true</ShowInTerminal>\r\n              <ShowInToolbarConfig>true</ShowInToolbarConfig>\r\n              <ShowInInventory>true</ShowInInventory>\r\n              <Enabled>true</Enabled>\r\n              <InputInventory>\r\n                <Items />\r\n                <nextItemId>0</nextItemId>\r\n                <Volume>7.5</Volume>\r\n                <Mass>9223372036854.775807</Mass>\r\n                <MaxItemCount>2147483647</MaxItemCount>\r\n                <Size xsi:nil=\"true\" />\r\n                <InventoryFlags>CanReceive</InventoryFlags>\r\n                <RemoveEntityOnEmpty>false</RemoveEntityOnEmpty>\r\n              </InputInventory>\r\n              <OutputInventory>\r\n                <Items />\r\n                <nextItemId>0</nextItemId>\r\n                <Volume>7.5</Volume>\r\n                <Mass>9223372036854.775807</Mass>\r\n                <MaxItemCount>2147483647</MaxItemCount>\r\n                <Size xsi:nil=\"true\" />\r\n                <InventoryFlags>CanSend</InventoryFlags>\r\n                <RemoveEntityOnEmpty>false</RemoveEntityOnEmpty>\r\n              </OutputInventory>\r\n            </MyObjectBuilder_CubeBlock>\r\n            <MyObjectBuilder_CubeBlock xsi:type=\"MyObjectBuilder_Assembler\">\r\n              <SubtypeName>LargeAssembler</SubtypeName>\r\n              <EntityId>125760405709574572</EntityId>\r\n              <Min x=\"1\" y=\"7\" z=\"0\" />\r\n              <BlockOrientation Forward=\"Down\" Up=\"Forward\" />\r\n              <Owner>144115188075855895</Owner>\r\n              <BuiltBy>144115188075855895</BuiltBy>\r\n              <ShareMode>Faction</ShareMode>\r\n              <ComponentContainer>\r\n                <Components>\r\n                  <ComponentData>\r\n                    <TypeId>MyInventoryBase</TypeId>\r\n                    <Component xsi:type=\"MyObjectBuilder_InventoryAggregate\">\r\n                      <InventoryId>Inventory</InventoryId>\r\n                      <Inventories>\r\n                        <MyObjectBuilder_InventoryBase xsi:type=\"MyObjectBuilder_Inventory\">\r\n                          <Items />\r\n                          <nextItemId>0</nextItemId>\r\n                          <Volume>1</Volume>\r\n                          <Mass>9223372036854.775807</Mass>\r\n                          <MaxItemCount>2147483647</MaxItemCount>\r\n                          <Size xsi:nil=\"true\" />\r\n                          <InventoryFlags>CanReceive</InventoryFlags>\r\n                          <RemoveEntityOnEmpty>false</RemoveEntityOnEmpty>\r\n                        </MyObjectBuilder_InventoryBase>\r\n                        <MyObjectBuilder_InventoryBase xsi:type=\"MyObjectBuilder_Inventory\">\r\n                          <Items />\r\n                          <nextItemId>0</nextItemId>\r\n                          <Volume>1</Volume>\r\n                          <Mass>9223372036854.775807</Mass>\r\n                          <MaxItemCount>2147483647</MaxItemCount>\r\n                          <Size xsi:nil=\"true\" />\r\n                          <InventoryFlags>CanSend</InventoryFlags>\r\n                          <RemoveEntityOnEmpty>false</RemoveEntityOnEmpty>\r\n                        </MyObjectBuilder_InventoryBase>\r\n                      </Inventories>\r\n                    </Component>\r\n                  </ComponentData>\r\n                </Components>\r\n              </ComponentContainer>\r\n              <ShowOnHUD>false</ShowOnHUD>\r\n              <ShowInTerminal>true</ShowInTerminal>\r\n              <ShowInToolbarConfig>true</ShowInToolbarConfig>\r\n              <ShowInInventory>true</ShowInInventory>\r\n              <Enabled>true</Enabled>\r\n              <InputInventory>\r\n                <Items />\r\n                <nextItemId>0</nextItemId>\r\n                <Volume>1</Volume>\r\n                <Mass>9223372036854.775807</Mass>\r\n                <MaxItemCount>2147483647</MaxItemCount>\r\n                <Size xsi:nil=\"true\" />\r\n                <InventoryFlags>CanReceive</InventoryFlags>\r\n                <RemoveEntityOnEmpty>false</RemoveEntityOnEmpty>\r\n              </InputInventory>\r\n              <OutputInventory>\r\n                <Items />\r\n                <nextItemId>0</nextItemId>\r\n                <Volume>1</Volume>\r\n                <Mass>9223372036854.775807</Mass>\r\n                <MaxItemCount>2147483647</MaxItemCount>\r\n                <Size xsi:nil=\"true\" />\r\n                <InventoryFlags>CanSend</InventoryFlags>\r\n                <RemoveEntityOnEmpty>false</RemoveEntityOnEmpty>\r\n              </OutputInventory>\r\n              <CurrentProgress>0</CurrentProgress>\r\n              <DisassembleEnabled>false</DisassembleEnabled>\r\n              <RepeatAssembleEnabled>false</RepeatAssembleEnabled>\r\n              <RepeatDisassembleEnabled>false</RepeatDisassembleEnabled>\r\n              <SlaveEnabled>false</SlaveEnabled>\r\n            </MyObjectBuilder_CubeBlock>\r\n            <MyObjectBuilder_CubeBlock xsi:type=\"MyObjectBuilder_UpgradeModule\">\r\n              <SubtypeName>LargeProductivityModule</SubtypeName>\r\n              <EntityId>75342360366597111</EntityId>\r\n              <Min x=\"1\" y=\"3\" z=\"-1\" />\r\n              <BlockOrientation Forward=\"Right\" Up=\"Up\" />\r\n              <BuiltBy>144115188075855895</BuiltBy>\r\n              <ShowOnHUD>false</ShowOnHUD>\r\n              <ShowInTerminal>true</ShowInTerminal>\r\n              <ShowInToolbarConfig>true</ShowInToolbarConfig>\r\n              <ShowInInventory>true</ShowInInventory>\r\n              <Enabled>true</Enabled>\r\n            </MyObjectBuilder_CubeBlock>\r\n            <MyObjectBuilder_CubeBlock xsi:type=\"MyObjectBuilder_UpgradeModule\">\r\n              <SubtypeName>LargeEffectivenessModule</SubtypeName>\r\n              <EntityId>131555822109251253</EntityId>\r\n              <Min x=\"1\" y=\"4\" z=\"-1\" />\r\n              <BlockOrientation Forward=\"Right\" Up=\"Up\" />\r\n              <BuiltBy>144115188075855895</BuiltBy>\r\n              <ShowOnHUD>false</ShowOnHUD>\r\n              <ShowInTerminal>true</ShowInTerminal>\r\n              <ShowInToolbarConfig>true</ShowInToolbarConfig>\r\n              <ShowInInventory>true</ShowInInventory>\r\n              <Enabled>true</Enabled>\r\n            </MyObjectBuilder_CubeBlock>\r\n            <MyObjectBuilder_CubeBlock xsi:type=\"MyObjectBuilder_UpgradeModule\">\r\n              <SubtypeName>LargeEnergyModule</SubtypeName>\r\n              <EntityId>83024096805046819</EntityId>\r\n              <Min x=\"1\" y=\"5\" z=\"-1\" />\r\n              <BlockOrientation Forward=\"Right\" Up=\"Up\" />\r\n              <BuiltBy>144115188075855895</BuiltBy>\r\n              <ShowOnHUD>false</ShowOnHUD>\r\n              <ShowInTerminal>true</ShowInTerminal>\r\n              <ShowInToolbarConfig>true</ShowInToolbarConfig>\r\n              <ShowInInventory>true</ShowInInventory>\r\n              <Enabled>true</Enabled>\r\n            </MyObjectBuilder_CubeBlock>\r\n            <MyObjectBuilder_CubeBlock xsi:type=\"MyObjectBuilder_Refinery\">\r\n              <SubtypeName>Blast Furnace</SubtypeName>\r\n              <EntityId>125388366828978237</EntityId>\r\n              <Min x=\"2\" y=\"7\" z=\"0\" />\r\n              <Owner>144115188075855895</Owner>\r\n              <BuiltBy>144115188075855895</BuiltBy>\r\n              <ShareMode>Faction</ShareMode>\r\n              <ComponentContainer>\r\n                <Components>\r\n                  <ComponentData>\r\n                    <TypeId>MyInventoryBase</TypeId>\r\n                    <Component xsi:type=\"MyObjectBuilder_InventoryAggregate\">\r\n                      <InventoryId>Inventory</InventoryId>\r\n                      <Inventories>\r\n                        <MyObjectBuilder_InventoryBase xsi:type=\"MyObjectBuilder_Inventory\">\r\n                          <Items />\r\n                          <nextItemId>0</nextItemId>\r\n                          <Volume>4</Volume>\r\n                          <Mass>9223372036854.775807</Mass>\r\n                          <MaxItemCount>2147483647</MaxItemCount>\r\n                          <Size xsi:nil=\"true\" />\r\n                          <InventoryFlags>CanReceive</InventoryFlags>\r\n                          <RemoveEntityOnEmpty>false</RemoveEntityOnEmpty>\r\n                        </MyObjectBuilder_InventoryBase>\r\n                        <MyObjectBuilder_InventoryBase xsi:type=\"MyObjectBuilder_Inventory\">\r\n                          <Items />\r\n                          <nextItemId>0</nextItemId>\r\n                          <Volume>4</Volume>\r\n                          <Mass>9223372036854.775807</Mass>\r\n                          <MaxItemCount>2147483647</MaxItemCount>\r\n                          <Size xsi:nil=\"true\" />\r\n                          <InventoryFlags>CanSend</InventoryFlags>\r\n                          <RemoveEntityOnEmpty>false</RemoveEntityOnEmpty>\r\n                        </MyObjectBuilder_InventoryBase>\r\n                      </Inventories>\r\n                    </Component>\r\n                  </ComponentData>\r\n                </Components>\r\n              </ComponentContainer>\r\n              <ShowOnHUD>false</ShowOnHUD>\r\n              <ShowInTerminal>true</ShowInTerminal>\r\n              <ShowInToolbarConfig>true</ShowInToolbarConfig>\r\n              <ShowInInventory>true</ShowInInventory>\r\n              <Enabled>true</Enabled>\r\n              <InputInventory>\r\n                <Items />\r\n                <nextItemId>0</nextItemId>\r\n                <Volume>4</Volume>\r\n                <Mass>9223372036854.775807</Mass>\r\n                <MaxItemCount>2147483647</MaxItemCount>\r\n                <Size xsi:nil=\"true\" />\r\n                <InventoryFlags>CanReceive</InventoryFlags>\r\n                <RemoveEntityOnEmpty>false</RemoveEntityOnEmpty>\r\n              </InputInventory>\r\n              <OutputInventory>\r\n                <Items />\r\n                <nextItemId>0</nextItemId>\r\n                <Volume>4</Volume>\r\n                <Mass>9223372036854.775807</Mass>\r\n                <MaxItemCount>2147483647</MaxItemCount>\r\n                <Size xsi:nil=\"true\" />\r\n                <InventoryFlags>CanSend</InventoryFlags>\r\n                <RemoveEntityOnEmpty>false</RemoveEntityOnEmpty>\r\n              </OutputInventory>\r\n            </MyObjectBuilder_CubeBlock>\r\n            <MyObjectBuilder_CubeBlock xsi:type=\"MyObjectBuilder_Projector\">\r\n              <SubtypeName>LargeProjector</SubtypeName>\r\n              <EntityId>76018440529200684</EntityId>\r\n              <Min x=\"1\" y=\"1\" z=\"2\" />\r\n              <BlockOrientation Forward=\"Left\" Up=\"Backward\" />\r\n              <Owner>144115188075855895</Owner>\r\n              <BuiltBy>144115188075855895</BuiltBy>\r\n              <ShareMode>Faction</ShareMode>\r\n              <ShowOnHUD>false</ShowOnHUD>\r\n              <ShowInTerminal>true</ShowInTerminal>\r\n              <ShowInToolbarConfig>true</ShowInToolbarConfig>\r\n              <ShowInInventory>true</ShowInInventory>\r\n              <Enabled>true</Enabled>\r\n              <ProjectionOffset>\r\n                <X>0</X>\r\n                <Y>0</Y>\r\n                <Z>0</Z>\r\n              </ProjectionOffset>\r\n              <ProjectionRotation>\r\n                <X>0</X>\r\n                <Y>0</Y>\r\n                <Z>0</Z>\r\n              </ProjectionRotation>\r\n              <KeepProjection>false</KeepProjection>\r\n              <ShowOnlyBuildable>false</ShowOnlyBuildable>\r\n              <InstantBuildingEnabled>false</InstantBuildingEnabled>\r\n              <MaxNumberOfProjections>5</MaxNumberOfProjections>\r\n              <MaxNumberOfBlocks>200</MaxNumberOfBlocks>\r\n              <ProjectionsRemaining>0</ProjectionsRemaining>\r\n              <GetOwnershipFromProjector>false</GetOwnershipFromProjector>\r\n            </MyObjectBuilder_CubeBlock>\r\n            <MyObjectBuilder_CubeBlock xsi:type=\"MyObjectBuilder_CargoContainer\">\r\n              <SubtypeName>LargeBlockSmallContainer</SubtypeName>\r\n              <EntityId>104489069019612943</EntityId>\r\n              <Min x=\"3\" y=\"1\" z=\"1\" />\r\n              <Owner>144115188075855895</Owner>\r\n              <BuiltBy>144115188075855895</BuiltBy>\r\n              <ShareMode>Faction</ShareMode>\r\n              <ComponentContainer>\r\n                <Components>\r\n                  <ComponentData>\r\n                    <TypeId>MyInventoryBase</TypeId>\r\n                    <Component xsi:type=\"MyObjectBuilder_Inventory\">\r\n                      <Items />\r\n                      <nextItemId>0</nextItemId>\r\n                      <Volume>15.625</Volume>\r\n                      <Mass>9223372036854.775807</Mass>\r\n                      <MaxItemCount>2147483647</MaxItemCount>\r\n                      <Size xsi:nil=\"true\" />\r\n                      <InventoryFlags>CanReceive CanSend</InventoryFlags>\r\n                      <RemoveEntityOnEmpty>false</RemoveEntityOnEmpty>\r\n                    </Component>\r\n                  </ComponentData>\r\n                </Components>\r\n              </ComponentContainer>\r\n              <ShowOnHUD>false</ShowOnHUD>\r\n              <ShowInTerminal>true</ShowInTerminal>\r\n              <ShowInToolbarConfig>true</ShowInToolbarConfig>\r\n              <ShowInInventory>true</ShowInInventory>\r\n            </MyObjectBuilder_CubeBlock>\r\n            <MyObjectBuilder_CubeBlock xsi:type=\"MyObjectBuilder_CargoContainer\">\r\n              <SubtypeName>LargeBlockLargeContainer</SubtypeName>\r\n              <EntityId>132664175534940796</EntityId>\r\n              <Min x=\"6\" y=\"-2\" z=\"-4\" />\r\n              <BlockOrientation Forward=\"Left\" Up=\"Forward\" />\r\n              <Owner>144115188075855895</Owner>\r\n              <BuiltBy>144115188075855895</BuiltBy>\r\n              <ShareMode>Faction</ShareMode>\r\n              <ComponentContainer>\r\n                <Components>\r\n                  <ComponentData>\r\n                    <TypeId>MyInventoryBase</TypeId>\r\n                    <Component xsi:type=\"MyObjectBuilder_Inventory\">\r\n                      <Items />\r\n                      <nextItemId>0</nextItemId>\r\n                      <Volume>421.875008</Volume>\r\n                      <Mass>9223372036854.775807</Mass>\r\n                      <MaxItemCount>2147483647</MaxItemCount>\r\n                      <Size xsi:nil=\"true\" />\r\n                      <InventoryFlags>CanReceive CanSend</InventoryFlags>\r\n                      <RemoveEntityOnEmpty>false</RemoveEntityOnEmpty>\r\n                    </Component>\r\n                  </ComponentData>\r\n                </Components>\r\n              </ComponentContainer>\r\n              <ShowOnHUD>false</ShowOnHUD>\r\n              <ShowInTerminal>true</ShowInTerminal>\r\n              <ShowInToolbarConfig>true</ShowInToolbarConfig>\r\n              <ShowInInventory>true</ShowInInventory>\r\n            </MyObjectBuilder_CubeBlock>\r\n            <MyObjectBuilder_CubeBlock xsi:type=\"MyObjectBuilder_InteriorTurret\">\r\n              <SubtypeName>LargeInteriorTurret</SubtypeName>\r\n              <EntityId>116167312815261726</EntityId>\r\n              <Min x=\"5\" y=\"-1\" z=\"1\" />\r\n              <BlockOrientation Forward=\"Left\" Up=\"Backward\" />\r\n              <Owner>144115188075855895</Owner>\r\n              <BuiltBy>144115188075855895</BuiltBy>\r\n              <ShareMode>Faction</ShareMode>\r\n              <ComponentContainer>\r\n                <Components>\r\n                  <ComponentData>\r\n                    <TypeId>MyInventoryBase</TypeId>\r\n                    <Component xsi:type=\"MyObjectBuilder_Inventory\">\r\n                      <Items />\r\n                      <nextItemId>0</nextItemId>\r\n                      <Volume>0.384</Volume>\r\n                      <Mass>9223372036854.775807</Mass>\r\n                      <MaxItemCount>2147483647</MaxItemCount>\r\n                      <Size xsi:nil=\"true\" />\r\n                      <InventoryFlags>CanReceive</InventoryFlags>\r\n                      <RemoveEntityOnEmpty>false</RemoveEntityOnEmpty>\r\n                    </Component>\r\n                  </ComponentData>\r\n                </Components>\r\n              </ComponentContainer>\r\n              <ShowOnHUD>false</ShowOnHUD>\r\n              <ShowInTerminal>true</ShowInTerminal>\r\n              <ShowInToolbarConfig>true</ShowInToolbarConfig>\r\n              <ShowInInventory>true</ShowInInventory>\r\n              <Enabled>true</Enabled>\r\n              <IsShooting>false</IsShooting>\r\n              <IsShootingFromTerminal>false</IsShootingFromTerminal>\r\n              <IsLargeTurret>true</IsLargeTurret>\r\n              <MinFov>0.1</MinFov>\r\n              <MaxFov>1.04719758</MaxFov>\r\n              <Inventory>\r\n                <Items />\r\n                <nextItemId>0</nextItemId>\r\n                <Volume>0.384</Volume>\r\n                <Mass>9223372036854.775807</Mass>\r\n                <MaxItemCount>2147483647</MaxItemCount>\r\n                <Size xsi:nil=\"true\" />\r\n                <InventoryFlags>CanReceive</InventoryFlags>\r\n                <RemoveEntityOnEmpty>false</RemoveEntityOnEmpty>\r\n              </Inventory>\r\n              <RemainingAmmo>0</RemainingAmmo>\r\n              <Target>80566543068103274</Target>\r\n              <IsPotentialTarget>true</IsPotentialTarget>\r\n              <PreviousControlledEntityId xsi:nil=\"true\" />\r\n              <Rotation>0</Rotation>\r\n              <Elevation>0</Elevation>\r\n              <GunBase>\r\n                <RemainingAmmo>0</RemainingAmmo>\r\n                <CurrentAmmoMagazineName>NATO_5p56x45mm</CurrentAmmoMagazineName>\r\n                <RemainingAmmosList />\r\n                <LastShootTime>0</LastShootTime>\r\n              </GunBase>\r\n              <EnableIdleRotation>true</EnableIdleRotation>\r\n              <PreviousIdleRotationState>true</PreviousIdleRotationState>\r\n              <TargetCharacters>true</TargetCharacters>\r\n            </MyObjectBuilder_CubeBlock>\r\n            <MyObjectBuilder_CubeBlock xsi:type=\"MyObjectBuilder_LargeGatlingTurret\">\r\n              <SubtypeName />\r\n              <EntityId>87858276849048676</EntityId>\r\n              <Min x=\"-1\" y=\"-1\" z=\"3\" />\r\n              <BlockOrientation Forward=\"Left\" Up=\"Backward\" />\r\n              <Owner>144115188075855895</Owner>\r\n              <BuiltBy>144115188075855895</BuiltBy>\r\n              <ShareMode>Faction</ShareMode>\r\n              <ComponentContainer>\r\n                <Components>\r\n                  <ComponentData>\r\n                    <TypeId>MyInventoryBase</TypeId>\r\n                    <Component xsi:type=\"MyObjectBuilder_Inventory\">\r\n                      <Items />\r\n                      <nextItemId>0</nextItemId>\r\n                      <Volume>0.384</Volume>\r\n                      <Mass>9223372036854.775807</Mass>\r\n                      <MaxItemCount>2147483647</MaxItemCount>\r\n                      <Size xsi:nil=\"true\" />\r\n                      <InventoryFlags>CanReceive</InventoryFlags>\r\n                      <RemoveEntityOnEmpty>false</RemoveEntityOnEmpty>\r\n                    </Component>\r\n                  </ComponentData>\r\n                </Components>\r\n              </ComponentContainer>\r\n              <ShowOnHUD>false</ShowOnHUD>\r\n              <ShowInTerminal>true</ShowInTerminal>\r\n              <ShowInToolbarConfig>true</ShowInToolbarConfig>\r\n              <ShowInInventory>true</ShowInInventory>\r\n              <Enabled>true</Enabled>\r\n              <IsShooting>false</IsShooting>\r\n              <IsShootingFromTerminal>false</IsShootingFromTerminal>\r\n              <IsLargeTurret>true</IsLargeTurret>\r\n              <MinFov>0.1</MinFov>\r\n              <MaxFov>1.04719758</MaxFov>\r\n              <Inventory>\r\n                <Items />\r\n                <nextItemId>0</nextItemId>\r\n                <Volume>0.384</Volume>\r\n                <Mass>9223372036854.775807</Mass>\r\n                <MaxItemCount>2147483647</MaxItemCount>\r\n                <Size xsi:nil=\"true\" />\r\n                <InventoryFlags>CanReceive</InventoryFlags>\r\n                <RemoveEntityOnEmpty>false</RemoveEntityOnEmpty>\r\n              </Inventory>\r\n              <RemainingAmmo>0</RemainingAmmo>\r\n              <Target>80566543068103274</Target>\r\n              <IsPotentialTarget>true</IsPotentialTarget>\r\n              <PreviousControlledEntityId xsi:nil=\"true\" />\r\n              <Rotation>0</Rotation>\r\n              <Elevation>0</Elevation>\r\n              <GunBase>\r\n                <RemainingAmmo>0</RemainingAmmo>\r\n                <CurrentAmmoMagazineName>NATO_25x184mm</CurrentAmmoMagazineName>\r\n                <RemainingAmmosList />\r\n                <LastShootTime>0</LastShootTime>\r\n              </GunBase>\r\n              <EnableIdleRotation>true</EnableIdleRotation>\r\n              <PreviousIdleRotationState>true</PreviousIdleRotationState>\r\n              <TargetCharacters>true</TargetCharacters>\r\n            </MyObjectBuilder_CubeBlock>\r\n            <MyObjectBuilder_CubeBlock xsi:type=\"MyObjectBuilder_LargeMissileTurret\">\r\n              <SubtypeName />\r\n              <EntityId>100780177614256299</EntityId>\r\n              <Min x=\"6\" y=\"-5\" z=\"-1\" />\r\n              <BlockOrientation Forward=\"Backward\" Up=\"Down\" />\r\n              <Owner>144115188075855895</Owner>\r\n              <BuiltBy>144115188075855895</BuiltBy>\r\n              <ShareMode>Faction</ShareMode>\r\n              <ComponentContainer>\r\n                <Components>\r\n                  <ComponentData>\r\n                    <TypeId>MyInventoryBase</TypeId>\r\n                    <Component xsi:type=\"MyObjectBuilder_Inventory\">\r\n                      <Items />\r\n                      <nextItemId>0</nextItemId>\r\n                      <Volume>0.384</Volume>\r\n                      <Mass>9223372036854.775807</Mass>\r\n                      <MaxItemCount>2147483647</MaxItemCount>\r\n                      <Size xsi:nil=\"true\" />\r\n                      <InventoryFlags>CanReceive</InventoryFlags>\r\n                      <RemoveEntityOnEmpty>false</RemoveEntityOnEmpty>\r\n                    </Component>\r\n                  </ComponentData>\r\n                </Components>\r\n              </ComponentContainer>\r\n              <ShowOnHUD>false</ShowOnHUD>\r\n              <ShowInTerminal>true</ShowInTerminal>\r\n              <ShowInToolbarConfig>true</ShowInToolbarConfig>\r\n              <ShowInInventory>true</ShowInInventory>\r\n              <Enabled>true</Enabled>\r\n              <IsShooting>false</IsShooting>\r\n              <IsShootingFromTerminal>false</IsShootingFromTerminal>\r\n              <IsLargeTurret>true</IsLargeTurret>\r\n              <MinFov>0.1</MinFov>\r\n              <MaxFov>1.04719758</MaxFov>\r\n              <Inventory>\r\n                <Items />\r\n                <nextItemId>0</nextItemId>\r\n                <Volume>0.384</Volume>\r\n                <Mass>9223372036854.775807</Mass>\r\n                <MaxItemCount>2147483647</MaxItemCount>\r\n                <Size xsi:nil=\"true\" />\r\n                <InventoryFlags>CanReceive</InventoryFlags>\r\n                <RemoveEntityOnEmpty>false</RemoveEntityOnEmpty>\r\n              </Inventory>\r\n              <RemainingAmmo>0</RemainingAmmo>\r\n              <Target>80566543068103274</Target>\r\n              <IsPotentialTarget>true</IsPotentialTarget>\r\n              <PreviousControlledEntityId xsi:nil=\"true\" />\r\n              <Rotation>0</Rotation>\r\n              <Elevation>0</Elevation>\r\n              <GunBase>\r\n                <RemainingAmmo>0</RemainingAmmo>\r\n                <CurrentAmmoMagazineName>Missile200mm</CurrentAmmoMagazineName>\r\n                <RemainingAmmosList />\r\n                <LastShootTime>0</LastShootTime>\r\n              </GunBase>\r\n              <EnableIdleRotation>true</EnableIdleRotation>\r\n              <PreviousIdleRotationState>true</PreviousIdleRotationState>\r\n              <TargetCharacters>false</TargetCharacters>\r\n            </MyObjectBuilder_CubeBlock>\r\n            <MyObjectBuilder_CubeBlock xsi:type=\"MyObjectBuilder_SmallMissileLauncher\">\r\n              <SubtypeName>LargeMissileLauncher</SubtypeName>\r\n              <EntityId>142985225455783347</EntityId>\r\n              <Min x=\"5\" y=\"-3\" z=\"0\" />\r\n              <BlockOrientation Forward=\"Down\" Up=\"Backward\" />\r\n              <Owner>144115188075855895</Owner>\r\n              <BuiltBy>144115188075855895</BuiltBy>\r\n              <ShareMode>Faction</ShareMode>\r\n              <ComponentContainer>\r\n                <Components>\r\n                  <ComponentData>\r\n                    <TypeId>MyInventoryBase</TypeId>\r\n                    <Component xsi:type=\"MyObjectBuilder_Inventory\">\r\n                      <Items />\r\n                      <nextItemId>0</nextItemId>\r\n                      <Volume>1.14</Volume>\r\n                      <Mass>9223372036854.775807</Mass>\r\n                      <MaxItemCount>2147483647</MaxItemCount>\r\n                      <Size xsi:nil=\"true\" />\r\n                      <InventoryFlags>CanReceive</InventoryFlags>\r\n                      <RemoveEntityOnEmpty>false</RemoveEntityOnEmpty>\r\n                    </Component>\r\n                  </ComponentData>\r\n                </Components>\r\n              </ComponentContainer>\r\n              <ShowOnHUD>false</ShowOnHUD>\r\n              <ShowInTerminal>true</ShowInTerminal>\r\n              <ShowInToolbarConfig>true</ShowInToolbarConfig>\r\n              <ShowInInventory>true</ShowInInventory>\r\n              <Enabled>true</Enabled>\r\n              <IsShooting>false</IsShooting>\r\n              <IsShootingFromTerminal>false</IsShootingFromTerminal>\r\n              <IsLargeTurret>false</IsLargeTurret>\r\n              <MinFov>0.1</MinFov>\r\n              <MaxFov>1.04719758</MaxFov>\r\n              <Inventory>\r\n                <Items />\r\n                <nextItemId>0</nextItemId>\r\n                <Volume>1.14</Volume>\r\n                <Mass>9223372036854.775807</Mass>\r\n                <MaxItemCount>2147483647</MaxItemCount>\r\n                <Size xsi:nil=\"true\" />\r\n                <InventoryFlags>CanReceive</InventoryFlags>\r\n                <RemoveEntityOnEmpty>false</RemoveEntityOnEmpty>\r\n              </Inventory>\r\n              <UseConveyorSystem>true</UseConveyorSystem>\r\n              <GunBase>\r\n                <RemainingAmmo>0</RemainingAmmo>\r\n                <CurrentAmmoMagazineName>Missile200mm</CurrentAmmoMagazineName>\r\n                <RemainingAmmosList />\r\n                <LastShootTime>0</LastShootTime>\r\n              </GunBase>\r\n            </MyObjectBuilder_CubeBlock>\r\n            <MyObjectBuilder_CubeBlock xsi:type=\"MyObjectBuilder_Warhead\">\r\n              <SubtypeName>LargeWarhead</SubtypeName>\r\n              <EntityId>136606779547500380</EntityId>\r\n              <Min x=\"3\" y=\"-5\" z=\"0\" />\r\n              <BlockOrientation Forward=\"Forward\" Up=\"Down\" />\r\n              <Owner>144115188075855895</Owner>\r\n              <BuiltBy>144115188075855895</BuiltBy>\r\n              <ShareMode>Faction</ShareMode>\r\n              <ShowOnHUD>false</ShowOnHUD>\r\n              <ShowInTerminal>true</ShowInTerminal>\r\n              <ShowInToolbarConfig>true</ShowInToolbarConfig>\r\n              <ShowInInventory>true</ShowInInventory>\r\n              <CountdownMs>10000</CountdownMs>\r\n              <IsArmed>false</IsArmed>\r\n              <IsCountingDown>false</IsCountingDown>\r\n            </MyObjectBuilder_CubeBlock>\r\n            <MyObjectBuilder_CubeBlock xsi:type=\"MyObjectBuilder_ShipWelder\">\r\n              <SubtypeName>LargeShipWelder</SubtypeName>\r\n              <EntityId>133435266336342141</EntityId>\r\n              <Min x=\"4\" y=\"-5\" z=\"0\" />\r\n              <BlockOrientation Forward=\"Down\" Up=\"Forward\" />\r\n              <Owner>144115188075855895</Owner>\r\n              <BuiltBy>144115188075855895</BuiltBy>\r\n              <ShareMode>Faction</ShareMode>\r\n              <DeformationRatio>0.5</DeformationRatio>\r\n              <ComponentContainer>\r\n                <Components>\r\n                  <ComponentData>\r\n                    <TypeId>MyInventoryBase</TypeId>\r\n                    <Component xsi:type=\"MyObjectBuilder_Inventory\">\r\n                      <Items />\r\n                      <nextItemId>0</nextItemId>\r\n                      <Volume>15.625</Volume>\r\n                      <Mass>9223372036854.775807</Mass>\r\n                      <MaxItemCount>2147483647</MaxItemCount>\r\n                      <Size xsi:nil=\"true\" />\r\n                      <InventoryFlags>CanSend</InventoryFlags>\r\n                      <RemoveEntityOnEmpty>false</RemoveEntityOnEmpty>\r\n                    </Component>\r\n                  </ComponentData>\r\n                </Components>\r\n              </ComponentContainer>\r\n              <ShowOnHUD>false</ShowOnHUD>\r\n              <ShowInTerminal>true</ShowInTerminal>\r\n              <ShowInToolbarConfig>true</ShowInToolbarConfig>\r\n              <ShowInInventory>true</ShowInInventory>\r\n              <Enabled>false</Enabled>\r\n              <Inventory>\r\n                <Items />\r\n                <nextItemId>0</nextItemId>\r\n                <Volume>15.625</Volume>\r\n                <Mass>9223372036854.775807</Mass>\r\n                <MaxItemCount>2147483647</MaxItemCount>\r\n                <Size xsi:nil=\"true\" />\r\n                <InventoryFlags>CanSend</InventoryFlags>\r\n                <RemoveEntityOnEmpty>false</RemoveEntityOnEmpty>\r\n              </Inventory>\r\n            </MyObjectBuilder_CubeBlock>\r\n            <MyObjectBuilder_CubeBlock xsi:type=\"MyObjectBuilder_ShipGrinder\">\r\n              <SubtypeName>LargeShipGrinder</SubtypeName>\r\n              <EntityId>76794457972039764</EntityId>\r\n              <Min x=\"2\" y=\"-5\" z=\"0\" />\r\n              <BlockOrientation Forward=\"Down\" Up=\"Forward\" />\r\n              <Owner>144115188075855895</Owner>\r\n              <BuiltBy>144115188075855895</BuiltBy>\r\n              <ShareMode>Faction</ShareMode>\r\n              <DeformationRatio>0.5</DeformationRatio>\r\n              <ComponentContainer>\r\n                <Components>\r\n                  <ComponentData>\r\n                    <TypeId>MyInventoryBase</TypeId>\r\n                    <Component xsi:type=\"MyObjectBuilder_Inventory\">\r\n                      <Items />\r\n                      <nextItemId>0</nextItemId>\r\n                      <Volume>15.625</Volume>\r\n                      <Mass>9223372036854.775807</Mass>\r\n                      <MaxItemCount>2147483647</MaxItemCount>\r\n                      <Size xsi:nil=\"true\" />\r\n                      <InventoryFlags>CanSend</InventoryFlags>\r\n                      <RemoveEntityOnEmpty>false</RemoveEntityOnEmpty>\r\n                    </Component>\r\n                  </ComponentData>\r\n                </Components>\r\n              </ComponentContainer>\r\n              <ShowOnHUD>false</ShowOnHUD>\r\n              <ShowInTerminal>true</ShowInTerminal>\r\n              <ShowInToolbarConfig>true</ShowInToolbarConfig>\r\n              <ShowInInventory>true</ShowInInventory>\r\n              <Enabled>false</Enabled>\r\n              <Inventory>\r\n                <Items />\r\n                <nextItemId>0</nextItemId>\r\n                <Volume>15.625</Volume>\r\n                <Mass>9223372036854.775807</Mass>\r\n                <MaxItemCount>2147483647</MaxItemCount>\r\n                <Size xsi:nil=\"true\" />\r\n                <InventoryFlags>CanSend</InventoryFlags>\r\n                <RemoveEntityOnEmpty>false</RemoveEntityOnEmpty>\r\n              </Inventory>\r\n              <CheckEnvironmentSector>true</CheckEnvironmentSector>\r\n            </MyObjectBuilder_CubeBlock>\r\n            <MyObjectBuilder_CubeBlock xsi:type=\"MyObjectBuilder_Drill\">\r\n              <SubtypeName>LargeBlockDrill</SubtypeName>\r\n              <EntityId>142066568481002832</EntityId>\r\n              <Min x=\"3\" y=\"-5\" z=\"-1\" />\r\n              <BlockOrientation Forward=\"Down\" Up=\"Forward\" />\r\n              <Owner>144115188075855895</Owner>\r\n              <BuiltBy>144115188075855895</BuiltBy>\r\n              <ShareMode>Faction</ShareMode>\r\n              <ComponentContainer>\r\n                <Components>\r\n                  <ComponentData>\r\n                    <TypeId>MyInventoryBase</TypeId>\r\n                    <Component xsi:type=\"MyObjectBuilder_Inventory\">\r\n                      <Items />\r\n                      <nextItemId>0</nextItemId>\r\n                      <Volume>23.4375</Volume>\r\n                      <Mass>9223372036854.775807</Mass>\r\n                      <MaxItemCount>2147483647</MaxItemCount>\r\n                      <Size xsi:nil=\"true\" />\r\n                      <InventoryFlags>CanSend</InventoryFlags>\r\n                      <RemoveEntityOnEmpty>false</RemoveEntityOnEmpty>\r\n                    </Component>\r\n                  </ComponentData>\r\n                </Components>\r\n              </ComponentContainer>\r\n              <CustomName>Drill 2</CustomName>\r\n              <ShowOnHUD>false</ShowOnHUD>\r\n              <ShowInTerminal>true</ShowInTerminal>\r\n              <ShowInToolbarConfig>true</ShowInToolbarConfig>\r\n              <ShowInInventory>true</ShowInInventory>\r\n              <Enabled>false</Enabled>\r\n              <Inventory>\r\n                <Items />\r\n                <nextItemId>0</nextItemId>\r\n                <Volume>23.4375</Volume>\r\n                <Mass>9223372036854.775807</Mass>\r\n                <MaxItemCount>2147483647</MaxItemCount>\r\n                <Size xsi:nil=\"true\" />\r\n                <InventoryFlags>CanSend</InventoryFlags>\r\n                <RemoveEntityOnEmpty>false</RemoveEntityOnEmpty>\r\n              </Inventory>\r\n            </MyObjectBuilder_CubeBlock>\r\n            <MyObjectBuilder_CubeBlock xsi:type=\"MyObjectBuilder_Door\">\r\n              <SubtypeName />\r\n              <EntityId>82847560014640832</EntityId>\r\n              <Min x=\"5\" y=\"-2\" z=\"1\" />\r\n              <BlockOrientation Forward=\"Down\" Up=\"Backward\" />\r\n              <Owner>144115188075855895</Owner>\r\n              <BuiltBy>144115188075855895</BuiltBy>\r\n              <ShareMode>Faction</ShareMode>\r\n              <ShowOnHUD>false</ShowOnHUD>\r\n              <ShowInTerminal>true</ShowInTerminal>\r\n              <ShowInToolbarConfig>true</ShowInToolbarConfig>\r\n              <ShowInInventory>true</ShowInInventory>\r\n              <Enabled>true</Enabled>\r\n              <Opening>-1</Opening>\r\n              <OpenSound>ArcBlockDoorSmallOpen</OpenSound>\r\n              <CloseSound>ArcBlockDoorSmallClose</CloseSound>\r\n            </MyObjectBuilder_CubeBlock>\r\n            <MyObjectBuilder_CubeBlock xsi:type=\"MyObjectBuilder_AirtightSlideDoor\">\r\n              <SubtypeName>LargeBlockSlideDoor</SubtypeName>\r\n              <EntityId>83429488656045651</EntityId>\r\n              <Min x=\"5\" y=\"-3\" z=\"1\" />\r\n              <BlockOrientation Forward=\"Down\" Up=\"Backward\" />\r\n              <Owner>144115188075855895</Owner>\r\n              <BuiltBy>144115188075855895</BuiltBy>\r\n              <ShareMode>Faction</ShareMode>\r\n              <ShowOnHUD>false</ShowOnHUD>\r\n              <ShowInTerminal>true</ShowInTerminal>\r\n              <ShowInToolbarConfig>true</ShowInToolbarConfig>\r\n              <ShowInInventory>true</ShowInInventory>\r\n              <Enabled>true</Enabled>\r\n              <Open>true</Open>\r\n              <CurrOpening>1</CurrOpening>\r\n            </MyObjectBuilder_CubeBlock>\r\n            <MyObjectBuilder_CubeBlock xsi:type=\"MyObjectBuilder_AirtightHangarDoor\">\r\n              <SubtypeName />\r\n              <EntityId>91863902302770685</EntityId>\r\n              <Min x=\"12\" y=\"-1\" z=\"0\" />\r\n              <BlockOrientation Forward=\"Forward\" Up=\"Left\" />\r\n              <Owner>144115188075855895</Owner>\r\n              <BuiltBy>144115188075855895</BuiltBy>\r\n              <ShareMode>Faction</ShareMode>\r\n              <ShowOnHUD>false</ShowOnHUD>\r\n              <ShowInTerminal>true</ShowInTerminal>\r\n              <ShowInToolbarConfig>true</ShowInToolbarConfig>\r\n              <ShowInInventory>true</ShowInInventory>\r\n              <Enabled>true</Enabled>\r\n              <Open>true</Open>\r\n              <CurrOpening>1</CurrOpening>\r\n            </MyObjectBuilder_CubeBlock>\r\n            <MyObjectBuilder_CubeBlock xsi:type=\"MyObjectBuilder_CubeBlock\">\r\n              <SubtypeName>ArmorCenter</SubtypeName>\r\n              <EntityId>109271391846992806</EntityId>\r\n              <Min x=\"12\" y=\"-1\" z=\"-1\" />\r\n              <BlockOrientation Forward=\"Forward\" Up=\"Right\" />\r\n              <BuiltBy>144115188075855895</BuiltBy>\r\n            </MyObjectBuilder_CubeBlock>\r\n            <MyObjectBuilder_CubeBlock xsi:type=\"MyObjectBuilder_CubeBlock\">\r\n              <SubtypeName>ArmorInvCorner</SubtypeName>\r\n              <EntityId>139595511843817626</EntityId>\r\n              <Min x=\"12\" y=\"0\" z=\"-1\" />\r\n              <BuiltBy>144115188075855895</BuiltBy>\r\n            </MyObjectBuilder_CubeBlock>\r\n            <MyObjectBuilder_CubeBlock xsi:type=\"MyObjectBuilder_CubeBlock\">\r\n              <SubtypeName>ArmorCorner</SubtypeName>\r\n              <EntityId>105532223598043346</EntityId>\r\n              <Min x=\"13\" y=\"0\" z=\"-1\" />\r\n              <BlockOrientation Forward=\"Forward\" Up=\"Right\" />\r\n              <BuiltBy>144115188075855895</BuiltBy>\r\n            </MyObjectBuilder_CubeBlock>\r\n            <MyObjectBuilder_CubeBlock xsi:type=\"MyObjectBuilder_CubeBlock\">\r\n              <SubtypeName>ArmorSide</SubtypeName>\r\n              <EntityId>93236369875298980</EntityId>\r\n              <Min x=\"12\" y=\"-2\" z=\"-1\" />\r\n              <BlockOrientation Forward=\"Forward\" Up=\"Down\" />\r\n              <BuiltBy>144115188075855895</BuiltBy>\r\n            </MyObjectBuilder_CubeBlock>\r\n            <MyObjectBuilder_CubeBlock xsi:type=\"MyObjectBuilder_CubeBlock\">\r\n              <SubtypeName>LargeCoverWall</SubtypeName>\r\n              <EntityId>92990383277541137</EntityId>\r\n              <Min x=\"13\" y=\"-1\" z=\"-1\" />\r\n              <BlockOrientation Forward=\"Backward\" Up=\"Right\" />\r\n              <BuiltBy>144115188075855895</BuiltBy>\r\n            </MyObjectBuilder_CubeBlock>\r\n            <MyObjectBuilder_CubeBlock xsi:type=\"MyObjectBuilder_CubeBlock\">\r\n              <SubtypeName>LargeCoverWallHalf</SubtypeName>\r\n              <EntityId>90128074358477169</EntityId>\r\n              <Min x=\"13\" y=\"-2\" z=\"-1\" />\r\n              <BlockOrientation Forward=\"Backward\" Up=\"Right\" />\r\n              <BuiltBy>144115188075855895</BuiltBy>\r\n            </MyObjectBuilder_CubeBlock>\r\n            <MyObjectBuilder_CubeBlock xsi:type=\"MyObjectBuilder_CubeBlock\">\r\n              <SubtypeName>LargeSteelCatwalk2Sides</SubtypeName>\r\n              <EntityId>107977040788834165</EntityId>\r\n              <Min x=\"5\" y=\"-3\" z=\"2\" />\r\n              <BlockOrientation Forward=\"Up\" Up=\"Backward\" />\r\n              <BuiltBy>144115188075855895</BuiltBy>\r\n            </MyObjectBuilder_CubeBlock>\r\n            <MyObjectBuilder_CubeBlock xsi:type=\"MyObjectBuilder_CubeBlock\">\r\n              <SubtypeName>LargeSteelCatwalkCorner</SubtypeName>\r\n              <EntityId>138247274553787295</EntityId>\r\n              <Min x=\"6\" y=\"-3\" z=\"2\" />\r\n              <BlockOrientation Forward=\"Up\" Up=\"Backward\" />\r\n              <BuiltBy>144115188075855895</BuiltBy>\r\n            </MyObjectBuilder_CubeBlock>\r\n            <MyObjectBuilder_CubeBlock xsi:type=\"MyObjectBuilder_CubeBlock\">\r\n              <SubtypeName>LargeSteelCatwalk</SubtypeName>\r\n              <EntityId>99842536776705635</EntityId>\r\n              <Min x=\"6\" y=\"-4\" z=\"2\" />\r\n              <BlockOrientation Forward=\"Right\" Up=\"Backward\" />\r\n              <BuiltBy>144115188075855895</BuiltBy>\r\n            </MyObjectBuilder_CubeBlock>\r\n            <MyObjectBuilder_CubeBlock xsi:type=\"MyObjectBuilder_CubeBlock\">\r\n              <SubtypeName>LargeSteelCatwalkPlate</SubtypeName>\r\n              <EntityId>101740945071636659</EntityId>\r\n              <Min x=\"6\" y=\"-5\" z=\"2\" />\r\n              <BlockOrientation Forward=\"Right\" Up=\"Backward\" />\r\n              <BuiltBy>144115188075855895</BuiltBy>\r\n            </MyObjectBuilder_CubeBlock>\r\n            <MyObjectBuilder_CubeBlock xsi:type=\"MyObjectBuilder_CubeBlock\">\r\n              <SubtypeName>LargeStairs</SubtypeName>\r\n              <EntityId>107933971371460684</EntityId>\r\n              <Min x=\"5\" y=\"-5\" z=\"0\" />\r\n              <BlockOrientation Forward=\"Down\" Up=\"Backward\" />\r\n              <BuiltBy>144115188075855895</BuiltBy>\r\n            </MyObjectBuilder_CubeBlock>\r\n            <MyObjectBuilder_CubeBlock xsi:type=\"MyObjectBuilder_CubeBlock\">\r\n              <SubtypeName>LargeRamp</SubtypeName>\r\n              <EntityId>123392133964357924</EntityId>\r\n              <Min x=\"6\" y=\"-2\" z=\"2\" />\r\n              <BlockOrientation Forward=\"Backward\" Up=\"Down\" />\r\n              <BuiltBy>144115188075855895</BuiltBy>\r\n            </MyObjectBuilder_CubeBlock>\r\n            <MyObjectBuilder_CubeBlock xsi:type=\"MyObjectBuilder_CubeBlock\">\r\n              <SubtypeName>LargeInteriorPillar</SubtypeName>\r\n              <EntityId>100330372348053194</EntityId>\r\n              <Min x=\"7\" y=\"-2\" z=\"3\" />\r\n              <BlockOrientation Forward=\"Forward\" Up=\"Down\" />\r\n              <BuiltBy>144115188075855895</BuiltBy>\r\n            </MyObjectBuilder_CubeBlock>\r\n            <MyObjectBuilder_CubeBlock xsi:type=\"MyObjectBuilder_CubeBlock\">\r\n              <SubtypeName>LargeWindowSquare</SubtypeName>\r\n              <EntityId>93046853343543469</EntityId>\r\n              <Min x=\"7\" y=\"-2\" z=\"2\" />\r\n              <BlockOrientation Forward=\"Up\" Up=\"Forward\" />\r\n              <BuiltBy>144115188075855895</BuiltBy>\r\n            </MyObjectBuilder_CubeBlock>\r\n            <MyObjectBuilder_CubeBlock xsi:type=\"MyObjectBuilder_CubeBlock\">\r\n              <SubtypeName>LargeWindowEdge</SubtypeName>\r\n              <EntityId>128664352345764769</EntityId>\r\n              <Min x=\"8\" y=\"-2\" z=\"3\" />\r\n              <BlockOrientation Forward=\"Backward\" Up=\"Down\" />\r\n              <BuiltBy>144115188075855895</BuiltBy>\r\n            </MyObjectBuilder_CubeBlock>\r\n            <MyObjectBuilder_CubeBlock xsi:type=\"MyObjectBuilder_Passage\">\r\n              <SubtypeName />\r\n              <EntityId>101490839444537924</EntityId>\r\n              <Min x=\"4\" y=\"-3\" z=\"2\" />\r\n              <BlockOrientation Forward=\"Backward\" Up=\"Right\" />\r\n              <BuiltBy>144115188075855895</BuiltBy>\r\n            </MyObjectBuilder_CubeBlock>\r\n            <MyObjectBuilder_CubeBlock xsi:type=\"MyObjectBuilder_Decoy\">\r\n              <SubtypeName>LargeDecoy</SubtypeName>\r\n              <EntityId>107527408324106123</EntityId>\r\n              <Min x=\"14\" y=\"0\" z=\"-1\" />\r\n              <BlockOrientation Forward=\"Down\" Up=\"Right\" />\r\n              <Owner>144115188075855895</Owner>\r\n              <BuiltBy>144115188075855895</BuiltBy>\r\n              <ShareMode>Faction</ShareMode>\r\n              <ShowOnHUD>false</ShowOnHUD>\r\n              <ShowInTerminal>true</ShowInTerminal>\r\n              <ShowInToolbarConfig>true</ShowInToolbarConfig>\r\n              <ShowInInventory>true</ShowInInventory>\r\n              <Enabled>true</Enabled>\r\n            </MyObjectBuilder_CubeBlock>\r\n            <MyObjectBuilder_CubeBlock xsi:type=\"MyObjectBuilder_InteriorLight\">\r\n              <SubtypeName>SmallLight</SubtypeName>\r\n              <EntityId>78373916447459549</EntityId>\r\n              <Min x=\"4\" y=\"-2\" z=\"2\" />\r\n              <BlockOrientation Forward=\"Up\" Up=\"Backward\" />\r\n              <BuiltBy>144115188075855895</BuiltBy>\r\n              <ShowOnHUD>false</ShowOnHUD>\r\n              <ShowInTerminal>true</ShowInTerminal>\r\n              <ShowInToolbarConfig>true</ShowInToolbarConfig>\r\n              <ShowInInventory>true</ShowInInventory>\r\n              <Enabled>true</Enabled>\r\n              <Radius>3.6</Radius>\r\n              <ReflectorRadius>120</ReflectorRadius>\r\n              <Falloff>1</Falloff>\r\n              <Intensity>1.5</Intensity>\r\n              <BlinkIntervalSeconds>0</BlinkIntervalSeconds>\r\n              <BlinkLenght>10</BlinkLenght>\r\n              <BlinkOffset>0</BlinkOffset>\r\n            </MyObjectBuilder_CubeBlock>\r\n            <MyObjectBuilder_CubeBlock xsi:type=\"MyObjectBuilder_ReflectorLight\">\r\n              <SubtypeName>LargeBlockFrontLight</SubtypeName>\r\n              <EntityId>103238742464961833</EntityId>\r\n              <Min x=\"2\" y=\"-1\" z=\"1\" />\r\n              <BlockOrientation Forward=\"Down\" Up=\"Forward\" />\r\n              <BuiltBy>144115188075855895</BuiltBy>\r\n              <ShowOnHUD>false</ShowOnHUD>\r\n              <ShowInTerminal>true</ShowInTerminal>\r\n              <ShowInToolbarConfig>true</ShowInToolbarConfig>\r\n              <ShowInInventory>true</ShowInInventory>\r\n              <Enabled>true</Enabled>\r\n              <Radius>7.5</Radius>\r\n              <ReflectorRadius>120</ReflectorRadius>\r\n              <Falloff>1</Falloff>\r\n              <Intensity>1</Intensity>\r\n              <BlinkIntervalSeconds>0</BlinkIntervalSeconds>\r\n              <BlinkLenght>10</BlinkLenght>\r\n              <BlinkOffset>0</BlinkOffset>\r\n            </MyObjectBuilder_CubeBlock>\r\n            <MyObjectBuilder_CubeBlock xsi:type=\"MyObjectBuilder_InteriorLight\">\r\n              <SubtypeName>LargeBlockLight_1corner</SubtypeName>\r\n              <EntityId>75839285413424319</EntityId>\r\n              <Min x=\"1\" y=\"-4\" z=\"0\" />\r\n              <BlockOrientation Forward=\"Right\" Up=\"Down\" />\r\n              <BuiltBy>144115188075855895</BuiltBy>\r\n              <ShowOnHUD>false</ShowOnHUD>\r\n              <ShowInTerminal>true</ShowInTerminal>\r\n              <ShowInToolbarConfig>true</ShowInToolbarConfig>\r\n              <ShowInInventory>true</ShowInInventory>\r\n              <Enabled>true</Enabled>\r\n              <Radius>2</Radius>\r\n              <ReflectorRadius>120</ReflectorRadius>\r\n              <Falloff>0.5</Falloff>\r\n              <Intensity>2</Intensity>\r\n              <BlinkIntervalSeconds>0</BlinkIntervalSeconds>\r\n              <BlinkLenght>10</BlinkLenght>\r\n              <BlinkOffset>0</BlinkOffset>\r\n            </MyObjectBuilder_CubeBlock>\r\n            <MyObjectBuilder_CubeBlock xsi:type=\"MyObjectBuilder_InteriorLight\">\r\n              <SubtypeName>LargeBlockLight_2corner</SubtypeName>\r\n              <EntityId>88788346349741059</EntityId>\r\n              <Min x=\"1\" y=\"-4\" z=\"-1\" />\r\n              <BlockOrientation Forward=\"Down\" Up=\"Right\" />\r\n              <BuiltBy>144115188075855895</BuiltBy>\r\n              <ShowOnHUD>false</ShowOnHUD>\r\n              <ShowInTerminal>true</ShowInTerminal>\r\n              <ShowInToolbarConfig>true</ShowInToolbarConfig>\r\n              <ShowInInventory>true</ShowInInventory>\r\n              <Enabled>true</Enabled>\r\n              <Radius>2</Radius>\r\n              <ReflectorRadius>120</ReflectorRadius>\r\n              <Falloff>0.5</Falloff>\r\n              <Intensity>2</Intensity>\r\n              <BlinkIntervalSeconds>0</BlinkIntervalSeconds>\r\n              <BlinkLenght>10</BlinkLenght>\r\n              <BlinkOffset>0</BlinkOffset>\r\n            </MyObjectBuilder_CubeBlock>\r\n            <MyObjectBuilder_CubeBlock xsi:type=\"MyObjectBuilder_MyProgrammableBlock\">\r\n              <SubtypeName>LargeProgrammableBlock</SubtypeName>\r\n              <EntityId>113477699081473674</EntityId>\r\n              <Min x=\"-1\" y=\"0\" z=\"2\" />\r\n              <BlockOrientation Forward=\"Forward\" Up=\"Left\" />\r\n              <Owner>144115188075855895</Owner>\r\n              <BuiltBy>144115188075855895</BuiltBy>\r\n              <ShareMode>Faction</ShareMode>\r\n              <ShowOnHUD>false</ShowOnHUD>\r\n              <ShowInTerminal>true</ShowInTerminal>\r\n              <ShowInToolbarConfig>true</ShowInToolbarConfig>\r\n              <ShowInInventory>true</ShowInInventory>\r\n              <Enabled>true</Enabled>\r\n              <Storage />\r\n            </MyObjectBuilder_CubeBlock>\r\n            <MyObjectBuilder_CubeBlock xsi:type=\"MyObjectBuilder_TerminalBlock\">\r\n              <SubtypeName>ControlPanel</SubtypeName>\r\n              <EntityId>86134858899747109</EntityId>\r\n              <Min x=\"0\" y=\"-4\" z=\"0\" />\r\n              <BlockOrientation Forward=\"Down\" Up=\"Forward\" />\r\n              <Owner>144115188075855895</Owner>\r\n              <BuiltBy>144115188075855895</BuiltBy>\r\n              <ShareMode>Faction</ShareMode>\r\n              <ShowOnHUD>false</ShowOnHUD>\r\n              <ShowInTerminal>true</ShowInTerminal>\r\n              <ShowInToolbarConfig>true</ShowInToolbarConfig>\r\n              <ShowInInventory>true</ShowInInventory>\r\n            </MyObjectBuilder_CubeBlock>\r\n            <MyObjectBuilder_CubeBlock xsi:type=\"MyObjectBuilder_CameraBlock\">\r\n              <SubtypeName>LargeCameraBlock</SubtypeName>\r\n              <EntityId>102514186414471653</EntityId>\r\n              <Min x=\"2\" y=\"-4\" z=\"1\" />\r\n              <BlockOrientation Forward=\"Backward\" Up=\"Down\" />\r\n              <Owner>144115188075855895</Owner>\r\n              <BuiltBy>144115188075855895</BuiltBy>\r\n              <ShareMode>Faction</ShareMode>\r\n              <ShowOnHUD>false</ShowOnHUD>\r\n              <ShowInTerminal>true</ShowInTerminal>\r\n              <ShowInToolbarConfig>true</ShowInToolbarConfig>\r\n              <ShowInInventory>true</ShowInInventory>\r\n              <Enabled>true</Enabled>\r\n              <IsActive>false</IsActive>\r\n              <Fov>1.04719758</Fov>\r\n            </MyObjectBuilder_CubeBlock>\r\n            <MyObjectBuilder_CubeBlock xsi:type=\"MyObjectBuilder_SoundBlock\">\r\n              <SubtypeName>LargeBlockSoundBlock</SubtypeName>\r\n              <EntityId>122363632434894471</EntityId>\r\n              <Min x=\"4\" y=\"-4\" z=\"1\" />\r\n              <BlockOrientation Forward=\"Backward\" Up=\"Down\" />\r\n              <Owner>144115188075855895</Owner>\r\n              <BuiltBy>144115188075855895</BuiltBy>\r\n              <ShareMode>Faction</ShareMode>\r\n              <ShowOnHUD>false</ShowOnHUD>\r\n              <ShowInTerminal>true</ShowInTerminal>\r\n              <ShowInToolbarConfig>true</ShowInToolbarConfig>\r\n              <ShowInInventory>true</ShowInInventory>\r\n              <Enabled>true</Enabled>\r\n              <Range>50</Range>\r\n              <Volume>1</Volume>\r\n              <CueName />\r\n              <LoopPeriod>1</LoopPeriod>\r\n              <IsPlaying>false</IsPlaying>\r\n            </MyObjectBuilder_CubeBlock>\r\n            <MyObjectBuilder_CubeBlock xsi:type=\"MyObjectBuilder_SensorBlock\">\r\n              <SubtypeName>LargeBlockSensor</SubtypeName>\r\n              <EntityId>89559167652480174</EntityId>\r\n              <Min x=\"2\" y=\"-3\" z=\"0\" />\r\n              <BlockOrientation Forward=\"Left\" Up=\"Backward\" />\r\n              <Owner>144115188075855895</Owner>\r\n              <BuiltBy>144115188075855895</BuiltBy>\r\n              <ShareMode>Faction</ShareMode>\r\n              <ShowOnHUD>false</ShowOnHUD>\r\n              <ShowInTerminal>true</ShowInTerminal>\r\n              <ShowInToolbarConfig>true</ShowInToolbarConfig>\r\n              <ShowInInventory>true</ShowInInventory>\r\n              <Enabled>true</Enabled>\r\n              <FieldMin x=\"-5\" y=\"-5\" z=\"-5\" />\r\n              <FieldMax x=\"5\" y=\"5\" z=\"5\" />\r\n              <Toolbar>\r\n                <ToolbarType>Character</ToolbarType>\r\n                <SelectedSlot xsi:nil=\"true\" />\r\n                <Slots />\r\n              </Toolbar>\r\n              <PlaySound>true</PlaySound>\r\n              <DetectPlayers>true</DetectPlayers>\r\n              <DetectFloatingObjects>false</DetectFloatingObjects>\r\n              <DetectSmallShips>false</DetectSmallShips>\r\n              <DetectLargeShips>false</DetectLargeShips>\r\n              <DetectStations>false</DetectStations>\r\n              <DetectSubgrids>false</DetectSubgrids>\r\n              <IsActive>false</IsActive>\r\n              <DetectAsteroids>false</DetectAsteroids>\r\n              <DetectOwner>true</DetectOwner>\r\n              <DetectFriendly>true</DetectFriendly>\r\n              <DetectNeutral>true</DetectNeutral>\r\n              <DetectEnemy>true</DetectEnemy>\r\n            </MyObjectBuilder_CubeBlock>\r\n            <MyObjectBuilder_CubeBlock xsi:type=\"MyObjectBuilder_TimerBlock\">\r\n              <SubtypeName>TimerBlockLarge</SubtypeName>\r\n              <EntityId>119803220257257100</EntityId>\r\n              <Min x=\"2\" y=\"-2\" z=\"0\" />\r\n              <BlockOrientation Forward=\"Forward\" Up=\"Left\" />\r\n              <Owner>144115188075855895</Owner>\r\n              <BuiltBy>144115188075855895</BuiltBy>\r\n              <ShareMode>Faction</ShareMode>\r\n              <ShowOnHUD>false</ShowOnHUD>\r\n              <ShowInTerminal>true</ShowInTerminal>\r\n              <ShowInToolbarConfig>true</ShowInToolbarConfig>\r\n              <ShowInInventory>true</ShowInInventory>\r\n              <Enabled>true</Enabled>\r\n              <Toolbar>\r\n                <ToolbarType>Character</ToolbarType>\r\n                <SelectedSlot xsi:nil=\"true\" />\r\n                <Slots />\r\n              </Toolbar>\r\n              <Delay>10000</Delay>\r\n              <CurrentTime>0</CurrentTime>\r\n              <IsCountingDown>false</IsCountingDown>\r\n              <Silent>false</Silent>\r\n            </MyObjectBuilder_CubeBlock>\r\n            <MyObjectBuilder_CubeBlock xsi:type=\"MyObjectBuilder_ButtonPanel\">\r\n              <SubtypeName>ButtonPanelLarge</SubtypeName>\r\n              <EntityId>135387871339063189</EntityId>\r\n              <Min x=\"2\" y=\"-3\" z=\"-1\" />\r\n              <BlockOrientation Forward=\"Right\" Up=\"Backward\" />\r\n              <Owner>144115188075855895</Owner>\r\n              <BuiltBy>144115188075855895</BuiltBy>\r\n              <ShareMode>Faction</ShareMode>\r\n              <ShowOnHUD>false</ShowOnHUD>\r\n              <ShowInTerminal>true</ShowInTerminal>\r\n              <ShowInToolbarConfig>true</ShowInToolbarConfig>\r\n              <ShowInInventory>true</ShowInInventory>\r\n              <Enabled>true</Enabled>\r\n              <Toolbar>\r\n                <ToolbarType>Character</ToolbarType>\r\n                <SelectedSlot xsi:nil=\"true\" />\r\n                <Slots />\r\n              </Toolbar>\r\n              <AnyoneCanUse>false</AnyoneCanUse>\r\n              <CustomButtonNames>\r\n                <dictionary />\r\n              </CustomButtonNames>\r\n            </MyObjectBuilder_CubeBlock>\r\n            <MyObjectBuilder_CubeBlock xsi:type=\"MyObjectBuilder_TextPanel\">\r\n              <SubtypeName>LargeLCDPanel</SubtypeName>\r\n              <EntityId>73780812774461646</EntityId>\r\n              <Min x=\"3\" y=\"-1\" z=\"-1\" />\r\n              <BlockOrientation Forward=\"Backward\" Up=\"Right\" />\r\n              <Owner>144115188075855895</Owner>\r\n              <BuiltBy>144115188075855895</BuiltBy>\r\n              <ShareMode>Faction</ShareMode>\r\n              <ShowOnHUD>false</ShowOnHUD>\r\n              <ShowInTerminal>true</ShowInTerminal>\r\n              <ShowInToolbarConfig>true</ShowInToolbarConfig>\r\n              <ShowInInventory>true</ShowInInventory>\r\n              <Enabled>true</Enabled>\r\n              <Description />\r\n              <Title>Title</Title>\r\n              <AccessFlag>READ_AND_WRITE_FACTION</AccessFlag>\r\n              <ChangeInterval>0</ChangeInterval>\r\n              <SelectedImages />\r\n              <Font Type=\"MyObjectBuilder_FontDefinition\" Subtype=\"Debug\" />\r\n              <FontSize>1</FontSize>\r\n              <PublicDescription />\r\n              <PublicTitle>Public title</PublicTitle>\r\n              <ShowText>NONE</ShowText>\r\n              <FontColor>\r\n                <PackedValue>4294967295</PackedValue>\r\n                <R>255</R>\r\n                <G>255</G>\r\n                <B>255</B>\r\n                <A>255</A>\r\n              </FontColor>\r\n              <BackgroundColor>\r\n                <PackedValue>4278190080</PackedValue>\r\n                <R>0</R>\r\n                <G>0</G>\r\n                <B>0</B>\r\n                <A>255</A>\r\n              </BackgroundColor>\r\n              <CurrentShownTexture>0</CurrentShownTexture>\r\n            </MyObjectBuilder_CubeBlock>\r\n            <MyObjectBuilder_CubeBlock xsi:type=\"MyObjectBuilder_TextPanel\">\r\n              <SubtypeName>LargeTextPanel</SubtypeName>\r\n              <EntityId>89953865336183329</EntityId>\r\n              <Min x=\"4\" y=\"-1\" z=\"-1\" />\r\n              <BlockOrientation Forward=\"Backward\" Up=\"Right\" />\r\n              <Owner>144115188075855895</Owner>\r\n              <BuiltBy>144115188075855895</BuiltBy>\r\n              <ShareMode>Faction</ShareMode>\r\n              <ShowOnHUD>false</ShowOnHUD>\r\n              <ShowInTerminal>true</ShowInTerminal>\r\n              <ShowInToolbarConfig>true</ShowInToolbarConfig>\r\n              <ShowInInventory>true</ShowInInventory>\r\n              <Enabled>true</Enabled>\r\n              <Description />\r\n              <Title>Title</Title>\r\n              <AccessFlag>READ_AND_WRITE_FACTION</AccessFlag>\r\n              <ChangeInterval>0</ChangeInterval>\r\n              <SelectedImages />\r\n              <Font Type=\"MyObjectBuilder_FontDefinition\" Subtype=\"Debug\" />\r\n              <FontSize>1</FontSize>\r\n              <PublicDescription />\r\n              <PublicTitle>Public title</PublicTitle>\r\n              <ShowText>NONE</ShowText>\r\n              <FontColor>\r\n                <PackedValue>4294967295</PackedValue>\r\n                <R>255</R>\r\n                <G>255</G>\r\n                <B>255</B>\r\n                <A>255</A>\r\n              </FontColor>\r\n              <BackgroundColor>\r\n                <PackedValue>4278190080</PackedValue>\r\n                <R>0</R>\r\n                <G>0</G>\r\n                <B>0</B>\r\n                <A>255</A>\r\n              </BackgroundColor>\r\n              <CurrentShownTexture>0</CurrentShownTexture>\r\n            </MyObjectBuilder_CubeBlock>\r\n            <MyObjectBuilder_CubeBlock xsi:type=\"MyObjectBuilder_TextPanel\">\r\n              <SubtypeName>LargeLCDPanelWide</SubtypeName>\r\n              <EntityId>94090103062396027</EntityId>\r\n              <Min x=\"3\" y=\"0\" z=\"-1\" />\r\n              <BlockOrientation Forward=\"Backward\" Up=\"Up\" />\r\n              <Owner>144115188075855895</Owner>\r\n              <BuiltBy>144115188075855895</BuiltBy>\r\n              <ShareMode>Faction</ShareMode>\r\n              <ShowOnHUD>false</ShowOnHUD>\r\n              <ShowInTerminal>true</ShowInTerminal>\r\n              <ShowInToolbarConfig>true</ShowInToolbarConfig>\r\n              <ShowInInventory>true</ShowInInventory>\r\n              <Enabled>true</Enabled>\r\n              <Description />\r\n              <Title>Title</Title>\r\n              <AccessFlag>READ_AND_WRITE_FACTION</AccessFlag>\r\n              <ChangeInterval>0</ChangeInterval>\r\n              <SelectedImages />\r\n              <Font Type=\"MyObjectBuilder_FontDefinition\" Subtype=\"Debug\" />\r\n              <FontSize>1</FontSize>\r\n              <PublicDescription />\r\n              <PublicTitle>Public title</PublicTitle>\r\n              <ShowText>NONE</ShowText>\r\n              <FontColor>\r\n                <PackedValue>4294967295</PackedValue>\r\n                <R>255</R>\r\n                <G>255</G>\r\n                <B>255</B>\r\n                <A>255</A>\r\n              </FontColor>\r\n              <BackgroundColor>\r\n                <PackedValue>4278190080</PackedValue>\r\n                <R>0</R>\r\n                <G>0</G>\r\n                <B>0</B>\r\n                <A>255</A>\r\n              </BackgroundColor>\r\n              <CurrentShownTexture>0</CurrentShownTexture>\r\n            </MyObjectBuilder_CubeBlock>\r\n            <MyObjectBuilder_CubeBlock xsi:type=\"MyObjectBuilder_TextPanel\">\r\n              <SubtypeName>LargeBlockCorner_LCD_1</SubtypeName>\r\n              <EntityId>143372194475450957</EntityId>\r\n              <Min x=\"4\" y=\"1\" z=\"-1\" />\r\n              <Owner>144115188075855895</Owner>\r\n              <BuiltBy>144115188075855895</BuiltBy>\r\n              <ShareMode>Faction</ShareMode>\r\n              <ShowOnHUD>false</ShowOnHUD>\r\n              <ShowInTerminal>true</ShowInTerminal>\r\n              <ShowInToolbarConfig>true</ShowInToolbarConfig>\r\n              <ShowInInventory>true</ShowInInventory>\r\n              <Enabled>true</Enabled>\r\n              <Description />\r\n              <Title>Title</Title>\r\n              <AccessFlag>READ_AND_WRITE_FACTION</AccessFlag>\r\n              <ChangeInterval>0</ChangeInterval>\r\n              <SelectedImages />\r\n              <Font Type=\"MyObjectBuilder_FontDefinition\" Subtype=\"Debug\" />\r\n              <FontSize>1</FontSize>\r\n              <PublicDescription />\r\n              <PublicTitle>Public title</PublicTitle>\r\n              <ShowText>NONE</ShowText>\r\n              <FontColor>\r\n                <PackedValue>4294967295</PackedValue>\r\n                <R>255</R>\r\n                <G>255</G>\r\n                <B>255</B>\r\n                <A>255</A>\r\n              </FontColor>\r\n              <BackgroundColor>\r\n                <PackedValue>4278190080</PackedValue>\r\n                <R>0</R>\r\n                <G>0</G>\r\n                <B>0</B>\r\n                <A>255</A>\r\n              </BackgroundColor>\r\n              <CurrentShownTexture>0</CurrentShownTexture>\r\n            </MyObjectBuilder_CubeBlock>\r\n            <MyObjectBuilder_CubeBlock xsi:type=\"MyObjectBuilder_TextPanel\">\r\n              <SubtypeName>LargeBlockCorner_LCD_Flat_2</SubtypeName>\r\n              <EntityId>83410405687648662</EntityId>\r\n              <Min x=\"3\" y=\"1\" z=\"-1\" />\r\n              <Owner>144115188075855895</Owner>\r\n              <BuiltBy>144115188075855895</BuiltBy>\r\n              <ShareMode>Faction</ShareMode>\r\n              <ShowOnHUD>false</ShowOnHUD>\r\n              <ShowInTerminal>true</ShowInTerminal>\r\n              <ShowInToolbarConfig>true</ShowInToolbarConfig>\r\n              <ShowInInventory>true</ShowInInventory>\r\n              <Enabled>true</Enabled>\r\n              <Description />\r\n              <Title>Title</Title>\r\n              <AccessFlag>READ_AND_WRITE_FACTION</AccessFlag>\r\n              <ChangeInterval>0</ChangeInterval>\r\n              <SelectedImages />\r\n              <Font Type=\"MyObjectBuilder_FontDefinition\" Subtype=\"Debug\" />\r\n              <FontSize>1</FontSize>\r\n              <PublicDescription />\r\n              <PublicTitle>Public title</PublicTitle>\r\n              <ShowText>NONE</ShowText>\r\n              <FontColor>\r\n                <PackedValue>4294967295</PackedValue>\r\n                <R>255</R>\r\n                <G>255</G>\r\n                <B>255</B>\r\n                <A>255</A>\r\n              </FontColor>\r\n              <BackgroundColor>\r\n                <PackedValue>4278190080</PackedValue>\r\n                <R>0</R>\r\n                <G>0</G>\r\n                <B>0</B>\r\n                <A>255</A>\r\n              </BackgroundColor>\r\n              <CurrentShownTexture>0</CurrentShownTexture>\r\n            </MyObjectBuilder_CubeBlock>\r\n            <MyObjectBuilder_CubeBlock xsi:type=\"MyObjectBuilder_TextPanel\">\r\n              <SubtypeName>LargeBlockCorner_LCD_Flat_1</SubtypeName>\r\n              <EntityId>98978718368337397</EntityId>\r\n              <Min x=\"2\" y=\"1\" z=\"-1\" />\r\n              <BlockOrientation Forward=\"Down\" Up=\"Forward\" />\r\n              <Owner>144115188075855895</Owner>\r\n              <BuiltBy>144115188075855895</BuiltBy>\r\n              <ShareMode>Faction</ShareMode>\r\n              <ShowOnHUD>false</ShowOnHUD>\r\n              <ShowInTerminal>true</ShowInTerminal>\r\n              <ShowInToolbarConfig>true</ShowInToolbarConfig>\r\n              <ShowInInventory>true</ShowInInventory>\r\n              <Enabled>true</Enabled>\r\n              <Description />\r\n              <Title>Title</Title>\r\n              <AccessFlag>READ_AND_WRITE_FACTION</AccessFlag>\r\n              <ChangeInterval>0</ChangeInterval>\r\n              <SelectedImages />\r\n              <Font Type=\"MyObjectBuilder_FontDefinition\" Subtype=\"Debug\" />\r\n              <FontSize>1</FontSize>\r\n              <PublicDescription />\r\n              <PublicTitle>Public title</PublicTitle>\r\n              <ShowText>NONE</ShowText>\r\n              <FontColor>\r\n                <PackedValue>4294967295</PackedValue>\r\n                <R>255</R>\r\n                <G>255</G>\r\n                <B>255</B>\r\n                <A>255</A>\r\n              </FontColor>\r\n              <BackgroundColor>\r\n                <PackedValue>4278190080</PackedValue>\r\n                <R>0</R>\r\n                <G>0</G>\r\n                <B>0</B>\r\n                <A>255</A>\r\n              </BackgroundColor>\r\n              <CurrentShownTexture>0</CurrentShownTexture>\r\n            </MyObjectBuilder_CubeBlock>\r\n            <MyObjectBuilder_CubeBlock xsi:type=\"MyObjectBuilder_TextPanel\">\r\n              <SubtypeName>LargeBlockCorner_LCD_2</SubtypeName>\r\n              <EntityId>94126229247354132</EntityId>\r\n              <Min x=\"1\" y=\"1\" z=\"-1\" />\r\n              <Owner>144115188075855895</Owner>\r\n              <BuiltBy>144115188075855895</BuiltBy>\r\n              <ShareMode>Faction</ShareMode>\r\n              <ShowOnHUD>false</ShowOnHUD>\r\n              <ShowInTerminal>true</ShowInTerminal>\r\n              <ShowInToolbarConfig>true</ShowInToolbarConfig>\r\n              <ShowInInventory>true</ShowInInventory>\r\n              <Enabled>true</Enabled>\r\n              <Description />\r\n              <Title>Title</Title>\r\n              <AccessFlag>READ_AND_WRITE_FACTION</AccessFlag>\r\n              <ChangeInterval>0</ChangeInterval>\r\n              <SelectedImages />\r\n              <Font Type=\"MyObjectBuilder_FontDefinition\" Subtype=\"Debug\" />\r\n              <FontSize>1</FontSize>\r\n              <PublicDescription />\r\n              <PublicTitle>Public title</PublicTitle>\r\n              <ShowText>NONE</ShowText>\r\n              <FontColor>\r\n                <PackedValue>4294967295</PackedValue>\r\n                <R>255</R>\r\n                <G>255</G>\r\n                <B>255</B>\r\n                <A>255</A>\r\n              </FontColor>\r\n              <BackgroundColor>\r\n                <PackedValue>4278190080</PackedValue>\r\n                <R>0</R>\r\n                <G>0</G>\r\n                <B>0</B>\r\n                <A>255</A>\r\n              </BackgroundColor>\r\n              <CurrentShownTexture>0</CurrentShownTexture>\r\n            </MyObjectBuilder_CubeBlock>\r\n            <MyObjectBuilder_CubeBlock xsi:type=\"MyObjectBuilder_ConveyorConnector\">\r\n              <SubtypeName>ConveyorTube</SubtypeName>\r\n              <EntityId>142448940415840819</EntityId>\r\n              <Min x=\"1\" y=\"7\" z=\"-1\" />\r\n              <BlockOrientation Forward=\"Down\" Up=\"Forward\" />\r\n              <BuiltBy>144115188075855895</BuiltBy>\r\n            </MyObjectBuilder_CubeBlock>\r\n            <MyObjectBuilder_CubeBlock xsi:type=\"MyObjectBuilder_ConveyorConnector\">\r\n              <SubtypeName>ConveyorTubeCurved</SubtypeName>\r\n              <EntityId>124986132581819905</EntityId>\r\n              <Min x=\"2\" y=\"7\" z=\"-1\" />\r\n              <BlockOrientation Forward=\"Right\" Up=\"Forward\" />\r\n              <BuiltBy>144115188075855895</BuiltBy>\r\n            </MyObjectBuilder_CubeBlock>\r\n            <MyObjectBuilder_CubeBlock xsi:type=\"MyObjectBuilder_Conveyor\">\r\n              <SubtypeName>LargeBlockConveyor</SubtypeName>\r\n              <EntityId>101993598630364394</EntityId>\r\n              <Min x=\"1\" y=\"7\" z=\"-2\" />\r\n              <BlockOrientation Forward=\"Left\" Up=\"Forward\" />\r\n              <BuiltBy>144115188075855895</BuiltBy>\r\n            </MyObjectBuilder_CubeBlock>\r\n            <MyObjectBuilder_CubeBlock xsi:type=\"MyObjectBuilder_ShipConnector\">\r\n              <SubtypeName>Connector</SubtypeName>\r\n              <EntityId>118134136527715131</EntityId>\r\n              <Min x=\"1\" y=\"8\" z=\"-2\" />\r\n              <BlockOrientation Forward=\"Up\" Up=\"Left\" />\r\n              <Owner>144115188075855895</Owner>\r\n              <BuiltBy>144115188075855895</BuiltBy>\r\n              <ShareMode>Faction</ShareMode>\r\n              <DeformationRatio>0.5</DeformationRatio>\r\n              <ComponentContainer>\r\n                <Components>\r\n                  <ComponentData>\r\n                    <TypeId>MyInventoryBase</TypeId>\r\n                    <Component xsi:type=\"MyObjectBuilder_Inventory\">\r\n                      <Items />\r\n                      <nextItemId>0</nextItemId>\r\n                      <Volume>8</Volume>\r\n                      <Mass>9223372036854.775807</Mass>\r\n                      <MaxItemCount>2147483647</MaxItemCount>\r\n                      <Size xsi:nil=\"true\" />\r\n                      <InventoryFlags>CanReceive CanSend</InventoryFlags>\r\n                      <RemoveEntityOnEmpty>false</RemoveEntityOnEmpty>\r\n                    </Component>\r\n                  </ComponentData>\r\n                </Components>\r\n              </ComponentContainer>\r\n              <ShowOnHUD>false</ShowOnHUD>\r\n              <ShowInTerminal>true</ShowInTerminal>\r\n              <ShowInToolbarConfig>true</ShowInToolbarConfig>\r\n              <ShowInInventory>true</ShowInInventory>\r\n              <Enabled>true</Enabled>\r\n              <Inventory>\r\n                <Items />\r\n                <nextItemId>0</nextItemId>\r\n                <Volume>8</Volume>\r\n                <Mass>9223372036854.775807</Mass>\r\n                <MaxItemCount>2147483647</MaxItemCount>\r\n                <Size xsi:nil=\"true\" />\r\n                <InventoryFlags>CanReceive CanSend</InventoryFlags>\r\n                <RemoveEntityOnEmpty>false</RemoveEntityOnEmpty>\r\n              </Inventory>\r\n              <MasterToSlaveTransform xsi:nil=\"true\" />\r\n              <MasterToSlaveGrid xsi:nil=\"true\" />\r\n              <IsMaster>true</IsMaster>\r\n            </MyObjectBuilder_CubeBlock>\r\n            <MyObjectBuilder_CubeBlock xsi:type=\"MyObjectBuilder_Collector\">\r\n              <SubtypeName>Collector</SubtypeName>\r\n              <EntityId>92754605325258609</EntityId>\r\n              <Min x=\"0\" y=\"7\" z=\"-2\" />\r\n              <BlockOrientation Forward=\"Left\" Up=\"Forward\" />\r\n              <Owner>144115188075855895</Owner>\r\n              <BuiltBy>144115188075855895</BuiltBy>\r\n              <ShareMode>Faction</ShareMode>\r\n              <ComponentContainer>\r\n                <Components>\r\n                  <ComponentData>\r\n                    <TypeId>MyInventoryBase</TypeId>\r\n                    <Component xsi:type=\"MyObjectBuilder_Inventory\">\r\n                      <Items />\r\n                      <nextItemId>0</nextItemId>\r\n                      <Volume>6.25</Volume>\r\n                      <Mass>9223372036854.775807</Mass>\r\n                      <MaxItemCount>2147483647</MaxItemCount>\r\n                      <Size xsi:nil=\"true\" />\r\n                      <InventoryFlags>CanSend</InventoryFlags>\r\n                      <RemoveEntityOnEmpty>false</RemoveEntityOnEmpty>\r\n                    </Component>\r\n                  </ComponentData>\r\n                </Components>\r\n              </ComponentContainer>\r\n              <ShowOnHUD>false</ShowOnHUD>\r\n              <ShowInTerminal>true</ShowInTerminal>\r\n              <ShowInToolbarConfig>true</ShowInToolbarConfig>\r\n              <ShowInInventory>true</ShowInInventory>\r\n              <Enabled>true</Enabled>\r\n              <Inventory>\r\n                <Items />\r\n                <nextItemId>0</nextItemId>\r\n                <Volume>6.25</Volume>\r\n                <Mass>9223372036854.775807</Mass>\r\n                <MaxItemCount>2147483647</MaxItemCount>\r\n                <Size xsi:nil=\"true\" />\r\n                <InventoryFlags>CanSend</InventoryFlags>\r\n                <RemoveEntityOnEmpty>false</RemoveEntityOnEmpty>\r\n              </Inventory>\r\n            </MyObjectBuilder_CubeBlock>\r\n            <MyObjectBuilder_CubeBlock xsi:type=\"MyObjectBuilder_ConveyorSorter\">\r\n              <SubtypeName>LargeBlockConveyorSorter</SubtypeName>\r\n              <EntityId>139484767405843421</EntityId>\r\n              <Min x=\"2\" y=\"7\" z=\"-2\" />\r\n              <BlockOrientation Forward=\"Right\" Up=\"Up\" />\r\n              <Owner>144115188075855895</Owner>\r\n              <BuiltBy>144115188075855895</BuiltBy>\r\n              <ShareMode>Faction</ShareMode>\r\n              <ComponentContainer>\r\n                <Components>\r\n                  <ComponentData>\r\n                    <TypeId>MyInventoryBase</TypeId>\r\n                    <Component xsi:type=\"MyObjectBuilder_Inventory\">\r\n                      <Items />\r\n                      <nextItemId>0</nextItemId>\r\n                      <Volume>1</Volume>\r\n                      <Mass>9223372036854.775807</Mass>\r\n                      <MaxItemCount>2147483647</MaxItemCount>\r\n                      <Size xsi:nil=\"true\" />\r\n                      <InventoryFlags>CanSend</InventoryFlags>\r\n                      <RemoveEntityOnEmpty>false</RemoveEntityOnEmpty>\r\n                    </Component>\r\n                  </ComponentData>\r\n                </Components>\r\n              </ComponentContainer>\r\n              <ShowOnHUD>false</ShowOnHUD>\r\n              <ShowInTerminal>true</ShowInTerminal>\r\n              <ShowInToolbarConfig>true</ShowInToolbarConfig>\r\n              <ShowInInventory>true</ShowInInventory>\r\n              <Enabled>true</Enabled>\r\n              <IsWhiteList>false</IsWhiteList>\r\n              <DefinitionIds />\r\n              <DefinitionTypes />\r\n              <DrainAll>false</DrainAll>\r\n              <Inventory>\r\n                <Items />\r\n                <nextItemId>0</nextItemId>\r\n                <Volume>1</Volume>\r\n                <Mass>9223372036854.775807</Mass>\r\n                <MaxItemCount>2147483647</MaxItemCount>\r\n                <Size xsi:nil=\"true\" />\r\n                <InventoryFlags>CanSend</InventoryFlags>\r\n                <RemoveEntityOnEmpty>false</RemoveEntityOnEmpty>\r\n              </Inventory>\r\n            </MyObjectBuilder_CubeBlock>\r\n            <MyObjectBuilder_CubeBlock xsi:type=\"MyObjectBuilder_LandingGear\">\r\n              <SubtypeName>LargeBlockLandingGear</SubtypeName>\r\n              <EntityId>142086672937830691</EntityId>\r\n              <Min x=\"0\" y=\"-1\" z=\"-2\" />\r\n              <BlockOrientation Forward=\"Down\" Up=\"Backward\" />\r\n              <BuiltBy>144115188075855895</BuiltBy>\r\n              <ShowOnHUD>false</ShowOnHUD>\r\n              <ShowInTerminal>true</ShowInTerminal>\r\n              <ShowInToolbarConfig>true</ShowInToolbarConfig>\r\n              <ShowInInventory>true</ShowInInventory>\r\n              <Enabled>true</Enabled>\r\n              <IsLocked>false</IsLocked>\r\n              <BrakeForce>1</BrakeForce>\r\n              <AutoLock>true</AutoLock>\r\n              <FirstLockAttempt>false</FirstLockAttempt>\r\n              <LockSound>ArcShipLandGearOn</LockSound>\r\n              <UnlockSound>ArcShipLandGearOff</UnlockSound>\r\n              <FailedAttachSound>ArcShipLandGearNothing01</FailedAttachSound>\r\n              <AttachedEntityId xsi:nil=\"true\" />\r\n              <MasterToSlave xsi:nil=\"true\" />\r\n              <GearPivotPosition xsi:nil=\"true\" />\r\n              <OtherPivot xsi:nil=\"true\" />\r\n              <LockMode>Unlocked</LockMode>\r\n            </MyObjectBuilder_CubeBlock>\r\n            <MyObjectBuilder_CubeBlock xsi:type=\"MyObjectBuilder_ExtendedPistonBase\">\r\n              <SubtypeName>LargePistonBase</SubtypeName>\r\n              <EntityId>109271613846369657</EntityId>\r\n              <Min x=\"12\" y=\"0\" z=\"0\" />\r\n              <Owner>144115188075855895</Owner>\r\n              <BuiltBy>144115188075855895</BuiltBy>\r\n              <ShareMode>Faction</ShareMode>\r\n              <ShowOnHUD>false</ShowOnHUD>\r\n              <ShowInTerminal>true</ShowInTerminal>\r\n              <ShowInToolbarConfig>true</ShowInToolbarConfig>\r\n              <ShowInInventory>true</ShowInInventory>\r\n              <Enabled>true</Enabled>\r\n              <MasterToSlaveTransform>\r\n                <Position x=\"-0.0025335603859275579\" y=\"1.4098180532455444\" z=\"0.0080790314823389053\" />\r\n                <Forward x=\"-6.361312E-08\" y=\"-8.812136E-07\" z=\"-1\" />\r\n                <Up x=\"-1.54619073E-08\" y=\"1\" z=\"-8.812136E-07\" />\r\n                <Orientation>\r\n                  <X>-4.406068E-07</X>\r\n                  <Y>3.18065645E-08</Y>\r\n                  <Z>7.73093944E-09</Z>\r\n                  <W>1</W>\r\n                </Orientation>\r\n              </MasterToSlaveTransform>\r\n              <weldSpeed>95</weldSpeed>\r\n              <forceWeld>false</forceWeld>\r\n              <TopBlockId>111805194077903389</TopBlockId>\r\n              <IsWelded>false</IsWelded>\r\n              <Velocity>-0.1</Velocity>\r\n              <MaxLimit>1</MaxLimit>\r\n              <MinLimit>0</MinLimit>\r\n              <Reverse>false</Reverse>\r\n              <CurrentPosition>0</CurrentPosition>\r\n            </MyObjectBuilder_CubeBlock>\r\n            <MyObjectBuilder_CubeBlock xsi:type=\"MyObjectBuilder_MotorAdvancedStator\">\r\n              <SubtypeName>LargeAdvancedStator</SubtypeName>\r\n              <EntityId>133929753185964267</EntityId>\r\n              <Min x=\"1\" y=\"9\" z=\"0\" />\r\n              <Owner>144115188075855895</Owner>\r\n              <BuiltBy>144115188075855895</BuiltBy>\r\n              <ShareMode>Faction</ShareMode>\r\n              <ShowOnHUD>false</ShowOnHUD>\r\n              <ShowInTerminal>true</ShowInTerminal>\r\n              <ShowInToolbarConfig>true</ShowInToolbarConfig>\r\n              <ShowInInventory>true</ShowInInventory>\r\n              <Enabled>true</Enabled>\r\n              <MasterToSlaveTransform>\r\n                <Position x=\"1.1724203432095237E-05\" y=\"0.20016713440418243\" z=\"0.00025913433637470007\" />\r\n                <Forward x=\"8.219617E-07\" y=\"-9.76865E-07\" z=\"-1\" />\r\n                <Up x=\"-6.798884E-08\" y=\"1\" z=\"-9.76865E-07\" />\r\n                <Orientation>\r\n                  <X>-4.884325E-07</X>\r\n                  <Y>-4.10980817E-07</Y>\r\n                  <Z>3.3994624E-08</Z>\r\n                  <W>1</W>\r\n                </Orientation>\r\n              </MasterToSlaveTransform>\r\n              <weldSpeed>95</weldSpeed>\r\n              <forceWeld>false</forceWeld>\r\n              <TopBlockId>143993098009495818</TopBlockId>\r\n              <IsWelded>false</IsWelded>\r\n              <RotorEntityId xsi:nil=\"true\" />\r\n              <WeldedEntityId xsi:nil=\"true\" />\r\n              <TargetVelocity>0</TargetVelocity>\r\n              <MinAngle xsi:nil=\"true\" />\r\n              <MaxAngle xsi:nil=\"true\" />\r\n              <CurrentAngle>8.773054E-07</CurrentAngle>\r\n              <LimitsActive>false</LimitsActive>\r\n            </MyObjectBuilder_CubeBlock>\r\n            <MyObjectBuilder_CubeBlock xsi:type=\"MyObjectBuilder_MotorStator\">\r\n              <SubtypeName>LargeStator</SubtypeName>\r\n              <EntityId>93554793163520165</EntityId>\r\n              <Min x=\"2\" y=\"9\" z=\"0\" />\r\n              <Owner>144115188075855895</Owner>\r\n              <BuiltBy>144115188075855895</BuiltBy>\r\n              <ShareMode>Faction</ShareMode>\r\n              <ShowOnHUD>false</ShowOnHUD>\r\n              <ShowInTerminal>true</ShowInTerminal>\r\n              <ShowInToolbarConfig>true</ShowInToolbarConfig>\r\n              <ShowInInventory>true</ShowInInventory>\r\n              <Enabled>true</Enabled>\r\n              <MasterToSlaveTransform>\r\n                <Position x=\"1.4211384041118436E-05\" y=\"0.42084208130836487\" z=\"0.0002813367173075676\" />\r\n                <Forward x=\"-3.47482643E-09\" y=\"-9.748867E-07\" z=\"-1\" />\r\n                <Up x=\"-6.77389451E-08\" y=\"1\" z=\"-9.748867E-07\" />\r\n                <Orientation>\r\n                  <X>-4.87443344E-07</X>\r\n                  <Y>1.73742976E-09</Y>\r\n                  <Z>3.38694726E-08</Z>\r\n                  <W>1</W>\r\n                </Orientation>\r\n              </MasterToSlaveTransform>\r\n              <weldSpeed>95</weldSpeed>\r\n              <forceWeld>false</forceWeld>\r\n              <TopBlockId>135398853972127406</TopBlockId>\r\n              <IsWelded>false</IsWelded>\r\n              <RotorEntityId xsi:nil=\"true\" />\r\n              <WeldedEntityId xsi:nil=\"true\" />\r\n              <TargetVelocity>0</TargetVelocity>\r\n              <MinAngle xsi:nil=\"true\" />\r\n              <MaxAngle xsi:nil=\"true\" />\r\n              <CurrentAngle>6.28318548</CurrentAngle>\r\n              <LimitsActive>false</LimitsActive>\r\n            </MyObjectBuilder_CubeBlock>\r\n            <MyObjectBuilder_CubeBlock xsi:type=\"MyObjectBuilder_MergeBlock\">\r\n              <SubtypeName>LargeShipMergeBlock</SubtypeName>\r\n              <EntityId>97770274472760134</EntityId>\r\n              <Min x=\"3\" y=\"8\" z=\"0\" />\r\n              <BlockOrientation Forward=\"Down\" Up=\"Forward\" />\r\n              <Owner>144115188075855895</Owner>\r\n              <BuiltBy>144115188075855895</BuiltBy>\r\n              <ShareMode>Faction</ShareMode>\r\n              <ShowOnHUD>false</ShowOnHUD>\r\n              <ShowInTerminal>true</ShowInTerminal>\r\n              <ShowInToolbarConfig>true</ShowInToolbarConfig>\r\n              <ShowInInventory>true</ShowInInventory>\r\n              <Enabled>true</Enabled>\r\n            </MyObjectBuilder_CubeBlock>\r\n            <MyObjectBuilder_CubeBlock xsi:type=\"MyObjectBuilder_OxygenGenerator\">\r\n              <SubtypeName />\r\n              <EntityId>142078161275068285</EntityId>\r\n              <Min x=\"0\" y=\"3\" z=\"0\" />\r\n              <BlockOrientation Forward=\"Left\" Up=\"Up\" />\r\n              <Owner>144115188075855895</Owner>\r\n              <BuiltBy>144115188075855895</BuiltBy>\r\n              <ShareMode>Faction</ShareMode>\r\n              <ComponentContainer>\r\n                <Components>\r\n                  <ComponentData>\r\n                    <TypeId>MyInventoryBase</TypeId>\r\n                    <Component xsi:type=\"MyObjectBuilder_Inventory\">\r\n                      <Items />\r\n                      <nextItemId>0</nextItemId>\r\n                      <Volume>4</Volume>\r\n                      <Mass>9223372036854.775807</Mass>\r\n                      <MaxItemCount>2147483647</MaxItemCount>\r\n                      <Size xsi:nil=\"true\" />\r\n                      <InventoryFlags>CanReceive</InventoryFlags>\r\n                      <RemoveEntityOnEmpty>false</RemoveEntityOnEmpty>\r\n                    </Component>\r\n                  </ComponentData>\r\n                </Components>\r\n              </ComponentContainer>\r\n              <ShowOnHUD>false</ShowOnHUD>\r\n              <ShowInTerminal>true</ShowInTerminal>\r\n              <ShowInToolbarConfig>true</ShowInToolbarConfig>\r\n              <ShowInInventory>true</ShowInInventory>\r\n              <Enabled>true</Enabled>\r\n              <Inventory>\r\n                <Items />\r\n                <nextItemId>0</nextItemId>\r\n                <Volume>4</Volume>\r\n                <Mass>9223372036854.775807</Mass>\r\n                <MaxItemCount>2147483647</MaxItemCount>\r\n                <Size xsi:nil=\"true\" />\r\n                <InventoryFlags>CanReceive</InventoryFlags>\r\n                <RemoveEntityOnEmpty>false</RemoveEntityOnEmpty>\r\n              </Inventory>\r\n            </MyObjectBuilder_CubeBlock>\r\n            <MyObjectBuilder_CubeBlock xsi:type=\"MyObjectBuilder_OxygenTank\">\r\n              <SubtypeName />\r\n              <EntityId>92552065077817701</EntityId>\r\n              <Min x=\"0\" y=\"5\" z=\"0\" />\r\n              <BlockOrientation Forward=\"Left\" Up=\"Up\" />\r\n              <Owner>144115188075855895</Owner>\r\n              <BuiltBy>144115188075855895</BuiltBy>\r\n              <ShareMode>Faction</ShareMode>\r\n              <ComponentContainer>\r\n                <Components>\r\n                  <ComponentData>\r\n                    <TypeId>MyInventoryBase</TypeId>\r\n                    <Component xsi:type=\"MyObjectBuilder_Inventory\">\r\n                      <Items />\r\n                      <nextItemId>0</nextItemId>\r\n                      <Volume>4</Volume>\r\n                      <Mass>9223372036854.775807</Mass>\r\n                      <MaxItemCount>2147483647</MaxItemCount>\r\n                      <Size xsi:nil=\"true\" />\r\n                      <InventoryFlags>CanReceive</InventoryFlags>\r\n                      <RemoveEntityOnEmpty>false</RemoveEntityOnEmpty>\r\n                    </Component>\r\n                  </ComponentData>\r\n                </Components>\r\n              </ComponentContainer>\r\n              <ShowOnHUD>false</ShowOnHUD>\r\n              <ShowInTerminal>true</ShowInTerminal>\r\n              <ShowInToolbarConfig>true</ShowInToolbarConfig>\r\n              <ShowInInventory>true</ShowInInventory>\r\n              <Enabled>true</Enabled>\r\n              <IsStockpiling>false</IsStockpiling>\r\n              <FilledRatio>1</FilledRatio>\r\n              <Inventory>\r\n                <Items />\r\n                <nextItemId>0</nextItemId>\r\n                <Volume>4</Volume>\r\n                <Mass>9223372036854.775807</Mass>\r\n                <MaxItemCount>2147483647</MaxItemCount>\r\n                <Size xsi:nil=\"true\" />\r\n                <InventoryFlags>CanReceive</InventoryFlags>\r\n                <RemoveEntityOnEmpty>false</RemoveEntityOnEmpty>\r\n              </Inventory>\r\n              <AutoRefill>false</AutoRefill>\r\n            </MyObjectBuilder_CubeBlock>\r\n            <MyObjectBuilder_CubeBlock xsi:type=\"MyObjectBuilder_OxygenTank\">\r\n              <SubtypeName>LargeHydrogenTank</SubtypeName>\r\n              <EntityId>85604701358014392</EntityId>\r\n              <Min x=\"-2\" y=\"7\" z=\"-1\" />\r\n              <BlockOrientation Forward=\"Forward\" Up=\"Right\" />\r\n              <Owner>144115188075855895</Owner>\r\n              <BuiltBy>144115188075855895</BuiltBy>\r\n              <ShareMode>Faction</ShareMode>\r\n              <ComponentContainer>\r\n                <Components>\r\n                  <ComponentData>\r\n                    <TypeId>MyInventoryBase</TypeId>\r\n                    <Component xsi:type=\"MyObjectBuilder_Inventory\">\r\n                      <Items />\r\n                      <nextItemId>0</nextItemId>\r\n                      <Volume>4</Volume>\r\n                      <Mass>9223372036854.775807</Mass>\r\n                      <MaxItemCount>2147483647</MaxItemCount>\r\n                      <Size xsi:nil=\"true\" />\r\n                      <InventoryFlags>CanReceive</InventoryFlags>\r\n                      <RemoveEntityOnEmpty>false</RemoveEntityOnEmpty>\r\n                    </Component>\r\n                  </ComponentData>\r\n                </Components>\r\n              </ComponentContainer>\r\n              <ShowOnHUD>false</ShowOnHUD>\r\n              <ShowInTerminal>true</ShowInTerminal>\r\n              <ShowInToolbarConfig>true</ShowInToolbarConfig>\r\n              <ShowInInventory>true</ShowInInventory>\r\n              <Enabled>true</Enabled>\r\n              <IsStockpiling>false</IsStockpiling>\r\n              <FilledRatio>0</FilledRatio>\r\n              <Inventory>\r\n                <Items />\r\n                <nextItemId>0</nextItemId>\r\n                <Volume>4</Volume>\r\n                <Mass>9223372036854.775807</Mass>\r\n                <MaxItemCount>2147483647</MaxItemCount>\r\n                <Size xsi:nil=\"true\" />\r\n                <InventoryFlags>CanReceive</InventoryFlags>\r\n                <RemoveEntityOnEmpty>false</RemoveEntityOnEmpty>\r\n              </Inventory>\r\n              <AutoRefill>false</AutoRefill>\r\n            </MyObjectBuilder_CubeBlock>\r\n            <MyObjectBuilder_CubeBlock xsi:type=\"MyObjectBuilder_OxygenFarm\">\r\n              <SubtypeName>LargeBlockOxygenFarm</SubtypeName>\r\n              <EntityId>135869144655182192</EntityId>\r\n              <Min x=\"-1\" y=\"4\" z=\"0\" />\r\n              <BlockOrientation Forward=\"Forward\" Up=\"Right\" />\r\n              <Owner>144115188075855895</Owner>\r\n              <BuiltBy>144115188075855895</BuiltBy>\r\n              <ShareMode>Faction</ShareMode>\r\n              <ShowOnHUD>false</ShowOnHUD>\r\n              <ShowInTerminal>true</ShowInTerminal>\r\n              <ShowInToolbarConfig>true</ShowInToolbarConfig>\r\n              <ShowInInventory>true</ShowInInventory>\r\n              <Enabled>true</Enabled>\r\n            </MyObjectBuilder_CubeBlock>\r\n          </CubeBlocks>\r\n          <ConveyorLines>\r\n            <MyObjectBuilder_ConveyorLine>\r\n              <StartPosition x=\"5\" y=\"-1\" z=\"0\" />\r\n              <StartDirection>Down</StartDirection>\r\n              <EndPosition x=\"5\" y=\"-2\" z=\"0\" />\r\n              <EndDirection>Up</EndDirection>\r\n              <Sections />\r\n              <ConveyorLineType>LARGE_LINE</ConveyorLineType>\r\n            </MyObjectBuilder_ConveyorLine>\r\n            <MyObjectBuilder_ConveyorLine>\r\n              <StartPosition x=\"7\" y=\"-2\" z=\"0\" />\r\n              <StartDirection>Down</StartDirection>\r\n              <EndPosition x=\"7\" y=\"-3\" z=\"0\" />\r\n              <EndDirection>Up</EndDirection>\r\n              <Sections />\r\n              <ConveyorLineType>LARGE_LINE</ConveyorLineType>\r\n            </MyObjectBuilder_ConveyorLine>\r\n            <MyObjectBuilder_ConveyorLine>\r\n              <StartPosition x=\"7\" y=\"0\" z=\"0\" />\r\n              <StartDirection>Up</StartDirection>\r\n              <EndPosition x=\"7\" y=\"1\" z=\"0\" />\r\n              <EndDirection>Down</EndDirection>\r\n              <Sections />\r\n              <ConveyorLineType>LARGE_LINE</ConveyorLineType>\r\n            </MyObjectBuilder_ConveyorLine>\r\n            <MyObjectBuilder_ConveyorLine>\r\n              <StartPosition x=\"7\" y=\"-1\" z=\"-1\" />\r\n              <StartDirection>Forward</StartDirection>\r\n              <EndPosition x=\"7\" y=\"-1\" z=\"-2\" />\r\n              <EndDirection>Backward</EndDirection>\r\n              <Sections />\r\n              <ConveyorLineType>LARGE_LINE</ConveyorLineType>\r\n            </MyObjectBuilder_ConveyorLine>\r\n            <MyObjectBuilder_ConveyorLine>\r\n              <StartPosition x=\"1\" y=\"3\" z=\"0\" />\r\n              <StartDirection>Left</StartDirection>\r\n              <EndPosition x=\"0\" y=\"3\" z=\"0\" />\r\n              <EndDirection>Right</EndDirection>\r\n              <Sections />\r\n              <ConveyorLineType>LARGE_LINE</ConveyorLineType>\r\n            </MyObjectBuilder_ConveyorLine>\r\n            <MyObjectBuilder_ConveyorLine>\r\n              <StartPosition x=\"1\" y=\"6\" z=\"0\" />\r\n              <StartDirection>Up</StartDirection>\r\n              <EndPosition x=\"1\" y=\"7\" z=\"0\" />\r\n              <EndDirection>Down</EndDirection>\r\n              <Sections />\r\n              <ConveyorLineType>LARGE_LINE</ConveyorLineType>\r\n            </MyObjectBuilder_ConveyorLine>\r\n            <MyObjectBuilder_ConveyorLine>\r\n              <StartPosition x=\"1\" y=\"8\" z=\"0\" />\r\n              <StartDirection>Up</StartDirection>\r\n              <EndPosition x=\"1\" y=\"9\" z=\"0\" />\r\n              <EndDirection>Down</EndDirection>\r\n              <Sections />\r\n              <ConveyorLineType>LARGE_LINE</ConveyorLineType>\r\n            </MyObjectBuilder_ConveyorLine>\r\n            <MyObjectBuilder_ConveyorLine>\r\n              <StartPosition x=\"1\" y=\"7\" z=\"0\" />\r\n              <StartDirection>Forward</StartDirection>\r\n              <EndPosition x=\"1\" y=\"7\" z=\"-2\" />\r\n              <EndDirection>Backward</EndDirection>\r\n              <Sections />\r\n              <ConveyorLineType>LARGE_LINE</ConveyorLineType>\r\n            </MyObjectBuilder_ConveyorLine>\r\n            <MyObjectBuilder_ConveyorLine>\r\n              <StartPosition x=\"2\" y=\"8\" z=\"-1\" />\r\n              <StartDirection>Down</StartDirection>\r\n              <EndPosition x=\"2\" y=\"7\" z=\"0\" />\r\n              <EndDirection>Forward</EndDirection>\r\n              <Sections>\r\n                <Section Direction=\"Down\" Length=\"1\" />\r\n                <Section Direction=\"Backward\" Length=\"1\" />\r\n              </Sections>\r\n              <ConveyorLineType>LARGE_LINE</ConveyorLineType>\r\n            </MyObjectBuilder_ConveyorLine>\r\n            <MyObjectBuilder_ConveyorLine>\r\n              <StartPosition x=\"1\" y=\"7\" z=\"-2\" />\r\n              <StartDirection>Right</StartDirection>\r\n              <EndPosition x=\"2\" y=\"7\" z=\"-2\" />\r\n              <EndDirection>Left</EndDirection>\r\n              <Sections />\r\n              <ConveyorLineType>LARGE_LINE</ConveyorLineType>\r\n              <ConveyorLineConductivity>BACKWARD</ConveyorLineConductivity>\r\n            </MyObjectBuilder_ConveyorLine>\r\n            <MyObjectBuilder_ConveyorLine>\r\n              <StartPosition x=\"1\" y=\"7\" z=\"-2\" />\r\n              <StartDirection>Left</StartDirection>\r\n              <EndPosition x=\"0\" y=\"7\" z=\"-2\" />\r\n              <EndDirection>Right</EndDirection>\r\n              <Sections />\r\n              <ConveyorLineType>LARGE_LINE</ConveyorLineType>\r\n            </MyObjectBuilder_ConveyorLine>\r\n            <MyObjectBuilder_ConveyorLine>\r\n              <StartPosition x=\"1\" y=\"7\" z=\"-2\" />\r\n              <StartDirection>Up</StartDirection>\r\n              <EndPosition x=\"1\" y=\"8\" z=\"-2\" />\r\n              <EndDirection>Down</EndDirection>\r\n              <Sections />\r\n              <ConveyorLineType>LARGE_LINE</ConveyorLineType>\r\n            </MyObjectBuilder_ConveyorLine>\r\n            <MyObjectBuilder_ConveyorLine>\r\n              <StartPosition x=\"0\" y=\"4\" z=\"0\" />\r\n              <StartDirection>Up</StartDirection>\r\n              <EndPosition x=\"0\" y=\"5\" z=\"0\" />\r\n              <EndDirection>Down</EndDirection>\r\n              <Sections />\r\n              <ConveyorLineType>LARGE_LINE</ConveyorLineType>\r\n            </MyObjectBuilder_ConveyorLine>\r\n            <MyObjectBuilder_ConveyorLine>\r\n              <StartPosition x=\"-1\" y=\"7\" z=\"0\" />\r\n              <StartDirection>Down</StartDirection>\r\n              <EndPosition x=\"-1\" y=\"6\" z=\"0\" />\r\n              <EndDirection>Up</EndDirection>\r\n              <Sections />\r\n              <ConveyorLineType>LARGE_LINE</ConveyorLineType>\r\n            </MyObjectBuilder_ConveyorLine>\r\n          </ConveyorLines>\r\n          <DisplayName>EveryLargeBlockOnce</DisplayName>\r\n          <OxygenAmount>\r\n            <float>0</float>\r\n            <float>0</float>\r\n            <float>0</float>\r\n            <float>0</float>\r\n          </OxygenAmount>\r\n          <DestructibleBlocks>true</DestructibleBlocks>\r\n          <IsRespawnGrid>false</IsRespawnGrid>\r\n          <LocalCoordSys>0</LocalCoordSys>\r\n          <TargetingTargets />\r\n        </CubeGrid>\r\n        <CubeGrid>\r\n          <SubtypeName />\r\n          <EntityId>88844725292475737</EntityId>\r\n          <PersistentFlags>CastShadows InScene</PersistentFlags>\r\n          <PositionAndOrientation>\r\n            <Position x=\"-191.43726869606689\" y=\"-180.05720609580567\" z=\"-42.782053721119155\" />\r\n            <Forward x=\"-8.014063E-06\" y=\"-1.1421218E-05\" z=\"-1\" />\r\n            <Up x=\"-1.12870548E-05\" y=\"1\" z=\"-1.14211271E-05\" />\r\n            <Orientation>\r\n              <X>-5.71058627E-06</X>\r\n              <Y>4.00706358E-06</Y>\r\n              <Z>5.64350466E-06</Z>\r\n              <W>1</W>\r\n            </Orientation>\r\n          </PositionAndOrientation>\r\n          <GridSizeEnum>Large</GridSizeEnum>\r\n          <CubeBlocks>\r\n            <MyObjectBuilder_CubeBlock xsi:type=\"MyObjectBuilder_PistonTop\">\r\n              <SubtypeName>LargePistonTop</SubtypeName>\r\n              <EntityId>111805194077903389</EntityId>\r\n              <BuiltBy>144115188075855895</BuiltBy>\r\n              <ParentEntityId>109271613846369657</ParentEntityId>\r\n            </MyObjectBuilder_CubeBlock>\r\n          </CubeBlocks>\r\n          <DisplayName>Large Grid 5737</DisplayName>\r\n          <DestructibleBlocks>true</DestructibleBlocks>\r\n          <IsRespawnGrid>false</IsRespawnGrid>\r\n          <LocalCoordSys>0</LocalCoordSys>\r\n          <TargetingTargets />\r\n        </CubeGrid>\r\n        <CubeGrid>\r\n          <SubtypeName />\r\n          <EntityId>91025959804006608</EntityId>\r\n          <PersistentFlags>CastShadows InScene</PersistentFlags>\r\n          <PositionAndOrientation>\r\n            <Position x=\"-218.93494936012939\" y=\"-160.01716703330567\" z=\"-42.789866221119155\" />\r\n            <Forward x=\"-7.12848669E-06\" y=\"-1.15168586E-05\" z=\"-1\" />\r\n            <Up x=\"-1.13395827E-05\" y=\"1\" z=\"-1.15167786E-05\" />\r\n            <Orientation>\r\n              <X>-5.75840932E-06</X>\r\n              <Y>3.564276E-06</Y>\r\n              <Z>5.669771E-06</Z>\r\n              <W>1</W>\r\n            </Orientation>\r\n          </PositionAndOrientation>\r\n          <GridSizeEnum>Large</GridSizeEnum>\r\n          <CubeBlocks>\r\n            <MyObjectBuilder_CubeBlock xsi:type=\"MyObjectBuilder_MotorAdvancedRotor\">\r\n              <SubtypeName>LargeAdvancedRotor</SubtypeName>\r\n              <EntityId>143993098009495818</EntityId>\r\n              <BuiltBy>144115188075855895</BuiltBy>\r\n              <ParentEntityId>133929753185964267</ParentEntityId>\r\n            </MyObjectBuilder_CubeBlock>\r\n          </CubeBlocks>\r\n          <DisplayName>Large Grid 6608</DisplayName>\r\n          <DestructibleBlocks>true</DestructibleBlocks>\r\n          <IsRespawnGrid>false</IsRespawnGrid>\r\n          <LocalCoordSys>0</LocalCoordSys>\r\n          <TargetingTargets />\r\n        </CubeGrid>\r\n        <CubeGrid>\r\n          <SubtypeName />\r\n          <EntityId>140149405294772869</EntityId>\r\n          <PersistentFlags>CastShadows InScene</PersistentFlags>\r\n          <PositionAndOrientation>\r\n            <Position x=\"-216.43494936012939\" y=\"-159.79646390830567\" z=\"-42.789866221119155\" />\r\n            <Forward x=\"-8.484978E-06\" y=\"-1.10166538E-05\" z=\"-1\" />\r\n            <Up x=\"-1.18356593E-05\" y=\"1\" z=\"-1.10165538E-05\" />\r\n            <Orientation>\r\n              <X>-5.508302E-06</X>\r\n              <Y>4.24252175E-06</Y>\r\n              <Z>5.91780645E-06</Z>\r\n              <W>1</W>\r\n            </Orientation>\r\n          </PositionAndOrientation>\r\n          <GridSizeEnum>Large</GridSizeEnum>\r\n          <CubeBlocks>\r\n            <MyObjectBuilder_CubeBlock xsi:type=\"MyObjectBuilder_MotorRotor\">\r\n              <SubtypeName>LargeRotor</SubtypeName>\r\n              <EntityId>135398853972127406</EntityId>\r\n              <BuiltBy>144115188075855895</BuiltBy>\r\n              <ParentEntityId>93554793163520165</ParentEntityId>\r\n            </MyObjectBuilder_CubeBlock>\r\n          </CubeBlocks>\r\n          <DisplayName>Large Grid 2869</DisplayName>\r\n          <DestructibleBlocks>true</DestructibleBlocks>\r\n          <IsRespawnGrid>false</IsRespawnGrid>\r\n          <LocalCoordSys>0</LocalCoordSys>\r\n          <TargetingTargets />\r\n        </CubeGrid>\r\n      </CubeGrids>\r\n      <WorkshopId>0</WorkshopId>\r\n      <OwnerSteamId>76561198084919043</OwnerSteamId>\r\n      <Points>0</Points>\r\n    </ShipBlueprint>\r\n  </ShipBlueprints>\r\n</Definitions>"
+
+/***/ }),
+
 /***/ "../node_modules/attr-accept/dist/index.js":
 /***/ (function(module, exports) {
 
@@ -10673,6 +10680,50 @@ exports.default = DeleteForever;
 
 /***/ }),
 
+/***/ "../node_modules/material-ui-icons/Error.js":
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(global) {
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__("../node_modules/react/index.js");
+
+var _react2 = _interopRequireDefault(_react);
+
+var _pure = __webpack_require__("../node_modules/recompose/pure.js");
+
+var _pure2 = _interopRequireDefault(_pure);
+
+var _SvgIcon = __webpack_require__("../node_modules/material-ui/SvgIcon/index.js");
+
+var _SvgIcon2 = _interopRequireDefault(_SvgIcon);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var SvgIconCustom = global.__MUI_SvgIcon__ || _SvgIcon2.default;
+
+var _ref = _react2.default.createElement('path', { d: 'M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z' });
+
+var Error = function Error(props) {
+  return _react2.default.createElement(
+    SvgIconCustom,
+    props,
+    _ref
+  );
+};
+
+Error = (0, _pure2.default)(Error);
+Error.muiName = 'SvgIcon';
+
+exports.default = Error;
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__("../node_modules/webpack/buildin/global.js")))
+
+/***/ }),
+
 /***/ "../node_modules/material-ui-icons/Menu.js":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -12572,6 +12623,1085 @@ Object.defineProperty(exports, 'default', {
   enumerable: true,
   get: function get() {
     return _interopRequireDefault(_Checkbox).default;
+  }
+});
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+/***/ }),
+
+/***/ "../node_modules/material-ui/Dialog/Dialog.js":
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.styles = undefined;
+
+var _extends2 = __webpack_require__("../node_modules/babel-runtime/helpers/extends.js");
+
+var _extends3 = _interopRequireDefault(_extends2);
+
+var _defineProperty2 = __webpack_require__("../node_modules/babel-runtime/helpers/defineProperty.js");
+
+var _defineProperty3 = _interopRequireDefault(_defineProperty2);
+
+var _objectWithoutProperties2 = __webpack_require__("../node_modules/babel-runtime/helpers/objectWithoutProperties.js");
+
+var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
+
+var _getPrototypeOf = __webpack_require__("../node_modules/babel-runtime/core-js/object/get-prototype-of.js");
+
+var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
+
+var _classCallCheck2 = __webpack_require__("../node_modules/babel-runtime/helpers/classCallCheck.js");
+
+var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
+
+var _createClass2 = __webpack_require__("../node_modules/babel-runtime/helpers/createClass.js");
+
+var _createClass3 = _interopRequireDefault(_createClass2);
+
+var _possibleConstructorReturn2 = __webpack_require__("../node_modules/babel-runtime/helpers/possibleConstructorReturn.js");
+
+var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
+
+var _inherits2 = __webpack_require__("../node_modules/babel-runtime/helpers/inherits.js");
+
+var _inherits3 = _interopRequireDefault(_inherits2);
+
+var _react = __webpack_require__("../node_modules/react/index.js");
+
+var _react2 = _interopRequireDefault(_react);
+
+var _classnames = __webpack_require__("../node_modules/classnames/index.js");
+
+var _classnames2 = _interopRequireDefault(_classnames);
+
+var _withStyles = __webpack_require__("../node_modules/material-ui/styles/withStyles.js");
+
+var _withStyles2 = _interopRequireDefault(_withStyles);
+
+var _helpers = __webpack_require__("../node_modules/material-ui/utils/helpers.js");
+
+var _Modal = __webpack_require__("../node_modules/material-ui/Modal/index.js");
+
+var _Modal2 = _interopRequireDefault(_Modal);
+
+var _Fade = __webpack_require__("../node_modules/material-ui/transitions/Fade.js");
+
+var _Fade2 = _interopRequireDefault(_Fade);
+
+var _transitions = __webpack_require__("../node_modules/material-ui/styles/transitions.js");
+
+var _Paper = __webpack_require__("../node_modules/material-ui/Paper/index.js");
+
+var _Paper2 = _interopRequireDefault(_Paper);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var babelPluginFlowReactPropTypes_proptype_Node = __webpack_require__("../node_modules/react/index.js").babelPluginFlowReactPropTypes_proptype_Node || __webpack_require__("../node_modules/prop-types/index.js").any;
+// @inheritedComponent Modal
+
+var babelPluginFlowReactPropTypes_proptype_ComponentType = __webpack_require__("../node_modules/prop-types/index.js").func;
+
+var babelPluginFlowReactPropTypes_proptype_TransitionCallback = __webpack_require__("../node_modules/material-ui/internal/transition.js").babelPluginFlowReactPropTypes_proptype_TransitionCallback || __webpack_require__("../node_modules/prop-types/index.js").any;
+
+var babelPluginFlowReactPropTypes_proptype_TransitionDuration = __webpack_require__("../node_modules/material-ui/internal/transition.js").babelPluginFlowReactPropTypes_proptype_TransitionDuration || __webpack_require__("../node_modules/prop-types/index.js").any;
+
+var styles = exports.styles = function styles(theme) {
+  return {
+    root: {
+      justifyContent: 'center',
+      alignItems: 'center'
+    },
+    paper: {
+      display: 'flex',
+      margin: theme.spacing.unit * 4,
+      flexDirection: 'column',
+      flex: '0 1 auto',
+      position: 'relative',
+      maxHeight: '90vh',
+      overflowY: 'auto', // Fix IE11 issue, to remove at some point.
+      '&:focus': {
+        outline: 'none'
+      }
+    },
+    paperWidthXs: {
+      maxWidth: Math.max(theme.breakpoints.values.xs, 360)
+    },
+    paperWidthSm: {
+      maxWidth: theme.breakpoints.values.sm
+    },
+    paperWidthMd: {
+      maxWidth: theme.breakpoints.values.md
+    },
+    fullWidth: {
+      width: '100%'
+    },
+    fullScreen: {
+      margin: 0,
+      width: '100%',
+      maxWidth: '100%',
+      height: '100%',
+      maxHeight: '100%',
+      borderRadius: 0
+    }
+  };
+};
+
+var babelPluginFlowReactPropTypes_proptype_Props = {
+  /**
+   * Dialog children, usually the included sub-components.
+   */
+  children: typeof babelPluginFlowReactPropTypes_proptype_Node === 'function' ? babelPluginFlowReactPropTypes_proptype_Node : __webpack_require__("../node_modules/prop-types/index.js").shape(babelPluginFlowReactPropTypes_proptype_Node),
+
+  /**
+   * Useful to extend the style applied to components.
+   */
+  classes: __webpack_require__("../node_modules/prop-types/index.js").object,
+
+  /**
+   * @ignore
+   */
+  className: __webpack_require__("../node_modules/prop-types/index.js").string,
+
+  /**
+   * If `true`, it will be full-screen
+   */
+  fullScreen: __webpack_require__("../node_modules/prop-types/index.js").bool.isRequired,
+
+  /**
+   * If `true`, clicking the backdrop will not fire the `onRequestClose` callback.
+   */
+  ignoreBackdropClick: __webpack_require__("../node_modules/prop-types/index.js").bool.isRequired,
+
+  /**
+   * If `true`, hitting escape will not fire the `onRequestClose` callback.
+   */
+  ignoreEscapeKeyUp: __webpack_require__("../node_modules/prop-types/index.js").bool.isRequired,
+
+  /**
+   * The duration for the transition, in milliseconds.
+   * You may specify a single timeout for all transitions, or individually with an object.
+   */
+  transitionDuration: typeof babelPluginFlowReactPropTypes_proptype_TransitionDuration === 'function' ? babelPluginFlowReactPropTypes_proptype_TransitionDuration.isRequired ? babelPluginFlowReactPropTypes_proptype_TransitionDuration.isRequired : babelPluginFlowReactPropTypes_proptype_TransitionDuration : __webpack_require__("../node_modules/prop-types/index.js").shape(babelPluginFlowReactPropTypes_proptype_TransitionDuration).isRequired,
+
+  /**
+   * Determine the max width of the dialog.
+   * The dialog width grows with the size of the screen, this property is useful
+   * on the desktop where you might need some coherent different width size across your
+   * application.
+   */
+  maxWidth: __webpack_require__("../node_modules/prop-types/index.js").oneOf(['xs', 'sm', 'md']).isRequired,
+
+  /**
+   * If specified, stretches dialog to max width.
+   */
+  fullWidth: __webpack_require__("../node_modules/prop-types/index.js").bool.isRequired,
+
+  /**
+   * Callback fired when the backdrop is clicked.
+   */
+  onBackdropClick: __webpack_require__("../node_modules/prop-types/index.js").func,
+
+  /**
+   * Callback fired before the dialog enters.
+   */
+  onEnter: typeof babelPluginFlowReactPropTypes_proptype_TransitionCallback === 'function' ? babelPluginFlowReactPropTypes_proptype_TransitionCallback : __webpack_require__("../node_modules/prop-types/index.js").shape(babelPluginFlowReactPropTypes_proptype_TransitionCallback),
+
+  /**
+   * Callback fired when the dialog is entering.
+   */
+  onEntering: typeof babelPluginFlowReactPropTypes_proptype_TransitionCallback === 'function' ? babelPluginFlowReactPropTypes_proptype_TransitionCallback : __webpack_require__("../node_modules/prop-types/index.js").shape(babelPluginFlowReactPropTypes_proptype_TransitionCallback),
+
+  /**
+   * Callback fired when the dialog has entered.
+   */
+  onEntered: typeof babelPluginFlowReactPropTypes_proptype_TransitionCallback === 'function' ? babelPluginFlowReactPropTypes_proptype_TransitionCallback : __webpack_require__("../node_modules/prop-types/index.js").shape(babelPluginFlowReactPropTypes_proptype_TransitionCallback),
+
+  /**
+   * Callback fires when the escape key is released and the modal is in focus.
+   */
+  onEscapeKeyUp: __webpack_require__("../node_modules/prop-types/index.js").func,
+
+  /**
+   * Callback fired before the dialog exits.
+   */
+  onExit: typeof babelPluginFlowReactPropTypes_proptype_TransitionCallback === 'function' ? babelPluginFlowReactPropTypes_proptype_TransitionCallback : __webpack_require__("../node_modules/prop-types/index.js").shape(babelPluginFlowReactPropTypes_proptype_TransitionCallback),
+
+  /**
+   * Callback fired when the dialog is exiting.
+   */
+  onExiting: typeof babelPluginFlowReactPropTypes_proptype_TransitionCallback === 'function' ? babelPluginFlowReactPropTypes_proptype_TransitionCallback : __webpack_require__("../node_modules/prop-types/index.js").shape(babelPluginFlowReactPropTypes_proptype_TransitionCallback),
+
+  /**
+   * Callback fired when the dialog has exited.
+   */
+  onExited: typeof babelPluginFlowReactPropTypes_proptype_TransitionCallback === 'function' ? babelPluginFlowReactPropTypes_proptype_TransitionCallback : __webpack_require__("../node_modules/prop-types/index.js").shape(babelPluginFlowReactPropTypes_proptype_TransitionCallback),
+
+  /**
+   * Callback fired when the component requests to be closed.
+   *
+   * @param {object} event The event source of the callback
+   */
+  onRequestClose: __webpack_require__("../node_modules/prop-types/index.js").func,
+
+  /**
+   * If `true`, the Dialog is open.
+   */
+  open: __webpack_require__("../node_modules/prop-types/index.js").bool.isRequired,
+
+  /**
+   * Transition component.
+   */
+  transition: typeof babelPluginFlowReactPropTypes_proptype_ComponentType === 'function' ? babelPluginFlowReactPropTypes_proptype_ComponentType.isRequired ? babelPluginFlowReactPropTypes_proptype_ComponentType.isRequired : babelPluginFlowReactPropTypes_proptype_ComponentType : __webpack_require__("../node_modules/prop-types/index.js").shape(babelPluginFlowReactPropTypes_proptype_ComponentType).isRequired
+};
+
+/**
+ * Dialogs are overlaid modal paper based components with a backdrop.
+ */
+var Dialog = function (_React$Component) {
+  (0, _inherits3.default)(Dialog, _React$Component);
+
+  function Dialog() {
+    (0, _classCallCheck3.default)(this, Dialog);
+    return (0, _possibleConstructorReturn3.default)(this, (Dialog.__proto__ || (0, _getPrototypeOf2.default)(Dialog)).apply(this, arguments));
+  }
+
+  (0, _createClass3.default)(Dialog, [{
+    key: 'render',
+    value: function render() {
+      var _classNames;
+
+      var _props = this.props,
+          children = _props.children,
+          classes = _props.classes,
+          className = _props.className,
+          fullScreen = _props.fullScreen,
+          ignoreBackdropClick = _props.ignoreBackdropClick,
+          ignoreEscapeKeyUp = _props.ignoreEscapeKeyUp,
+          transitionDuration = _props.transitionDuration,
+          maxWidth = _props.maxWidth,
+          fullWidth = _props.fullWidth,
+          open = _props.open,
+          onBackdropClick = _props.onBackdropClick,
+          onEscapeKeyUp = _props.onEscapeKeyUp,
+          onEnter = _props.onEnter,
+          onEntering = _props.onEntering,
+          onEntered = _props.onEntered,
+          onExit = _props.onExit,
+          onExiting = _props.onExiting,
+          onExited = _props.onExited,
+          onRequestClose = _props.onRequestClose,
+          TransitionProp = _props.transition,
+          other = (0, _objectWithoutProperties3.default)(_props, ['children', 'classes', 'className', 'fullScreen', 'ignoreBackdropClick', 'ignoreEscapeKeyUp', 'transitionDuration', 'maxWidth', 'fullWidth', 'open', 'onBackdropClick', 'onEscapeKeyUp', 'onEnter', 'onEntering', 'onEntered', 'onExit', 'onExiting', 'onExited', 'onRequestClose', 'transition']);
+
+
+      return _react2.default.createElement(
+        _Modal2.default,
+        (0, _extends3.default)({
+          className: (0, _classnames2.default)(classes.root, className),
+          BackdropTransitionDuration: transitionDuration,
+          ignoreBackdropClick: ignoreBackdropClick,
+          ignoreEscapeKeyUp: ignoreEscapeKeyUp,
+          onBackdropClick: onBackdropClick,
+          onEscapeKeyUp: onEscapeKeyUp,
+          onRequestClose: onRequestClose,
+          show: open
+        }, other),
+        _react2.default.createElement(
+          TransitionProp,
+          {
+            appear: true,
+            'in': open,
+            timeout: transitionDuration,
+            onEnter: onEnter,
+            onEntering: onEntering,
+            onEntered: onEntered,
+            onExit: onExit,
+            onExiting: onExiting,
+            onExited: onExited
+          },
+          _react2.default.createElement(
+            _Paper2.default,
+            {
+              elevation: 24,
+              className: (0, _classnames2.default)(classes.paper, classes['paperWidth' + (0, _helpers.capitalizeFirstLetter)(maxWidth)], (_classNames = {}, (0, _defineProperty3.default)(_classNames, classes.fullScreen, fullScreen), (0, _defineProperty3.default)(_classNames, classes.fullWidth, fullWidth), _classNames))
+            },
+            children
+          )
+        )
+      );
+    }
+  }]);
+  return Dialog;
+}(_react2.default.Component);
+
+Dialog.defaultProps = {
+  fullScreen: false,
+  ignoreBackdropClick: false,
+  ignoreEscapeKeyUp: false,
+  transitionDuration: {
+    enter: _transitions.duration.enteringScreen,
+    exit: _transitions.duration.leavingScreen
+  },
+  maxWidth: 'sm',
+  fullWidth: false,
+  open: false,
+  transition: _Fade2.default
+};
+exports.default = (0, _withStyles2.default)(styles, { name: 'MuiDialog' })(Dialog);
+
+/***/ }),
+
+/***/ "../node_modules/material-ui/Dialog/DialogActions.js":
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.styles = undefined;
+
+var _defineProperty2 = __webpack_require__("../node_modules/babel-runtime/helpers/defineProperty.js");
+
+var _defineProperty3 = _interopRequireDefault(_defineProperty2);
+
+var _extends2 = __webpack_require__("../node_modules/babel-runtime/helpers/extends.js");
+
+var _extends3 = _interopRequireDefault(_extends2);
+
+var _objectWithoutProperties2 = __webpack_require__("../node_modules/babel-runtime/helpers/objectWithoutProperties.js");
+
+var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
+
+var _ref;
+
+var _react = __webpack_require__("../node_modules/react/index.js");
+
+var _react2 = _interopRequireDefault(_react);
+
+var _classnames = __webpack_require__("../node_modules/classnames/index.js");
+
+var _classnames2 = _interopRequireDefault(_classnames);
+
+var _withStyles = __webpack_require__("../node_modules/material-ui/styles/withStyles.js");
+
+var _withStyles2 = _interopRequireDefault(_withStyles);
+
+__webpack_require__("../node_modules/material-ui/Button/index.js");
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var babelPluginFlowReactPropTypes_proptype_Node = __webpack_require__("../node_modules/react/index.js").babelPluginFlowReactPropTypes_proptype_Node || __webpack_require__("../node_modules/prop-types/index.js").any;
+
+// So we don't have any override priority issue.
+
+var styles = exports.styles = function styles(theme) {
+  return {
+    root: {
+      display: 'flex',
+      justifyContent: 'flex-end',
+      alignItems: 'center',
+      margin: theme.spacing.unit + 'px ' + theme.spacing.unit / 2 + 'px',
+      flex: '0 0 auto'
+    },
+    action: {
+      margin: '0 ' + theme.spacing.unit / 2 + 'px'
+    },
+    button: {
+      minWidth: 64
+    }
+  };
+};
+
+var babelPluginFlowReactPropTypes_proptype_Props = {
+  /**
+   * The content of the component.
+   */
+  children: typeof babelPluginFlowReactPropTypes_proptype_Node === 'function' ? babelPluginFlowReactPropTypes_proptype_Node : __webpack_require__("../node_modules/prop-types/index.js").shape(babelPluginFlowReactPropTypes_proptype_Node),
+
+  /**
+   * Useful to extend the style applied to components.
+   */
+  classes: __webpack_require__("../node_modules/prop-types/index.js").object,
+
+  /**
+   * @ignore
+   */
+  className: __webpack_require__("../node_modules/prop-types/index.js").string
+};
+
+
+function DialogActions(props) {
+  var children = props.children,
+      classes = props.classes,
+      className = props.className,
+      other = (0, _objectWithoutProperties3.default)(props, ['children', 'classes', 'className']);
+
+
+  return _react2.default.createElement(
+    'div',
+    (0, _extends3.default)({ className: (0, _classnames2.default)(classes.root, className) }, other),
+    _react2.default.Children.map(children, function (child) {
+      if (!_react2.default.isValidElement(child)) {
+        return null;
+      }
+
+      return _react2.default.createElement(
+        'div',
+        { className: classes.action },
+        _react2.default.cloneElement(child, {
+          className: (0, _classnames2.default)(classes.button, child.props.className)
+        })
+      );
+    })
+  );
+}
+
+DialogActions.propTypes =  false ? (_ref = {
+  classes: require('prop-types').object.isRequired,
+
+  /**
+   * @ignore
+   */
+  theme: require('prop-types').object,
+  children: typeof babelPluginFlowReactPropTypes_proptype_Node === 'function' ? babelPluginFlowReactPropTypes_proptype_Node : require('prop-types').shape(babelPluginFlowReactPropTypes_proptype_Node)
+}, (0, _defineProperty3.default)(_ref, 'classes', require('prop-types').object), (0, _defineProperty3.default)(_ref, 'className', require('prop-types').string), _ref) : {};
+exports.default = (0, _withStyles2.default)(styles, { name: 'MuiDialogActions' })(DialogActions);
+
+/***/ }),
+
+/***/ "../node_modules/material-ui/Dialog/DialogContent.js":
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.styles = undefined;
+
+var _defineProperty2 = __webpack_require__("../node_modules/babel-runtime/helpers/defineProperty.js");
+
+var _defineProperty3 = _interopRequireDefault(_defineProperty2);
+
+var _extends2 = __webpack_require__("../node_modules/babel-runtime/helpers/extends.js");
+
+var _extends3 = _interopRequireDefault(_extends2);
+
+var _objectWithoutProperties2 = __webpack_require__("../node_modules/babel-runtime/helpers/objectWithoutProperties.js");
+
+var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
+
+var _ref;
+
+var _react = __webpack_require__("../node_modules/react/index.js");
+
+var _react2 = _interopRequireDefault(_react);
+
+var _classnames = __webpack_require__("../node_modules/classnames/index.js");
+
+var _classnames2 = _interopRequireDefault(_classnames);
+
+var _withStyles = __webpack_require__("../node_modules/material-ui/styles/withStyles.js");
+
+var _withStyles2 = _interopRequireDefault(_withStyles);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var babelPluginFlowReactPropTypes_proptype_Node = __webpack_require__("../node_modules/react/index.js").babelPluginFlowReactPropTypes_proptype_Node || __webpack_require__("../node_modules/prop-types/index.js").any;
+
+var styles = exports.styles = function styles(theme) {
+  var spacing = theme.spacing.unit * 3;
+  return {
+    root: {
+      flex: '1 1 auto',
+      overflowY: 'auto',
+      padding: '0 ' + spacing + 'px ' + spacing + 'px ' + spacing + 'px',
+      '&:first-child': {
+        paddingTop: spacing
+      }
+    }
+  };
+};
+
+var babelPluginFlowReactPropTypes_proptype_Props = {
+  /**
+   * The content of the component.
+   */
+  children: typeof babelPluginFlowReactPropTypes_proptype_Node === 'function' ? babelPluginFlowReactPropTypes_proptype_Node : __webpack_require__("../node_modules/prop-types/index.js").shape(babelPluginFlowReactPropTypes_proptype_Node),
+
+  /**
+   * Useful to extend the style applied to components.
+   */
+  classes: __webpack_require__("../node_modules/prop-types/index.js").object,
+
+  /**
+   * @ignore
+   */
+  className: __webpack_require__("../node_modules/prop-types/index.js").string
+};
+
+
+function DialogContent(props) {
+  var classes = props.classes,
+      children = props.children,
+      className = props.className,
+      other = (0, _objectWithoutProperties3.default)(props, ['classes', 'children', 'className']);
+
+
+  return _react2.default.createElement(
+    'div',
+    (0, _extends3.default)({ className: (0, _classnames2.default)(classes.root, className) }, other),
+    children
+  );
+}
+
+DialogContent.propTypes =  false ? (_ref = {
+  classes: require('prop-types').object.isRequired,
+  children: typeof babelPluginFlowReactPropTypes_proptype_Node === 'function' ? babelPluginFlowReactPropTypes_proptype_Node : require('prop-types').shape(babelPluginFlowReactPropTypes_proptype_Node)
+}, (0, _defineProperty3.default)(_ref, 'classes', require('prop-types').object), (0, _defineProperty3.default)(_ref, 'className', require('prop-types').string), _ref) : {};
+exports.default = (0, _withStyles2.default)(styles, { name: 'MuiDialogContent' })(DialogContent);
+
+/***/ }),
+
+/***/ "../node_modules/material-ui/Dialog/DialogContentText.js":
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.styles = undefined;
+
+var _defineProperty2 = __webpack_require__("../node_modules/babel-runtime/helpers/defineProperty.js");
+
+var _defineProperty3 = _interopRequireDefault(_defineProperty2);
+
+var _objectWithoutProperties2 = __webpack_require__("../node_modules/babel-runtime/helpers/objectWithoutProperties.js");
+
+var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
+
+var _extends2 = __webpack_require__("../node_modules/babel-runtime/helpers/extends.js");
+
+var _extends3 = _interopRequireDefault(_extends2);
+
+var _ref;
+
+var _react = __webpack_require__("../node_modules/react/index.js");
+
+var _react2 = _interopRequireDefault(_react);
+
+var _classnames = __webpack_require__("../node_modules/classnames/index.js");
+
+var _classnames2 = _interopRequireDefault(_classnames);
+
+var _withStyles = __webpack_require__("../node_modules/material-ui/styles/withStyles.js");
+
+var _withStyles2 = _interopRequireDefault(_withStyles);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var babelPluginFlowReactPropTypes_proptype_Node = __webpack_require__("../node_modules/react/index.js").babelPluginFlowReactPropTypes_proptype_Node || __webpack_require__("../node_modules/prop-types/index.js").any;
+
+var styles = exports.styles = function styles(theme) {
+  return {
+    root: (0, _extends3.default)({}, theme.typography.subheading, {
+      color: theme.palette.text.secondary,
+      margin: 0
+    })
+  };
+};
+
+var babelPluginFlowReactPropTypes_proptype_Props = {
+  /**
+   * The content of the component.
+   */
+  children: typeof babelPluginFlowReactPropTypes_proptype_Node === 'function' ? babelPluginFlowReactPropTypes_proptype_Node : __webpack_require__("../node_modules/prop-types/index.js").shape(babelPluginFlowReactPropTypes_proptype_Node),
+
+  /**
+   * Useful to extend the style applied to components.
+   */
+  classes: __webpack_require__("../node_modules/prop-types/index.js").object,
+
+  /**
+   * @ignore
+   */
+  className: __webpack_require__("../node_modules/prop-types/index.js").string
+};
+
+
+function DialogContentText(props) {
+  var children = props.children,
+      classes = props.classes,
+      className = props.className,
+      other = (0, _objectWithoutProperties3.default)(props, ['children', 'classes', 'className']);
+
+
+  return _react2.default.createElement(
+    'p',
+    (0, _extends3.default)({ className: (0, _classnames2.default)(classes.root, className) }, other),
+    children
+  );
+}
+
+DialogContentText.propTypes =  false ? (_ref = {
+  classes: require('prop-types').object.isRequired,
+
+  /**
+   * @ignore
+   */
+  theme: require('prop-types').object,
+  children: typeof babelPluginFlowReactPropTypes_proptype_Node === 'function' ? babelPluginFlowReactPropTypes_proptype_Node : require('prop-types').shape(babelPluginFlowReactPropTypes_proptype_Node)
+}, (0, _defineProperty3.default)(_ref, 'classes', require('prop-types').object), (0, _defineProperty3.default)(_ref, 'className', require('prop-types').string), _ref) : {};
+exports.default = (0, _withStyles2.default)(styles, { name: 'MuiDialogContentText' })(DialogContentText);
+
+/***/ }),
+
+/***/ "../node_modules/material-ui/Dialog/DialogTitle.js":
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.styles = undefined;
+
+var _extends2 = __webpack_require__("../node_modules/babel-runtime/helpers/extends.js");
+
+var _extends3 = _interopRequireDefault(_extends2);
+
+var _objectWithoutProperties2 = __webpack_require__("../node_modules/babel-runtime/helpers/objectWithoutProperties.js");
+
+var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
+
+var _getPrototypeOf = __webpack_require__("../node_modules/babel-runtime/core-js/object/get-prototype-of.js");
+
+var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
+
+var _classCallCheck2 = __webpack_require__("../node_modules/babel-runtime/helpers/classCallCheck.js");
+
+var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
+
+var _createClass2 = __webpack_require__("../node_modules/babel-runtime/helpers/createClass.js");
+
+var _createClass3 = _interopRequireDefault(_createClass2);
+
+var _possibleConstructorReturn2 = __webpack_require__("../node_modules/babel-runtime/helpers/possibleConstructorReturn.js");
+
+var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
+
+var _inherits2 = __webpack_require__("../node_modules/babel-runtime/helpers/inherits.js");
+
+var _inherits3 = _interopRequireDefault(_inherits2);
+
+var _react = __webpack_require__("../node_modules/react/index.js");
+
+var _react2 = _interopRequireDefault(_react);
+
+var _classnames = __webpack_require__("../node_modules/classnames/index.js");
+
+var _classnames2 = _interopRequireDefault(_classnames);
+
+var _withStyles = __webpack_require__("../node_modules/material-ui/styles/withStyles.js");
+
+var _withStyles2 = _interopRequireDefault(_withStyles);
+
+var _Typography = __webpack_require__("../node_modules/material-ui/Typography/index.js");
+
+var _Typography2 = _interopRequireDefault(_Typography);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var babelPluginFlowReactPropTypes_proptype_Node = __webpack_require__("../node_modules/react/index.js").babelPluginFlowReactPropTypes_proptype_Node || __webpack_require__("../node_modules/prop-types/index.js").any;
+
+var styles = exports.styles = function styles(theme) {
+  return {
+    root: {
+      margin: 0,
+      padding: theme.spacing.unit * 3 + 'px ' + theme.spacing.unit * 3 + 'px       20px ' + theme.spacing.unit * 3 + 'px',
+      flex: '0 0 auto'
+    }
+  };
+};
+
+var babelPluginFlowReactPropTypes_proptype_Props = {
+  /**
+   * The content of the component.
+   */
+  children: typeof babelPluginFlowReactPropTypes_proptype_Node === 'function' ? babelPluginFlowReactPropTypes_proptype_Node : __webpack_require__("../node_modules/prop-types/index.js").shape(babelPluginFlowReactPropTypes_proptype_Node),
+
+  /**
+   * Useful to extend the style applied to components.
+   */
+  classes: __webpack_require__("../node_modules/prop-types/index.js").object,
+
+  /**
+   * @ignore
+   */
+  className: __webpack_require__("../node_modules/prop-types/index.js").string,
+
+  /**
+   * If `true`, the children won't be wrapped by a typography component.
+   * For instance, this can be useful to render an h4 instead of the default h2.
+   */
+  disableTypography: __webpack_require__("../node_modules/prop-types/index.js").bool.isRequired
+};
+
+var DialogTitle = function (_React$Component) {
+  (0, _inherits3.default)(DialogTitle, _React$Component);
+
+  function DialogTitle() {
+    (0, _classCallCheck3.default)(this, DialogTitle);
+    return (0, _possibleConstructorReturn3.default)(this, (DialogTitle.__proto__ || (0, _getPrototypeOf2.default)(DialogTitle)).apply(this, arguments));
+  }
+
+  (0, _createClass3.default)(DialogTitle, [{
+    key: 'render',
+    value: function render() {
+      var _props = this.props,
+          children = _props.children,
+          classes = _props.classes,
+          className = _props.className,
+          disableTypography = _props.disableTypography,
+          other = (0, _objectWithoutProperties3.default)(_props, ['children', 'classes', 'className', 'disableTypography']);
+
+
+      return _react2.default.createElement(
+        'div',
+        (0, _extends3.default)({ className: (0, _classnames2.default)(classes.root, className) }, other),
+        disableTypography ? children : _react2.default.createElement(
+          _Typography2.default,
+          { type: 'title' },
+          children
+        )
+      );
+    }
+  }]);
+  return DialogTitle;
+}(_react2.default.Component);
+
+DialogTitle.defaultProps = {
+  disableTypography: false
+};
+exports.default = (0, _withStyles2.default)(styles, { name: 'MuiDialogTitle' })(DialogTitle);
+
+/***/ }),
+
+/***/ "../node_modules/material-ui/Dialog/index.js":
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _Dialog = __webpack_require__("../node_modules/material-ui/Dialog/Dialog.js");
+
+Object.defineProperty(exports, 'default', {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_Dialog).default;
+  }
+});
+
+var _DialogActions = __webpack_require__("../node_modules/material-ui/Dialog/DialogActions.js");
+
+Object.defineProperty(exports, 'DialogActions', {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_DialogActions).default;
+  }
+});
+
+var _DialogTitle = __webpack_require__("../node_modules/material-ui/Dialog/DialogTitle.js");
+
+Object.defineProperty(exports, 'DialogTitle', {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_DialogTitle).default;
+  }
+});
+
+var _DialogContent = __webpack_require__("../node_modules/material-ui/Dialog/DialogContent.js");
+
+Object.defineProperty(exports, 'DialogContent', {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_DialogContent).default;
+  }
+});
+
+var _DialogContentText = __webpack_require__("../node_modules/material-ui/Dialog/DialogContentText.js");
+
+Object.defineProperty(exports, 'DialogContentText', {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_DialogContentText).default;
+  }
+});
+
+var _withMobileDialog = __webpack_require__("../node_modules/material-ui/Dialog/withMobileDialog.js");
+
+Object.defineProperty(exports, 'withMobileDialog', {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_withMobileDialog).default;
+  }
+});
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+/***/ }),
+
+/***/ "../node_modules/material-ui/Dialog/withMobileDialog.js":
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _extends2 = __webpack_require__("../node_modules/babel-runtime/helpers/extends.js");
+
+var _extends3 = _interopRequireDefault(_extends2);
+
+var _react = __webpack_require__("../node_modules/react/index.js");
+
+var _react2 = _interopRequireDefault(_react);
+
+var _wrapDisplayName = __webpack_require__("../node_modules/recompose/wrapDisplayName.js");
+
+var _wrapDisplayName2 = _interopRequireDefault(_wrapDisplayName);
+
+var _withWidth = __webpack_require__("../node_modules/material-ui/utils/withWidth.js");
+
+var _withWidth2 = _interopRequireDefault(_withWidth);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var babelPluginFlowReactPropTypes_proptype_Node = __webpack_require__("../node_modules/react/index.js").babelPluginFlowReactPropTypes_proptype_Node || __webpack_require__("../node_modules/prop-types/index.js").any;
+
+var babelPluginFlowReactPropTypes_proptype_HigherOrderComponent = __webpack_require__("../node_modules/react-flow-types/index.js").babelPluginFlowReactPropTypes_proptype_HigherOrderComponent || __webpack_require__("../node_modules/prop-types/index.js").any;
+
+var babelPluginFlowReactPropTypes_proptype_Breakpoint = __webpack_require__("../node_modules/material-ui/styles/createBreakpoints.js").babelPluginFlowReactPropTypes_proptype_Breakpoint || __webpack_require__("../node_modules/prop-types/index.js").any;
+
+var babelPluginFlowReactPropTypes_proptype_InjectedProps = {
+  /**
+   * If isWidthDown(options.breakpoint), return true.
+   */
+  fullScreen: __webpack_require__("../node_modules/prop-types/index.js").bool
+};
+
+
+/**
+ * Dialog will responsively be full screen *at or below* the given breakpoint
+ * (defaults to 'sm' for mobile devices).
+ * Notice that this Higher-order Component is incompatible with server side rendering.
+ */
+var withMobileDialog = function withMobileDialog() {
+  var options = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : { breakpoint: 'sm' };
+  return function (Component) {
+    var breakpoint = options.breakpoint;
+
+
+    function WithMobileDialog(props) {
+      return _react2.default.createElement(Component, (0, _extends3.default)({ fullScreen: (0, _withWidth.isWidthDown)(breakpoint, props.width) }, props));
+    }
+
+    WithMobileDialog.propTypes =  false ? {
+      width: typeof babelPluginFlowReactPropTypes_proptype_Breakpoint === 'function' ? babelPluginFlowReactPropTypes_proptype_Breakpoint.isRequired ? babelPluginFlowReactPropTypes_proptype_Breakpoint.isRequired : babelPluginFlowReactPropTypes_proptype_Breakpoint : require('prop-types').shape(babelPluginFlowReactPropTypes_proptype_Breakpoint).isRequired
+    } : {};
+    if (false) {
+      WithMobileDialog.displayName = (0, _wrapDisplayName2.default)(Component, 'withMobileDialog');
+    }
+
+    return (0, _withWidth2.default)()(WithMobileDialog);
+  };
+};
+
+exports.default = withMobileDialog;
+
+/***/ }),
+
+/***/ "../node_modules/material-ui/Divider/Divider.js":
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.styles = undefined;
+
+var _extends2 = __webpack_require__("../node_modules/babel-runtime/helpers/extends.js");
+
+var _extends3 = _interopRequireDefault(_extends2);
+
+var _defineProperty2 = __webpack_require__("../node_modules/babel-runtime/helpers/defineProperty.js");
+
+var _defineProperty3 = _interopRequireDefault(_defineProperty2);
+
+var _objectWithoutProperties2 = __webpack_require__("../node_modules/babel-runtime/helpers/objectWithoutProperties.js");
+
+var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
+
+var _getPrototypeOf = __webpack_require__("../node_modules/babel-runtime/core-js/object/get-prototype-of.js");
+
+var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
+
+var _classCallCheck2 = __webpack_require__("../node_modules/babel-runtime/helpers/classCallCheck.js");
+
+var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
+
+var _createClass2 = __webpack_require__("../node_modules/babel-runtime/helpers/createClass.js");
+
+var _createClass3 = _interopRequireDefault(_createClass2);
+
+var _possibleConstructorReturn2 = __webpack_require__("../node_modules/babel-runtime/helpers/possibleConstructorReturn.js");
+
+var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
+
+var _inherits2 = __webpack_require__("../node_modules/babel-runtime/helpers/inherits.js");
+
+var _inherits3 = _interopRequireDefault(_inherits2);
+
+var _react = __webpack_require__("../node_modules/react/index.js");
+
+var _react2 = _interopRequireDefault(_react);
+
+var _classnames = __webpack_require__("../node_modules/classnames/index.js");
+
+var _classnames2 = _interopRequireDefault(_classnames);
+
+var _withStyles = __webpack_require__("../node_modules/material-ui/styles/withStyles.js");
+
+var _withStyles2 = _interopRequireDefault(_withStyles);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var styles = exports.styles = function styles(theme) {
+  return {
+    root: {
+      height: 1,
+      margin: 0, // Reset browser default style.
+      border: 'none',
+      flexShrink: 0
+    },
+    default: {
+      backgroundColor: theme.palette.text.divider
+    },
+    inset: {
+      marginLeft: 72
+    },
+    light: {
+      backgroundColor: theme.palette.text.lightDivider
+    },
+    absolute: {
+      position: 'absolute',
+      bottom: 0,
+      left: 0,
+      width: '100%'
+    }
+  };
+};
+
+var babelPluginFlowReactPropTypes_proptype_Props = {
+  absolute: __webpack_require__("../node_modules/prop-types/index.js").bool.isRequired,
+
+  /**
+   * Useful to extend the style applied to components.
+   */
+  classes: __webpack_require__("../node_modules/prop-types/index.js").object,
+
+  /**
+   * @ignore
+   */
+  className: __webpack_require__("../node_modules/prop-types/index.js").string,
+
+  /**
+   * If `true`, the divider will be indented.
+   */
+  inset: __webpack_require__("../node_modules/prop-types/index.js").bool.isRequired,
+
+  /**
+   * If `true`, the divider will have a lighter color.
+   */
+  light: __webpack_require__("../node_modules/prop-types/index.js").bool.isRequired
+};
+
+var Divider = function (_React$Component) {
+  (0, _inherits3.default)(Divider, _React$Component);
+
+  function Divider() {
+    (0, _classCallCheck3.default)(this, Divider);
+    return (0, _possibleConstructorReturn3.default)(this, (Divider.__proto__ || (0, _getPrototypeOf2.default)(Divider)).apply(this, arguments));
+  }
+
+  (0, _createClass3.default)(Divider, [{
+    key: 'render',
+    value: function render() {
+      var _classNames;
+
+      var _props = this.props,
+          absolute = _props.absolute,
+          classes = _props.classes,
+          classNameProp = _props.className,
+          inset = _props.inset,
+          light = _props.light,
+          other = (0, _objectWithoutProperties3.default)(_props, ['absolute', 'classes', 'className', 'inset', 'light']);
+
+
+      var className = (0, _classnames2.default)(classes.root, (_classNames = {}, (0, _defineProperty3.default)(_classNames, classes.absolute, absolute), (0, _defineProperty3.default)(_classNames, classes.inset, inset), (0, _defineProperty3.default)(_classNames, light ? classes.light : classes.default, true), _classNames), classNameProp);
+
+      return _react2.default.createElement('hr', (0, _extends3.default)({ className: className }, other));
+    }
+  }]);
+  return Divider;
+}(_react2.default.Component);
+
+Divider.defaultProps = {
+  absolute: false,
+  inset: false,
+  light: false
+};
+exports.default = (0, _withStyles2.default)(styles, { name: 'MuiDivider' })(Divider);
+
+/***/ }),
+
+/***/ "../node_modules/material-ui/Divider/index.js":
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _Divider = __webpack_require__("../node_modules/material-ui/Divider/Divider.js");
+
+Object.defineProperty(exports, 'default', {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_Divider).default;
   }
 });
 
@@ -37020,16 +38150,13 @@ const styles = (theme) => ({
 });
 class AnalysisAnalysisBlockTable extends _1.Component {
     getData() {
-        return this.props.analysis.blummary.blockcount.map((count, title) => {
-            const block = this.props.analysis.blocks.get(title);
-            return {
-                type: block ? block.type : '**Unknown block**',
-                subtype: block ? block.subtype : `"${title}"`,
-                count: Math.round(count),
-                mass: Math.round(block.mass * count),
-                volume: Math.round(block.volume * count)
-            };
-        });
+        return this.props.analysis.blocks.map(([block, count]) => ({
+            type: block ? block.type : '**Unknown block**',
+            subtype: block ? block.subtype : `"${block.title}"`,
+            count: Math.round(count),
+            mass: Math.round(block.mass * count),
+            volume: Math.round(block.volume * count)
+        }));
     }
     render() {
         return (React.createElement(Grid_1.default, { container: true, spacing: 0 },
@@ -37067,17 +38194,13 @@ const styles = (theme) => ({
 });
 class AnalysisComponentTable extends _1.Component {
     getData() {
-        return Object.keys(this.props.analysis.componentCount).map((title) => {
-            const count = this.props.analysis.componentCount[title];
-            const { type, subtype, mass, volume } = this.props.analysis.components.get(title);
-            return {
-                type,
-                subtype,
-                count: Math.round(count),
-                mass: Math.round(mass * count),
-                volume: Math.round(volume * count)
-            };
-        });
+        return this.props.analysis.components.map(([component, count]) => ({
+            type: component.type,
+            subtype: component.subtype,
+            count: Math.round(count),
+            mass: Math.round(component.mass * count),
+            volume: Math.round(component.volume * count)
+        }));
     }
     render() {
         return (React.createElement(Grid_1.default, { container: true, spacing: 0 },
@@ -37115,17 +38238,13 @@ const styles = (theme) => ({
 });
 class AnalysisIngotTable extends _1.Component {
     getData() {
-        return Object.keys(this.props.analysis.ingotCount).map((title) => {
-            const count = this.props.analysis.ingotCount[title];
-            const { type, subtype, mass, volume } = this.props.analysis.ingots.get(title);
-            return {
-                type,
-                subtype,
-                count: Math.round(count),
-                mass: Math.round(mass * count),
-                volume: Math.round(volume * count)
-            };
-        });
+        return this.props.analysis.ingots.map(([ingot, count]) => ({
+            type: ingot.type,
+            subtype: ingot.subtype,
+            count: Math.round(count),
+            mass: Math.round(ingot.mass * count),
+            volume: Math.round(ingot.volume * count)
+        }));
     }
     render() {
         return (React.createElement(Grid_1.default, { container: true, spacing: 0 },
@@ -37163,17 +38282,13 @@ const styles = (theme) => ({
 });
 class AnalysisOreTable extends _1.Component {
     getData() {
-        return Object.keys(this.props.analysis.oreCount).map((title) => {
-            const count = this.props.analysis.oreCount[title];
-            const { type, subtype, mass, volume } = this.props.analysis.ores.get(title);
-            return {
-                type,
-                subtype,
-                count: Math.round(count),
-                mass: Math.round(mass * count),
-                volume: Math.round(volume * count)
-            };
-        });
+        return this.props.analysis.ores.map(([ore, count]) => ({
+            type: ore.type,
+            subtype: ore.subtype,
+            count: Math.round(count),
+            mass: Math.round(ore.mass * count),
+            volume: Math.round(ore.volume * count)
+        }));
     }
     render() {
         return (React.createElement(Grid_1.default, { container: true, spacing: 0 },
@@ -37197,35 +38312,127 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const React = __webpack_require__("../node_modules/react/index.js");
 const styles_1 = __webpack_require__("../node_modules/material-ui/styles/index.js");
 const Grid_1 = __webpack_require__("../node_modules/material-ui/Grid/index.js");
-const Typography_1 = __webpack_require__("../node_modules/material-ui/Typography/index.js");
 const List_1 = __webpack_require__("../node_modules/material-ui/List/index.js");
 const _1 = __webpack_require__("./app/common/index.ts");
+const AnalysisSummaryRow_1 = __webpack_require__("./app/components/AnalysisSummaryRow.tsx");
 const styles = (theme) => ({
     root: {}
 });
 class AnalysisSummary extends _1.Component {
-    constructor(props) {
-        super(props);
-        this.renderItem = (title, value) => React.createElement(List_1.ListItem, null,
-            React.createElement(List_1.ListItemText, { primary: title }),
-            React.createElement(Typography_1.default, { type: 'body1' }, value));
-    }
     render() {
+        const { analysis } = this.props;
         return (React.createElement(Grid_1.default, { container: true, spacing: 0 },
             React.createElement(Grid_1.default, { item: true, xs: 12 },
                 React.createElement(List_1.default, null,
-                    this.renderItem('Title', this.props.analysis.blummary.title),
-                    this.renderItem('Block count', this.props.analysis.blummary.count.toFixed(0)),
-                    this.renderItem('Total Mass', this.props.analysis.blockMass.toFixed(2)),
-                    this.renderItem('Component Mass', this.props.analysis.componentMass.toFixed(2)),
-                    this.renderItem('Ingot Mass', this.props.analysis.ingotMass.toFixed(2)),
-                    this.renderItem('Ore Mass', this.props.analysis.oreMass.toFixed(2))))));
+                    React.createElement(AnalysisSummaryRow_1.default, { title: 'Title', value: analysis.blummary.title, errors: [] }),
+                    React.createElement(AnalysisSummaryRow_1.default, { title: 'Blocks', value: `${analysis.blockCount.toFixed(0)} pc`, errors: analysis.blocksErrors }),
+                    React.createElement(AnalysisSummaryRow_1.default, { title: 'Components', value: `${analysis.componentCount.toFixed(0)} pc`, errors: analysis.componentErrors }),
+                    React.createElement(AnalysisSummaryRow_1.default, { title: 'Weight', value: `${(analysis.blockMass / 1000).toFixed(1)} t`, errors: [] }),
+                    React.createElement(AnalysisSummaryRow_1.default, { title: 'Ingots', value: `${(analysis.ingotMass / 1000).toFixed(1)} t`, errors: analysis.ingotErrors }),
+                    React.createElement(AnalysisSummaryRow_1.default, { title: 'Ores', value: `${(analysis.oreMass / 1000).toFixed(1)} t`, errors: analysis.oreErrors })))));
     }
 }
 exports.default = styles_1.withStyles(styles)(AnalysisSummary);
 
 
  ;(function register() { /* react-hot-loader/webpack */ if (false) { if (typeof __REACT_HOT_LOADER__ === 'undefined') { return; } /* eslint-disable camelcase, no-undef */ var webpackExports = typeof __webpack_exports__ !== 'undefined' ? __webpack_exports__ : module.exports; /* eslint-enable camelcase, no-undef */ if (typeof webpackExports === 'function') { __REACT_HOT_LOADER__.register(webpackExports, 'module.exports', "/home/kalvis/git/sepraisal/src/app/components/AnalysisSummary.tsx"); return; } /* eslint-disable no-restricted-syntax */ for (var key in webpackExports) { /* eslint-enable no-restricted-syntax */ if (!Object.prototype.hasOwnProperty.call(webpackExports, key)) { continue; } var namedExport = void 0; try { namedExport = webpackExports[key]; } catch (err) { continue; } __REACT_HOT_LOADER__.register(namedExport, key, "/home/kalvis/git/sepraisal/src/app/components/AnalysisSummary.tsx"); } } })();
+
+/***/ }),
+
+/***/ "./app/components/AnalysisSummaryRow.tsx":
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+const React = __webpack_require__("../node_modules/react/index.js");
+const mobx_1 = __webpack_require__("../node_modules/mobx/lib/mobx.module.js");
+const mobx_react_1 = __webpack_require__("../node_modules/mobx-react/index.module.js");
+const styles_1 = __webpack_require__("../node_modules/material-ui/styles/index.js");
+const Typography_1 = __webpack_require__("../node_modules/material-ui/Typography/index.js");
+const List_1 = __webpack_require__("../node_modules/material-ui/List/index.js");
+const Dialog_1 = __webpack_require__("../node_modules/material-ui/Dialog/index.js");
+const Divider_1 = __webpack_require__("../node_modules/material-ui/Divider/index.js");
+const IconButton_1 = __webpack_require__("../node_modules/material-ui/IconButton/index.js");
+const Error_1 = __webpack_require__("../node_modules/material-ui-icons/Error.js");
+const _1 = __webpack_require__("./app/common/index.ts");
+const styles = (theme) => ({
+    root: {},
+    icon: {
+        color: theme.palette.error[400],
+        '&:hover': {
+            color: theme.palette.error[800],
+        }
+    },
+    dialog: {
+        backgroundColor: theme.palette.error[50],
+    }
+});
+let AnalysisSummaryRow = class AnalysisSummaryRow extends _1.Component {
+    constructor() {
+        super(...arguments);
+        this.dialogOpen = false;
+        this.open = () => { this.dialogOpen = true; };
+        this.close = () => { this.dialogOpen = false; };
+    }
+    render() {
+        return (React.createElement(List_1.ListItem, null,
+            this.props.errors.length > 0 ?
+                React.createElement(List_1.ListItemIcon, null,
+                    React.createElement(IconButton_1.default, { className: this.props.classes.icon, onClick: this.open },
+                        React.createElement(Error_1.default, null)))
+                :
+                    null,
+            React.createElement(List_1.ListItemText, { primary: this.props.title, secondary: this.props.subtitle }),
+            React.createElement(Typography_1.default, { type: 'body1' }, this.props.value),
+            React.createElement(Dialog_1.default, { open: this.dialogOpen, onRequestClose: this.close, classes: { paper: this.props.classes.dialog } },
+                React.createElement(Dialog_1.DialogTitle, null,
+                    "Unknown ",
+                    this.props.title),
+                React.createElement(Dialog_1.DialogContent, null,
+                    React.createElement(Typography_1.default, { type: 'body1', gutterBottom: true },
+                        "There are ",
+                        this.props.errors.length,
+                        " unknown ",
+                        this.props.title,
+                        " in the blueprint. They are excluded from the analysis. If that's from mod, please wait until I add mod support. If that's vanilla, then please file a bug report (see Credits), thank you!"),
+                    React.createElement(Divider_1.default, null),
+                    React.createElement(List_1.default, null, this.props.errors.map(([name, count]) => (React.createElement(List_1.ListItem, { key: name },
+                        React.createElement(List_1.ListItemText, { primary: name }),
+                        React.createElement(Typography_1.default, { type: 'body1' },
+                            count,
+                            " pc"))))),
+                    React.createElement(Divider_1.default, null)))));
+    }
+};
+__decorate([
+    mobx_1.observable,
+    __metadata("design:type", Object)
+], AnalysisSummaryRow.prototype, "dialogOpen", void 0);
+__decorate([
+    mobx_1.action,
+    __metadata("design:type", Object)
+], AnalysisSummaryRow.prototype, "open", void 0);
+__decorate([
+    mobx_1.action,
+    __metadata("design:type", Object)
+], AnalysisSummaryRow.prototype, "close", void 0);
+AnalysisSummaryRow = __decorate([
+    mobx_react_1.observer
+], AnalysisSummaryRow);
+exports.default = styles_1.withStyles(styles)(AnalysisSummaryRow);
+
+
+ ;(function register() { /* react-hot-loader/webpack */ if (false) { if (typeof __REACT_HOT_LOADER__ === 'undefined') { return; } /* eslint-disable camelcase, no-undef */ var webpackExports = typeof __webpack_exports__ !== 'undefined' ? __webpack_exports__ : module.exports; /* eslint-enable camelcase, no-undef */ if (typeof webpackExports === 'function') { __REACT_HOT_LOADER__.register(webpackExports, 'module.exports', "/home/kalvis/git/sepraisal/src/app/components/AnalysisSummaryRow.tsx"); return; } /* eslint-disable no-restricted-syntax */ for (var key in webpackExports) { /* eslint-enable no-restricted-syntax */ if (!Object.prototype.hasOwnProperty.call(webpackExports, key)) { continue; } var namedExport = void 0; try { namedExport = webpackExports[key]; } catch (err) { continue; } __REACT_HOT_LOADER__.register(namedExport, key, "/home/kalvis/git/sepraisal/src/app/components/AnalysisSummaryRow.tsx"); } } })();
 
 /***/ }),
 
@@ -37799,8 +39006,19 @@ exports.STORE_ANALYSIS = 'analysisStore';
 
 "use strict";
 
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 const React = __webpack_require__("../node_modules/react/index.js");
+const mobx_1 = __webpack_require__("../node_modules/mobx/lib/mobx.module.js");
+const mobx_react_1 = __webpack_require__("../node_modules/mobx-react/index.module.js");
 const styles_1 = __webpack_require__("../node_modules/material-ui/styles/index.js");
 const Grid_1 = __webpack_require__("../node_modules/material-ui/Grid/index.js");
 const Paper_1 = __webpack_require__("../node_modules/material-ui/Paper/index.js");
@@ -37817,8 +39035,18 @@ const AnalysisIngotTable_1 = __webpack_require__("./app/components/AnalysisIngot
 const AnalysisOreTable_1 = __webpack_require__("./app/components/AnalysisOreTable.tsx");
 const styles = (theme) => ({
     root: {},
+    error: {
+        backgroundColor: theme.palette.error[400],
+    },
 });
-class AnalysisColumn extends _1.Component {
+let AnalysisColumn = class AnalysisColumn extends _1.Component {
+    get anyError() {
+        const { analysis } = this.props;
+        return analysis.blocksErrors.length > 0
+            || analysis.componentErrors.length > 0
+            || analysis.ingotErrors.length > 0
+            || analysis.oreErrors.length > 0;
+    }
     renderRow(AnalysisRow) {
         return (React.createElement(Grid_1.default, { item: true, xs: 12 },
             React.createElement(Paper_1.default, null,
@@ -37829,7 +39057,7 @@ class AnalysisColumn extends _1.Component {
             React.createElement(Grid_1.default, { container: true, spacing: 16 },
                 React.createElement(Grid_1.default, { item: true, xs: 12 },
                     React.createElement(AppBar_1.default, { position: 'static' },
-                        React.createElement(Toolbar_1.default, null,
+                        React.createElement(Toolbar_1.default, { className: this.anyError ? this.props.classes.error : undefined },
                             React.createElement(Typography_1.default, { type: 'title', color: 'inherit', style: { flex: 1 } },
                                 this.props.analysis.blummary.title,
                                 " (",
@@ -37844,7 +39072,15 @@ class AnalysisColumn extends _1.Component {
                 this.renderRow(AnalysisIngotTable_1.default),
                 this.renderRow(AnalysisOreTable_1.default))));
     }
-}
+};
+__decorate([
+    mobx_1.computed,
+    __metadata("design:type", Object),
+    __metadata("design:paramtypes", [])
+], AnalysisColumn.prototype, "anyError", null);
+AnalysisColumn = __decorate([
+    mobx_react_1.observer
+], AnalysisColumn);
 exports.default = styles_1.withStyles(styles)(AnalysisColumn);
 
 
@@ -38315,67 +39551,174 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 Object.defineProperty(exports, "__esModule", { value: true });
 const mobx_1 = __webpack_require__("../node_modules/mobx/lib/mobx.module.js");
 class Analysis {
-    constructor(blummary, blocks, components, ingots, ores) {
+    constructor(blummary, blockStore, componentStore, ingotStore, oreStore) {
         this.blummary = blummary;
-        this.blocks = blocks;
-        this.components = components;
-        this.ingots = ingots;
-        this.ores = ores;
+        this.blockStore = blockStore;
+        this.componentStore = componentStore;
+        this.ingotStore = ingotStore;
+        this.oreStore = oreStore;
     }
-    get blockCount() { return this.blummary.count; }
-    get blockTime() { return this.blummary.blockcount.reduce((sum, value, key) => sum + value * this.blocks.get(key).time, 0); }
-    get blockMass() { return this.blummary.blockcount.reduce((sum, value, key) => sum + value * this.blocks.get(key).mass, 0); }
-    get componentMass() {
-        return Object.keys(this.componentCount).reduce((sum, title) => {
-            const count = this.componentCount[title];
-            const { mass } = this.components.get(title);
-            return sum + mass * count;
-        }, 0);
-    }
-    get ingotMass() {
-        return Object.keys(this.ingotCount).reduce((sum, title) => {
-            const count = this.ingotCount[title];
-            const { mass } = this.ingots.get(title);
-            return sum + mass * count;
-        }, 0);
-    }
-    get oreMass() {
-        return Object.keys(this.oreCount).reduce((sum, title) => {
-            const count = this.oreCount[title];
-            const { mass } = this.ores.get(title);
-            return sum + mass * count;
-        }, 0);
-    }
-    get componentCount() {
-        return this.blummary.blockcount.reduce((components, count, blockTitle) => {
-            const block = this.blocks.get(blockTitle);
-            if (!block)
-                return components;
-            for (let [title, required] of Object.entries(block.prerequisites)) {
-                components[title] = count * required + (title in components ? components[title] : 0);
+    getMaterialAll(outerEntries, innerStore) {
+        const struct = Object.create(null);
+        for (let [material, outerCount] of outerEntries) {
+            for (let [innerName, innerCount] of Object.entries(material.prerequisites)) {
+                struct[innerName] = (struct[innerName] || 0) + outerCount * innerCount;
             }
-            return components;
-        }, Object.create(null));
+        }
+        return struct;
     }
-    get ingotCount() {
-        return Object.keys(this.componentCount).reduce((ingots, compTitle) => {
-            const { prerequisites } = this.components.get(compTitle);
-            for (let [title, required] of Object.entries(prerequisites)) {
-                ingots[title] = this.componentCount[compTitle] * required + (title in ingots ? ingots[title] : 0);
-            }
-            return ingots;
-        }, Object.create(null));
+    get blockAll() {
+        return this.blummary.blockcount.entries()
+            .reduce((struct, [name, count]) => { struct[name] = count; return struct; }, Object.create(null));
     }
-    get oreCount() {
-        return Object.keys(this.ingotCount).reduce((ores, ingotTitle) => {
-            const { prerequisites } = this.ingots.get(ingotTitle);
-            for (let [title, required] of Object.entries(prerequisites)) {
-                ores[title] = this.ingotCount[ingotTitle] * required + (title in ores ? ores[title] : 0);
-            }
-            return ores;
-        }, Object.create(null));
+    get componentAll() { return this.getMaterialAll(this.blocks, this.blockStore); }
+    get ingotAll() { return this.getMaterialAll(this.components, this.componentStore); }
+    get oreAll() { return this.getMaterialAll(this.ingots, this.ingotStore); }
+    getMaterials(struct, store) {
+        const result = Object.create(null);
+        for (let [name, count] of Object.entries(struct)) {
+            if (store.has(name))
+                result[name] = count;
+        }
+        return result;
     }
+    getMaterialsError(struct, store) {
+        const result = Object.create(null);
+        for (let [name, count] of Object.entries(struct)) {
+            if (!store.has(name))
+                result[name] = count;
+        }
+        return result;
+    }
+    get blockStruct() { return this.getMaterials(this.blockAll, this.blockStore); }
+    get componentStruct() { return this.getMaterials(this.componentAll, this.componentStore); }
+    get ingotStruct() { return this.getMaterials(this.ingotAll, this.ingotStore); }
+    get oreStruct() { return this.getMaterials(this.oreAll, this.oreStore); }
+    get blockErrorsStruct() { return this.getMaterialsError(this.blockAll, this.blockStore); }
+    get componentErrorsStruct() { return this.getMaterialsError(this.componentAll, this.componentStore); }
+    get ingotErrorsStruct() { return this.getMaterialsError(this.ingotAll, this.ingotStore); }
+    get oreErrorsStruct() { return this.getMaterialsError(this.oreAll, this.oreStore); }
+    get blocks() { return Object.entries(this.blockStruct).map(([name, count]) => [this.blockStore.get(name), count]); }
+    get components() { return Object.entries(this.componentStruct).map(([name, count]) => [this.componentStore.get(name), count]); }
+    get ingots() { return Object.entries(this.ingotStruct).map(([name, count]) => [this.ingotStore.get(name), count]); }
+    get ores() { return Object.entries(this.oreStruct).map(([name, count]) => [this.oreStore.get(name), count]); }
+    get blocksErrors() { return Object.entries(this.blockErrorsStruct); }
+    get componentErrors() { return Object.entries(this.componentErrorsStruct); }
+    get ingotErrors() { return Object.entries(this.ingotErrorsStruct); }
+    get oreErrors() { return Object.entries(this.oreErrorsStruct); }
+    get blockCount() { return this.blocks.reduce((sum, [material, count]) => sum + count, 0); }
+    get blockTime() { return this.blocks.reduce((sum, [material, count]) => sum + material.time * count, 0); }
+    get blockMass() { return this.blocks.reduce((sum, [material, count]) => sum + material.mass * count, 0); }
+    get componentCount() { return this.components.reduce((sum, [material, count]) => sum + count, 0); }
+    get componentTime() { return this.components.reduce((sum, [material, count]) => sum + material.time * count, 0); }
+    get componentMass() { return this.components.reduce((sum, [material, count]) => sum + material.mass * count, 0); }
+    get ingotCount() { return this.ingots.reduce((sum, [material, count]) => sum + count, 0); }
+    get ingotTime() { return this.ingots.reduce((sum, [material, count]) => sum + material.time * count, 0); }
+    get ingotMass() { return this.ingots.reduce((sum, [material, count]) => sum + material.mass * count, 0); }
+    get oreCount() { return this.ores.reduce((sum, [material, count]) => sum + count, 0); }
+    get oreTime() { return this.ores.reduce((sum, [material, count]) => sum + material.time * count, 0); }
+    get oreMass() { return this.ores.reduce((sum, [material, count]) => sum + material.mass * count, 0); }
 }
+__decorate([
+    mobx_1.computed.struct,
+    __metadata("design:type", Object),
+    __metadata("design:paramtypes", [])
+], Analysis.prototype, "blockAll", null);
+__decorate([
+    mobx_1.computed.struct,
+    __metadata("design:type", Object),
+    __metadata("design:paramtypes", [])
+], Analysis.prototype, "componentAll", null);
+__decorate([
+    mobx_1.computed.struct,
+    __metadata("design:type", Object),
+    __metadata("design:paramtypes", [])
+], Analysis.prototype, "ingotAll", null);
+__decorate([
+    mobx_1.computed.struct,
+    __metadata("design:type", Object),
+    __metadata("design:paramtypes", [])
+], Analysis.prototype, "oreAll", null);
+__decorate([
+    mobx_1.computed.struct,
+    __metadata("design:type", Object),
+    __metadata("design:paramtypes", [])
+], Analysis.prototype, "blockStruct", null);
+__decorate([
+    mobx_1.computed.struct,
+    __metadata("design:type", Object),
+    __metadata("design:paramtypes", [])
+], Analysis.prototype, "componentStruct", null);
+__decorate([
+    mobx_1.computed.struct,
+    __metadata("design:type", Object),
+    __metadata("design:paramtypes", [])
+], Analysis.prototype, "ingotStruct", null);
+__decorate([
+    mobx_1.computed.struct,
+    __metadata("design:type", Object),
+    __metadata("design:paramtypes", [])
+], Analysis.prototype, "oreStruct", null);
+__decorate([
+    mobx_1.computed.struct,
+    __metadata("design:type", Object),
+    __metadata("design:paramtypes", [])
+], Analysis.prototype, "blockErrorsStruct", null);
+__decorate([
+    mobx_1.computed.struct,
+    __metadata("design:type", Object),
+    __metadata("design:paramtypes", [])
+], Analysis.prototype, "componentErrorsStruct", null);
+__decorate([
+    mobx_1.computed.struct,
+    __metadata("design:type", Object),
+    __metadata("design:paramtypes", [])
+], Analysis.prototype, "ingotErrorsStruct", null);
+__decorate([
+    mobx_1.computed.struct,
+    __metadata("design:type", Object),
+    __metadata("design:paramtypes", [])
+], Analysis.prototype, "oreErrorsStruct", null);
+__decorate([
+    mobx_1.computed,
+    __metadata("design:type", Object),
+    __metadata("design:paramtypes", [])
+], Analysis.prototype, "blocks", null);
+__decorate([
+    mobx_1.computed,
+    __metadata("design:type", Object),
+    __metadata("design:paramtypes", [])
+], Analysis.prototype, "components", null);
+__decorate([
+    mobx_1.computed,
+    __metadata("design:type", Object),
+    __metadata("design:paramtypes", [])
+], Analysis.prototype, "ingots", null);
+__decorate([
+    mobx_1.computed,
+    __metadata("design:type", Object),
+    __metadata("design:paramtypes", [])
+], Analysis.prototype, "ores", null);
+__decorate([
+    mobx_1.computed,
+    __metadata("design:type", Object),
+    __metadata("design:paramtypes", [])
+], Analysis.prototype, "blocksErrors", null);
+__decorate([
+    mobx_1.computed,
+    __metadata("design:type", Object),
+    __metadata("design:paramtypes", [])
+], Analysis.prototype, "componentErrors", null);
+__decorate([
+    mobx_1.computed,
+    __metadata("design:type", Object),
+    __metadata("design:paramtypes", [])
+], Analysis.prototype, "ingotErrors", null);
+__decorate([
+    mobx_1.computed,
+    __metadata("design:type", Object),
+    __metadata("design:paramtypes", [])
+], Analysis.prototype, "oreErrors", null);
 __decorate([
     mobx_1.computed,
     __metadata("design:type", Object),
@@ -38395,22 +39738,17 @@ __decorate([
     mobx_1.computed,
     __metadata("design:type", Object),
     __metadata("design:paramtypes", [])
-], Analysis.prototype, "componentMass", null);
-__decorate([
-    mobx_1.computed,
-    __metadata("design:type", Object),
-    __metadata("design:paramtypes", [])
-], Analysis.prototype, "ingotMass", null);
-__decorate([
-    mobx_1.computed,
-    __metadata("design:type", Object),
-    __metadata("design:paramtypes", [])
-], Analysis.prototype, "oreMass", null);
-__decorate([
-    mobx_1.computed,
-    __metadata("design:type", Object),
-    __metadata("design:paramtypes", [])
 ], Analysis.prototype, "componentCount", null);
+__decorate([
+    mobx_1.computed,
+    __metadata("design:type", Object),
+    __metadata("design:paramtypes", [])
+], Analysis.prototype, "componentTime", null);
+__decorate([
+    mobx_1.computed,
+    __metadata("design:type", Object),
+    __metadata("design:paramtypes", [])
+], Analysis.prototype, "componentMass", null);
 __decorate([
     mobx_1.computed,
     __metadata("design:type", Object),
@@ -38420,7 +39758,27 @@ __decorate([
     mobx_1.computed,
     __metadata("design:type", Object),
     __metadata("design:paramtypes", [])
+], Analysis.prototype, "ingotTime", null);
+__decorate([
+    mobx_1.computed,
+    __metadata("design:type", Object),
+    __metadata("design:paramtypes", [])
+], Analysis.prototype, "ingotMass", null);
+__decorate([
+    mobx_1.computed,
+    __metadata("design:type", Object),
+    __metadata("design:paramtypes", [])
 ], Analysis.prototype, "oreCount", null);
+__decorate([
+    mobx_1.computed,
+    __metadata("design:type", Object),
+    __metadata("design:paramtypes", [])
+], Analysis.prototype, "oreTime", null);
+__decorate([
+    mobx_1.computed,
+    __metadata("design:type", Object),
+    __metadata("design:paramtypes", [])
+], Analysis.prototype, "oreMass", null);
 exports.Analysis = Analysis;
 
 
@@ -38932,6 +40290,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const mobx_1 = __webpack_require__("../node_modules/mobx/lib/mobx.module.js");
 const _1 = __webpack_require__("./app/common/index.ts");
 const _2 = __webpack_require__("./app/models/index.ts");
+const EveryLargeBlockOnce = __webpack_require__("../assets/blueprints/EveryLargeBlockOnce/bp.sbc");
 const AlienLander = __webpack_require__("../vendor/SpaceEngineers/prefabs/AlienLander.sbc");
 const AtmosphericLander = __webpack_require__("../vendor/SpaceEngineers/prefabs/AtmosphericLander.sbc");
 const MarsLander = __webpack_require__("../vendor/SpaceEngineers/prefabs/MarsLander.sbc");
@@ -38943,6 +40302,7 @@ class BlummaryStore extends _1.ObservableMap {
     addPrefabs() {
         return __awaiter(this, void 0, void 0, function* () {
             return Promise.all([
+                EveryLargeBlockOnce,
                 AlienLander,
                 AtmosphericLander,
                 MarsLander,
