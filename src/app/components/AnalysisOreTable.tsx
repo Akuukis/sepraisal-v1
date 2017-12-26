@@ -27,7 +27,7 @@ class AnalysisOreTable extends Component<AnalysisRowProps, AnalysisOreTableClass
 
     return Object.keys(this.props.analysis.oreCount).map((title)=>{
       const count = this.props.analysis.oreCount[title];
-      const { type, subtype, mass, volume } = this.props.analysis.ores.get(title);
+      const { type, subtype, mass, volume } = this.props.analysis.oreStore.get(title);
       return {
         type,
         subtype,

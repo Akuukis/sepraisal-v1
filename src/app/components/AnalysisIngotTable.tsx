@@ -27,7 +27,7 @@ class AnalysisIngotTable extends Component<AnalysisRowProps, AnalysisIngotTableC
 
     return Object.keys(this.props.analysis.ingotCount).map((title)=>{
       const count = this.props.analysis.ingotCount[title];
-      const { type, subtype, mass, volume } = this.props.analysis.ingots.get(title);
+      const { type, subtype, mass, volume } = this.props.analysis.ingotStore.get(title);
       return {
         type,
         subtype,

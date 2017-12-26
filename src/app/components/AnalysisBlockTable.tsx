@@ -25,7 +25,7 @@ class AnalysisAnalysisBlockTable extends Component<AnalysisRowProps, AnalysisAna
 
   getData(): {[field in keyof typeof datumTitles]: number|string}[] {
     return this.props.analysis.blummary.blockcount.map((count, title)=>{
-      const block = this.props.analysis.blocks.get(title);
+      const block = this.props.analysis.blockStore.get(title);
       return {
         type: block ? block.type : '**Unknown block**',
         subtype: block ? block.subtype : `"${title}"`,

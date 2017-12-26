@@ -27,7 +27,7 @@ class AnalysisComponentTable extends Component<AnalysisRowProps, AnalysisCompone
 
     return Object.keys(this.props.analysis.componentCount).map((title)=>{
       const count = this.props.analysis.componentCount[title];
-      const { type, subtype, mass, volume } = this.props.analysis.components.get(title);
+      const { type, subtype, mass, volume } = this.props.analysis.componentStore.get(title);
       return {
         type,
         subtype,
