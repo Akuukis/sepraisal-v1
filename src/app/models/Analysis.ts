@@ -49,15 +49,33 @@ export class Analysis {
     return result;
   }
 
+  private getMaterialsError(struct: {[name: string]: number}, store: MaterialStore<any>): {[blockName: string]: number} {
+    const result = Object.create(null);
+    for(let [name, count] of Object.entries(struct)) {
+      if(!store.has(name)) result[name] = count;
+    }
+    return result;
+  }
+
   @computed.struct get blocks() { return this.getMaterials(this.blockAll, this.blockStore); }
   @computed.struct get components() { return this.getMaterials(this.componentAll, this.componentStore); }
   @computed.struct get ingots() { return this.getMaterials(this.ingotAll, this.ingotStore); }
   @computed.struct get ores() { return this.getMaterials(this.oreAll, this.oreStore); }
 
+  @computed.struct get blocksError() { return this.getMaterialsError(this.blockAll, this.blockStore); }
+  @computed.struct get componentsError() { return this.getMaterialsError(this.componentAll, this.componentStore); }
+  @computed.struct get ingotsError() { return this.getMaterialsError(this.ingotAll, this.ingotStore); }
+  @computed.struct get oresError() { return this.getMaterialsError(this.oreAll, this.oreStore); }
+
   @computed get blockEntries()     { return Object.entries(this.blocks    ).map<[Block    , number]>(([name, count])=>[this.blockStore.get(name)    , count]); }
   @computed get componentEntries() { return Object.entries(this.components).map<[Component, number]>(([name, count])=>[this.componentStore.get(name), count]); }
   @computed get ingotEntries()     { return Object.entries(this.ingots    ).map<[Ingot    , number]>(([name, count])=>[this.ingotStore.get(name)    , count]); }
   @computed get oreEntries()       { return Object.entries(this.ores      ).map<[Ore      , number]>(([name, count])=>[this.oreStore.get(name)      , count]); }
+
+  @computed get blocksErrorEntries() { return Object.entries(this.blocksError); }
+  @computed get componentsErrorEntries() { return Object.entries(this.componentsError); }
+  @computed get ingotsErrorEntries() { return Object.entries(this.ingotsError); }
+  @computed get oresErrorEntries() { return Object.entries(this.oresError); }
 
   @computed get blockCount() { return this.blockEntries.reduce((sum, [material, count])=>sum+count, 0)}
   @computed get blockTime() { return this.blockEntries.reduce((sum, [material, count])=>sum+material.time*count, 0)}
