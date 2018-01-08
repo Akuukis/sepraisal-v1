@@ -4,9 +4,10 @@
   "description": "Space Engineers Praisal: Blueprint Parser & Analyzer",
   "main": "dist/index.js",
   "scripts": {
-    "test": "gulp test",
+    "build": "NODE_ENV=production webpack --progress --colors",
+    "deploy-github": "TARGET=github yarn run build; git co gh-pages; mv dist/* .; git add .; git commit -m 'Automatic update'; git push; git co master;",
     "start": "NODE_ENV=development webpack-dev-server -d --history-api-fallback --hot --inline --progress --colors --port 3000 --open",
-    "build": "NODE_ENV=production webpack --progress --colors"
+    "test": "gulp test"
   },
   "repository": {
     "type": "git",
