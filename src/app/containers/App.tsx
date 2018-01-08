@@ -113,7 +113,7 @@ class App extends ComponentRouted<{}, AppClasses> {
         <Paper className={this.props.classes.app}>
           <Drawer
             open={this.isDrawerOpen}
-            onRequestClose={()=>this.setDrawer(false)}
+            onClose={()=>this.setDrawer(false)}
           >
             <Navigation />
           </Drawer>

@@ -56,7 +56,7 @@ class AnalysisSummaryRow extends Component<AnalysisSummaryRowProps, AnalysisSumm
         }
         <ListItemText primary={this.props.title} secondary={this.props.subtitle}/>
         <Typography type='body1'>{this.props.value}</Typography>
-        <Dialog open={this.dialogOpen} onRequestClose={this.close} classes={{paper:this.props.classes.dialog}}>
+        <Dialog open={this.dialogOpen} onClose={this.close} classes={{paper:this.props.classes.dialog}}>
           <DialogTitle>Unknown {this.props.title}</DialogTitle>
           <DialogContent>
             <Typography type='body1' gutterBottom>
