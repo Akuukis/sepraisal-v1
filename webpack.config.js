@@ -14,7 +14,7 @@ module.exports = {
   entry: {
     main: isProduction ?
         './index.ts'
-      : 
+      :
         [
           'react-hot-loader/patch',
           './index.ts',
@@ -31,7 +31,7 @@ module.exports = {
   output: {
     path: outPath,
     filename: 'bundle.js',
-    publicPath: '/spaceengineers-praisal/'
+    publicPath: process.env.TARGET == 'github' ? '/spaceengineers-praisal/' : '',
   },
   target: 'web',
   resolve: {

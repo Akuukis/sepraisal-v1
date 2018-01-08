@@ -3,19 +3,10 @@
 ## Setup
 
 ```
-npm install
-```
-
-## Running
-
-```
-npm start
-```
-
-## Build
-
-```
-npm run build
+yarn install
+yarn start
+yarn build
+# yarn run deploy-github
 ```
 
 # License
@@ -23,6 +14,14 @@ npm run build
 GPLv3
 
 # TODO
+
+> In the future, it will also be able to
+> * praise your blueprints according to various popular MP servers (in credits, XP, etc.),
+> * measure compliance level to popular MP server grid limits,
+> * calculate production times,
+> * handle mods (and modpacks),
+> * do smart block analysis to report freight, production and mobility perfomance,
+> * and understand TIM tags for more interesting reports.
 
 Stores:
 - BP
@@ -55,6 +54,3 @@ Views:
   - ore management
   - converter management
 - Modpack management
-
-Controllers:
-+ BP parser
