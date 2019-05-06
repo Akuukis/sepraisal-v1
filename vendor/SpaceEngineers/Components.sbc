@@ -410,8 +410,8 @@
         <Y>0.5</Y>
         <Z>0.05</Z>
       </Size>
-      <Mass>8</Mass>
-      <Volume>20</Volume>
+      <Mass>6</Mass>
+      <Volume>12</Volume>
       <Model>Models\Components\SolarCell.mwm</Model>
       <PhysicalMaterial>Metal</PhysicalMaterial>
       <MaxIntegrity>1</MaxIntegrity>
@@ -431,10 +431,30 @@
         <Z>0.3</Z>
       </Size>
       <Mass>25</Mass>
-      <Volume>45</Volume>
+      <Volume>40</Volume>
       <Model>Models\Components\PowerCellComponent.mwm</Model>
       <PhysicalMaterial>Metal</PhysicalMaterial>
       <MaxIntegrity>50</MaxIntegrity>
+      <DropProbability>0.3</DropProbability>
+      <Health>14</Health>
+    </Component>
+    <Component>
+      <Id>
+        <TypeId>Component</TypeId>
+        <SubtypeId>Canvas</SubtypeId>
+      </Id>
+      <DisplayName>DisplayName_Item_CanvasCartridge</DisplayName>
+      <Icon>Textures\GUI\Icons\component\Cartridge_Icon.dds</Icon>
+      <Size>
+        <X>0.25</X>
+        <Y>0.25</Y>
+        <Z>0.03</Z>
+      </Size>
+      <Mass>15</Mass>
+      <Volume>8</Volume>
+      <Model>Models\Components\Cartridge.mwm</Model>
+      <PhysicalMaterial>Metal</PhysicalMaterial>
+      <MaxIntegrity>5</MaxIntegrity>
       <DropProbability>0.3</DropProbability>
       <Health>14</Health>
     </Component>
