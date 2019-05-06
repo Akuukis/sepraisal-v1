@@ -12,6 +12,8 @@ export async function parseBlueprintSbc(xml, filter) {
         if(parseError) reject(parseError);
         try {
           const blockDtos = bp.Definitions.Blueprints[0].Blueprint
+          // as of 1.189/1.190 not all materials have a Result. (bottle refills are the prime example)
+            .filter((material)=>"Result" in material)
             .filter((material)=>material.Result[0].$.TypeId==filter)
             .map((material)=>({
                 type: material.Result[0].$.TypeId,
@@ -25,7 +27,7 @@ export async function parseBlueprintSbc(xml, filter) {
               }));
           resolve(blockDtos);
         } catch(transformError) {
-          console.error(transformError, bp)
+          console.error(transformError, bp, filter)
           reject(transformError);
         };
       });
