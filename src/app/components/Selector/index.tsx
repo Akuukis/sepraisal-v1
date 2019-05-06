@@ -18,6 +18,8 @@ import { AnalysisStore, BlummaryStore } from '../../stores/index';
 import SelectorRow from './Row';
 import SelectorDnDOverlay from './DnDOverlay';
 
+import * as Pako from 'pako';
+
 export type SelectorClasses = 'root';
 const styles: StyleRulesCallback<SelectorClasses> = (theme) => ({
   root: {
@@ -48,14 +50,23 @@ class Selector extends Component<SelectorProps, SelectorClasses> {
       const promise = new Promise((resolve: (res:string)=>void, reject ) => {
         reader.onload = (e: ProgressEvent) => {
             const r: any = e.target;  // TODO fix typings
-            resolve(r.result);
+            try {
+                const out: any = Pako.inflate(r.result, {to: 'string'});
+                resolve(out);
+            } catch(error) {
+                console.error(`inflate failed ${error}`);
+                const out: any = r.result.toString('utf-8');
+                resolve(out);
+            }
+            //resolve(r.result);
         };
         reader.onabort = (e) => reject(e);
         reader.onerror = (e) => reject(e);
       });
 
-      // reader.readAsBinaryString(file);
-      reader.readAsText(file, 'utf8');
+      reader.readAsBinaryString(file);
+      // reader.readAsText(file, 'utf8');
+
       this.blummaryStore.add(new Blummary(await Blummary.parseBlueprintXml(await promise)));
     });
   }
