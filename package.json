@@ -59,6 +59,7 @@
     "react-table": "^6.5.3",
     "react-tap-event-plugin": "^3.0.2",
     "typeface-roboto": "^0.0.45",
-    "xml2js": "^0.4.17"
+    "xml2js": "^0.4.17",
+    "pako": "^1.0.10"
   }
 }

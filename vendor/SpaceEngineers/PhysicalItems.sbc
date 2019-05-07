@@ -368,6 +368,7 @@
       </Id>
       <DisplayName>DisplayName_Item_AutomaticRifle</DisplayName>
       <Icon>Textures\GUI\Icons\WeaponAutomaticRifle.dds</Icon>
+      <Description>Description_Rifle</Description>
       <Size>
         <X>0.8</X>
         <Y>0.24</Y>
@@ -388,6 +389,7 @@
       </Id>
       <DisplayName>DisplayName_Item_PreciseAutomaticRifle</DisplayName>
       <Icon>Textures\GUI\Icons\WeaponAutomaticRifle_Precise.dds</Icon>
+      <Description>Description_Rifle</Description>
       <Size>
         <X>0.8</X>
         <Y>0.24</Y>
@@ -408,6 +410,7 @@
       </Id>
       <DisplayName>DisplayName_Item_RapidFireAutomaticRifle</DisplayName>
       <Icon>Textures\GUI\Icons\WeaponAutomaticRifle_RapidFire.dds</Icon>
+      <Description>Description_Rifle</Description>
       <Size>
         <X>0.8</X>
         <Y>0.24</Y>
@@ -428,6 +431,7 @@
       </Id>
       <DisplayName>DisplayName_Item_EliteAutomaticRifle</DisplayName>
       <Icon>Textures\GUI\Icons\WeaponAutomaticRifle_Elite.dds</Icon>
+      <Description>Description_Rifle</Description>
       <Size>
         <X>0.8</X>
         <Y>0.24</Y>
@@ -492,6 +496,7 @@
       </Id>
       <DisplayName>DisplayName_Item_Welder</DisplayName>
       <Icon>Textures\GUI\Icons\WeaponWelder.dds</Icon>
+      <Description>Description_Welder</Description>
       <Size>
         <X>0.4</X>
         <Y>0.2</Y>
@@ -509,6 +514,7 @@
       </Id>
       <DisplayName>DisplayName_Item_Welder2</DisplayName>
       <Icon>Textures\GUI\Icons\WeaponWelder_1.dds</Icon>
+      <Description>Description_Welder</Description>
       <Size>
         <X>0.4</X>
         <Y>0.2</Y>
@@ -527,6 +533,7 @@
       </Id>
       <DisplayName>DisplayName_Item_Welder3</DisplayName>
       <Icon>Textures\GUI\Icons\WeaponWelder_2.dds</Icon>
+      <Description>Description_Welder</Description>
       <Size>
         <X>0.4</X>
         <Y>0.2</Y>
@@ -545,6 +552,7 @@
       </Id>
       <DisplayName>DisplayName_Item_Welder4</DisplayName>
       <Icon>Textures\GUI\Icons\WeaponWelder_3.dds</Icon>
+	  <Description>Description_Welder</Description>
       <Size>
         <X>0.4</X>
         <Y>0.2</Y>
@@ -563,6 +571,7 @@
       </Id>
       <DisplayName>DisplayName_Item_AngleGrinder</DisplayName>
       <Icon>Textures\GUI\Icons\WeaponGrinder.dds</Icon>
+      <Description>Description_AngleGrinder</Description>
       <Size>
         <X>0.5</X>
         <Y>0.3</Y>
@@ -580,6 +589,7 @@
       </Id>
       <DisplayName>DisplayName_Item_AngleGrinder2</DisplayName>
       <Icon>Textures\GUI\Icons\WeaponGrinder_1.dds</Icon>
+      <Description>Description_AngleGrinder</Description>
       <Size>
         <X>0.5</X>
         <Y>0.3</Y>
@@ -598,6 +608,7 @@
       </Id>
       <DisplayName>DisplayName_Item_AngleGrinder3</DisplayName>
       <Icon>Textures\GUI\Icons\WeaponGrinder_2.dds</Icon>
+      <Description>Description_AngleGrinder</Description>
       <Size>
         <X>0.5</X>
         <Y>0.3</Y>
@@ -616,6 +627,7 @@
       </Id>
       <DisplayName>DisplayName_Item_AngleGrinder4</DisplayName>
       <Icon>Textures\GUI\Icons\WeaponGrinder_3.dds</Icon>
+      <Description>Description_AngleGrinder</Description>
       <Size>
         <X>0.5</X>
         <Y>0.3</Y>
@@ -634,6 +646,7 @@
       </Id>
       <DisplayName>DisplayName_Item_HandDrill</DisplayName>
       <Icon>Textures\GUI\Icons\WeaponDrill.dds</Icon>
+      <Description>Description_HandDrill</Description>
       <Size>
         <X>1.2</X>
         <Y>0.6</Y>
@@ -651,6 +664,7 @@
       </Id>
       <DisplayName>DisplayName_Item_HandDrill2</DisplayName>
       <Icon>Textures\GUI\Icons\WeaponDrill_1.dds</Icon>
+      <Description>Description_HandDrill</Description>
       <Size>
         <X>1.2</X>
         <Y>0.6</Y>
@@ -669,6 +683,7 @@
       </Id>
       <DisplayName>DisplayName_Item_HandDrill3</DisplayName>
       <Icon>Textures\GUI\Icons\WeaponDrill_2.dds</Icon>
+      <Description>Description_HandDrill</Description>
       <Size>
         <X>1.2</X>
         <Y>0.6</Y>
@@ -687,6 +702,7 @@
       </Id>
       <DisplayName>DisplayName_Item_HandDrill4</DisplayName>
       <Icon>Textures\GUI\Icons\WeaponDrill_3.dds</Icon>
+      <Description>Description_HandDrill</Description>
       <Size>
         <X>1.2</X>
         <Y>0.6</Y>
